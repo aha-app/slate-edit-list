@@ -6,7 +6,42 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 ## [Unreleased]
 
-[Unreleased]: https://github.com/GitbookIO/slate-edit-list/compare/0.10.0...HEAD
+[Unreleased]: https://github.com/GitbookIO/slate-edit-list/compare/0.12.2...HEAD
+
+## 0.12.2 - 2018-08-20
+
+- Added optional argument `type` to `isSelectionInList`
+
+## 0.12.1 - 2018-08-20
+
+- Avoid merging non-list blocks, even when using the `canMerge` option
+
+## 0.12.0 - 2018-08-03
+
+- Add `canMerge` option to control which adjacent lists can
+  be merged automatically through normalization.
+
+## 0.11.3 - 2018-04-19
+
+- Limit package size by publishing only the `dist` folder
+
+## 0.11.2 - 2018-02-06
+
+## 0.11.1 - 2018-02-06
+
+- Fixed build
+
+## 0.11.0 - 2018-02-05
+
+- Upgrade to be compatible with Slate 0.32.x
+
+## 0.10.3 - 2018-02-05
+
+- Fix: delete selection while pressing Enter in a list
+
+## 0.10.2 - 2018-01-09
+
+- Wider slate peer dependency range
 
 ## 0.10.1 - 2017-11-08
 
