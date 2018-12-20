@@ -7,10 +7,14 @@ export default function(plugin, change) {
     const selectedNode = change.value.document.getTexts().get(2);
 
     expect(change.value.selection.toJS()).toMatch({
-        anchorKey: selectedNode.key,
-        anchorOffset: 0,
-        focusKey: selectedNode.key,
-        focusOffset: 0
+        anchor: {
+            path: change.value.document.assertPath(selectedNode.key).toJS(),
+            offset: 0
+        },
+        focus: {
+            path: change.value.document.assertPath(selectedNode.key).toJS(),
+            offset: 0
+        }
     });
 
     return change;

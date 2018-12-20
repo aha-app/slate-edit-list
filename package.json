@@ -7,7 +7,7 @@
   "main": "./dist/index.js",
   "peerDependencies": {
     "immutable": "^3.8.2",
-    "slate": "^0.32.0"
+    "slate": "^0.37.0"
   },
   "files": [
     "dist",
@@ -44,10 +44,10 @@
     "prettier": "^1.13.3",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
-    "slate": "^0.34.4",
+    "slate": "^0.37.0",
     "slate-hyperprint": "^2.2.5",
-    "slate-hyperscript": "^0.5.15",
-    "slate-react": "^0.13.0",
+    "slate-hyperscript": "^0.7.0",
+    "slate-react": "^0.15.0",
     "stringify": "^5.1.0"
   },
   "scripts": {
