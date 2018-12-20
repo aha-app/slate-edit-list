@@ -1,19 +1,25 @@
+/* eslint-disable import/no-dynamic-require */
+/* eslint-disable global-require */
 import expect from 'expect';
 import fs from 'fs';
 import path from 'path';
 import Slate from 'slate';
-import readMetadata from 'read-metadata';
+import hyperprint from 'slate-hyperprint';
 
 import EditList from '../lib';
 
-const PLUGIN = EditList();
-const SCHEMA = Slate.Schema.create({
-    plugins: [PLUGIN]
-});
+// Provide the value with
+function deserializeValue(plugin, value) {
+    const SCHEMA = Slate.Schema.create({
+        plugins: [plugin]
+    });
 
-function deserializeValue(json) {
     return Slate.Value.fromJSON(
-        { ...json, schema: SCHEMA },
+        {
+            selection: value.selection,
+            document: value.document,
+            schema: SCHEMA
+        },
         { normalize: false }
     );
 }
@@ -25,21 +31,28 @@ describe('slate-edit-list', () => {
         if (test[0] === '.' || path.extname(test).length > 0) return;
         it(test, () => {
             const dir = path.resolve(__dirname, test);
-            const input = readMetadata.sync(path.resolve(dir, 'input.yaml'));
-            const expectedPath = path.resolve(dir, 'expected.yaml');
-            const expected =
-                fs.existsSync(expectedPath) && readMetadata.sync(expectedPath);
+            const plugin = EditList();
 
-            // eslint-disable-next-line
+            const input = deserializeValue(
+                plugin,
+                require(path.resolve(dir, 'input.js')).default
+            );
+
+            const expectedPath = path.resolve(dir, 'expected.js');
+            const expected =
+                fs.existsSync(expectedPath) &&
+                deserializeValue(plugin, require(expectedPath).default);
+
             const runChange = require(path.resolve(dir, 'change.js')).default;
 
-            const valueInput = deserializeValue(input);
-
-            const newChange = runChange(PLUGIN, valueInput.change());
+            const newChange = runChange(plugin, input.change());
 
             if (expected) {
-                const newDocJSon = newChange.value.toJSON();
-                expect(newDocJSon).toEqual(deserializeValue(expected).toJSON());
+                const actual = newChange.value;
+
+                expect(hyperprint(actual, { strict: true })).toEqual(
+                    hyperprint(expected, { strict: true })
+                );
             }
         });
     });
