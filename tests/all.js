@@ -4,7 +4,6 @@ import expect from 'expect';
 import fs from 'fs';
 import path from 'path';
 import Slate from 'slate';
-import hyperprint from 'slate-hyperprint';
 
 import EditList from '../lib';
 
@@ -50,8 +49,8 @@ describe('slate-edit-list', () => {
             if (expected) {
                 const actual = newChange.value;
 
-                expect(hyperprint(actual, { strict: true })).toEqual(
-                    hyperprint(expected, { strict: true })
+                expect(JSON.stringify(actual)).toEqual(
+                  JSON.stringify(expected)
                 );
             }
         });
