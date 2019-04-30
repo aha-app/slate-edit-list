@@ -6,7 +6,12 @@ export default (
         <document>
             <ol_list>
                 <list_item>
-                    <paragraph>Fi<anchor />rs<focus />t item</paragraph>
+                    <paragraph>
+                        Fi
+                        <anchor />
+                        rs
+                        <focus />t item
+                    </paragraph>
                 </list_item>
             </ol_list>
         </document>

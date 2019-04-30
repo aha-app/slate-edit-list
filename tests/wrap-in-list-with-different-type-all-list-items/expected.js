@@ -6,10 +6,18 @@ export default (
         <document>
             <ul_list>
                 <list_item>
-                    <paragraph>Fi<anchor />rst item</paragraph>
+                    <paragraph>
+                        Fi
+                        <anchor />
+                        rst item
+                    </paragraph>
                 </list_item>
                 <list_item>
-                    <paragraph>Seco<focus />nd item</paragraph>
+                    <paragraph>
+                        Seco
+                        <focus />
+                        nd item
+                    </paragraph>
                 </list_item>
             </ul_list>
         </document>

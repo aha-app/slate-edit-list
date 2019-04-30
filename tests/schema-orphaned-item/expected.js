@@ -6,12 +6,7 @@ export default (
         <document>
             <ul_list>
                 <list_item>
-                    <paragraph>
-                        Fi
-                        <anchor />
-                        rs
-                        <focus />t item
-                    </paragraph>
+                    <paragraph>1st item</paragraph>
                 </list_item>
             </ul_list>
         </document>
