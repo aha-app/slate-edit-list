@@ -9,7 +9,7 @@ export default function(plugin, change) {
             shiftKey: true
         },
         change,
-        {}
+        () => {}
     );
 
     expect(ret == null).toBe(true);

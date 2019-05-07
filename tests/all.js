@@ -9,18 +9,13 @@ import EditList from '../lib';
 
 // Provide the value with
 function deserializeValue(plugin, value) {
-    const SCHEMA = Slate.Schema.create({
+    const editor = new Slate.Editor({
+        value,
         plugins: [plugin]
-    });
+    },
+    { normalize: false });
 
-    return Slate.Value.fromJSON(
-        {
-            selection: value.selection,
-            document: value.document,
-            schema: SCHEMA
-        },
-        { normalize: false }
-    );
+    return editor.value;
 }
 
 describe('slate-edit-list', () => {
@@ -32,25 +27,37 @@ describe('slate-edit-list', () => {
             const dir = path.resolve(__dirname, test);
             const plugin = EditList();
 
-            const input = deserializeValue(
-                plugin,
-                require(path.resolve(dir, 'input.js')).default
-            );
+            const input = require(path.resolve(dir, 'input.js')).default;
+
+            const inputEditor = new Slate.Editor({
+                value: Slate.Value.fromJSON(input),
+                plugins: [plugin]
+            }, { normalize: false });
 
             const expectedPath = path.resolve(dir, 'expected.js');
             const expected =
                 fs.existsSync(expectedPath) &&
-                deserializeValue(plugin, require(expectedPath).default);
+                  require(expectedPath).default;
+
+            const expectedEditor = new Slate.Editor({
+                value: Slate.Value.fromJSON(expected),
+                plugins: [plugin]
+            });
 
             const runChange = require(path.resolve(dir, 'change.js')).default;
 
-            const newChange = runChange(plugin, input.change());
-
+            inputEditor.change(change => {
+                runChange(plugin, change);
+                // Some runChange methods don't perform changes, which
+                // means the value won't get normalized at the
+                // end. But the expected _is_ always normalized. So we
+                // need to force a normalize here.
+                change.normalize();
+            });
+            
             if (expected) {
-                const actual = newChange.value;
-
-                expect(JSON.stringify(actual)).toEqual(
-                  JSON.stringify(expected)
+                expect(JSON.stringify(inputEditor.value)).toEqual(
+                  JSON.stringify(expectedEditor.value)
                 );
             }
         });
