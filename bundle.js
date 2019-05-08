@@ -234,7 +234,7 @@ var Example = function (_React$Component) {
 
 _reactDom2.default.render(_react2.default.createElement(Example, null), document.getElementById('example'));
 
-},{"../lib/":14,"./value":2,"babel-runtime/core-js/object/get-prototype-of":35,"babel-runtime/helpers/classCallCheck":39,"babel-runtime/helpers/createClass":40,"babel-runtime/helpers/extends":42,"babel-runtime/helpers/inherits":43,"babel-runtime/helpers/possibleConstructorReturn":44,"react":322,"react-dom":318,"slate-react":331}],2:[function(require,module,exports){
+},{"../lib/":14,"./value":2,"babel-runtime/core-js/object/get-prototype-of":35,"babel-runtime/helpers/classCallCheck":39,"babel-runtime/helpers/createClass":40,"babel-runtime/helpers/extends":42,"babel-runtime/helpers/inherits":43,"babel-runtime/helpers/possibleConstructorReturn":44,"react":322,"react-dom":318,"slate-react":332}],2:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -422,7 +422,7 @@ function decreaseItemDepth(opts, change, block) {
 }
 exports.default = decreaseItemDepth;
 
-},{"../changes":5,"../utils":22,"slate":347}],4:[function(require,module,exports){
+},{"../changes":5,"../utils":22,"slate":348}],4:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -495,7 +495,7 @@ destKey) {
 
 exports.default = increaseItemDepth;
 
-},{"../utils":22,"slate":347}],5:[function(require,module,exports){
+},{"../utils":22,"slate":348}],5:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -565,7 +565,7 @@ function splitListItem(opts, change) {
 
 exports.default = splitListItem;
 
-},{"../utils":22,"slate":347}],7:[function(require,module,exports){
+},{"../utils":22,"slate":348}],7:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -620,7 +620,7 @@ function unwrapList(opts, change, block) {
 }
 exports.default = unwrapList;
 
-},{"../utils":22,"immutable":158,"slate":347}],8:[function(require,module,exports){
+},{"../utils":22,"immutable":158,"slate":348}],8:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -721,7 +721,7 @@ function getHighestSelectedBlocks(value) {
 
 exports.default = wrapInList;
 
-},{"../utils":22,"immutable":158,"slate":347}],9:[function(require,module,exports){
+},{"../utils":22,"immutable":158,"slate":348}],9:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -876,7 +876,7 @@ function onBackspace(event, editor, next, opts) {
 }
 exports.default = onBackspace;
 
-},{"../changes":5,"../utils":22,"slate":347}],12:[function(require,module,exports){
+},{"../changes":5,"../utils":22,"slate":348}],12:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -932,7 +932,7 @@ function onEnter(event, editor, next, opts) {
 }
 exports.default = onEnter;
 
-},{"../changes":5,"../utils":22,"slate":347}],13:[function(require,module,exports){
+},{"../changes":5,"../utils":22,"slate":348}],13:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -977,7 +977,7 @@ function onTab(event, editor, next, opts) {
 }
 exports.default = onTab;
 
-},{"../changes":5,"../utils":22,"slate":347}],14:[function(require,module,exports){
+},{"../changes":5,"../utils":22,"slate":348}],14:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -1120,7 +1120,7 @@ function getCurrentItem(opts, value, block) {
 }
 exports.default = getCurrentItem;
 
-},{"slate":347}],17:[function(require,module,exports){
+},{"slate":348}],17:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -1153,7 +1153,7 @@ function getCurrentList(opts, value, block) {
 }
 exports.default = getCurrentList;
 
-},{"./getCurrentItem":16,"./getListForItem":20,"slate":347}],18:[function(require,module,exports){
+},{"./getCurrentItem":16,"./getListForItem":20,"slate":348}],18:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -1189,7 +1189,7 @@ function getItemDepth(opts, value, block) {
 
 exports.default = getItemDepth;
 
-},{"./getCurrentItem":16,"slate":347}],19:[function(require,module,exports){
+},{"./getCurrentItem":16,"slate":348}],19:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -1251,7 +1251,7 @@ function getItemsAtRange(opts, value, range) {
 
 exports.default = getItemsAtRange;
 
-},{"./getCurrentItem":16,"./isList":24,"immutable":158,"slate":347}],20:[function(require,module,exports){
+},{"./getCurrentItem":16,"./isList":24,"immutable":158,"slate":348}],20:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -1278,7 +1278,7 @@ function getListForItem(opts, value, item) {
 
 exports.default = getListForItem;
 
-},{"./isList":24,"slate":347}],21:[function(require,module,exports){
+},{"./isList":24,"slate":348}],21:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -1319,7 +1319,7 @@ function getPreviousItem(opts, value, block) {
 
 exports.default = getPreviousItem;
 
-},{"./getCurrentItem":16,"slate":347}],22:[function(require,module,exports){
+},{"./getCurrentItem":16,"slate":348}],22:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -1413,7 +1413,7 @@ function isList(opts, node) {
 }
 exports.default = isList;
 
-},{"slate":347}],25:[function(require,module,exports){
+},{"slate":348}],25:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -1443,7 +1443,7 @@ function isSelectionInList(opts, value, type) {
 }
 exports.default = isSelectionInList;
 
-},{"./getItemsAtRange":19,"./getListForItem":20,"slate":347}],26:[function(require,module,exports){
+},{"./getItemsAtRange":19,"./getListForItem":20,"slate":348}],26:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -1485,7 +1485,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
  * Create a schema definition with rules to normalize lists
  */
 function normalizeNode(opts) {
-    return function (node, next) {
+    return function (node, editor, next) {
         return joinAdjacentLists(opts, node, next);
     };
 }
@@ -1516,19 +1516,19 @@ function joinAdjacentLists(opts, node, next) {
      * Join the list pairs
      */
     // We join in reverse order, so that multiple lists folds onto the first one
-    return function (change) {
-        return change.withoutNormalizing(function (change) {
+    return function (editor) {
+        return editor.withoutNormalizing(function (editor) {
             invalids.reverse().forEach(function (pair) {
                 var _pair = (0, _slicedToArray3.default)(pair, 2),
                     first = _pair[0],
                     second = _pair[1];
 
-                var updatedSecond = change.value.document.getDescendant(second.key);
+                var updatedSecond = editor.value.document.getDescendant(second.key);
                 updatedSecond.nodes.forEach(function (secondNode, index) {
-                    change.moveNodeByKey(secondNode.key, first.key, first.nodes.size + index);
+                    editor.moveNodeByKey(secondNode.key, first.key, first.nodes.size + index);
                 });
 
-                change.removeNodeByKey(second.key);
+                editor.removeNodeByKey(second.key);
             });
         });
     };
@@ -1536,7 +1536,7 @@ function joinAdjacentLists(opts, node, next) {
 
 exports.default = normalizeNode;
 
-},{"../utils":22,"babel-runtime/helpers/slicedToArray":45,"slate":347}],28:[function(require,module,exports){
+},{"../utils":22,"babel-runtime/helpers/slicedToArray":45,"slate":348}],28:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -1629,7 +1629,7 @@ function wrapChildrenInDefaultBlock(opts, change, node) {
 
 exports.default = schema;
 
-},{"babel-runtime/helpers/defineProperty":41,"slate":347}],29:[function(require,module,exports){
+},{"babel-runtime/helpers/defineProperty":41,"slate":348}],29:[function(require,module,exports){
 module.exports = { "default": require("core-js/library/fn/array/from"), __esModule: true };
 },{"core-js/library/fn/array/from":48}],30:[function(require,module,exports){
 module.exports = { "default": require("core-js/library/fn/get-iterator"), __esModule: true };
@@ -31987,7 +31987,7 @@ var index = {
 exports.default = index;
 
 
-},{"isomorphic-base64":163,"slate":347}],325:[function(require,module,exports){
+},{"isomorphic-base64":163,"slate":348}],325:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, '__esModule', { value: true });
@@ -33378,7 +33378,7 @@ exports.default = index;
 exports.createHyperscript = createHyperscript;
 
 
-},{"is-plain-object":161,"slate":347}],329:[function(require,module,exports){
+},{"is-plain-object":161,"slate":348}],329:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, '__esModule', { value: true });
@@ -33503,7 +33503,7 @@ var index = {
 exports.default = index;
 
 
-},{"immutable":158,"slate":347}],330:[function(require,module,exports){
+},{"immutable":158,"slate":348}],330:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, '__esModule', { value: true });
@@ -33619,7 +33619,202 @@ var Types = {
 exports.default = Types;
 
 
-},{"slate":347}],331:[function(require,module,exports){
+},{"slate":348}],331:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, '__esModule', { value: true });
+
+function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
+
+var React = _interopDefault(require('react'));
+
+var isProduction = "development" === 'production';
+var prefix = 'Invariant failed';
+var index = (function (condition, message) {
+  if (condition) {
+    return;
+  }
+
+  if (isProduction) {
+    throw new Error(prefix);
+  } else {
+    throw new Error(prefix + ": " + (message || ''));
+  }
+});
+
+var _extends = Object.assign || function (target) {
+  for (var i = 1; i < arguments.length; i++) {
+    var source = arguments[i];
+
+    for (var key in source) {
+      if (Object.prototype.hasOwnProperty.call(source, key)) {
+        target[key] = source[key];
+      }
+    }
+  }
+
+  return target;
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var toConsumableArray = function (arr) {
+  if (Array.isArray(arr)) {
+    for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) arr2[i] = arr[i];
+
+    return arr2;
+  } else {
+    return Array.from(arr);
+  }
+};
+
+/*
+ * Instance counter to enable unique marks for multiple Placeholder instances.
+ */
+
+var instanceCounter = 0;
+
+/**
+ * A plugin that renders a React placeholder for a given Slate node.
+ *
+ * @param {Object} options
+ * @return {Object}
+ */
+
+function SlateReactPlaceholder() {
+  var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+
+  var instanceId = instanceCounter++;
+  var placeholderMark = {
+    type: 'placeholder',
+    data: { key: instanceId }
+  };
+
+  var placeholder = options.placeholder,
+      when = options.when,
+      _options$style = options.style,
+      style = _options$style === undefined ? {} : _options$style;
+
+
+  index(placeholder, 'You must pass `SlateReactPlaceholder` an `options.placeholder` string.');
+
+  index(when, 'You must pass `SlateReactPlaceholder` an `options.when` query.');
+
+  /**
+   * Decorate a match node with a placeholder mark when it fits the query.
+   *
+   * @param {Node} node
+   * @param {Editor} editor
+   * @param {Function} next
+   * @return {Array}
+   */
+
+  function decorateNode(node, editor, next) {
+    if (!editor.query(when, node)) {
+      return next();
+    }
+
+    var others = next();
+    var document = editor.value.document;
+    var first = node.getFirstText();
+    var last = node.getLastText();
+    var decoration = {
+      anchor: { key: first.key, offset: 0, path: document.getPath(first.key) },
+      focus: {
+        key: last.key,
+        offset: last.text.length,
+        path: document.getPath(last.key)
+      },
+      mark: placeholderMark
+    };
+
+    return [].concat(toConsumableArray(others), [decoration]);
+  }
+
+  /**
+   * Render an inline placeholder for the placeholder mark.
+   *
+   * @param {Object} props
+   * @param {Editor} editor
+   * @param {Function} next
+   * @return {Element}
+   */
+
+  function renderMark(props, editor, next) {
+    var children = props.children,
+        mark = props.mark;
+
+
+    if (mark.type === 'placeholder' && mark.data.get('key') === instanceId) {
+      var placeHolderStyle = _extends({
+        pointerEvents: 'none',
+        display: 'inline-block',
+        width: '0',
+        maxWidth: '100%',
+        whiteSpace: 'nowrap',
+        opacity: '0.333'
+      }, style);
+
+      return React.createElement(
+        'span',
+        null,
+        React.createElement(
+          'span',
+          { contentEditable: false, style: placeHolderStyle },
+          placeholder
+        ),
+        children
+      );
+    }
+
+    return next();
+  }
+
+  /**
+   * Return the plugin.
+   *
+   * @return {Object}
+   */
+
+  return { decorateNode: decorateNode, renderMark: renderMark };
+}
+
+exports.default = SlateReactPlaceholder;
+
+
+},{"react":322}],332:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, '__esModule', { value: true });
@@ -33643,6 +33838,7 @@ var immutable = require('immutable');
 var warning = _interopDefault(require('tiny-warning'));
 var isBackward = _interopDefault(require('selection-is-backward'));
 var throttle = _interopDefault(require('lodash/throttle'));
+var PlaceholderPlugin = _interopDefault(require('slate-react-placeholder'));
 var memoizeOne = _interopDefault(require('memoize-one'));
 
 /**
@@ -34267,25 +34463,45 @@ function findDOMPoint(point) {
 
   var el = findDOMNode(point.key, win);
   var start = 0;
-  var n = void 0;
 
-  // COMPAT: In IE, this method's arguments are not optional, so we have to
-  // pass in all four even though the last two are defaults. (2017/10/25)
-  var iterator = win.document.createNodeIterator(el, NodeFilter.SHOW_TEXT, function () {
-    return NodeFilter.FILTER_ACCEPT;
-  }, false);
+  // For each leaf, we need to isolate its content, which means filtering to its
+  // direct text and zero-width spans. (We have to filter out any other siblings
+  // that may have been rendered alongside them.)
+  var texts = Array.from(el.querySelectorAll('[data-slate-content], [data-slate-zero-width]'));
 
-  while (n = iterator.nextNode()) {
-    var length = n.textContent.length;
+  var _iteratorNormalCompletion = true;
+  var _didIteratorError = false;
+  var _iteratorError = undefined;
 
-    var end = start + length;
+  try {
+    for (var _iterator = texts[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+      var text = _step.value;
 
-    if (point.offset <= end) {
-      var o = point.offset - start;
-      return { node: n, offset: o >= 0 ? o : 0 };
+      var node = text.childNodes[0];
+      var length = node.textContent.length;
+
+      var end = start + length;
+
+      if (point.offset <= end) {
+        var offset = Math.max(0, point.offset - start);
+        return { node: node, offset: offset };
+      }
+
+      start = end;
     }
-
-    start = end;
+  } catch (err) {
+    _didIteratorError = true;
+    _iteratorError = err;
+  } finally {
+    try {
+      if (!_iteratorNormalCompletion && _iterator.return) {
+        _iterator.return();
+      }
+    } finally {
+      if (_didIteratorError) {
+        throw _iteratorError;
+      }
+    }
   }
 
   return null;
@@ -34685,13 +34901,12 @@ function AfterPlugin() {
    * On before input.
    *
    * @param {Event} event
-   * @param {Change} change
+   * @param {Editor} editor
    * @param {Function} next
    */
 
-  function onBeforeInput(event, change, next) {
-    var editor = change.editor,
-        value = change.value;
+  function onBeforeInput(event, editor, next) {
+    var value = editor.value;
 
     var isSynthetic = !!event.nativeEvent;
 
@@ -34700,7 +34915,7 @@ function AfterPlugin() {
     // gets triggered for character insertions, so we can just insert directly.
     if (isSynthetic) {
       event.preventDefault();
-      change.insertText(event.data);
+      editor.insertText(event.data);
       return next();
     }
 
@@ -34729,33 +34944,33 @@ function AfterPlugin() {
       case 'deleteContentBackward':
       case 'deleteContentForward':
         {
-          change.deleteAtRange(range);
+          editor.deleteAtRange(range);
           break;
         }
 
       case 'deleteWordBackward':
         {
-          change.deleteWordBackwardAtRange(range);
+          editor.deleteWordBackwardAtRange(range);
           break;
         }
 
       case 'deleteWordForward':
         {
-          change.deleteWordForwardAtRange(range);
+          editor.deleteWordForwardAtRange(range);
           break;
         }
 
       case 'deleteSoftLineBackward':
       case 'deleteHardLineBackward':
         {
-          change.deleteLineBackwardAtRange(range);
+          editor.deleteLineBackwardAtRange(range);
           break;
         }
 
       case 'deleteSoftLineForward':
       case 'deleteHardLineForward':
         {
-          change.deleteLineForwardAtRange(range);
+          editor.deleteLineForwardAtRange(range);
           break;
         }
 
@@ -34765,9 +34980,9 @@ function AfterPlugin() {
           var hasVoidParent = document.hasVoidParent(selection.start.path, editor);
 
           if (hasVoidParent) {
-            change.moveToStartOfNextText();
+            editor.moveToStartOfNextText();
           } else {
-            change.splitBlockAtRange(range);
+            editor.splitBlockAtRange(range);
           }
 
           break;
@@ -34785,12 +35000,12 @@ function AfterPlugin() {
 
           if (text == null) break;
 
-          change.insertTextAtRange(range, text, selection.marks);
+          editor.insertTextAtRange(range, text, selection.marks);
 
           // If the text was successfully inserted, and the selection had marks
           // on it, unset the selection's marks.
-          if (selection.marks && value.document != change.value.document) {
-            change.select({ marks: null });
+          if (selection.marks && value.document != editor.value.document) {
+            editor.select({ marks: null });
           }
 
           break;
@@ -34804,13 +35019,13 @@ function AfterPlugin() {
    * On blur.
    *
    * @param {Event} event
-   * @param {Change} change
+   * @param {Editor} editor
    * @param {Function} next
    */
 
-  function onBlur(event, change, next) {
+  function onBlur(event, editor, next) {
     debug('onBlur', { event: event });
-    change.blur();
+    editor.blur();
     next();
   }
 
@@ -34818,13 +35033,11 @@ function AfterPlugin() {
    * On click.
    *
    * @param {Event} event
-   * @param {Change} change
+   * @param {Editor} editor
    * @param {Function} next
    */
 
-  function onClick(event, change, next) {
-    var editor = change.editor;
-
+  function onClick(event, editor, next) {
     if (editor.readOnly) return next();
 
     var value = editor.value;
@@ -34836,8 +35049,8 @@ function AfterPlugin() {
     debug('onClick', { event: event });
 
     var ancestors = document.getAncestors(node.key);
-    var isVoid = node && (change.isVoid(node) || ancestors.some(function (a) {
-      return change.isVoid(a);
+    var isVoid = node && (editor.isVoid(node) || ancestors.some(function (a) {
+      return editor.isVoid(a);
     }));
 
     if (isVoid) {
@@ -34845,7 +35058,7 @@ function AfterPlugin() {
       // an inline node will be automatically replaced to be at the last offset
       // of a previous inline node, which screws us up, so we always want to set
       // it to the end of the node. (2016/11/29)
-      change.focus().moveToEndOfNode(node);
+      editor.focus().moveToEndOfNode(node);
     }
 
     next();
@@ -34855,14 +35068,12 @@ function AfterPlugin() {
    * On copy.
    *
    * @param {Event} event
-   * @param {Change} change
+   * @param {Editor} editor
    * @param {Function} next
    */
 
-  function onCopy(event, change, next) {
+  function onCopy(event, editor, next) {
     debug('onCopy', { event: event });
-    var editor = change.editor;
-
     cloneFragment(event, editor);
     next();
   }
@@ -34871,41 +35082,33 @@ function AfterPlugin() {
    * On cut.
    *
    * @param {Event} event
-   * @param {Change} change
+   * @param {Editor} editor
    * @param {Function} next
    */
 
-  function onCut(event, change, next) {
+  function onCut(event, editor, next) {
     debug('onCut', { event: event });
-    var editor = change.editor;
 
     // Once the fake cut content has successfully been added to the clipboard,
     // delete the content in the current selection.
-
     cloneFragment(event, editor, function () {
       // If user cuts a void block node or a void inline node,
       // manually removes it since selection is collapsed in this case.
-      var value = change.value;
+      var value = editor.value;
       var endBlock = value.endBlock,
           endInline = value.endInline,
           selection = value.selection;
       var isCollapsed = selection.isCollapsed;
 
-      var isVoidBlock = endBlock && change.isVoid(endBlock) && isCollapsed;
-      var isVoidInline = endInline && change.isVoid(endInline) && isCollapsed;
+      var isVoidBlock = endBlock && editor.isVoid(endBlock) && isCollapsed;
+      var isVoidInline = endInline && editor.isVoid(endInline) && isCollapsed;
 
       if (isVoidBlock) {
-        editor.change(function (c) {
-          return c.removeNodeByKey(endBlock.key);
-        });
+        editor.removeNodeByKey(endBlock.key);
       } else if (isVoidInline) {
-        editor.change(function (c) {
-          return c.removeNodeByKey(endInline.key);
-        });
+        editor.removeNodeByKey(endInline.key);
       } else {
-        editor.change(function (c) {
-          return c.delete();
-        });
+        editor.delete();
       }
     });
 
@@ -34916,11 +35119,11 @@ function AfterPlugin() {
    * On drag end.
    *
    * @param {Event} event
-   * @param {Change} change
+   * @param {Editor} editor
    * @param {Function} next
    */
 
-  function onDragEnd(event, change, next) {
+  function onDragEnd(event, editor, next) {
     debug('onDragEnd', { event: event });
     isDraggingInternally = null;
     next();
@@ -34930,23 +35133,22 @@ function AfterPlugin() {
    * On drag start.
    *
    * @param {Event} event
-   * @param {Change} change
+   * @param {Editor} editor
    * @param {Function} next
    */
 
-  function onDragStart(event, change, next) {
+  function onDragStart(event, editor, next) {
     debug('onDragStart', { event: event });
 
     isDraggingInternally = true;
 
-    var editor = change.editor;
     var value = editor.value;
     var document = value.document;
 
     var node = findNode(event.target, editor);
     var ancestors = document.getAncestors(node.key);
-    var isVoid = node && (change.isVoid(node) || ancestors.some(function (a) {
-      return change.isVoid(a);
+    var isVoid = node && (editor.isVoid(node) || ancestors.some(function (a) {
+      return editor.isVoid(a);
     }));
     var selectionIncludesNode = value.blocks.some(function (block) {
       return block.key === node.key;
@@ -34954,10 +35156,10 @@ function AfterPlugin() {
 
     // If a void block is dragged and is not selected, select it (necessary for local drags).
     if (isVoid && !selectionIncludesNode) {
-      change.moveToRangeOfNode(node);
+      editor.moveToRangeOfNode(node);
     }
 
-    var fragment = change.value.fragment;
+    var fragment = editor.value.fragment;
     var encoded = Base64.serializeNode(fragment);
     setEventTransfer(event, 'fragment', encoded);
     next();
@@ -34967,13 +35169,12 @@ function AfterPlugin() {
    * On drop.
    *
    * @param {Event} event
-   * @param {Change} change
+   * @param {Editor} editor
    * @param {Function} next
    */
 
-  function onDrop(event, change, next) {
-    var editor = change.editor,
-        value = change.value;
+  function onDrop(event, editor, next) {
+    var value = editor.value;
     var document = value.document,
         selection = value.selection;
 
@@ -34989,7 +35190,7 @@ function AfterPlugin() {
         text = transfer.text;
 
 
-    change.focus();
+    editor.focus();
 
     // If the drag is internal and the target is after the selection, it
     // needs to account for the selection's content being deleted.
@@ -34998,10 +35199,10 @@ function AfterPlugin() {
     }
 
     if (isDraggingInternally) {
-      change.delete();
+      editor.delete();
     }
 
-    change.select(target);
+    editor.select(target);
 
     if (type == 'text' || type == 'html') {
       var _target = target,
@@ -35018,19 +35219,19 @@ function AfterPlugin() {
           hasVoidParent = document.hasVoidParent(n.key, editor);
         }
 
-        if (n) change.moveToStartOfNode(n);
+        if (n) editor.moveToStartOfNode(n);
       }
 
       if (text) {
         text.split('\n').forEach(function (line, i) {
-          if (i > 0) change.splitBlock();
-          change.insertText(line);
+          if (i > 0) editor.splitBlock();
+          editor.insertText(line);
         });
       }
     }
 
     if (type == 'fragment') {
-      change.insertFragment(fragment);
+      editor.insertFragment(fragment);
     }
 
     // COMPAT: React's onSelect event breaks after an onDrop event
@@ -35055,14 +35256,13 @@ function AfterPlugin() {
    * On input.
    *
    * @param {Event} event
-   * @param {Change} change
+   * @param {Editor} editor
    * @param {Function} next
    */
 
-  function onInput(event, change, next) {
+  function onInput(event, editor, next) {
     var window = getWindow(event.target);
-    var editor = change.editor,
-        value = change.value;
+    var value = editor.value;
 
     // Get the selection point.
 
@@ -35118,7 +35318,7 @@ function AfterPlugin() {
     entire = document.resolveRange(entire);
 
     // Change the current value to have the leaf's text replaced.
-    change.insertTextAtRange(entire, textContent, leaf.marks).select(corrected);
+    editor.insertTextAtRange(entire, textContent, leaf.marks).select(corrected);
     next();
   }
 
@@ -35126,15 +35326,14 @@ function AfterPlugin() {
    * On key down.
    *
    * @param {Event} event
-   * @param {Change} change
+   * @param {Editor} editor
    * @param {Function} next
    */
 
-  function onKeyDown(event, change, next) {
+  function onKeyDown(event, editor, next) {
     debug('onKeyDown', { event: event });
 
-    var editor = change.editor,
-        value = change.value;
+    var value = editor.value;
     var document = value.document,
         selection = value.selection;
 
@@ -35144,39 +35343,39 @@ function AfterPlugin() {
     // `onNativeBeforeInput` handler of the `<Content>` component in order to
     // preserve native autocorrect behavior, so they shouldn't be handled here.
     if (Hotkeys.isSplitBlock(event) && !slateDevEnvironment.IS_IOS) {
-      return hasVoidParent ? change.moveToStartOfNextText() : change.splitBlock();
+      return hasVoidParent ? editor.moveToStartOfNextText() : editor.splitBlock();
     }
 
     if (Hotkeys.isDeleteBackward(event) && !slateDevEnvironment.IS_IOS) {
-      return change.deleteCharBackward();
+      return editor.deleteCharBackward();
     }
 
     if (Hotkeys.isDeleteForward(event) && !slateDevEnvironment.IS_IOS) {
-      return change.deleteCharForward();
+      return editor.deleteCharForward();
     }
 
     if (Hotkeys.isDeleteLineBackward(event)) {
-      return change.deleteLineBackward();
+      return editor.deleteLineBackward();
     }
 
     if (Hotkeys.isDeleteLineForward(event)) {
-      return change.deleteLineForward();
+      return editor.deleteLineForward();
     }
 
     if (Hotkeys.isDeleteWordBackward(event)) {
-      return change.deleteWordBackward();
+      return editor.deleteWordBackward();
     }
 
     if (Hotkeys.isDeleteWordForward(event)) {
-      return change.deleteWordForward();
+      return editor.deleteWordForward();
     }
 
     if (Hotkeys.isRedo(event)) {
-      return change.redo();
+      return editor.redo();
     }
 
     if (Hotkeys.isUndo(event)) {
-      return change.undo();
+      return editor.undo();
     }
 
     // COMPAT: Certain browsers don't handle the selection updates properly. In
@@ -35184,22 +35383,22 @@ function AfterPlugin() {
     // selection isn't properly collapsed. (2017/10/17)
     if (Hotkeys.isMoveLineBackward(event)) {
       event.preventDefault();
-      return change.moveToStartOfBlock();
+      return editor.moveToStartOfBlock();
     }
 
     if (Hotkeys.isMoveLineForward(event)) {
       event.preventDefault();
-      return change.moveToEndOfBlock();
+      return editor.moveToEndOfBlock();
     }
 
     if (Hotkeys.isExtendLineBackward(event)) {
       event.preventDefault();
-      return change.moveFocusToStartOfBlock();
+      return editor.moveFocusToStartOfBlock();
     }
 
     if (Hotkeys.isExtendLineForward(event)) {
       event.preventDefault();
-      return change.moveFocusToEndOfBlock();
+      return editor.moveFocusToEndOfBlock();
     }
 
     // COMPAT: If a void node is selected, or a zero-width text node adjacent to
@@ -35209,30 +35408,30 @@ function AfterPlugin() {
       event.preventDefault();
 
       if (!selection.isCollapsed) {
-        return change.moveToStart();
+        return editor.moveToStart();
       }
 
-      return change.moveBackward();
+      return editor.moveBackward();
     }
 
     if (Hotkeys.isMoveForward(event)) {
       event.preventDefault();
 
       if (!selection.isCollapsed) {
-        return change.moveToEnd();
+        return editor.moveToEnd();
       }
 
-      return change.moveForward();
+      return editor.moveForward();
     }
 
     if (Hotkeys.isMoveWordBackward(event)) {
       event.preventDefault();
-      return change.moveWordBackward();
+      return editor.moveWordBackward();
     }
 
     if (Hotkeys.isMoveWordForward(event)) {
       event.preventDefault();
-      return change.moveWordForward();
+      return editor.moveWordForward();
     }
 
     if (Hotkeys.isExtendBackward(event)) {
@@ -35243,7 +35442,7 @@ function AfterPlugin() {
 
       if (hasVoidParent || isPreviousInVoid || startText.text == '') {
         event.preventDefault();
-        return change.moveFocusBackward();
+        return editor.moveFocusBackward();
       }
     }
 
@@ -35255,7 +35454,7 @@ function AfterPlugin() {
 
       if (hasVoidParent || isNextInVoid || _startText.text == '') {
         event.preventDefault();
-        return change.moveFocusForward();
+        return editor.moveFocusForward();
       }
     }
 
@@ -35266,14 +35465,14 @@ function AfterPlugin() {
    * On paste.
    *
    * @param {Event} event
-   * @param {Change} change
+   * @param {Editor} editor
    * @param {Function} next
    */
 
-  function onPaste(event, change, next) {
+  function onPaste(event, editor, next) {
     debug('onPaste', { event: event });
 
-    var value = change.value;
+    var value = editor.value;
 
     var transfer = getEventTransfer(event);
     var type = transfer.type,
@@ -35282,7 +35481,7 @@ function AfterPlugin() {
 
 
     if (type == 'fragment') {
-      change.insertFragment(fragment);
+      editor.insertFragment(fragment);
     }
 
     if (type == 'text' || type == 'html') {
@@ -35291,12 +35490,12 @@ function AfterPlugin() {
           selection = value.selection,
           startBlock = value.startBlock;
 
-      if (change.isVoid(startBlock)) return next();
+      if (editor.isVoid(startBlock)) return next();
 
       var defaultBlock = startBlock;
       var defaultMarks = document.getInsertMarksAtRange(selection);
       var frag = Plain.deserialize(text, { defaultBlock: defaultBlock, defaultMarks: defaultMarks }).document;
-      change.insertFragment(frag);
+      editor.insertFragment(frag);
     }
 
     next();
@@ -35306,23 +35505,22 @@ function AfterPlugin() {
    * On select.
    *
    * @param {Event} event
-   * @param {Change} change
+   * @param {Editor} editor
    * @param {Function} next
    */
 
-  function onSelect(event, change, next) {
+  function onSelect(event, editor, next) {
     debug('onSelect', { event: event });
 
     var window = getWindow(event.target);
-    var editor = change.editor,
-        value = change.value;
+    var value = editor.value;
     var document = value.document;
 
     var native = window.getSelection();
 
     // If there are no ranges, the editor was blurred natively.
     if (!native.rangeCount) {
-      change.blur();
+      editor.blur();
       return;
     }
 
@@ -35348,20 +35546,20 @@ function AfterPlugin() {
     // than `0`. Since we can't know what it really should be, and since an
     // offset of `0` is less destructive because it creates a hanging
     // selection, go with `0`. (2017/09/07)
-    if (anchorBlock && !change.isVoid(anchorBlock) && anchor.offset == 0 && focusBlock && change.isVoid(focusBlock) && focus.offset != 0) {
+    if (anchorBlock && !editor.isVoid(anchorBlock) && anchor.offset == 0 && focusBlock && editor.isVoid(focusBlock) && focus.offset != 0) {
       range = range.setFocus(focus.setOffset(0));
     }
 
     // COMPAT: If the selection is at the end of a non-void inline node, and
     // there is a node after it, put it in the node after instead. This
     // standardizes the behavior, since it's indistinguishable to the user.
-    if (anchorInline && !change.isVoid(anchorInline) && anchor.offset == anchorText.text.length) {
+    if (anchorInline && !editor.isVoid(anchorInline) && anchor.offset == anchorText.text.length) {
       var block = document.getClosestBlock(anchor.key);
       var nextText = block.getNextText(anchor.key);
       if (nextText) range = range.moveAnchorTo(nextText.key, 0);
     }
 
-    if (focusInline && !change.isVoid(focusInline) && focus.offset == focusText.text.length) {
+    if (focusInline && !editor.isVoid(focusInline) && focus.offset == focusText.text.length) {
       var _block = document.getClosestBlock(focus.key);
       var _nextText = _block.getNextText(focus.key);
       if (_nextText) range = range.moveFocusTo(_nextText.key, 0);
@@ -35371,10 +35569,10 @@ function AfterPlugin() {
     selection = selection.setIsFocused(true);
 
     // Preserve active marks from the current selection.
-    // They will be cleared by `change.select` if the selection actually moved.
+    // They will be cleared by `editor.select` if the selection actually moved.
     selection = selection.set('marks', value.selection.marks);
 
-    change.select(selection);
+    editor.select(selection);
     next();
   }
 
@@ -35425,13 +35623,11 @@ function BeforePlugin() {
    * On before input.
    *
    * @param {Event} event
-   * @param {Change} change
+   * @param {Editor} editor
    * @param {Function} next
    */
 
-  function onBeforeInput(event, change, next) {
-    var editor = change.editor;
-
+  function onBeforeInput(event, editor, next) {
     var isSynthetic = !!event.nativeEvent;
     if (editor.readOnly) return;
 
@@ -35448,13 +35644,11 @@ function BeforePlugin() {
    * On blur.
    *
    * @param {Event} event
-   * @param {Change} change
+   * @param {Editor} editor
    * @param {Function} next
    */
 
-  function onBlur(event, change, next) {
-    var editor = change.editor;
-
+  function onBlur(event, editor, next) {
     if (isCopying) return;
     if (editor.readOnly) return;
 
@@ -35487,7 +35681,7 @@ function BeforePlugin() {
       // editable section of an element that isn't a void node (eg. a list item
       // of the check list example).
       var node = findNode(relatedTarget, editor);
-      if (el.contains(relatedTarget) && node && !change.isVoid(node)) return;
+      if (el.contains(relatedTarget) && node && !editor.isVoid(node)) return;
     }
 
     debug$1('onBlur', { event: event });
@@ -35498,13 +35692,11 @@ function BeforePlugin() {
    * On composition end.
    *
    * @param {Event} event
-   * @param {Change} change
+   * @param {Editor} editor
    * @param {Function} next
    */
 
-  function onCompositionEnd(event, change, next) {
-    var editor = change.editor;
-
+  function onCompositionEnd(event, editor, next) {
     var n = compositionCount;
 
     // The `count` check here ensures that if another composition starts
@@ -35513,14 +35705,6 @@ function BeforePlugin() {
     window.requestAnimationFrame(function () {
       if (compositionCount > n) return;
       isComposing = false;
-
-      // HACK: we need to re-render the editor here so that it will update its
-      // placeholder in case one is currently rendered. This should be handled
-      // differently ideally, in a less invasive way?
-      // (apply force re-render if isComposing changes)
-      if (editor.state.isComposing) {
-        editor.setState({ isComposing: false });
-      }
     });
 
     debug$1('onCompositionEnd', { event: event });
@@ -35531,11 +35715,11 @@ function BeforePlugin() {
    * On click.
    *
    * @param {Event} event
-   * @param {Change} change
+   * @param {Editor} editor
    * @param {Function} next
    */
 
-  function onClick(event, change, next) {
+  function onClick(event, editor, next) {
     debug$1('onClick', { event: event });
     next();
   }
@@ -35544,25 +35728,15 @@ function BeforePlugin() {
    * On composition start.
    *
    * @param {Event} event
-   * @param {Change} change
+   * @param {Editor} editor
    * @param {Function} next
    */
 
-  function onCompositionStart(event, change, next) {
+  function onCompositionStart(event, editor, next) {
     isComposing = true;
     compositionCount++;
-    var editor = change.editor;
 
-    // HACK: we need to re-render the editor here so that it will update its
-    // placeholder in case one is currently rendered. This should be handled
-    // differently ideally, in a less invasive way?
-    // (apply force re-render if isComposing changes)
-
-    if (!editor.state.isComposing) {
-      editor.setState({ isComposing: true });
-    }
-
-    var value = change.value;
+    var value = editor.value;
     var selection = value.selection;
 
 
@@ -35574,7 +35748,7 @@ function BeforePlugin() {
       // (because it cannot find <span> nodes in DOM). This is a workaround that
       // erases selection as soon as composition starts and preventing <spans>
       // to be dropped.
-      change.delete();
+      editor.delete();
     }
 
     debug$1('onCompositionStart', { event: event });
@@ -35585,11 +35759,11 @@ function BeforePlugin() {
    * On copy.
    *
    * @param {Event} event
-   * @param {Change} change
+   * @param {Editor} editor
    * @param {Function} next
    */
 
-  function onCopy(event, change, next) {
+  function onCopy(event, editor, next) {
     var window = getWindow(event.target);
     isCopying = true;
     window.requestAnimationFrame(function () {
@@ -35604,13 +35778,11 @@ function BeforePlugin() {
    * On cut.
    *
    * @param {Event} event
-   * @param {Change} change
+   * @param {Editor} editor
    * @param {Function} next
    */
 
-  function onCut(event, change, next) {
-    var editor = change.editor;
-
+  function onCut(event, editor, next) {
     if (editor.readOnly) return;
 
     var window = getWindow(event.target);
@@ -35627,11 +35799,11 @@ function BeforePlugin() {
    * On drag end.
    *
    * @param {Event} event
-   * @param {Change} change
+   * @param {Editor} editor
    * @param {Function} next
    */
 
-  function onDragEnd(event, change, next) {
+  function onDragEnd(event, editor, next) {
     isDragging = false;
     debug$1('onDragEnd', { event: event });
     next();
@@ -35641,11 +35813,11 @@ function BeforePlugin() {
    * On drag enter.
    *
    * @param {Event} event
-   * @param {Change} change
+   * @param {Editor} editor
    * @param {Function} next
    */
 
-  function onDragEnter(event, change, next) {
+  function onDragEnter(event, editor, next) {
     debug$1('onDragEnter', { event: event });
     next();
   }
@@ -35654,11 +35826,11 @@ function BeforePlugin() {
    * On drag exit.
    *
    * @param {Event} event
-   * @param {Change} change
+   * @param {Editor} editor
    * @param {Function} next
    */
 
-  function onDragExit(event, change, next) {
+  function onDragExit(event, editor, next) {
     debug$1('onDragExit', { event: event });
     next();
   }
@@ -35667,11 +35839,11 @@ function BeforePlugin() {
    * On drag leave.
    *
    * @param {Event} event
-   * @param {Change} change
+   * @param {Editor} editor
    * @param {Function} next
    */
 
-  function onDragLeave(event, change, next) {
+  function onDragLeave(event, editor, next) {
     debug$1('onDragLeave', { event: event });
     next();
   }
@@ -35680,19 +35852,17 @@ function BeforePlugin() {
    * On drag over.
    *
    * @param {Event} event
-   * @param {Change} change
+   * @param {Editor} editor
    * @param {Function} next
    */
 
-  function onDragOver(event, change, next) {
+  function onDragOver(event, editor, next) {
     // If the target is inside a void node, and only in this case,
     // call `preventDefault` to signal that drops are allowed.
     // When the target is editable, dropping is already allowed by
     // default, and calling `preventDefault` hides the cursor.
-    var editor = change.editor;
-
     var node = findNode(event.target, editor);
-    if (change.isVoid(node)) event.preventDefault();
+    if (editor.isVoid(node)) event.preventDefault();
 
     // COMPAT: IE won't call onDrop on contentEditables unless the
     // default dragOver is prevented:
@@ -35721,11 +35891,11 @@ function BeforePlugin() {
    * On drag start.
    *
    * @param {Event} event
-   * @param {Change} change
+   * @param {Editor} editor
    * @param {Function} next
    */
 
-  function onDragStart(event, change, next) {
+  function onDragStart(event, editor, next) {
     isDragging = true;
     debug$1('onDragStart', { event: event });
     next();
@@ -35735,13 +35905,11 @@ function BeforePlugin() {
    * On drop.
    *
    * @param {Event} event
-   * @param {Change} change
+   * @param {Editor} editor
    * @param {Function} next
    */
 
-  function onDrop(event, change, next) {
-    var editor = change.editor;
-
+  function onDrop(event, editor, next) {
     if (editor.readOnly) return;
 
     // Prevent default so the DOM's value isn't corrupted.
@@ -35755,13 +35923,11 @@ function BeforePlugin() {
    * On focus.
    *
    * @param {Event} event
-   * @param {Change} change
+   * @param {Editor} editor
    * @param {Function} next
    */
 
-  function onFocus(event, change, next) {
-    var editor = change.editor;
-
+  function onFocus(event, editor, next) {
     if (isCopying) return;
     if (editor.readOnly) return;
 
@@ -35787,13 +35953,13 @@ function BeforePlugin() {
    * On input.
    *
    * @param {Event} event
-   * @param {Change} change
+   * @param {Editor} editor
    * @param {Function} next
    */
 
-  function onInput(event, change, next) {
+  function onInput(event, editor, next) {
     if (isComposing) return;
-    if (change.value.selection.isBlurred) return;
+    if (editor.value.selection.isBlurred) return;
     debug$1('onInput', { event: event });
     next();
   }
@@ -35802,13 +35968,11 @@ function BeforePlugin() {
    * On key down.
    *
    * @param {Event} event
-   * @param {Change} change
+   * @param {Editor} editor
    * @param {Function} next
    */
 
-  function onKeyDown(event, change, next) {
-    var editor = change.editor;
-
+  function onKeyDown(event, editor, next) {
     if (editor.readOnly) return;
 
     // When composing, we need to prevent all hotkeys from executing while
@@ -35820,7 +35984,7 @@ function BeforePlugin() {
     }
 
     // Certain hotkeys have native editing behaviors in `contenteditable`
-    // elements which will change the DOM and cause our value to be out of sync,
+    // elements which will editor the DOM and cause our value to be out of sync,
     // so they need to always be prevented.
     if (!slateDevEnvironment.IS_IOS && (Hotkeys.isBold(event) || Hotkeys.isDeleteBackward(event) || Hotkeys.isDeleteForward(event) || Hotkeys.isDeleteLineBackward(event) || Hotkeys.isDeleteLineForward(event) || Hotkeys.isDeleteWordBackward(event) || Hotkeys.isDeleteWordForward(event) || Hotkeys.isItalic(event) || Hotkeys.isRedo(event) || Hotkeys.isSplitBlock(event) || Hotkeys.isTransposeCharacter(event) || Hotkeys.isUndo(event))) {
       event.preventDefault();
@@ -35834,13 +35998,11 @@ function BeforePlugin() {
    * On paste.
    *
    * @param {Event} event
-   * @param {Change} change
+   * @param {Editor} editor
    * @param {Function} next
    */
 
-  function onPaste(event, change, next) {
-    var editor = change.editor;
-
+  function onPaste(event, editor, next) {
     if (editor.readOnly) return;
 
     // Prevent defaults so the DOM state isn't corrupted.
@@ -35854,15 +36016,13 @@ function BeforePlugin() {
    * On select.
    *
    * @param {Event} event
-   * @param {Change} change
+   * @param {Editor} editor
    * @param {Function} next
    */
 
-  function onSelect(event, change, next) {
+  function onSelect(event, editor, next) {
     if (isCopying) return;
     if (isComposing) return;
-
-    var editor = change.editor;
 
     if (editor.readOnly) return;
 
@@ -36006,7 +36166,7 @@ var Leaf = function (_React$Component) {
 
       return React.createElement(
         'span',
-        { 'data-offset-key': offsetKey },
+        { 'data-slate-leaf': true, 'data-offset-key': offsetKey },
         this.renderMarks()
       );
     }
@@ -36029,7 +36189,7 @@ var Leaf = function (_React$Component) {
 
       var leaf = this.renderText();
       var attributes = {
-        'data-slate-leaf': true
+        'data-slate-mark': true
       };
 
       return marks.reduce(function (children, mark) {
@@ -36108,8 +36268,12 @@ var Leaf = function (_React$Component) {
       var isLastLeaf = index === leaves.size - 1;
       if (isLastText && isLastLeaf && lastChar === '\n') return text + '\n';
 
-      // Otherwise, just return the text.
-      return text;
+      // Otherwise, just return the content.
+      return React.createElement(
+        'span',
+        { 'data-slate-content': true },
+        text
+      );
     }
   }]);
   return Leaf;
@@ -36771,7 +36935,6 @@ var Node = function (_React$Component) {
       var indexes = node.getSelectionIndexes(selection, isSelected);
       var decs = decorations.concat(node.getDecorations(editor));
       var childrenDecorations = getChildrenDecorations(node, decs);
-
       var children = [];
 
       node.nodes.forEach(function (child, i) {
@@ -36786,7 +36949,7 @@ var Node = function (_React$Component) {
 
         // If it's a block node with inline children, add the proper `dir` attribute
         // for text direction.
-      };if (node.object == 'block' && node.nodes.first().object != 'block') {
+      };if (node.isLeafBlock()) {
         var direction = node.getTextDirection();
         if (direction == 'rtl') attributes.dir = 'rtl';
       }
@@ -36800,16 +36963,6 @@ var Node = function (_React$Component) {
         parent: parent,
         readOnly: readOnly
       };
-
-      var placeholder = editor.run('renderPlaceholder', props);
-
-      if (placeholder) {
-        placeholder = React.cloneElement(placeholder, {
-          key: node.key + '-placeholder'
-        });
-
-        children = [placeholder].concat(toConsumableArray(children));
-      }
 
       var element = editor.run('renderNode', _extends({}, props, {
         attributes: attributes,
@@ -37263,8 +37416,7 @@ var Content = function (_React$Component) {
         throw err;
       }
 
-      var allowEdit = el.isContentEditable || el.closest('[data-slate-void]');
-      return allowEdit && (el === element || el.closest('[data-slate-editor]') === element);
+      return el.isContentEditable && (el === element || el.closest('[data-slate-editor]') === element);
     }, _this.onNativeSelectionChange = throttle(function (event) {
       if (_this.props.readOnly) return;
 
@@ -37564,7 +37716,7 @@ Content.defaultProps = {
  * @type {Array}
  */
 
-var PROPS = [].concat(toConsumableArray(EVENT_HANDLERS), ['commands', 'decorateNode', 'queries', 'renderEditor', 'renderMark', 'renderNode', 'renderPlaceholder', 'schema']);
+var PROPS = [].concat(toConsumableArray(EVENT_HANDLERS), ['commands', 'decorateNode', 'queries', 'renderEditor', 'renderMark', 'renderNode', 'schema']);
 
 /**
  * A plugin that adds the React-specific rendering logic to the editor.
@@ -37575,25 +37727,40 @@ var PROPS = [].concat(toConsumableArray(EVENT_HANDLERS), ['commands', 'decorateN
 
 function ReactPlugin() {
   var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-  var _options$plugins = options.plugins,
+  var placeholder = options.placeholder,
+      _options$plugins = options.plugins,
       plugins = _options$plugins === undefined ? [] : _options$plugins;
+
+  /**
+   * Decorate node.
+   *
+   * @param {Object} node
+   * @param {Editor} editor
+   * @param {Function} next
+   * @return {Array}
+   */
+
+  function decorateNode(node, editor, next) {
+    return [];
+  }
 
   /**
    * Render editor.
    *
    * @param {Object} props
+   * @param {Editor} editor
    * @param {Function} next
-   * @return {Object}
+   * @return {Element}
    */
 
-  function renderEditor(props, next) {
-    var editor = props.editor;
-
+  function renderEditor(props, editor, next) {
     return React.createElement(Content, {
-      onEvent: editor.event,
       autoCorrect: props.autoCorrect,
       className: props.className,
       editor: editor,
+      onEvent: function onEvent(handler, event) {
+        return editor.run(handler, event);
+      },
       readOnly: props.readOnly,
       role: props.role,
       spellCheck: props.spellCheck,
@@ -37607,11 +37774,12 @@ function ReactPlugin() {
    * Render node.
    *
    * @param {Object} props
+   * @param {Editor} editor
    * @param {Function} next
    * @return {Element}
    */
 
-  function renderNode(props, next) {
+  function renderNode(props, editor, next) {
     var attributes = props.attributes,
         children = props.children,
         node = props.node;
@@ -37629,57 +37797,37 @@ function ReactPlugin() {
   }
 
   /**
-   * Render placeholder.
-   *
-   * @param {Object} props
-   * @param {Function} next
-   * @return {Element}
-   */
-
-  function renderPlaceholder(props, next) {
-    var editor = props.editor,
-        node = props.node;
-
-    if (!editor.props.placeholder) return null;
-    if (editor.state.isComposing) return null;
-    if (node.object != 'block') return null;
-    if (!slate.Text.isTextList(node.nodes)) return null;
-    if (node.text != '') return null;
-    if (editor.value.document.getBlocks().size > 1) return null;
-
-    var style = {
-      pointerEvents: 'none',
-      display: 'inline-block',
-      width: '0',
-      maxWidth: '100%',
-      whiteSpace: 'nowrap',
-      opacity: '0.333'
-    };
-
-    return React.createElement(
-      'span',
-      { contentEditable: false, style: style },
-      editor.props.placeholder
-    );
-  }
-
-  /**
    * Return the plugins.
    *
    * @type {Array}
    */
 
+  var ret = [];
   var editorPlugin = PROPS.reduce(function (memo, prop) {
     if (prop in options) memo[prop] = options[prop];
     return memo;
   }, {});
 
-  var domPlugin = DOMPlugin({
+  ret.push(DOMPlugin({
     plugins: [editorPlugin].concat(toConsumableArray(plugins))
+  }));
+
+  if (placeholder) {
+    ret.push(PlaceholderPlugin({
+      placeholder: placeholder,
+      when: function when(editor, node) {
+        return node.object === 'document' && node.text === '' && node.nodes.size === 1;
+      }
+    }));
+  }
+
+  ret.push({
+    decorateNode: decorateNode,
+    renderEditor: renderEditor,
+    renderNode: renderNode
   });
 
-  var defaultsPlugin = { renderEditor: renderEditor, renderNode: renderNode, renderPlaceholder: renderPlaceholder };
-  return [domPlugin, defaultsPlugin];
+  return ret;
 }
 
 /**
@@ -37710,7 +37858,34 @@ var Editor = function (_React$Component) {
       args[_key] = arguments[_key];
     }
 
-    return _ret = (_temp = (_this = possibleConstructorReturn(this, (_ref = Editor.__proto__ || Object.getPrototypeOf(Editor)).call.apply(_ref, [this].concat(args))), _this), _initialiseProps$4.call(_this), _temp), possibleConstructorReturn(_this, _ret);
+    return _ret = (_temp = (_this = possibleConstructorReturn(this, (_ref = Editor.__proto__ || Object.getPrototypeOf(Editor)).call.apply(_ref, [this].concat(args))), _this), _this.state = {}, _this.tmp = {
+      mounted: false,
+      change: null,
+      resolves: 0,
+      updates: 0
+
+      /**
+       * When the component first mounts, flush a queued change if one exists.
+       */
+
+    }, _this.resolveController = memoizeOne(function () {
+      warning(_this.tmp.resolves < 5 || _this.tmp.resolves !== _this.tmp.updates, 'A Slate <Editor> component is re-resolving the `plugins`, `schema`, `commands`, `queries` or `placeholder` prop on each update, which leads to poor performance. This is often due to passing in a new references for these props with each render by declaring them inline in your render function. Do not do this! Declare them outside your render function, or memoize them instead.');
+
+      _this.tmp.resolves++;
+      var react = ReactPlugin(_this.props);
+
+      var onChange = function onChange(change) {
+        if (_this.tmp.mounted) {
+          _this.props.onChange(change);
+        } else {
+          _this.tmp.change = change;
+        }
+      };
+
+      _this.controller = new slate.Editor({ plugins: [react], onChange: onChange }, { controller: _this, construct: false });
+
+      _this.controller.run('onConstruct');
+    }), _temp), possibleConstructorReturn(_this, _ret);
   }
   /**
    * Property types.
@@ -37738,20 +37913,12 @@ var Editor = function (_React$Component) {
 
   createClass(Editor, [{
     key: 'componentDidMount',
-
-
-    /**
-     * When the component first mounts, flush a queued change if one exists.
-     */
-
     value: function componentDidMount() {
       this.tmp.mounted = true;
       this.tmp.updates++;
 
       if (this.props.autoFocus) {
-        this.change(function (c) {
-          return c.focus();
-        });
+        this.focus();
       }
 
       if (this.tmp.change) {
@@ -37776,32 +37943,25 @@ var Editor = function (_React$Component) {
     }
 
     /**
-     * On controller change, call `onChange` or queue the change for flushing.
-     *
-     * @param {Change} change
-     */
-
-  }, {
-    key: 'render',
-
-
-    /**
      * Render the editor.
      *
      * @return {Element}
      */
 
+  }, {
+    key: 'render',
     value: function render() {
       debug$7('render', this);
       var props = _extends({}, this.props, { editor: this
 
         // Re-resolve the controller if needed based on memoized props.
       });var commands = props.commands,
+          placeholder = props.placeholder,
           plugins = props.plugins,
           queries = props.queries,
           schema = props.schema;
 
-      this.resolveController(plugins, schema, commands, queries);
+      this.resolveController(plugins, schema, commands, queries, placeholder);
 
       // Set the current props on the controller.
       var options = props.options,
@@ -37825,11 +37985,129 @@ var Editor = function (_React$Component) {
      * @param {Object} schema
      * @param {Object} commands
      * @param {Object} queries
+     * @param {String} placeholder
      * @return {Editor}
      */
 
   }, {
-    key: 'readOnly',
+    key: 'applyOperation',
+    value: function applyOperation() {
+      var _controller;
+
+      return (_controller = this.controller).applyOperation.apply(_controller, arguments);
+    }
+  }, {
+    key: 'command',
+    value: function command() {
+      var _controller2;
+
+      return (_controller2 = this.controller).command.apply(_controller2, arguments);
+    }
+  }, {
+    key: 'normalize',
+    value: function normalize() {
+      var _controller3;
+
+      return (_controller3 = this.controller).normalize.apply(_controller3, arguments);
+    }
+  }, {
+    key: 'query',
+    value: function query() {
+      var _controller4;
+
+      return (_controller4 = this.controller).query.apply(_controller4, arguments);
+    }
+  }, {
+    key: 'registerCommand',
+    value: function registerCommand() {
+      var _controller5;
+
+      return (_controller5 = this.controller).registerCommand.apply(_controller5, arguments);
+    }
+  }, {
+    key: 'registerQuery',
+    value: function registerQuery() {
+      var _controller6;
+
+      return (_controller6 = this.controller).registerQuery.apply(_controller6, arguments);
+    }
+  }, {
+    key: 'run',
+    value: function run() {
+      var _controller7;
+
+      return (_controller7 = this.controller).run.apply(_controller7, arguments);
+    }
+  }, {
+    key: 'withoutNormalizing',
+    value: function withoutNormalizing() {
+      var _controller8;
+
+      return (_controller8 = this.controller).withoutNormalizing.apply(_controller8, arguments);
+    }
+
+    /**
+     * Deprecated.
+     */
+
+  }, {
+    key: 'call',
+    value: function call() {
+      var _controller9;
+
+      return (_controller9 = this.controller).call.apply(_controller9, arguments);
+    }
+  }, {
+    key: 'change',
+    value: function change() {
+      var _controller10;
+
+      return (_controller10 = this.controller).change.apply(_controller10, arguments);
+    }
+  }, {
+    key: 'onChange',
+    value: function onChange() {
+      var _controller11;
+
+      return (_controller11 = this.controller).onChange.apply(_controller11, arguments);
+    }
+  }, {
+    key: 'applyOperations',
+    value: function applyOperations() {
+      var _controller12;
+
+      return (_controller12 = this.controller).applyOperations.apply(_controller12, arguments);
+    }
+  }, {
+    key: 'setOperationFlag',
+    value: function setOperationFlag() {
+      var _controller13;
+
+      return (_controller13 = this.controller).setOperationFlag.apply(_controller13, arguments);
+    }
+  }, {
+    key: 'getFlag',
+    value: function getFlag() {
+      var _controller14;
+
+      return (_controller14 = this.controller).getFlag.apply(_controller14, arguments);
+    }
+  }, {
+    key: 'unsetOperationFlag',
+    value: function unsetOperationFlag() {
+      var _controller15;
+
+      return (_controller15 = this.controller).unsetOperationFlag.apply(_controller15, arguments);
+    }
+  }, {
+    key: 'withoutNormalization',
+    value: function withoutNormalization() {
+      var _controller16;
+
+      return (_controller16 = this.controller).withoutNormalization.apply(_controller16, arguments);
+    }
+  }, {
+    key: 'operations',
 
 
     /**
@@ -37838,6 +38116,11 @@ var Editor = function (_React$Component) {
      */
 
     get: function get$$1() {
+      return this.controller.operations;
+    }
+  }, {
+    key: 'readOnly',
+    get: function get$$1() {
       return this.controller.readOnly;
     }
   }, {
@@ -37845,26 +38128,20 @@ var Editor = function (_React$Component) {
     get: function get$$1() {
       return this.controller.value;
     }
-
-    /**
-     * Mimic the API of a DOM input/textarea, to maintain a React-like interface.
-     */
-
+  }, {
+    key: 'editor',
+    get: function get$$1() {
+      return this.controller.editor;
+    }
   }, {
     key: 'schema',
-
-
-    /**
-     * Deprecated.
-     */
-
     get: function get$$1() {
-      invariant(false, 'As of Slate 0.42.0, the `editor.schema` property no longer exists, and its functionality has been folded into the editor itself. Use the `editor` instead.');
+      invariant(false, 'As of Slate 0.42, the `editor.schema` property no longer exists, and its functionality has been folded into the editor itself. Use the `editor` instead.');
     }
   }, {
     key: 'stack',
     get: function get$$1() {
-      invariant(false, 'As of Slate 0.42.0, the `editor.stack` property no longer exists, and its functionality has been folded into the editor itself. Use the `editor` instead.');
+      invariant(false, 'As of Slate 0.42, the `editor.stack` property no longer exists, and its functionality has been folded into the editor itself. Use the `editor` instead.');
     }
   }]);
   return Editor;
@@ -37900,86 +38177,11 @@ Editor.defaultProps = {
   autoCorrect: true,
   onChange: function onChange() {},
   options: {},
+  placeholder: '',
   plugins: [],
   readOnly: false,
   schema: {},
   spellCheck: true };
-
-var _initialiseProps$4 = function _initialiseProps() {
-  var _this2 = this;
-
-  this.state = {};
-  this.tmp = {
-    mounted: false,
-    change: null,
-    resolves: 0,
-    updates: 0 };
-
-  this.onControllerChange = function (change) {
-    if (_this2.tmp.mounted) {
-      _this2.props.onChange(change);
-    } else {
-      _this2.tmp.change = change;
-    }
-  };
-
-  this.resolveController = memoizeOne(function () {
-    warning(_this2.tmp.resolves < 5 || _this2.tmp.resolves !== _this2.tmp.updates, 'A Slate <Editor> component is re-resolving the `plugins`, `schema`, `commands` or `queries` on each update, which leads to poor performance. This is often due to passing in a new references for these props with each render by declaring them inline in your render function. Do not do this! Declare them outside your render function, or memoize them instead.');
-
-    _this2.tmp.resolves++;
-    var react = ReactPlugin(_this2.props);
-    var attrs = { onChange: _this2.onControllerChange, plugins: [react] };
-    _this2.controller = new slate.Editor(attrs, { editor: _this2, normalize: false });
-  });
-
-  this.change = function () {
-    var _controller;
-
-    return (_controller = _this2.controller).change.apply(_controller, arguments);
-  };
-
-  this.command = function () {
-    var _controller2;
-
-    return (_controller2 = _this2.controller).command.apply(_controller2, arguments);
-  };
-
-  this.event = function () {
-    var _controller3;
-
-    return (_controller3 = _this2.controller).event.apply(_controller3, arguments);
-  };
-
-  this.onChange = function () {
-    var _controller4;
-
-    return (_controller4 = _this2.controller).onChange.apply(_controller4, arguments);
-  };
-
-  this.query = function () {
-    var _controller5;
-
-    return (_controller5 = _this2.controller).query.apply(_controller5, arguments);
-  };
-
-  this.run = function () {
-    var _controller6;
-
-    return (_controller6 = _this2.controller).run.apply(_controller6, arguments);
-  };
-
-  this.blur = function () {
-    _this2.change(function (c) {
-      return c.blur();
-    });
-  };
-
-  this.focus = function () {
-    _this2.change(function (c) {
-      return c.focus();
-    });
-  };
-};
 
 var index = {
   Editor: Editor,
@@ -38007,7 +38209,7 @@ exports.ReactPlugin = ReactPlugin;
 exports.default = index;
 
 
-},{"debug":332,"get-window":156,"immutable":158,"lodash/throttle":345,"memoize-one":307,"prop-types":314,"react":322,"react-dom":318,"react-immutable-proptypes":319,"selection-is-backward":323,"slate":347,"slate-base64-serializer":324,"slate-dev-environment":325,"slate-hotkeys":326,"slate-plain-serializer":329,"slate-prop-types":330,"tiny-invariant":350,"tiny-warning":351}],332:[function(require,module,exports){
+},{"debug":333,"get-window":156,"immutable":158,"lodash/throttle":346,"memoize-one":307,"prop-types":314,"react":322,"react-dom":318,"react-immutable-proptypes":319,"selection-is-backward":323,"slate":348,"slate-base64-serializer":324,"slate-dev-environment":325,"slate-hotkeys":326,"slate-plain-serializer":329,"slate-prop-types":330,"slate-react-placeholder":331,"tiny-invariant":351,"tiny-warning":352}],333:[function(require,module,exports){
 (function (process){
 /**
  * This is the web browser implementation of `debug()`.
@@ -38206,7 +38408,7 @@ function localstorage() {
 }
 
 }).call(this,require('_process'))
-},{"./debug":333,"_process":310}],333:[function(require,module,exports){
+},{"./debug":334,"_process":310}],334:[function(require,module,exports){
 
 /**
  * This is the common logic for both the Node.js and web browser
@@ -38433,19 +38635,19 @@ function coerce(val) {
   return val;
 }
 
-},{"ms":308}],334:[function(require,module,exports){
+},{"ms":308}],335:[function(require,module,exports){
 arguments[4][172][0].apply(exports,arguments)
-},{"./_root":339,"dup":172}],335:[function(require,module,exports){
+},{"./_root":340,"dup":172}],336:[function(require,module,exports){
 arguments[4][191][0].apply(exports,arguments)
-},{"./_Symbol":334,"./_getRawTag":337,"./_objectToString":338,"dup":191}],336:[function(require,module,exports){
+},{"./_Symbol":335,"./_getRawTag":338,"./_objectToString":339,"dup":191}],337:[function(require,module,exports){
 arguments[4][224][0].apply(exports,arguments)
-},{"dup":224}],337:[function(require,module,exports){
+},{"dup":224}],338:[function(require,module,exports){
 arguments[4][230][0].apply(exports,arguments)
-},{"./_Symbol":334,"dup":230}],338:[function(require,module,exports){
+},{"./_Symbol":335,"dup":230}],339:[function(require,module,exports){
 arguments[4][265][0].apply(exports,arguments)
-},{"dup":265}],339:[function(require,module,exports){
+},{"dup":265}],340:[function(require,module,exports){
 arguments[4][269][0].apply(exports,arguments)
-},{"./_freeGlobal":336,"dup":269}],340:[function(require,module,exports){
+},{"./_freeGlobal":337,"dup":269}],341:[function(require,module,exports){
 var isObject = require('./isObject'),
     now = require('./now'),
     toNumber = require('./toNumber');
@@ -38637,13 +38839,13 @@ function debounce(func, wait, options) {
 
 module.exports = debounce;
 
-},{"./isObject":341,"./now":344,"./toNumber":346}],341:[function(require,module,exports){
+},{"./isObject":342,"./now":345,"./toNumber":347}],342:[function(require,module,exports){
 arguments[4][292][0].apply(exports,arguments)
-},{"dup":292}],342:[function(require,module,exports){
+},{"dup":292}],343:[function(require,module,exports){
 arguments[4][293][0].apply(exports,arguments)
-},{"dup":293}],343:[function(require,module,exports){
+},{"dup":293}],344:[function(require,module,exports){
 arguments[4][296][0].apply(exports,arguments)
-},{"./_baseGetTag":335,"./isObjectLike":342,"dup":296}],344:[function(require,module,exports){
+},{"./_baseGetTag":336,"./isObjectLike":343,"dup":296}],345:[function(require,module,exports){
 var root = require('./_root');
 
 /**
@@ -38668,7 +38870,7 @@ var now = function() {
 
 module.exports = now;
 
-},{"./_root":339}],345:[function(require,module,exports){
+},{"./_root":340}],346:[function(require,module,exports){
 var debounce = require('./debounce'),
     isObject = require('./isObject');
 
@@ -38739,7 +38941,7 @@ function throttle(func, wait, options) {
 
 module.exports = throttle;
 
-},{"./debounce":340,"./isObject":341}],346:[function(require,module,exports){
+},{"./debounce":341,"./isObject":342}],347:[function(require,module,exports){
 var isObject = require('./isObject'),
     isSymbol = require('./isSymbol');
 
@@ -38807,7 +39009,7 @@ function toNumber(value) {
 
 module.exports = toNumber;
 
-},{"./isObject":341,"./isSymbol":343}],347:[function(require,module,exports){
+},{"./isObject":342,"./isSymbol":344}],348:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, '__esModule', { value: true });
@@ -40312,22 +40514,41 @@ var Text = function (_Record) {
     /**
      * Derive the leaves for a list of `decorations`.
      *
-     * @param {Array|Void} decorations (optional)
+     * @param {List} decorations (optional)
      * @return {List<Leaf>}
      */
 
   }, {
     key: 'getLeaves',
-    value: function getLeaves() {
-      var _this2 = this;
-
-      var decorations = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
+    value: function getLeaves(decorations) {
       var leaves = this.leaves;
 
-      if (leaves.size === 0) return immutable.List.of(Leaf.create({}));
-      if (!decorations || decorations.length === 0) return leaves;
-      if (this.text.length === 0) return leaves;
-      var key = this.key;
+      // PERF: We can exit early without decorations.
+
+      if (!decorations || decorations.size === 0) return leaves;
+
+      // HACK: We shouldn't need this, because text nodes should never be in a
+      // position of not having any leaves...
+      if (leaves.size === 0) {
+        var marks = decorations.map(function (d) {
+          return d.mark;
+        });
+        var leaf = Leaf.create({ marks: marks });
+        return immutable.List([leaf]);
+      }
+
+      // HACK: this shouldn't be necessary, because the loop below should handle
+      // the `0` case without failures. It may already even, not sure.
+      if (this.text.length === 0) {
+        var _marks = decorations.map(function (d) {
+          return d.mark;
+        });
+        var _leaf = Leaf.create({ marks: _marks });
+        return immutable.List([_leaf]);
+      }
+
+      var key = this.key,
+          text = this.text;
 
 
       decorations.forEach(function (dec) {
@@ -40340,12 +40561,12 @@ var Text = function (_Record) {
 
         if (hasStart && hasEnd) {
           var index = hasStart ? start.offset : 0;
-          var length = hasEnd ? end.offset - index : _this2.text.length - index;
+          var length = hasEnd ? end.offset - index : text.length - index;
 
           if (length < 1) return;
-          if (index >= _this2.text.length) return;
+          if (index >= text.length) return;
 
-          if (index !== 0 || length < _this2.text.length) {
+          if (index !== 0 || length < text.length) {
             var _Leaf$splitLeaves5 = Leaf.splitLeaves(leaves, index),
                 _Leaf$splitLeaves6 = slicedToArray(_Leaf$splitLeaves5, 2),
                 before = _Leaf$splitLeaves6[0],
@@ -40424,7 +40645,7 @@ var Text = function (_Record) {
   }, {
     key: 'getActiveMarks',
     value: function getActiveMarks() {
-      var _this3 = this;
+      var _this2 = this;
 
       if (this.leaves.size === 0) return immutable.Set();
 
@@ -40432,7 +40653,7 @@ var Text = function (_Record) {
       if (result.size === 0) return result;
 
       return result.toOrderedSet().withMutations(function (x) {
-        _this3.leaves.forEach(function (c) {
+        _this2.leaves.forEach(function (c) {
           x.intersect(c.marks);
           if (x.size === 0) return false;
         });
@@ -40782,19 +41003,23 @@ var Text = function (_Record) {
   }, {
     key: 'setLeaves',
     value: function setLeaves(leaves) {
-      var result = Leaf.createLeaves(leaves);
+      leaves = Leaf.createLeaves(leaves);
 
-      if (result.size === 1) {
-        var first = result.first();
+      if (leaves.size === 1) {
+        var first = leaves.first();
 
         if (!first.marks || first.marks.size === 0) {
           if (first.text === '') {
-            return this.set('leaves', immutable.List());
+            return this.set('leaves', immutable.List([Leaf.create()]));
           }
         }
       }
 
-      return this.set('leaves', Leaf.createLeaves(leaves));
+      if (leaves.size === 0) {
+        leaves = leaves.push(Leaf.create());
+      }
+
+      return this.set('leaves', leaves);
     }
   }], [{
     key: 'create',
@@ -40892,6 +41117,10 @@ var Text = function (_Record) {
         });
       } else {
         throw new Error('leaves must be either Array or Immutable.List');
+      }
+
+      if (leaves.size === 0) {
+        leaves = leaves.push(Leaf.create());
       }
 
       var node = new Text({
@@ -44111,19 +44340,19 @@ function invertOperation(op) {
  */
 
 var OPERATION_ATTRIBUTES = {
-  add_mark: ['value', 'path', 'offset', 'length', 'mark'],
-  insert_node: ['value', 'path', 'node'],
-  insert_text: ['value', 'path', 'offset', 'text', 'marks'],
-  merge_node: ['value', 'path', 'position', 'properties', 'target'],
-  move_node: ['value', 'path', 'newPath'],
-  remove_mark: ['value', 'path', 'offset', 'length', 'mark'],
-  remove_node: ['value', 'path', 'node'],
-  remove_text: ['value', 'path', 'offset', 'text', 'marks'],
-  set_mark: ['value', 'path', 'offset', 'length', 'mark', 'properties'],
-  set_node: ['value', 'path', 'node', 'properties'],
-  set_selection: ['value', 'selection', 'properties'],
-  set_value: ['value', 'properties'],
-  split_node: ['value', 'path', 'position', 'properties', 'target']
+  add_mark: ['value', 'path', 'offset', 'length', 'mark', 'data'],
+  insert_node: ['value', 'path', 'node', 'data'],
+  insert_text: ['value', 'path', 'offset', 'text', 'marks', 'data'],
+  merge_node: ['value', 'path', 'position', 'properties', 'target', 'data'],
+  move_node: ['value', 'path', 'newPath', 'data'],
+  remove_mark: ['value', 'path', 'offset', 'length', 'mark', 'data'],
+  remove_node: ['value', 'path', 'node', 'data'],
+  remove_text: ['value', 'path', 'offset', 'text', 'marks', 'data'],
+  set_mark: ['value', 'path', 'offset', 'length', 'mark', 'properties', 'data'],
+  set_node: ['value', 'path', 'node', 'properties', 'data'],
+  set_selection: ['value', 'selection', 'properties', 'data'],
+  set_value: ['value', 'properties', 'data'],
+  split_node: ['value', 'path', 'position', 'properties', 'target', 'data']
 
   /**
    * Default properties.
@@ -44145,7 +44374,8 @@ var OPERATION_ATTRIBUTES = {
   target: undefined,
   text: undefined,
   type: undefined,
-  value: undefined
+  value: undefined,
+  data: undefined
 
   /**
    * Operation.
@@ -44272,6 +44502,10 @@ var Operation = function (_Record) {
             value = _v5;
           }
 
+          if (key === 'data' && value) {
+            value = value.toJSON();
+          }
+
           json[key] = value;
         }
       } catch (err) {
@@ -44376,6 +44610,9 @@ var Operation = function (_Record) {
             if (key == 'value') continue;
             if (key == 'node' && type != 'insert_node') continue;
 
+            // Skip optional user defined data
+            if (key == 'data') continue;
+
             throw new Error('`Operation.fromJSON` was passed a "' + type + '" operation without the required "' + key + '" attribute.');
           }
 
@@ -44427,6 +44664,10 @@ var Operation = function (_Record) {
             v = Node.createProperties(v);
           }
 
+          if (key === 'data') {
+            v = immutable.Map(v);
+          }
+
           attrs[key] = v;
         }
       } catch (err) {
@@ -44467,759 +44708,157 @@ var Operation = function (_Record) {
 }(immutable.Record(DEFAULTS$11));
 
 /**
- * Debug.
- *
- * @type {Function}
- */
-
-var debug$2 = Debug('slate:change');
-
-/**
- * Change.
- *
- * @type {Change}
- */
-
-var Change = function () {
-  /**
-   * Create a new `Change` with `attrs`.
-   *
-   * @param {Object} attrs
-   *   @property {Value} value
-   */
-
-  function Change(attrs) {
-    classCallCheck(this, Change);
-    var editor = attrs.editor,
-        value = attrs.value;
-
-    this.editor = editor;
-    this.value = value;
-    this.operations = new immutable.List();
-
-    this.tmp = {
-      dirty: [],
-      merge: null,
-      normalize: true,
-      save: true
-    };
-  }
-
-  /**
-   * Apply an `operation` to the current value, saving the operation to the
-   * history if needed.
-   *
-   * @param {Operation|Object} operation
-   * @return {Change}
-   */
-
-  createClass(Change, [{
-    key: 'applyOperation',
-    value: function applyOperation(operation) {
-      var _this = this;
-
-      var operations = this.operations;
-
-      var value = this.value;
-
-      // Add in the current `value` in case the operation was serialized.
-      if (isPlainObject(operation)) {
-        operation = _extends({}, operation, { value: value });
-      }
-
-      operation = Operation.create(operation);
-
-      // Save the operation into the history. Since `save` is a command, we need
-      // to do it without normalizing, since it would have side effects.
-      this.withoutNormalizing(function () {
-        _this.save(operation);
-        value = _this.value;
-      });
-
-      // Apply the operation to the value.
-      debug$2('apply', { operation: operation });
-      value = operation.apply(value);
-
-      // Get the paths of the affected nodes, and mark them as dirty.
-      var newDirtyPaths = getDirtyPaths(operation);
-      var dirty = this.tmp.dirty.reduce(function (memo, path) {
-        path = PathUtils.create(path);
-        var transformed = PathUtils.transform(path, operation);
-        memo = memo.concat(transformed.toArray());
-        return memo;
-      }, newDirtyPaths);
-
-      this.tmp.dirty = dirty;
-
-      // Update the mutable change object.
-      this.value = value;
-      this.operations = operations.push(operation);
-      return this;
-    }
-
-    /**
-     * Apply a series of `operations` to the current value.
-     *
-     * @param {Array|List} operations
-     * @return {Change}
-     */
-
-  }, {
-    key: 'applyOperations',
-    value: function applyOperations(operations) {
-      var _this2 = this;
-
-      operations.forEach(function (op) {
-        return _this2.applyOperation(op);
-      });
-      return this;
-    }
-
-    /**
-     * Call a change `fn` with arguments.
-     *
-     * @param {Function} fn
-     * @param {Mixed} ...args
-     * @return {Change}
-     */
-
-  }, {
-    key: 'call',
-    value: function call(fn) {
-      for (var _len = arguments.length, args = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
-        args[_key - 1] = arguments[_key];
-      }
-
-      fn.apply(undefined, [this].concat(args));
-      this.normalizeDirtyPaths();
-      return this;
-    }
-
-    /**
-     * Run a `command` with `args`.
-     *
-     * @param {String} command
-     * @param {Any} ...args
-     * @return {Change}
-     */
-
-  }, {
-    key: 'command',
-    value: function command(_command) {
-      var editor = this.editor;
-
-      for (var _len2 = arguments.length, args = Array(_len2 > 1 ? _len2 - 1 : 0), _key2 = 1; _key2 < _len2; _key2++) {
-        args[_key2 - 1] = arguments[_key2];
-      }
-
-      editor.command.apply(editor, [_command].concat(args));
-      return this;
-    }
-
-    /**
-     * Run a `query` with `args`.
-     *
-     * @param {String} query
-     * @param {Any} ...args
-     * @return {Change}
-     */
-
-  }, {
-    key: 'query',
-    value: function query(_query) {
-      var editor = this.editor;
-
-      for (var _len3 = arguments.length, args = Array(_len3 > 1 ? _len3 - 1 : 0), _key3 = 1; _key3 < _len3; _key3++) {
-        args[_key3 - 1] = arguments[_key3];
-      }
-
-      return editor.query.apply(editor, [_query].concat(args));
-    }
-
-    /**
-     * Normalize all of the nodes in the document from scratch.
-     *
-     * @return {Change}
-     */
-
-  }, {
-    key: 'normalize',
-    value: function normalize() {
-      var value = this.value;
-      var document = value.document;
-
-      var table = document.getKeysToPathsTable();
-      var paths = Object.values(table).map(PathUtils.create);
-      this.tmp.dirty = this.tmp.dirty.concat(paths);
-      this.normalizeDirtyPaths();
-
-      var selection = value.selection;
-
-      document = value.document;
-
-      if (selection.isUnset && document.nodes.size) {
-        this.moveToStartOfDocument();
-      }
-
-      return this;
-    }
-
-    /**
-     * Normalize any new "dirty" paths that have been added to the change.
-     *
-     * @return {Change}
-     */
-
-  }, {
-    key: 'normalizeDirtyPaths',
-    value: function normalizeDirtyPaths() {
-      if (!this.tmp.normalize) {
-        return this;
-      }
-
-      while (this.tmp.dirty.length) {
-        var path = this.tmp.dirty.pop();
-        this.normalizeNodeByPath(path);
-      }
-
-      return this;
-    }
-
-    /**
-     * Normalize the node at a specific `path`.
-     *
-     * @param {Array} path
-     * @return {Change}
-     */
-
-  }, {
-    key: 'normalizeNodeByPath',
-    value: function normalizeNodeByPath(path) {
-      var _this3 = this;
-
-      var editor = this.editor,
-          value = this.value;
-      var document = value.document;
-
-      var node = document.assertNode(path);
-      var iterations = 0;
-      var max = 1000 + (node.object === 'text' ? 1 : node.nodes.size);
-
-      var iterate = function iterate() {
-        var fn = node.normalize(editor);
-        if (!fn) return;
-
-        // Run the normalize `fn` to fix the node.
-        fn(_this3);
-
-        // Attempt to re-find the node by path, or by key if it has changed
-        // locations in the tree continue iterating.
-        document = _this3.value.document;
-        var _node = node,
-            key = _node.key;
-
-        var found = document.getDescendant(path);
-
-        if (found && found.key === key) {
-          node = found;
-        } else {
-          found = document.getDescendant(key);
-
-          if (found) {
-            node = found;
-            path = document.getPath(key);
-          } else {
-            // If it no longer exists by key, it was removed, so abort.
-            return;
-          }
-        }
-
-        // Increment the iterations counter, and check to make sure that we haven't
-        // exceeded the max. Without this check, it's easy for the `normalize`
-        // function of a schema rule to be written incorrectly and for an infinite
-        // invalid loop to occur.
-        iterations++;
-
-        if (iterations > max) {
-          throw new Error('A schema rule could not be normalized after sufficient iterations. This is usually due to a `rule.normalize` or `plugin.normalizeNode` function of a schema being incorrectly written, causing an infinite loop.');
-        }
-
-        // Otherwise, iterate again.
-        iterate();
-      };
-
-      this.withoutNormalizing(function () {
-        iterate();
-      });
-
-      return this;
-    }
-
-    /**
-     * Apply a series of changes inside a synchronous `fn`, deferring
-     * normalization until after the function has finished executing.
-     *
-     * @param {Function} fn
-     * @return {Change}
-     */
-
-  }, {
-    key: 'withoutNormalizing',
-    value: function withoutNormalizing(fn) {
-      var value = this.tmp.normalize;
-      this.tmp.normalize = false;
-      fn(this);
-      this.tmp.normalize = value;
-      this.normalizeDirtyPaths();
-      return this;
-    }
-
-    /**
-     * Deprecated.
-     */
-
-  }, {
-    key: 'setOperationFlag',
-    value: function setOperationFlag(key, value) {
-      warning(false, 'As of slate@0.41.0 the `change.setOperationFlag` method has been deprecated.');
-
-      this.tmp[key] = value;
-      return this;
-    }
-  }, {
-    key: 'getFlag',
-    value: function getFlag(key) {
-      var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-
-      warning(false, 'As of slate@0.41.0 the `change.getFlag` method has been deprecated.');
-
-      return options[key] !== undefined ? options[key] : this.tmp[key];
-    }
-  }, {
-    key: 'unsetOperationFlag',
-    value: function unsetOperationFlag(key) {
-      warning(false, 'As of slate@0.41.0 the `change.unsetOperationFlag` method has been deprecated.');
-
-      delete this.tmp[key];
-      return this;
-    }
-  }, {
-    key: 'withoutNormalization',
-    value: function withoutNormalization(fn) {
-      warning(false, 'As of slate@0.41.0 the `change.withoutNormalization` helper has been renamed to `change.withoutNormalizing`.');
-
-      return this.withoutNormalizing(fn);
-    }
-  }]);
-  return Change;
-}();
-
-/**
- * Get the "dirty" paths for a given `operation`.
- *
- * @param {Operation} operation
- * @return {Array}
- */
-
-function getDirtyPaths(operation) {
-  var type = operation.type,
-      node = operation.node,
-      path = operation.path,
-      newPath = operation.newPath;
-
-
-  switch (type) {
-    case 'add_mark':
-    case 'insert_text':
-    case 'remove_mark':
-    case 'remove_text':
-    case 'set_mark':
-    case 'set_node':
-      {
-        var ancestors = PathUtils.getAncestors(path).toArray();
-        return [].concat(toConsumableArray(ancestors), [path]);
-      }
-
-    case 'insert_node':
-      {
-        var table = node.getKeysToPathsTable();
-        var paths = Object.values(table).map(function (p) {
-          return path.concat(p);
-        });
-        var _ancestors = PathUtils.getAncestors(path).toArray();
-        return [].concat(toConsumableArray(_ancestors), [path], toConsumableArray(paths));
-      }
-
-    case 'split_node':
-      {
-        var _ancestors2 = PathUtils.getAncestors(path).toArray();
-        var nextPath = PathUtils.increment(path);
-        return [].concat(toConsumableArray(_ancestors2), [path, nextPath]);
-      }
-
-    case 'merge_node':
-      {
-        var _ancestors3 = PathUtils.getAncestors(path).toArray();
-        var previousPath = PathUtils.decrement(path);
-        return [].concat(toConsumableArray(_ancestors3), [previousPath]);
-      }
-
-    case 'move_node':
-      {
-        var parentPath = PathUtils.lift(path);
-        var newParentPath = PathUtils.lift(newPath);
-
-        if (PathUtils.isEqual(path, newPath)) {
-          return [];
-        }
-
-        // HACK: this clause only exists because the `move_path` logic isn't
-        // consistent when it deals with siblings.
-        if (!PathUtils.isSibling(path, newPath)) {
-          if (newParentPath.size && PathUtils.isYounger(path, newPath)) {
-            newParentPath = PathUtils.decrement(newParentPath, 1, path.size - 1);
-          }
-
-          if (parentPath.size && PathUtils.isYounger(newPath, path)) {
-            parentPath = PathUtils.increment(parentPath, 1, newPath.size - 1);
-          }
-        }
-
-        var oldAncestors = PathUtils.getAncestors(parentPath).toArray();
-        var newAncestors = PathUtils.getAncestors(newParentPath).toArray();
-
-        return [].concat(toConsumableArray(oldAncestors), [parentPath], toConsumableArray(newAncestors), [newParentPath]);
-      }
-
-    case 'remove_node':
-      {
-        var _ancestors4 = PathUtils.getAncestors(path).toArray();
-        return [].concat(toConsumableArray(_ancestors4));
-      }
-
-    default:
-      {
-        return [];
-      }
-  }
-}
-
-/**
- * Commands.
+ * Default properties.
  *
  * @type {Object}
  */
 
-var Commands = {};
+var DEFAULTS$12 = {
+  operations: undefined,
+  value: undefined
+
+  /**
+   * Change.
+   *
+   * @type {Change}
+   */
+
+};
+var Change = function (_Record) {
+  inherits(Change, _Record);
+
+  function Change() {
+    classCallCheck(this, Change);
+    return possibleConstructorReturn(this, (Change.__proto__ || Object.getPrototypeOf(Change)).apply(this, arguments));
+  }
+
+  createClass(Change, [{
+    key: 'toJSON',
+
+
+    /**
+     * Return a JSON representation of the change.
+     *
+     * @param {Object} options
+     * @return {Object}
+     */
+
+    value: function toJSON() {
+      var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+
+      var object = {
+        object: this.object,
+        value: this.value.toJSON(options),
+        operations: this.operations.toArray().map(function (o) {
+          return o.toJSON(options);
+        })
+      };
+
+      return object;
+    }
+  }], [{
+    key: 'create',
+
+    /**
+     * Create a new `Change` with `attrs`.
+     *
+     * @param {Object|Change} attrs
+     * @return {Change}
+     */
+
+    value: function create() {
+      var attrs = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+
+      if (Change.isChange(attrs)) {
+        return attrs;
+      }
+
+      if (isPlainObject(attrs)) {
+        return Change.fromJSON(attrs);
+      }
+
+      throw new Error('`Change.create` only accepts objects or changes, but you passed it: ' + attrs);
+    }
+
+    /**
+     * Create a `Change` from a JSON `object`.
+     *
+     * @param {Object} object
+     * @return {Change}
+     */
+
+  }, {
+    key: 'fromJSON',
+    value: function fromJSON(object) {
+      var value = object.value,
+          _object$operations = object.operations,
+          operations = _object$operations === undefined ? [] : _object$operations;
+
+
+      var change = new Change({
+        value: Value.create(value),
+        operations: Operation.createList(operations)
+      });
+
+      return change;
+    }
+  }]);
+  return Change;
+}(immutable.Record(DEFAULTS$12));
 
 /**
- * Mix in the changes that pass through to their at-range equivalents because
- * they don't have any effect on the selection.
+ * A plugin that adds a set of commands to the editor.
+ *
+ * @param {Object} commands
+ * @return {Object}
  */
 
-var PROXY_TRANSFORMS = ['deleteBackward', 'deleteCharBackward', 'deleteLineBackward', 'deleteWordBackward', 'deleteForward', 'deleteCharForward', 'deleteWordForward', 'deleteLineForward', 'setBlocks', 'setInlines', 'splitInline', 'unwrapBlock', 'unwrapInline', 'wrapBlock', 'wrapInline'];
+function CommandsPlugin() {
+  var commands = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
 
-PROXY_TRANSFORMS.forEach(function (method) {
-  Commands[method] = function (change) {
-    for (var _len = arguments.length, args = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
-      args[_key - 1] = arguments[_key];
+  /**
+   * On command, if it exists in our list of commands, call it.
+   *
+   * @param {Object} command
+   * @param {Editor} editor
+   * @param {Function} next
+   */
+
+  function onCommand(command, editor, next) {
+    var type = command.type,
+        args = command.args;
+
+    var fn = commands[type];
+    if (!fn) return next();
+    editor.command.apply(editor, [fn].concat(toConsumableArray(args)));
+  }
+
+  /**
+   * On construct, register all the commands.
+   *
+   * @param {Editor} editor
+   * @param {Function} next
+   */
+
+  function onConstruct(editor, next) {
+    for (var command in commands) {
+      editor.registerCommand(command);
     }
 
-    var value = change.value;
-    var selection = value.selection;
+    return next();
+  }
 
-    var methodAtRange = method + 'AtRange';
-    change[methodAtRange].apply(change, [selection].concat(args));
+  /**
+   * Return the plugin.
+   *
+   * @type {Object}
+   */
 
-    if (method.match(/Backward$/)) {
-      change.moveToStart();
-    } else if (method.match(/Forward$/)) {
-      change.moveToEnd();
-    }
+  return {
+    onCommand: onCommand,
+    onConstruct: onConstruct
   };
-});
-
-/**
- * Add a `mark` to the characters in the current selection.
- *
- * @param {Change} change
- * @param {Mark} mark
- */
-
-Commands.addMark = function (change, mark) {
-  mark = Mark.create(mark);
-  var value = change.value;
-  var document = value.document,
-      selection = value.selection;
-
-
-  if (selection.isExpanded) {
-    change.addMarkAtRange(selection, mark);
-  } else if (selection.marks) {
-    var marks = selection.marks.add(mark);
-    var sel = selection.set('marks', marks);
-    change.select(sel);
-  } else {
-    var _marks = document.getActiveMarksAtRange(selection).add(mark);
-    var _sel = selection.set('marks', _marks);
-    change.select(_sel);
-  }
-};
-
-/**
- * Add a list of `marks` to the characters in the current selection.
- *
- * @param {Change} change
- * @param {Mark} mark
- */
-
-Commands.addMarks = function (change, marks) {
-  marks.forEach(function (mark) {
-    return change.addMark(mark);
-  });
-};
-
-/**
- * Delete at the current selection.
- *
- * @param {Change} change
- */
-
-Commands.delete = function (change) {
-  var value = change.value;
-  var selection = value.selection;
-
-  change.deleteAtRange(selection);
-
-  // Ensure that the selection is collapsed to the start, because in certain
-  // cases when deleting across inline nodes, when splitting the inline node the
-  // end point of the selection will end up after the split point.
-  change.moveToStart();
-};
-
-/**
- * Insert a `block` at the current selection.
- *
- * @param {Change} change
- * @param {String|Object|Block} block
- */
-
-Commands.insertBlock = function (change, block) {
-  block = Block.create(block);
-  var value = change.value;
-  var selection = value.selection;
-
-  change.insertBlockAtRange(selection, block);
-
-  // If the node was successfully inserted, update the selection.
-  var node = change.value.document.getNode(block.key);
-  if (node) change.moveToEndOfNode(node);
-};
-
-/**
- * Insert a `fragment` at the current selection.
- *
- * @param {Change} change
- * @param {Document} fragment
- */
-
-Commands.insertFragment = function (change, fragment) {
-  if (!fragment.nodes.size) return;
-
-  var value = change.value;
-  var _value = value,
-      document = _value.document,
-      selection = _value.selection;
-  var start = selection.start,
-      end = selection.end;
-  var _value2 = value,
-      startText = _value2.startText,
-      endText = _value2.endText,
-      startInline = _value2.startInline;
-
-  var lastText = fragment.getLastText();
-  var lastInline = fragment.getClosestInline(lastText.key);
-  var firstChild = fragment.nodes.first();
-  var lastChild = fragment.nodes.last();
-  var keys = document.getTexts().map(function (text) {
-    return text.key;
-  });
-  var isAppending = !startInline || start.isAtStartOfNode(startText) || end.isAtStartOfNode(startText) || start.isAtEndOfNode(endText) || end.isAtEndOfNode(endText);
-
-  var isInserting = firstChild.hasBlockChildren() || lastChild.hasBlockChildren();
-
-  change.insertFragmentAtRange(selection, fragment);
-  value = change.value;
-  document = value.document;
-
-  var newTexts = document.getTexts().filter(function (n) {
-    return !keys.includes(n.key);
-  });
-  var newText = isAppending ? newTexts.last() : newTexts.takeLast(2).first();
-
-  if (newText && (lastInline || isInserting)) {
-    change.select(selection.moveToEndOfNode(newText));
-  } else if (newText) {
-    change.select(selection.moveToStartOfNode(newText).moveForward(lastText.text.length));
-  } else {
-    change.select(selection.moveToStart().moveForward(lastText.text.length));
-  }
-};
-
-/**
- * Insert an `inline` at the current selection.
- *
- * @param {Change} change
- * @param {String|Object|Inline} inline
- */
-
-Commands.insertInline = function (change, inline) {
-  inline = Inline.create(inline);
-  var value = change.value;
-  var selection = value.selection;
-
-  change.insertInlineAtRange(selection, inline);
-
-  // If the node was successfully inserted, update the selection.
-  var node = change.value.document.getNode(inline.key);
-  if (node) change.moveToEndOfNode(node);
-};
-
-/**
- * Insert a string of `text` with optional `marks` at the current selection.
- *
- * @param {Change} change
- * @param {String} text
- * @param {Set<Mark>} marks (optional)
- */
-
-Commands.insertText = function (change, text, marks) {
-  var value = change.value;
-  var document = value.document,
-      selection = value.selection;
-
-  marks = marks || selection.marks || document.getInsertMarksAtRange(selection);
-  change.insertTextAtRange(selection, text, marks);
-
-  // If the text was successfully inserted, and the selection had marks on it,
-  // unset the selection's marks.
-  if (selection.marks && document != change.value.document) {
-    change.select({ marks: null });
-  }
-};
-
-/**
- * Remove a `mark` from the characters in the current selection.
- *
- * @param {Change} change
- * @param {Mark} mark
- */
-
-Commands.removeMark = function (change, mark) {
-  mark = Mark.create(mark);
-  var value = change.value;
-  var document = value.document,
-      selection = value.selection;
-
-
-  if (selection.isExpanded) {
-    change.removeMarkAtRange(selection, mark);
-  } else if (selection.marks) {
-    var marks = selection.marks.remove(mark);
-    var sel = selection.set('marks', marks);
-    change.select(sel);
-  } else {
-    var _marks2 = document.getActiveMarksAtRange(selection).remove(mark);
-    var _sel2 = selection.set('marks', _marks2);
-    change.select(_sel2);
-  }
-};
-
-/**
- * Replace an `oldMark` with a `newMark` in the characters in the current selection.
- *
- * @param {Change} change
- * @param {Mark} oldMark
- * @param {Mark} newMark
- */
-
-Commands.replaceMark = function (change, oldMark, newMark) {
-  change.removeMark(oldMark);
-  change.addMark(newMark);
-};
-
-/**
- * Split the block node at the current selection, to optional `depth`.
- *
- * @param {Change} change
- * @param {Number} depth (optional)
- */
-
-Commands.splitBlock = function (change) {
-  var depth = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 1;
-  var value = change.value;
-  var selection = value.selection,
-      document = value.document;
-
-  var marks = selection.marks || document.getInsertMarksAtRange(selection);
-  change.splitBlockAtRange(selection, depth).moveToEnd();
-
-  if (marks && marks.size !== 0) {
-    change.select({ marks: marks });
-  }
-};
-
-/**
- * Add or remove a `mark` from the characters in the current selection,
- * depending on whether it's already there.
- *
- * @param {Change} change
- * @param {Mark} mark
- */
-
-Commands.toggleMark = function (change, mark) {
-  mark = Mark.create(mark);
-  var value = change.value;
-
-  var exists = value.activeMarks.has(mark);
-
-  if (exists) {
-    change.removeMark(mark);
-  } else {
-    change.addMark(mark);
-  }
-};
-
-/**
- * Wrap the current selection with prefix/suffix.
- *
- * @param {Change} change
- * @param {String} prefix
- * @param {String} suffix
- */
-
-Commands.wrapText = function (change, prefix) {
-  var suffix = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : prefix;
-  var value = change.value;
-  var selection = value.selection;
-
-  change.wrapTextAtRange(selection, prefix, suffix);
-
-  // If the selection was collapsed, it will have moved the start offset too.
-  if (selection.isCollapsed) {
-    change.moveStartBackward(prefix.length);
-  }
-
-  // Adding the suffix will have pushed the end of the selection further on, so
-  // we need to move it back to account for this.
-  change.moveEndBackward(suffix.length);
-
-  // There's a chance that the selection points moved "through" each other,
-  // resulting in a now-incorrect selection direction.
-  if (selection.isForward != change.value.selection.isForward) {
-    change.flip();
-  }
-};
+}
 
 /**
  * Surrogate pair start and end points.
@@ -45421,6 +45060,34 @@ var TextUtils = {
 };
 
 /**
+ * Ensure that an expanded selection is deleted first, and return the updated
+ * range to account for the deleted part.
+ *
+ * @param {Editor}
+ */
+
+function deleteExpandedAtRange(editor, range) {
+  if (range.isExpanded) {
+    editor.deleteAtRange(range);
+  }
+
+  var value = editor.value;
+  var document = value.document;
+  var _range = range,
+      start = _range.start,
+      end = _range.end;
+
+
+  if (document.hasDescendant(start.key)) {
+    range = range.moveToStart();
+  } else {
+    range = range.moveTo(end.key, 0).normalize(document);
+  }
+
+  return range;
+}
+
+/**
  * Commands.
  *
  * @type {Object}
@@ -45431,22 +45098,22 @@ var Commands$1 = {};
 /**
  * Add a new `mark` to the characters at `range`.
  *
- * @param {Change} change
+ * @param {Editor} editor
  * @param {Range} range
  * @param {Mixed} mark
  */
 
-Commands$1.addMarkAtRange = function (change, range, mark) {
+Commands$1.addMarkAtRange = function (editor, range, mark) {
   if (range.isCollapsed) return;
 
-  var value = change.value;
+  var value = editor.value;
   var document = value.document;
   var start = range.start,
       end = range.end;
 
   var texts = document.getTextsAtRange(range);
 
-  change.withoutNormalizing(function () {
+  editor.withoutNormalizing(function () {
     texts.forEach(function (node) {
       var key = node.key;
 
@@ -45457,7 +45124,7 @@ Commands$1.addMarkAtRange = function (change, range, mark) {
       if (key == end.key) length = end.offset;
       if (key == start.key && key == end.key) length = end.offset - start.offset;
 
-      change.addMarkByKey(key, index, length, mark);
+      editor.addMarkByKey(key, index, length, mark);
     });
   });
 };
@@ -45465,31 +45132,30 @@ Commands$1.addMarkAtRange = function (change, range, mark) {
 /**
  * Add a list of `marks` to the characters at `range`.
  *
- * @param {Change} change
+ * @param {Editor} editor
  * @param {Range} range
  * @param {Array<Mixed>} mark
  */
 
-Commands$1.addMarksAtRange = function (change, range, marks) {
+Commands$1.addMarksAtRange = function (editor, range, marks) {
   marks.forEach(function (mark) {
-    return change.addMarkAtRange(range, mark);
+    return editor.addMarkAtRange(range, mark);
   });
 };
 
 /**
  * Delete everything in a `range`.
  *
- * @param {Change} change
+ * @param {Editor} editor
  * @param {Range} range
  */
 
-Commands$1.deleteAtRange = function (change, range) {
+Commands$1.deleteAtRange = function (editor, range) {
   // Snapshot the selection, which creates an extra undo save point, so that
   // when you undo a delete, the expanded selection will be retained.
-  change.snapshotSelection();
+  editor.snapshotSelection();
 
-  var editor = change.editor,
-      value = change.value;
+  var value = editor.value;
   var start = range.start,
       end = range.end;
 
@@ -45517,14 +45183,14 @@ Commands$1.deleteAtRange = function (change, range) {
     isEndVoid = document.hasVoidParent(endKey, editor);
   }
 
-  change.withoutNormalizing(function () {
+  editor.withoutNormalizing(function () {
     // If the start node is inside a void node, remove the void node and update
     // the starting point to be right after it, continuously until the start point
     // is not a void, or until the entire range is handled.
     while (isStartVoid) {
       var startVoid = document.getClosestVoid(startKey, editor);
       var nextText = document.getNextText(startKey);
-      change.removeNodeByKey(startVoid.key);
+      editor.removeNodeByKey(startVoid.key);
 
       // If the start and end keys are the same, we're done.
       if (startKey == endKey) return;
@@ -45533,7 +45199,7 @@ Commands$1.deleteAtRange = function (change, range) {
       if (!nextText) return;
 
       // Continue...
-      document = change.value.document;
+      document = editor.value.document;
       startKey = nextText.key;
       startOffset = 0;
       isStartVoid = document.hasVoidParent(startKey, editor);
@@ -45545,10 +45211,10 @@ Commands$1.deleteAtRange = function (change, range) {
     while (isEndVoid) {
       var endVoid = document.getClosestVoid(endKey, editor);
       var _prevText = document.getPreviousText(endKey);
-      change.removeNodeByKey(endVoid.key);
+      editor.removeNodeByKey(endVoid.key);
 
       // Continue...
-      document = change.value.document;
+      document = editor.value.document;
       endKey = _prevText.key;
       endOffset = _prevText.text.length;
       isEndVoid = document.hasVoidParent(endKey, editor);
@@ -45557,14 +45223,14 @@ Commands$1.deleteAtRange = function (change, range) {
     // If the start and end key are the same, and it was a hanging selection, we
     // can just remove the entire block.
     if (startKey == endKey && isHanging) {
-      change.removeNodeByKey(startBlock.key);
+      editor.removeNodeByKey(startBlock.key);
       return;
     } else if (startKey == endKey) {
       // Otherwise, if it wasn't hanging, we're inside a single text node, so we can
       // simply remove the text in the range.
       var index = startOffset;
       var length = endOffset - startOffset;
-      change.removeTextByKey(startKey, index, length);
+      editor.removeTextByKey(startKey, index, length);
       return;
     } else {
       // Otherwise, we need to recursively remove text and nodes inside the start
@@ -45598,7 +45264,7 @@ Commands$1.deleteAtRange = function (change, range) {
         var afters = parent.nodes.slice(_index + 1);
 
         afters.reverse().forEach(function (node) {
-          change.removeNodeByKey(node.key);
+          editor.removeNodeByKey(node.key);
         });
 
         child = parent;
@@ -45610,7 +45276,7 @@ Commands$1.deleteAtRange = function (change, range) {
       var middles = ancestor.nodes.slice(startChildIndex + 1, endChildIndex);
 
       middles.reverse().forEach(function (node) {
-        change.removeNodeByKey(node.key);
+        editor.removeNodeByKey(node.key);
       });
 
       // Remove the nodes before the end text node in the tree.
@@ -45622,7 +45288,7 @@ Commands$1.deleteAtRange = function (change, range) {
         var befores = _parent.nodes.slice(0, _index2);
 
         befores.reverse().forEach(function (node) {
-          change.removeNodeByKey(node.key);
+          editor.removeNodeByKey(node.key);
         });
 
         child = _parent;
@@ -45630,35 +45296,35 @@ Commands$1.deleteAtRange = function (change, range) {
 
       // Remove any overlapping text content from the leaf text nodes.
       if (startLength != 0) {
-        change.removeTextByKey(startKey, startOffset, startLength);
+        editor.removeTextByKey(startKey, startOffset, startLength);
       }
 
       if (endLength != 0) {
-        change.removeTextByKey(endKey, 0, endOffset);
+        editor.removeTextByKey(endKey, 0, endOffset);
       }
 
       // If the start and end blocks aren't the same, move and merge the end block
       // into the start block.
       if (startBlock.key != endBlock.key) {
-        document = change.value.document;
+        document = editor.value.document;
         var lonely = document.getFurthestOnlyChildAncestor(endBlock.key);
 
         // Move the end block to be right after the start block.
         if (endParentIndex != startParentIndex + 1) {
-          change.moveNodeByKey(endBlock.key, startParent.key, startParentIndex + 1);
+          editor.moveNodeByKey(endBlock.key, startParent.key, startParentIndex + 1);
         }
 
         // If the selection is hanging, just remove the start block, otherwise
         // merge the end block into it.
         if (isHanging) {
-          change.removeNodeByKey(startBlock.key);
+          editor.removeNodeByKey(startBlock.key);
         } else {
-          change.mergeNodeByKey(endBlock.key);
+          editor.mergeNodeByKey(endBlock.key);
         }
 
         // If nested empty blocks are left over above the end block, remove them.
         if (lonely) {
-          change.removeNodeByKey(lonely.key);
+          editor.removeNodeByKey(lonely.key);
         }
       }
     }
@@ -45666,88 +45332,27 @@ Commands$1.deleteAtRange = function (change, range) {
 };
 
 /**
- * Delete backward until the character boundary at a `range`.
- *
- * @param {Change} change
- * @param {Range} range
- */
-
-Commands$1.deleteCharBackwardAtRange = function (change, range) {
-  var value = change.value;
-  var document = value.document;
-  var start = range.start;
-
-  var startBlock = document.getClosestBlock(start.key);
-  var offset = startBlock.getOffset(start.key);
-  var o = offset + start.offset;
-  var text = startBlock.text;
-
-  var n = TextUtils.getCharOffsetBackward(text, o);
-  change.deleteBackwardAtRange(range, n);
-};
-
-/**
- * Delete backward until the line boundary at a `range`.
- *
- * @param {Change} change
- * @param {Range} range
- */
-
-Commands$1.deleteLineBackwardAtRange = function (change, range) {
-  var value = change.value;
-  var document = value.document;
-  var start = range.start;
-
-  var startBlock = document.getClosestBlock(start.key);
-  var offset = startBlock.getOffset(start.key);
-  var o = offset + start.offset;
-  change.deleteBackwardAtRange(range, o);
-};
-
-/**
- * Delete backward until the word boundary at a `range`.
- *
- * @param {Change} change
- * @param {Range} range
- */
-
-Commands$1.deleteWordBackwardAtRange = function (change, range) {
-  var value = change.value;
-  var document = value.document;
-  var start = range.start;
-
-  var startBlock = document.getClosestBlock(start.key);
-  var offset = startBlock.getOffset(start.key);
-  var o = offset + start.offset;
-  var text = startBlock.text;
-
-  var n = o === 0 ? 1 : TextUtils.getWordOffsetBackward(text, o);
-  change.deleteBackwardAtRange(range, n);
-};
-
-/**
  * Delete backward `n` characters at a `range`.
  *
- * @param {Change} change
+ * @param {Editor} editor
  * @param {Range} range
  * @param {Number} n (optional)
  */
 
-Commands$1.deleteBackwardAtRange = function (change, range) {
+Commands$1.deleteBackwardAtRange = function (editor, range) {
   var n = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 1;
 
   if (n === 0) return;
-  var editor = change.editor,
-      value = change.value;
+  var value = editor.value;
   var document = value.document;
-  var _range = range,
-      start = _range.start,
-      focus = _range.focus;
+  var _range2 = range,
+      start = _range2.start,
+      focus = _range2.focus;
 
   // If the range is expanded, perform a regular delete instead.
 
   if (range.isExpanded) {
-    change.deleteAtRange(range);
+    editor.deleteAtRange(range);
     return;
   }
 
@@ -45755,20 +45360,21 @@ Commands$1.deleteBackwardAtRange = function (change, range) {
 
   // If there is a void parent, delete it.
   if (voidParent) {
-    change.removeNodeByKey(voidParent.key);
-    return;
-  }
-
-  var block = document.getClosestBlock(start.key);
-
-  // If the closest is not void, but empty, remove it
-  if (block && !change.isVoid(block) && block.text === '' && document.nodes.size !== 1) {
-    change.removeNodeByKey(block.key);
+    editor.removeNodeByKey(voidParent.key);
     return;
   }
 
   // If the range is at the start of the document, abort.
   if (start.isAtStartOfNode(document)) {
+    return;
+  }
+
+  var block = document.getClosestBlock(start.key);
+
+  // PERF: If the closest block is empty, remove it. This is just a shortcut,
+  // since merging it would result in the same outcome.
+  if (document.nodes.size !== 1 && block && block.text === '') {
+    editor.removeNodeByKey(block.key);
     return;
   }
 
@@ -45783,7 +45389,7 @@ Commands$1.deleteBackwardAtRange = function (change, range) {
 
     // If the previous text node has a void parent, remove it.
     if (prevVoid) {
-      change.removeNodeByKey(prevVoid.key);
+      editor.removeNodeByKey(prevVoid.key);
       return;
     }
 
@@ -45791,7 +45397,7 @@ Commands$1.deleteBackwardAtRange = function (change, range) {
     // inside the current block, we need to merge the two blocks together.
     if (n == 1 && prevBlock != block) {
       range = range.moveAnchorTo(prev.key, prev.text.length);
-      change.deleteAtRange(range);
+      editor.deleteAtRange(range);
       return;
     }
   }
@@ -45800,7 +45406,7 @@ Commands$1.deleteBackwardAtRange = function (change, range) {
   // just remove the characters backwards inside the current node.
   if (n < focus.offset) {
     range = range.moveFocusBackward(n);
-    change.deleteAtRange(range);
+    editor.deleteAtRange(range);
     return;
   }
 
@@ -45822,18 +45428,49 @@ Commands$1.deleteBackwardAtRange = function (change, range) {
   }
 
   range = range.moveAnchorTo(node.key, offset);
-  change.deleteAtRange(range);
+  editor.deleteAtRange(range);
+};
+
+/**
+ * Delete backward until the character boundary at a `range`.
+ *
+ * @param {Editor} editor
+ * @param {Range} range
+ */
+
+Commands$1.deleteCharBackwardAtRange = function (editor, range) {
+  if (range.isExpanded) {
+    editor.deleteAtRange(range);
+    return;
+  }
+
+  var value = editor.value;
+  var document = value.document;
+  var start = range.start;
+
+  var startBlock = document.getClosestBlock(start.key);
+  var offset = startBlock.getOffset(start.key);
+  var o = offset + start.offset;
+  var text = startBlock.text;
+
+  var n = TextUtils.getCharOffsetBackward(text, o);
+  editor.deleteBackwardAtRange(range, n);
 };
 
 /**
  * Delete forward until the character boundary at a `range`.
  *
- * @param {Change} change
+ * @param {Editor} editor
  * @param {Range} range
  */
 
-Commands$1.deleteCharForwardAtRange = function (change, range) {
-  var value = change.value;
+Commands$1.deleteCharForwardAtRange = function (editor, range) {
+  if (range.isExpanded) {
+    editor.deleteAtRange(range);
+    return;
+  }
+
+  var value = editor.value;
   var document = value.document;
   var start = range.start;
 
@@ -45843,72 +45480,31 @@ Commands$1.deleteCharForwardAtRange = function (change, range) {
   var text = startBlock.text;
 
   var n = TextUtils.getCharOffsetForward(text, o);
-  change.deleteForwardAtRange(range, n);
-};
-
-/**
- * Delete forward until the line boundary at a `range`.
- *
- * @param {Change} change
- * @param {Range} range
- */
-
-Commands$1.deleteLineForwardAtRange = function (change, range) {
-  var value = change.value;
-  var document = value.document;
-  var start = range.start;
-
-  var startBlock = document.getClosestBlock(start.key);
-  var offset = startBlock.getOffset(start.key);
-  var o = offset + start.offset;
-  change.deleteForwardAtRange(range, startBlock.text.length - o);
-};
-
-/**
- * Delete forward until the word boundary at a `range`.
- *
- * @param {Change} change
- * @param {Range} range
- */
-
-Commands$1.deleteWordForwardAtRange = function (change, range) {
-  var value = change.value;
-  var document = value.document;
-  var start = range.start;
-
-  var startBlock = document.getClosestBlock(start.key);
-  var offset = startBlock.getOffset(start.key);
-  var o = offset + start.offset;
-  var text = startBlock.text;
-
-  var wordOffset = TextUtils.getWordOffsetForward(text, o);
-  var n = wordOffset === 0 ? 1 : wordOffset;
-  change.deleteForwardAtRange(range, n);
+  editor.deleteForwardAtRange(range, n);
 };
 
 /**
  * Delete forward `n` characters at a `range`.
  *
- * @param {Change} change
+ * @param {Editor} editor
  * @param {Range} range
  * @param {Number} n (optional)
  */
 
-Commands$1.deleteForwardAtRange = function (change, range) {
+Commands$1.deleteForwardAtRange = function (editor, range) {
   var n = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 1;
 
   if (n === 0) return;
-  var editor = change.editor,
-      value = change.value;
+  var value = editor.value;
   var document = value.document;
-  var _range2 = range,
-      start = _range2.start,
-      focus = _range2.focus;
+  var _range3 = range,
+      start = _range3.start,
+      focus = _range3.focus;
 
   // If the range is expanded, perform a regular delete instead.
 
   if (range.isExpanded) {
-    change.deleteAtRange(range);
+    editor.deleteAtRange(range);
     return;
   }
 
@@ -45916,19 +45512,19 @@ Commands$1.deleteForwardAtRange = function (change, range) {
 
   // If the node has a void parent, delete it.
   if (voidParent) {
-    change.removeNodeByKey(voidParent.key);
+    editor.removeNodeByKey(voidParent.key);
     return;
   }
 
   var block = document.getClosestBlock(start.key);
 
   // If the closest is not void, but empty, remove it
-  if (block && !change.isVoid(block) && block.text === '' && document.nodes.size !== 1) {
+  if (block && !editor.isVoid(block) && block.text === '' && document.nodes.size !== 1) {
     var nextBlock = document.getNextBlock(block.key);
-    change.removeNodeByKey(block.key);
+    editor.removeNodeByKey(block.key);
 
     if (nextBlock && nextBlock.key) {
-      change.moveToStartOfNode(nextBlock);
+      editor.moveToStartOfNode(nextBlock);
     }
 
     return;
@@ -45950,7 +45546,7 @@ Commands$1.deleteForwardAtRange = function (change, range) {
 
     // If the next text node has a void parent, remove it.
     if (nextVoid) {
-      change.removeNodeByKey(nextVoid.key);
+      editor.removeNodeByKey(nextVoid.key);
       return;
     }
 
@@ -45958,7 +45554,7 @@ Commands$1.deleteForwardAtRange = function (change, range) {
     // inside the current block, we need to merge the two blocks together.
     if (n == 1 && _nextBlock != block) {
       range = range.moveFocusTo(next.key, 0);
-      change.deleteAtRange(range);
+      editor.deleteAtRange(range);
       return;
     }
   }
@@ -45968,7 +45564,7 @@ Commands$1.deleteForwardAtRange = function (change, range) {
   // inside the current node.
   if (n <= text.text.length - focus.offset) {
     range = range.moveFocusForward(n);
-    change.deleteAtRange(range);
+    editor.deleteAtRange(range);
     return;
   }
 
@@ -45990,29 +45586,124 @@ Commands$1.deleteForwardAtRange = function (change, range) {
   }
 
   range = range.moveFocusTo(node.key, offset);
-  change.deleteAtRange(range);
+  editor.deleteAtRange(range);
+};
+
+/**
+ * Delete backward until the line boundary at a `range`.
+ *
+ * @param {Editor} editor
+ * @param {Range} range
+ */
+
+Commands$1.deleteLineBackwardAtRange = function (editor, range) {
+  if (range.isExpanded) {
+    editor.deleteAtRange(range);
+    return;
+  }
+
+  var value = editor.value;
+  var document = value.document;
+  var start = range.start;
+
+  var startBlock = document.getClosestBlock(start.key);
+  var offset = startBlock.getOffset(start.key);
+  var o = offset + start.offset;
+  editor.deleteBackwardAtRange(range, o);
+};
+
+/**
+ * Delete forward until the line boundary at a `range`.
+ *
+ * @param {Editor} editor
+ * @param {Range} range
+ */
+
+Commands$1.deleteLineForwardAtRange = function (editor, range) {
+  if (range.isExpanded) {
+    editor.deleteAtRange(range);
+    return;
+  }
+
+  var value = editor.value;
+  var document = value.document;
+  var start = range.start;
+
+  var startBlock = document.getClosestBlock(start.key);
+  var offset = startBlock.getOffset(start.key);
+  var o = offset + start.offset;
+  editor.deleteForwardAtRange(range, startBlock.text.length - o);
+};
+
+/**
+ * Delete backward until the word boundary at a `range`.
+ *
+ * @param {Editor} editor
+ * @param {Range} range
+ */
+
+Commands$1.deleteWordBackwardAtRange = function (editor, range) {
+  if (range.isExpanded) {
+    editor.deleteAtRange(range);
+    return;
+  }
+
+  var value = editor.value;
+  var document = value.document;
+  var start = range.start;
+
+  var startBlock = document.getClosestBlock(start.key);
+  var offset = startBlock.getOffset(start.key);
+  var o = offset + start.offset;
+  var text = startBlock.text;
+
+  var n = o === 0 ? 1 : TextUtils.getWordOffsetBackward(text, o);
+  editor.deleteBackwardAtRange(range, n);
+};
+
+/**
+ * Delete forward until the word boundary at a `range`.
+ *
+ * @param {Editor} editor
+ * @param {Range} range
+ */
+
+Commands$1.deleteWordForwardAtRange = function (editor, range) {
+  if (range.isExpanded) {
+    editor.deleteAtRange(range);
+    return;
+  }
+
+  var value = editor.value;
+  var document = value.document;
+  var start = range.start;
+
+  var startBlock = document.getClosestBlock(start.key);
+  var offset = startBlock.getOffset(start.key);
+  var o = offset + start.offset;
+  var text = startBlock.text;
+
+  var wordOffset = TextUtils.getWordOffsetForward(text, o);
+  var n = wordOffset === 0 ? 1 : wordOffset;
+  editor.deleteForwardAtRange(range, n);
 };
 
 /**
  * Insert a `block` node at `range`.
  *
- * @param {Change} change
+ * @param {Editor} editor
  * @param {Range} range
  * @param {Block|String|Object} block
  */
 
-Commands$1.insertBlockAtRange = function (change, range, block) {
+Commands$1.insertBlockAtRange = function (editor, range, block) {
+  range = deleteExpandedAtRange(editor, range);
   block = Block.create(block);
 
-  if (range.isExpanded) {
-    change.deleteAtRange(range);
-    range = range.moveToStart();
-  }
-
-  var value = change.value;
+  var value = editor.value;
   var document = value.document;
-  var _range3 = range,
-      start = _range3.start;
+  var _range4 = range,
+      start = _range4.start;
 
   var startKey = start.key;
   var startOffset = start.offset;
@@ -46021,17 +45712,17 @@ Commands$1.insertBlockAtRange = function (change, range, block) {
   var parent = document.getParent(startBlock.key);
   var index = parent.nodes.indexOf(startBlock);
 
-  if (change.isVoid(startBlock)) {
+  if (editor.isVoid(startBlock)) {
     var extra = start.isAtEndOfNode(startBlock) ? 1 : 0;
-    change.insertNodeByKey(parent.key, index + extra, block);
+    editor.insertNodeByKey(parent.key, index + extra, block);
   } else if (!startInline && startBlock.text === '') {
-    change.insertNodeByKey(parent.key, index + 1, block);
+    editor.insertNodeByKey(parent.key, index + 1, block);
   } else if (start.isAtStartOfNode(startBlock)) {
-    change.insertNodeByKey(parent.key, index, block);
+    editor.insertNodeByKey(parent.key, index, block);
   } else if (start.isAtEndOfNode(startBlock)) {
-    change.insertNodeByKey(parent.key, index + 1, block);
+    editor.insertNodeByKey(parent.key, index + 1, block);
   } else {
-    if (startInline && change.isVoid(startInline)) {
+    if (startInline && editor.isVoid(startInline)) {
       var atEnd = start.isAtEndOfNode(startInline);
       var siblingText = atEnd ? document.getNextText(startKey) : document.getPreviousText(startKey);
 
@@ -46041,9 +45732,9 @@ Commands$1.insertBlockAtRange = function (change, range, block) {
       startOffset = splitRange.start.offset;
     }
 
-    change.withoutNormalizing(function () {
-      change.splitDescendantsByKey(startBlock.key, startKey, startOffset);
-      change.insertNodeByKey(parent.key, index + 1, block);
+    editor.withoutNormalizing(function () {
+      editor.splitDescendantsByKey(startBlock.key, startKey, startOffset);
+      editor.insertNodeByKey(parent.key, index + 1, block);
     });
   }
 };
@@ -46051,23 +45742,14 @@ Commands$1.insertBlockAtRange = function (change, range, block) {
 /**
  * Insert a `fragment` at a `range`.
  *
- * @param {Change} change
+ * @param {Editor} editor
  * @param {Range} range
  * @param {Document} fragment
  */
 
-Commands$1.insertFragmentAtRange = function (change, range, fragment) {
-  change.withoutNormalizing(function () {
-    // If the range is expanded, delete it first.
-    if (range.isExpanded) {
-      change.deleteAtRange(range);
-
-      if (change.value.document.getDescendant(range.start.key)) {
-        range = range.moveToStart();
-      } else {
-        range = range.moveTo(range.end.key, 0).normalize(change.value.document);
-      }
-    }
+Commands$1.insertFragmentAtRange = function (editor, range, fragment) {
+  editor.withoutNormalizing(function () {
+    range = deleteExpandedAtRange(editor, range);
 
     // If the fragment is empty, there's nothing to do after deleting.
     if (!fragment.nodes.size) return;
@@ -46081,9 +45763,9 @@ Commands$1.insertFragmentAtRange = function (change, range, fragment) {
     });
 
     // Calculate a few things...
-    var _range4 = range,
-        start = _range4.start;
-    var value = change.value;
+    var _range5 = range,
+        start = _range5.start;
+    var value = editor.value;
     var document = value.document;
 
     var startText = document.getDescendant(start.key);
@@ -46100,8 +45782,8 @@ Commands$1.insertFragmentAtRange = function (change, range, fragment) {
     var insertionNode = findInsertionNode(fragment, document, startBlock.key);
 
     // If the fragment only contains a void block, use `insertBlock` instead.
-    if (firstBlock === lastBlock && change.isVoid(firstBlock)) {
-      change.insertBlockAtRange(range, firstBlock);
+    if (firstBlock === lastBlock && editor.isVoid(firstBlock)) {
+      editor.insertBlockAtRange(range, firstBlock);
       return;
     }
 
@@ -46109,7 +45791,7 @@ Commands$1.insertFragmentAtRange = function (change, range, fragment) {
     // nested block, e.g. a table, we do not merge it with existing blocks.
     if (insertionNode === fragment && (firstChild.hasBlockChildren() || lastChild.hasBlockChildren())) {
       fragment.nodes.reverse().forEach(function (node) {
-        change.insertBlockAtRange(range, node);
+        editor.insertBlockAtRange(range, node);
       });
       return;
     }
@@ -46127,17 +45809,17 @@ Commands$1.insertFragmentAtRange = function (change, range, fragment) {
 
       excludingLonelyChild.nodes.forEach(function (node, i) {
         var newIndex = startIndex + i + 1;
-        change.insertNodeByKey(parent.key, newIndex, node);
+        editor.insertNodeByKey(parent.key, newIndex, node);
       });
     }
 
     // Check if we need to split the node.
     if (start.offset != 0) {
-      change.splitDescendantsByKey(startChild.key, start.key, start.offset);
+      editor.splitDescendantsByKey(startChild.key, start.key, start.offset);
     }
 
     // Update our variables with the new value.
-    document = change.value.document;
+    document = editor.value.document;
     startText = document.getDescendant(start.key);
     startBlock = document.getClosestBlock(start.key);
     startChild = startBlock.getFurthestAncestor(startText.key);
@@ -46154,15 +45836,15 @@ Commands$1.insertFragmentAtRange = function (change, range, fragment) {
 
       nextNodes.forEach(function (node, i) {
         var newIndex = lastIndex + i;
-        change.moveNodeByKey(node.key, lastBlock.key, newIndex);
+        editor.moveNodeByKey(node.key, lastBlock.key, newIndex);
       });
     }
 
     // If the starting block is empty, we replace it entirely with the first block
     // of the fragment, since this leads to a more expected behavior for the user.
-    if (!change.isVoid(startBlock) && startBlock.text === '') {
-      change.removeNodeByKey(startBlock.key);
-      change.insertNodeByKey(parent.key, index, firstBlock);
+    if (!editor.isVoid(startBlock) && startBlock.text === '') {
+      editor.removeNodeByKey(startBlock.key);
+      editor.insertNodeByKey(parent.key, index, firstBlock);
     } else {
       // Otherwise, we maintain the starting block, and insert all of the first
       // block's inline nodes into it at the split point.
@@ -46172,7 +45854,7 @@ Commands$1.insertFragmentAtRange = function (change, range, fragment) {
       firstBlock.nodes.forEach(function (inline, i) {
         var o = start.offset == 0 ? 0 : 1;
         var newIndex = inlineIndex + i + o;
-        change.insertNodeByKey(startBlock.key, newIndex, inline);
+        editor.insertNodeByKey(startBlock.key, newIndex, inline);
       });
     }
   });
@@ -46215,87 +45897,72 @@ var findInsertionNode = function findInsertionNode(fragment, document, startKey)
 /**
  * Insert an `inline` node at `range`.
  *
- * @param {Change} change
+ * @param {Editor} editor
  * @param {Range} range
  * @param {Inline|String|Object} inline
  */
 
-Commands$1.insertInlineAtRange = function (change, range, inline) {
+Commands$1.insertInlineAtRange = function (editor, range, inline) {
   inline = Inline.create(inline);
 
-  change.withoutNormalizing(function () {
-    if (range.isExpanded) {
-      change.deleteAtRange(range);
-      range = range.moveToStart();
-    }
+  editor.withoutNormalizing(function () {
+    range = deleteExpandedAtRange(editor, range);
 
-    var value = change.value;
+    var value = editor.value;
     var document = value.document;
-    var _range5 = range,
-        start = _range5.start;
+    var _range6 = range,
+        start = _range6.start;
 
     var parent = document.getParent(start.key);
     var startText = document.assertDescendant(start.key);
     var index = parent.nodes.indexOf(startText);
 
-    if (change.isVoid(parent)) return;
+    if (editor.isVoid(parent)) return;
 
-    change.splitNodeByKey(start.key, start.offset);
-    change.insertNodeByKey(parent.key, index + 1, inline);
+    editor.splitNodeByKey(start.key, start.offset);
+    editor.insertNodeByKey(parent.key, index + 1, inline);
   });
 };
 
 /**
  * Insert `text` at a `range`, with optional `marks`.
  *
- * @param {Change} change
+ * @param {Editor} editor
  * @param {Range} range
  * @param {String} text
  * @param {Set<Mark>} marks (optional)
  */
 
-Commands$1.insertTextAtRange = function (change, range, text, marks) {
-  var value = change.value;
-  var document = value.document;
-  var start = range.start;
+Commands$1.insertTextAtRange = function (editor, range, text, marks) {
+  range = deleteExpandedAtRange(editor, range);
 
-  var key = start.key;
+  var value = editor.value;
+  var document = value.document;
+  var _range7 = range,
+      start = _range7.start;
+
   var offset = start.offset;
-  var path = start.path;
   var parent = document.getParent(start.key);
 
-  if (change.isVoid(parent)) {
+  if (editor.isVoid(parent)) {
     return;
   }
 
-  change.withoutNormalizing(function () {
-    if (range.isExpanded) {
-      change.deleteAtRange(range);
-
-      var startText = change.value.document.getNode(path);
-
-      // Update range start after delete
-      if (startText && startText.key !== key) {
-        key = startText.key;
-      }
-    }
-
-    change.insertTextByKey(key, offset, text, marks);
-  });
+  editor.insertTextByKey(start.key, offset, text, marks);
 };
 
 /**
  * Remove an existing `mark` to the characters at `range`.
  *
- * @param {Change} change
+ * @param {Editor} editor
  * @param {Range} range
  * @param {Mark|String} mark (optional)
  */
 
-Commands$1.removeMarkAtRange = function (change, range, mark) {
+Commands$1.removeMarkAtRange = function (editor, range, mark) {
   if (range.isCollapsed) return;
 
-  var value = change.value;
+  var value = editor.value;
   var document = value.document;
 
   var texts = document.getTextsAtRange(range);
@@ -46303,7 +45970,7 @@ Commands$1.removeMarkAtRange = function (change, range, mark) {
       end = range.end;
 
 
-  change.withoutNormalizing(function () {
+  editor.withoutNormalizing(function () {
     texts.forEach(function (node) {
       var key = node.key;
 
@@ -46314,7 +45981,7 @@ Commands$1.removeMarkAtRange = function (change, range, mark) {
       if (key == end.key) length = end.offset;
       if (key == start.key && key == end.key) length = end.offset - start.offset;
 
-      change.removeMarkByKey(key, index, length, mark);
+      editor.removeMarkByKey(key, index, length, mark);
     });
   });
 };
@@ -46322,14 +45989,13 @@ Commands$1.removeMarkAtRange = function (change, range, mark) {
 /**
  * Set the `properties` of block nodes in a `range`.
  *
- * @param {Change} change
+ * @param {Editor} editor
  * @param {Range} range
  * @param {Object|String} properties
  */
 
-Commands$1.setBlocksAtRange = function (change, range, properties) {
-  var editor = change.editor,
-      value = change.value;
+Commands$1.setBlocksAtRange = function (editor, range, properties) {
+  var value = editor.value;
   var document = value.document;
 
   var blocks = document.getBlocksAtRange(range);
@@ -46350,9 +46016,9 @@ Commands$1.setBlocksAtRange = function (change, range, properties) {
   // If it's a hanging selection, ignore the last block.
   var sets = isHanging ? blocks.slice(0, -1) : blocks;
 
-  change.withoutNormalizing(function () {
+  editor.withoutNormalizing(function () {
     sets.forEach(function (block) {
-      change.setNodeByKey(block.key, properties);
+      editor.setNodeByKey(block.key, properties);
     });
   });
 };
@@ -46360,20 +46026,20 @@ Commands$1.setBlocksAtRange = function (change, range, properties) {
 /**
  * Set the `properties` of inline nodes in a `range`.
  *
- * @param {Change} change
+ * @param {Editor} editor
  * @param {Range} range
  * @param {Object|String} properties
  */
 
-Commands$1.setInlinesAtRange = function (change, range, properties) {
-  var value = change.value;
+Commands$1.setInlinesAtRange = function (editor, range, properties) {
+  var value = editor.value;
   var document = value.document;
 
   var inlines = document.getInlinesAtRange(range);
 
-  change.withoutNormalizing(function () {
+  editor.withoutNormalizing(function () {
     inlines.forEach(function (inline) {
-      change.setNodeByKey(inline.key, properties);
+      editor.setNodeByKey(inline.key, properties);
     });
   });
 };
@@ -46381,17 +46047,20 @@ Commands$1.setInlinesAtRange = function (change, range, properties) {
 /**
  * Split the block nodes at a `range`, to optional `height`.
  *
- * @param {Change} change
+ * @param {Editor} editor
  * @param {Range} range
  * @param {Number} height (optional)
  */
 
-Commands$1.splitBlockAtRange = function (change, range) {
+Commands$1.splitBlockAtRange = function (editor, range) {
   var height = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 1;
-  var _range6 = range,
-      start = _range6.start,
-      end = _range6.end;
-  var value = change.value;
+
+  range = deleteExpandedAtRange(editor, range);
+
+  var _range8 = range,
+      start = _range8.start,
+      end = _range8.end;
+  var value = editor.value;
   var _value = value,
       document = _value.document;
 
@@ -46405,10 +46074,10 @@ Commands$1.splitBlockAtRange = function (change, range) {
     h++;
   }
 
-  change.withoutNormalizing(function () {
-    change.splitDescendantsByKey(node.key, start.key, start.offset);
+  editor.withoutNormalizing(function () {
+    editor.splitDescendantsByKey(node.key, start.key, start.offset);
 
-    value = change.value;
+    value = editor.value;
     document = value.document;
 
     if (range.isExpanded) {
@@ -46422,7 +46091,7 @@ Commands$1.splitBlockAtRange = function (change, range) {
       }
 
       range = document.resolveRange(range);
-      change.deleteAtRange(range);
+      editor.deleteAtRange(range);
     }
   });
 };
@@ -46430,22 +46099,19 @@ Commands$1.splitBlockAtRange = function (change, range) {
 /**
  * Split the inline nodes at a `range`, to optional `height`.
  *
- * @param {Change} change
+ * @param {Editor} editor
  * @param {Range} range
  * @param {Number} height (optional)
  */
 
-Commands$1.splitInlineAtRange = function (change, range) {
+Commands$1.splitInlineAtRange = function (editor, range) {
   var height = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : Infinity;
 
-  if (range.isExpanded) {
-    change.deleteAtRange(range);
-    range = range.moveToStart();
-  }
+  range = deleteExpandedAtRange(editor, range);
 
-  var _range7 = range,
-      start = _range7.start;
-  var value = change.value;
+  var _range9 = range,
+      start = _range9.start;
+  var value = editor.value;
   var document = value.document;
 
   var node = document.assertDescendant(start.key);
@@ -46458,24 +46124,24 @@ Commands$1.splitInlineAtRange = function (change, range) {
     h++;
   }
 
-  change.splitDescendantsByKey(node.key, start.key, start.offset);
+  editor.splitDescendantsByKey(node.key, start.key, start.offset);
 };
 
 /**
  * Add or remove a `mark` from the characters at `range`, depending on whether
  * it's already there.
  *
- * @param {Change} change
+ * @param {Editor} editor
  * @param {Range} range
  * @param {Mixed} mark
  */
 
-Commands$1.toggleMarkAtRange = function (change, range, mark) {
+Commands$1.toggleMarkAtRange = function (editor, range, mark) {
   if (range.isCollapsed) return;
 
   mark = Mark.create(mark);
 
-  var value = change.value;
+  var value = editor.value;
   var document = value.document;
 
   var marks = document.getActiveMarksAtRange(range);
@@ -46484,24 +46150,24 @@ Commands$1.toggleMarkAtRange = function (change, range, mark) {
   });
 
   if (exists) {
-    change.removeMarkAtRange(range, mark);
+    editor.removeMarkAtRange(range, mark);
   } else {
-    change.addMarkAtRange(range, mark);
+    editor.addMarkAtRange(range, mark);
   }
 };
 
 /**
  * Unwrap all of the block nodes in a `range` from a block with `properties`.
  *
- * @param {Change} change
+ * @param {Editor} editor
  * @param {Range} range
  * @param {String|Object} properties
  */
 
-Commands$1.unwrapBlockAtRange = function (change, range, properties) {
+Commands$1.unwrapBlockAtRange = function (editor, range, properties) {
   properties = Node.createProperties(properties);
 
-  var value = change.value;
+  var value = editor.value;
   var document = value.document;
 
   var blocks = document.getBlocksAtRange(range);
@@ -46516,7 +46182,7 @@ Commands$1.unwrapBlockAtRange = function (change, range, properties) {
     return exists;
   }).toOrderedSet().toList();
 
-  change.withoutNormalizing(function () {
+  editor.withoutNormalizing(function () {
     wrappers.forEach(function (block) {
       var first = block.nodes.first();
       var last = block.nodes.last();
@@ -46534,37 +46200,37 @@ Commands$1.unwrapBlockAtRange = function (change, range, properties) {
 
       if (first == firstMatch && last == lastMatch) {
         block.nodes.forEach(function (child, i) {
-          change.moveNodeByKey(child.key, parent.key, index + i);
+          editor.moveNodeByKey(child.key, parent.key, index + i);
         });
 
-        change.removeNodeByKey(block.key);
+        editor.removeNodeByKey(block.key);
       } else if (last == lastMatch) {
         block.nodes.skipUntil(function (n) {
           return n == firstMatch;
         }).forEach(function (child, i) {
-          change.moveNodeByKey(child.key, parent.key, index + 1 + i);
+          editor.moveNodeByKey(child.key, parent.key, index + 1 + i);
         });
       } else if (first == firstMatch) {
         block.nodes.takeUntil(function (n) {
           return n == lastMatch;
         }).push(lastMatch).forEach(function (child, i) {
-          change.moveNodeByKey(child.key, parent.key, index + i);
+          editor.moveNodeByKey(child.key, parent.key, index + i);
         });
       } else {
         var firstText = firstMatch.getFirstText();
 
-        change.splitDescendantsByKey(block.key, firstText.key, 0);
+        editor.splitDescendantsByKey(block.key, firstText.key, 0);
 
-        document = change.value.document;
+        document = editor.value.document;
 
         children.forEach(function (child, i) {
           if (i == 0) {
             var extra = child;
             child = document.getNextBlock(child.key);
-            change.removeNodeByKey(extra.key);
+            editor.removeNodeByKey(extra.key);
           }
 
-          change.moveNodeByKey(child.key, parent.key, index + 1 + i);
+          editor.moveNodeByKey(child.key, parent.key, index + 1 + i);
         });
       }
     });
@@ -46574,15 +46240,15 @@ Commands$1.unwrapBlockAtRange = function (change, range, properties) {
 /**
  * Unwrap the inline nodes in a `range` from an inline with `properties`.
  *
- * @param {Change} change
+ * @param {Editor} editor
  * @param {Range} range
  * @param {String|Object} properties
  */
 
-Commands$1.unwrapInlineAtRange = function (change, range, properties) {
+Commands$1.unwrapInlineAtRange = function (editor, range, properties) {
   properties = Node.createProperties(properties);
 
-  var value = change.value;
+  var value = editor.value;
   var document = value.document;
 
   var texts = document.getTextsAtRange(range);
@@ -46597,16 +46263,16 @@ Commands$1.unwrapInlineAtRange = function (change, range, properties) {
     return exists;
   }).toOrderedSet().toList();
 
-  change.withoutNormalizing(function () {
+  editor.withoutNormalizing(function () {
     inlines.forEach(function (inline) {
-      var parent = change.value.document.getParent(inline.key);
+      var parent = editor.value.document.getParent(inline.key);
       var index = parent.nodes.indexOf(inline);
 
       inline.nodes.forEach(function (child, i) {
-        change.moveNodeByKey(child.key, parent.key, index + i);
+        editor.moveNodeByKey(child.key, parent.key, index + i);
       });
 
-      change.removeNodeByKey(inline.key);
+      editor.removeNodeByKey(inline.key);
     });
   });
 };
@@ -46614,16 +46280,16 @@ Commands$1.unwrapInlineAtRange = function (change, range, properties) {
 /**
  * Wrap all of the blocks in a `range` in a new `block`.
  *
- * @param {Change} change
+ * @param {Editor} editor
  * @param {Range} range
  * @param {Block|Object|String} block
  */
 
-Commands$1.wrapBlockAtRange = function (change, range, block) {
+Commands$1.wrapBlockAtRange = function (editor, range, block) {
   block = Block.create(block);
   block = block.set('nodes', block.nodes.clear());
 
-  var value = change.value;
+  var value = editor.value;
   var document = value.document;
 
 
@@ -46669,13 +46335,13 @@ Commands$1.wrapBlockAtRange = function (change, range, block) {
     index = parent.nodes.indexOf(siblings.first());
   }
 
-  change.withoutNormalizing(function () {
+  editor.withoutNormalizing(function () {
     // Inject the new block node into the parent.
-    change.insertNodeByKey(parent.key, index, block);
+    editor.insertNodeByKey(parent.key, index, block);
 
     // Move the sibling nodes into the new block node.
     siblings.forEach(function (node, i) {
-      change.moveNodeByKey(node.key, block.key, i);
+      editor.moveNodeByKey(node.key, block.key, i);
     });
   });
 };
@@ -46683,13 +46349,13 @@ Commands$1.wrapBlockAtRange = function (change, range, block) {
 /**
  * Wrap the text and inlines in a `range` in a new `inline`.
  *
- * @param {Change} change
+ * @param {Editor} editor
  * @param {Range} range
  * @param {Inline|Object|String} inline
  */
 
-Commands$1.wrapInlineAtRange = function (change, range, inline) {
-  var value = change.value;
+Commands$1.wrapInlineAtRange = function (editor, range, inline) {
+  var value = editor.value;
   var document = value.document;
   var start = range.start,
       end = range.end;
@@ -46699,11 +46365,15 @@ Commands$1.wrapInlineAtRange = function (change, range, inline) {
     // Wrapping an inline void
     var inlineParent = document.getClosestInline(start.key);
 
-    if (!change.isVoid(inlineParent)) {
+    if (!inlineParent) {
       return;
     }
 
-    return change.wrapInlineByKey(inlineParent.key, inline);
+    if (!editor.isVoid(inlineParent)) {
+      return;
+    }
+
+    return editor.wrapInlineByKey(inlineParent.key, inline);
   }
 
   inline = Inline.create(inline);
@@ -46717,13 +46387,13 @@ Commands$1.wrapInlineAtRange = function (change, range, inline) {
   var startChild = startBlock.getFurthestAncestor(start.key);
   var endChild = endBlock.getFurthestAncestor(end.key);
 
-  change.withoutNormalizing(function () {
+  editor.withoutNormalizing(function () {
     if (!startInline || startInline != endInline) {
-      change.splitDescendantsByKey(endChild.key, end.key, end.offset);
-      change.splitDescendantsByKey(startChild.key, start.key, start.offset);
+      editor.splitDescendantsByKey(endChild.key, end.key, end.offset);
+      editor.splitDescendantsByKey(startChild.key, start.key, start.offset);
     }
 
-    document = change.value.document;
+    document = editor.value.document;
     startBlock = document.getDescendant(startBlock.key);
     endBlock = document.getDescendant(endBlock.key);
     startChild = startBlock.getFurthestAncestor(start.key);
@@ -46735,7 +46405,7 @@ Commands$1.wrapInlineAtRange = function (change, range, inline) {
       var text = startBlock.getTextsAtRange(range).get(0).splitText(start.offset)[1].splitText(end.offset - start.offset)[0];
 
       inline = inline.set('nodes', immutable.List([text]));
-      change.insertInlineAtRange(range, inline);
+      editor.insertInlineAtRange(range, inline);
 
       var inlinekey = inline.getFirstText().key;
       var rng = {
@@ -46749,9 +46419,9 @@ Commands$1.wrapInlineAtRange = function (change, range, inline) {
         },
         isFocused: true
       };
-      change.select(rng);
+      editor.select(rng);
     } else if (startBlock == endBlock) {
-      document = change.value.document;
+      document = editor.value.document;
       startBlock = document.getClosestBlock(start.key);
       startChild = startBlock.getFurthestAncestor(start.key);
 
@@ -46766,10 +46436,10 @@ Commands$1.wrapInlineAtRange = function (change, range, inline) {
 
       var node = inline.regenerateKey();
 
-      change.insertNodeByKey(startBlock.key, startInnerIndex, node);
+      editor.insertNodeByKey(startBlock.key, startInnerIndex, node);
 
       inlines.forEach(function (child, i) {
-        change.moveNodeByKey(child.key, node.key, i);
+        editor.moveNodeByKey(child.key, node.key, i);
       });
     } else {
       var startInlines = startBlock.nodes.slice(startIndex + 1);
@@ -46777,23 +46447,23 @@ Commands$1.wrapInlineAtRange = function (change, range, inline) {
       var startNode = inline.regenerateKey();
       var endNode = inline.regenerateKey();
 
-      change.insertNodeByKey(startBlock.key, startIndex + 1, startNode);
-      change.insertNodeByKey(endBlock.key, endIndex, endNode);
+      editor.insertNodeByKey(startBlock.key, startIndex + 1, startNode);
+      editor.insertNodeByKey(endBlock.key, endIndex, endNode);
 
       startInlines.forEach(function (child, i) {
-        change.moveNodeByKey(child.key, startNode.key, i);
+        editor.moveNodeByKey(child.key, startNode.key, i);
       });
 
       endInlines.forEach(function (child, i) {
-        change.moveNodeByKey(child.key, endNode.key, i);
+        editor.moveNodeByKey(child.key, endNode.key, i);
       });
 
       blocks.slice(1, -1).forEach(function (block) {
         var node = inline.regenerateKey();
-        change.insertNodeByKey(block.key, 0, node);
+        editor.insertNodeByKey(block.key, 0, node);
 
         block.nodes.forEach(function (child, i) {
-          change.moveNodeByKey(child.key, node.key, i);
+          editor.moveNodeByKey(child.key, node.key, i);
         });
       });
     }
@@ -46803,13 +46473,13 @@ Commands$1.wrapInlineAtRange = function (change, range, inline) {
 /**
  * Wrap the text in a `range` in a prefix/suffix.
  *
- * @param {Change} change
+ * @param {Editor} editor
  * @param {Range} range
  * @param {String} prefix
  * @param {String} suffix (optional)
  */
 
-Commands$1.wrapTextAtRange = function (change, range, prefix) {
+Commands$1.wrapTextAtRange = function (editor, range, prefix) {
   var suffix = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : prefix;
   var start = range.start,
       end = range.end;
@@ -46821,9 +46491,9 @@ Commands$1.wrapTextAtRange = function (change, range, prefix) {
     endRange = endRange.moveForward(prefix.length);
   }
 
-  change.withoutNormalizing(function () {
-    change.insertTextAtRange(startRange, prefix, []);
-    change.insertTextAtRange(endRange, suffix, []);
+  editor.withoutNormalizing(function () {
+    editor.insertTextAtRange(startRange, prefix, []);
+    editor.insertTextAtRange(endRange, suffix, []);
   });
 };
 
@@ -46838,16 +46508,16 @@ var Commands$2 = {};
 /**
  * Add mark to text at `offset` and `length` in node by `path`.
  *
- * @param {Change} change
+ * @param {Editor} editor
  * @param {Array} path
  * @param {Number} offset
  * @param {Number} length
  * @param {Mixed} mark
  */
 
-Commands$2.addMarkByPath = function (change, path, offset, length, mark) {
+Commands$2.addMarkByPath = function (editor, path, offset, length, mark) {
   mark = Mark.create(mark);
-  var value = change.value;
+  var value = editor.value;
   var document = value.document;
 
   var node = document.assertNode(path);
@@ -46884,38 +46554,40 @@ Commands$2.addMarkByPath = function (change, path, offset, length, mark) {
     });
   });
 
-  change.applyOperations(operations);
+  operations.forEach(function (op) {
+    return editor.applyOperation(op);
+  });
 };
 
 /**
  * Insert a `fragment` at `index` in a node by `path`.
  *
- * @param {Change} change
+ * @param {Editor} editor
  * @param {Array} path
  * @param {Number} index
  * @param {Fragment} fragment
  */
 
-Commands$2.insertFragmentByPath = function (change, path, index, fragment) {
+Commands$2.insertFragmentByPath = function (editor, path, index, fragment) {
   fragment.nodes.forEach(function (node, i) {
-    change.insertNodeByPath(path, index + i, node);
+    editor.insertNodeByPath(path, index + i, node);
   });
 };
 
 /**
  * Insert a `node` at `index` in a node by `path`.
  *
- * @param {Change} change
+ * @param {Editor} editor
  * @param {Array} path
  * @param {Number} index
  * @param {Node} node
  */
 
-Commands$2.insertNodeByPath = function (change, path, index, node) {
-  var value = change.value;
+Commands$2.insertNodeByPath = function (editor, path, index, node) {
+  var value = editor.value;
 
 
-  change.applyOperation({
+  editor.applyOperation({
     type: 'insert_node',
     value: value,
     path: path.concat(index),
@@ -46926,15 +46598,15 @@ Commands$2.insertNodeByPath = function (change, path, index, node) {
 /**
  * Insert `text` at `offset` in node by `path`.
  *
- * @param {Change} change
+ * @param {Editor} editor
  * @param {Array} path
  * @param {Number} offset
  * @param {String} text
  * @param {Set<Mark>} marks (optional)
  */
 
-Commands$2.insertTextByPath = function (change, path, offset, text, marks) {
-  var value = change.value;
+Commands$2.insertTextByPath = function (editor, path, offset, text, marks) {
+  var value = editor.value;
   var decorations = value.decorations,
       document = value.document;
 
@@ -46950,7 +46622,7 @@ Commands$2.insertTextByPath = function (change, path, offset, text, marks) {
         end = dec.end,
         mark = dec.mark;
 
-    var isAtomic = change.isAtomic(mark);
+    var isAtomic = editor.isAtomic(mark);
     if (!isAtomic) return true;
     if (start.key !== key) return true;
 
@@ -46963,10 +46635,10 @@ Commands$2.insertTextByPath = function (change, path, offset, text, marks) {
   });
 
   if (updated) {
-    change.setValue({ decorations: decs });
+    editor.setDecorations(decs);
   }
 
-  change.applyOperation({
+  editor.applyOperation({
     type: 'insert_text',
     value: value,
     path: path,
@@ -46979,12 +46651,12 @@ Commands$2.insertTextByPath = function (change, path, offset, text, marks) {
 /**
  * Merge a node by `path` with the previous node.
  *
- * @param {Change} change
+ * @param {Editor} editor
  * @param {Array} path
  */
 
-Commands$2.mergeNodeByPath = function (change, path) {
-  var value = change.value;
+Commands$2.mergeNodeByPath = function (editor, path) {
+  var value = editor.value;
   var document = value.document;
 
   var original = document.getDescendant(path);
@@ -46996,7 +46668,7 @@ Commands$2.mergeNodeByPath = function (change, path) {
 
   var position = previous.object == 'text' ? previous.text.length : previous.nodes.size;
 
-  change.applyOperation({
+  editor.applyOperation({
     type: 'merge_node',
     value: value,
     path: path,
@@ -47014,23 +46686,23 @@ Commands$2.mergeNodeByPath = function (change, path) {
 /**
  * Move a node by `path` to a new parent by `newPath` and `index`.
  *
- * @param {Change} change
+ * @param {Editor} editor
  * @param {Array} path
  * @param {String} newPath
  * @param {Number} index
  */
 
-Commands$2.moveNodeByPath = function (change, path, newPath, newIndex) {
-  var value = change.value;
+Commands$2.moveNodeByPath = function (editor, path, newPath, newIndex) {
+  var value = editor.value;
 
   // If the operation path and newPath are the same,
   // this should be considered a NOOP
 
   if (PathUtils.isEqual(path, newPath)) {
-    return change;
+    return editor;
   }
 
-  change.applyOperation({
+  editor.applyOperation({
     type: 'move_node',
     value: value,
     path: path,
@@ -47041,16 +46713,16 @@ Commands$2.moveNodeByPath = function (change, path, newPath, newIndex) {
 /**
  * Remove mark from text at `offset` and `length` in node by `path`.
  *
- * @param {Change} change
+ * @param {Editor} editor
  * @param {Array} path
  * @param {Number} offset
  * @param {Number} length
  * @param {Mark} mark
  */
 
-Commands$2.removeMarkByPath = function (change, path, offset, length, mark) {
+Commands$2.removeMarkByPath = function (editor, path, offset, length, mark) {
   mark = Mark.create(mark);
-  var value = change.value;
+  var value = editor.value;
   var document = value.document;
 
   var node = document.assertNode(path);
@@ -47087,18 +46759,20 @@ Commands$2.removeMarkByPath = function (change, path, offset, length, mark) {
     });
   });
 
-  change.applyOperations(operations);
+  operations.forEach(function (op) {
+    return editor.applyOperation(op);
+  });
 };
 
 /**
  * Remove all `marks` from node by `path`.
  *
- * @param {Change} change
+ * @param {Editor} editor
  * @param {Array} path
  */
 
-Commands$2.removeAllMarksByPath = function (change, path) {
-  var state = change.state;
+Commands$2.removeAllMarksByPath = function (editor, path) {
+  var state = editor.state;
   var document = state.document;
 
   var node = document.assertNode(path);
@@ -47106,7 +46780,7 @@ Commands$2.removeAllMarksByPath = function (change, path) {
 
   texts.forEach(function (text) {
     text.getMarksAsArray().forEach(function (mark) {
-      change.removeMarkByKey(text.key, 0, text.text.length, mark);
+      editor.removeMarkByKey(text.key, 0, text.text.length, mark);
     });
   });
 };
@@ -47114,17 +46788,17 @@ Commands$2.removeAllMarksByPath = function (change, path) {
 /**
  * Remove a node by `path`.
  *
- * @param {Change} change
+ * @param {Editor} editor
  * @param {Array} path
  */
 
-Commands$2.removeNodeByPath = function (change, path) {
-  var value = change.value;
+Commands$2.removeNodeByPath = function (editor, path) {
+  var value = editor.value;
   var document = value.document;
 
   var node = document.assertNode(path);
 
-  change.applyOperation({
+  editor.applyOperation({
     type: 'remove_node',
     value: value,
     path: path,
@@ -47135,14 +46809,14 @@ Commands$2.removeNodeByPath = function (change, path) {
 /**
  * Remove text at `offset` and `length` in node by `path`.
  *
- * @param {Change} change
+ * @param {Editor} editor
  * @param {Array} path
  * @param {Number} offset
  * @param {Number} length
  */
 
-Commands$2.removeTextByPath = function (change, path, offset, length) {
-  var value = change.value;
+Commands$2.removeTextByPath = function (editor, path, offset, length) {
+  var value = editor.value;
   var decorations = value.decorations,
       document = value.document;
 
@@ -47162,7 +46836,7 @@ Commands$2.removeTextByPath = function (change, path, offset, length) {
         end = dec.end,
         mark = dec.mark;
 
-    var isAtomic = change.isAtomic(mark);
+    var isAtomic = editor.isAtomic(mark);
     if (!isAtomic) return true;
     if (start.key !== key) return true;
 
@@ -47180,7 +46854,7 @@ Commands$2.removeTextByPath = function (change, path, offset, length) {
   });
 
   if (updated) {
-    change.setValue({ decorations: decs });
+    editor.setDecorations(decs);
   }
 
   var removals = [];
@@ -47213,31 +46887,33 @@ Commands$2.removeTextByPath = function (change, path, offset, length) {
   });
 
   // Apply in reverse order, so subsequent removals don't impact previous ones.
-  change.applyOperations(removals.reverse());
+  removals.reverse().forEach(function (op) {
+    return editor.applyOperation(op);
+  });
 };
 
 /**
 `* Replace a `node` with another `node`
  *
- * @param {Change} change
+ * @param {Editor} editor
  * @param {Array} path
  * @param {Object|Node} node
  */
 
-Commands$2.replaceNodeByPath = function (change, path, newNode) {
+Commands$2.replaceNodeByPath = function (editor, path, newNode) {
   newNode = Node.create(newNode);
   var index = path.last();
   var parentPath = PathUtils.lift(path);
 
-  change.withoutNormalizing(function () {
-    change.removeNodeByPath(path);
-    change.insertNodeByPath(parentPath, index, newNode);
+  editor.withoutNormalizing(function () {
+    editor.removeNodeByPath(path);
+    editor.insertNodeByPath(parentPath, index, newNode);
   });
 };
 
 /**
  * Replace A Length of Text with another string or text
- * @param {Change} change
+ * @param {Editor} editor
  * @param {String} key
  * @param {Number} offset
  * @param {Number} length
@@ -47245,8 +46921,8 @@ Commands$2.replaceNodeByPath = function (change, path, newNode) {
  * @param {Set<Mark>} marks (optional)
  */
 
-Commands$2.replaceTextByPath = function (change, path, offset, length, text, marks) {
-  var document = change.value.document;
+Commands$2.replaceTextByPath = function (editor, path, offset, length, text, marks) {
+  var document = editor.value.document;
 
   var node = document.assertNode(path);
 
@@ -47261,8 +46937,8 @@ Commands$2.replaceTextByPath = function (change, path, offset, length, text, mar
 
   var activeMarks = document.getActiveMarksAtRange(range);
 
-  change.withoutNormalizing(function () {
-    change.removeTextByPath(path, offset, length);
+  editor.withoutNormalizing(function () {
+    editor.removeTextByPath(path, offset, length);
 
     if (!marks) {
       // Do not use mark at index when marks and activeMarks are both empty
@@ -47279,27 +46955,27 @@ Commands$2.replaceTextByPath = function (change, path, offset, length, text, mar
       marks = activeMarks.merge(marks);
     }
 
-    change.insertTextByPath(path, offset, text, marks);
+    editor.insertTextByPath(path, offset, text, marks);
   });
 };
 
 /**
  * Set `properties` on mark on text at `offset` and `length` in node by `path`.
  *
- * @param {Change} change
+ * @param {Editor} editor
  * @param {Array} path
  * @param {Number} offset
  * @param {Number} length
  * @param {Mark} mark
  */
 
-Commands$2.setMarkByPath = function (change, path, offset, length, mark, properties) {
+Commands$2.setMarkByPath = function (editor, path, offset, length, mark, properties) {
   mark = Mark.create(mark);
   properties = Mark.createProperties(properties);
-  var value = change.value;
+  var value = editor.value;
 
 
-  change.applyOperation({
+  editor.applyOperation({
     type: 'set_mark',
     value: value,
     path: path,
@@ -47313,19 +46989,19 @@ Commands$2.setMarkByPath = function (change, path, offset, length, mark, propert
 /**
  * Set `properties` on a node by `path`.
  *
- * @param {Change} change
+ * @param {Editor} editor
  * @param {Array} path
  * @param {Object|String} properties
  */
 
-Commands$2.setNodeByPath = function (change, path, properties) {
+Commands$2.setNodeByPath = function (editor, path, properties) {
   properties = Node.createProperties(properties);
-  var value = change.value;
+  var value = editor.value;
   var document = value.document;
 
   var node = document.assertNode(path);
 
-  change.applyOperation({
+  editor.applyOperation({
     type: 'set_node',
     value: value,
     path: path,
@@ -47337,40 +47013,40 @@ Commands$2.setNodeByPath = function (change, path, properties) {
 /**
  * Insert `text` at `offset` in node by `path`.
  *
- * @param {Change} change
+ * @param {Editor} editor
  * @param {Array} path
  * @param {String} text
  * @param {Set<Mark>} marks (optional)
  */
 
-Commands$2.setTextByPath = function (change, path, text, marks) {
-  var value = change.value;
+Commands$2.setTextByPath = function (editor, path, text, marks) {
+  var value = editor.value;
   var document = value.document;
 
   var node = document.assertNode(path);
   var end = node.text.length;
-  change.replaceTextByPath(path, 0, end, text, marks);
+  editor.replaceTextByPath(path, 0, end, text, marks);
 };
 
 /**
  * Split a node by `path` at `position`.
  *
- * @param {Change} change
+ * @param {Editor} editor
  * @param {Array} path
  * @param {Number} position
  * @param {Object} options
  */
 
-Commands$2.splitNodeByPath = function (change, path, position) {
+Commands$2.splitNodeByPath = function (editor, path, position) {
   var options = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : {};
   var _options$target = options.target,
       target = _options$target === undefined ? null : _options$target;
-  var value = change.value;
+  var value = editor.value;
   var document = value.document;
 
   var node = document.getDescendant(path);
 
-  change.applyOperation({
+  editor.applyOperation({
     type: 'split_node',
     value: value,
     path: path,
@@ -47386,19 +47062,19 @@ Commands$2.splitNodeByPath = function (change, path, position) {
 /**
  * Split a node deeply down the tree by `path`, `textPath` and `textOffset`.
  *
- * @param {Change} change
+ * @param {Editor} editor
  * @param {Array} path
  * @param {Array} textPath
  * @param {Number} textOffset
  */
 
-Commands$2.splitDescendantsByPath = function (change, path, textPath, textOffset) {
+Commands$2.splitDescendantsByPath = function (editor, path, textPath, textOffset) {
   if (path.equals(textPath)) {
-    change.splitNodeByPath(textPath, textOffset);
+    editor.splitNodeByPath(textPath, textOffset);
     return;
   }
 
-  var value = change.value;
+  var value = editor.value;
   var document = value.document;
 
   var node = document.assertNode(path);
@@ -47411,12 +47087,12 @@ Commands$2.splitDescendantsByPath = function (change, path, textPath, textOffset
   var previous = void 0;
   var index = void 0;
 
-  change.withoutNormalizing(function () {
+  editor.withoutNormalizing(function () {
     nodes.forEach(function (n) {
       var prevIndex = index == null ? null : index;
       index = previous ? n.nodes.indexOf(previous) + 1 : textOffset;
       previous = n;
-      change.splitNodeByKey(n.key, index, { target: prevIndex });
+      editor.splitNodeByKey(n.key, index, { target: prevIndex });
     });
   });
 };
@@ -47424,13 +47100,13 @@ Commands$2.splitDescendantsByPath = function (change, path, textPath, textOffset
 /**
  * Unwrap content from an inline parent with `properties`.
  *
- * @param {Change} change
+ * @param {Editor} editor
  * @param {Array} path
  * @param {Object|String} properties
  */
 
-Commands$2.unwrapInlineByPath = function (change, path, properties) {
-  var value = change.value;
+Commands$2.unwrapInlineByPath = function (editor, path, properties) {
+  var value = editor.value;
   var document = value.document,
       selection = value.selection;
 
@@ -47438,19 +47114,19 @@ Commands$2.unwrapInlineByPath = function (change, path, properties) {
   var first = node.getFirstText();
   var last = node.getLastText();
   var range = selection.moveToRangeOfNode(first, last);
-  change.unwrapInlineAtRange(range, properties);
+  editor.unwrapInlineAtRange(range, properties);
 };
 
 /**
  * Unwrap content from a block parent with `properties`.
  *
- * @param {Change} change
+ * @param {Editor} editor
  * @param {Array} path
  * @param {Object|String} properties
  */
 
-Commands$2.unwrapBlockByPath = function (change, path, properties) {
-  var value = change.value;
+Commands$2.unwrapBlockByPath = function (editor, path, properties) {
+  var value = editor.value;
   var document = value.document,
       selection = value.selection;
 
@@ -47458,7 +47134,7 @@ Commands$2.unwrapBlockByPath = function (change, path, properties) {
   var first = node.getFirstText();
   var last = node.getLastText();
   var range = selection.moveToRangeOfNode(first, last);
-  change.unwrapBlockAtRange(range, properties);
+  editor.unwrapBlockAtRange(range, properties);
 };
 
 /**
@@ -47468,12 +47144,12 @@ Commands$2.unwrapBlockByPath = function (change, path, properties) {
  * split. If the node is the only child, the parent is removed, and
  * simply replaced by the node itself.  Cannot unwrap a root node.
  *
- * @param {Change} change
+ * @param {Editor} editor
  * @param {Array} path
  */
 
-Commands$2.unwrapNodeByPath = function (change, path) {
-  var value = change.value;
+Commands$2.unwrapNodeByPath = function (editor, path) {
+  var value = editor.value;
   var document = value.document;
 
   document.assertNode(path);
@@ -47486,19 +47162,19 @@ Commands$2.unwrapNodeByPath = function (change, path) {
   var isFirst = index === 0;
   var isLast = index === parent.nodes.size - 1;
 
-  change.withoutNormalizing(function () {
+  editor.withoutNormalizing(function () {
     if (parent.nodes.size === 1) {
-      change.moveNodeByPath(path, grandPath, parentIndex + 1);
-      change.removeNodeByPath(parentPath);
+      editor.moveNodeByPath(path, grandPath, parentIndex + 1);
+      editor.removeNodeByPath(parentPath);
     } else if (isFirst) {
-      change.moveNodeByPath(path, grandPath, parentIndex);
+      editor.moveNodeByPath(path, grandPath, parentIndex);
     } else if (isLast) {
-      change.moveNodeByPath(path, grandPath, parentIndex + 1);
+      editor.moveNodeByPath(path, grandPath, parentIndex + 1);
     } else {
       var updatedPath = PathUtils.increment(path, 1, parentPath.size - 1);
       updatedPath = updatedPath.set(updatedPath.size - 1, 0);
-      change.splitNodeByPath(parentPath, index);
-      change.moveNodeByPath(updatedPath, grandPath, parentIndex + 1);
+      editor.splitNodeByPath(parentPath, index);
+      editor.moveNodeByPath(updatedPath, grandPath, parentIndex + 1);
     }
   });
 };
@@ -47507,13 +47183,13 @@ Commands$2.unwrapNodeByPath = function (change, path) {
  * Unwrap all of the children of a node, by removing the node and replacing it
  * with the children in the tree.
  *
- * @param {Change} change
+ * @param {Editor} editor
  * @param {Array} path
  */
 
-Commands$2.unwrapChildrenByPath = function (change, path) {
+Commands$2.unwrapChildrenByPath = function (editor, path) {
   path = PathUtils.create(path);
-  var value = change.value;
+  var value = editor.value;
   var document = value.document;
 
   var node = document.assertNode(path);
@@ -47522,74 +47198,74 @@ Commands$2.unwrapChildrenByPath = function (change, path) {
   var nodes = node.nodes;
 
 
-  change.withoutNormalizing(function () {
+  editor.withoutNormalizing(function () {
     nodes.reverse().forEach(function (child, i) {
       var childIndex = nodes.size - i - 1;
       var childPath = path.push(childIndex);
-      change.moveNodeByPath(childPath, parentPath, index + 1);
+      editor.moveNodeByPath(childPath, parentPath, index + 1);
     });
 
-    change.removeNodeByPath(path);
+    editor.removeNodeByPath(path);
   });
 };
 
 /**
  * Wrap a node in a block with `properties`.
  *
- * @param {Change} change
+ * @param {Editor} editor
  * @param {Array} path
  * @param {Block|Object|String} block
  */
 
-Commands$2.wrapBlockByPath = function (change, path, block) {
+Commands$2.wrapBlockByPath = function (editor, path, block) {
   block = Block.create(block);
   block = block.set('nodes', block.nodes.clear());
   var parentPath = PathUtils.lift(path);
   var index = path.last();
   var newPath = PathUtils.increment(path);
 
-  change.withoutNormalizing(function () {
-    change.insertNodeByPath(parentPath, index, block);
-    change.moveNodeByPath(newPath, path, 0);
+  editor.withoutNormalizing(function () {
+    editor.insertNodeByPath(parentPath, index, block);
+    editor.moveNodeByPath(newPath, path, 0);
   });
 };
 
 /**
  * Wrap a node in an inline with `properties`.
  *
- * @param {Change} change
+ * @param {Editor} editor
  * @param {Array} path
  * @param {Block|Object|String} inline
  */
 
-Commands$2.wrapInlineByPath = function (change, path, inline) {
+Commands$2.wrapInlineByPath = function (editor, path, inline) {
   inline = Inline.create(inline);
   inline = inline.set('nodes', inline.nodes.clear());
   var parentPath = PathUtils.lift(path);
   var index = path.last();
   var newPath = PathUtils.increment(path);
 
-  change.withoutNormalizing(function () {
-    change.insertNodeByPath(parentPath, index, inline);
-    change.moveNodeByPath(newPath, path, 0);
+  editor.withoutNormalizing(function () {
+    editor.insertNodeByPath(parentPath, index, inline);
+    editor.moveNodeByPath(newPath, path, 0);
   });
 };
 
 /**
  * Wrap a node by `path` with `node`.
  *
- * @param {Change} change
+ * @param {Editor} editor
  * @param {Array} path
  * @param {Node|Object} node
  */
 
-Commands$2.wrapNodeByPath = function (change, path, node) {
+Commands$2.wrapNodeByPath = function (editor, path, node) {
   node = Node.create(node);
 
   if (node.object === 'block') {
-    change.wrapBlockByPath(path, node);
+    editor.wrapBlockByPath(path, node);
   } else if (node.object === 'inline') {
-    change.wrapInlineByPath(path, node);
+    editor.wrapInlineByPath(path, node);
   }
 };
 
@@ -47600,16 +47276,16 @@ Commands$2.wrapNodeByPath = function (change, path, node) {
 var COMMANDS = ['addMark', 'insertFragment', 'insertNode', 'insertText', 'mergeNode', 'removeAllMarks', 'removeMark', 'removeNode', 'removeText', 'replaceNode', 'replaceText', 'setMark', 'setNode', 'setText', 'splitNode', 'unwrapBlock', 'unwrapChildren', 'unwrapInline', 'unwrapNode', 'wrapBlock', 'wrapInline', 'wrapNode'];
 
 var _loop = function _loop(method) {
-  Commands$2[method + 'ByKey'] = function (change, key) {
+  Commands$2[method + 'ByKey'] = function (editor, key) {
     for (var _len3 = arguments.length, args = Array(_len3 > 2 ? _len3 - 2 : 0), _key3 = 2; _key3 < _len3; _key3++) {
       args[_key3 - 2] = arguments[_key3];
     }
 
-    var value = change.value;
+    var value = editor.value;
     var document = value.document;
 
     var path = document.assertPath(key);
-    change[method + 'ByPath'].apply(change, [path].concat(args));
+    editor[method + 'ByPath'].apply(editor, [path].concat(args));
   };
 };
 
@@ -47640,86 +47316,32 @@ try {
   }
 }
 
-Commands$2.moveNodeByKey = function (change, key, newKey) {
+Commands$2.moveNodeByKey = function (editor, key, newKey) {
   for (var _len = arguments.length, args = Array(_len > 3 ? _len - 3 : 0), _key = 3; _key < _len; _key++) {
     args[_key - 3] = arguments[_key];
   }
 
-  var value = change.value;
+  var value = editor.value;
   var document = value.document;
 
   var path = document.assertPath(key);
   var newPath = document.assertPath(newKey);
-  change.moveNodeByPath.apply(change, [path, newPath].concat(args));
+  editor.moveNodeByPath.apply(editor, [path, newPath].concat(args));
 };
 
 // Splitting descendants takes two keys, so it's slightly different.
-Commands$2.splitDescendantsByKey = function (change, key, textKey) {
+Commands$2.splitDescendantsByKey = function (editor, key, textKey) {
   for (var _len2 = arguments.length, args = Array(_len2 > 3 ? _len2 - 3 : 0), _key2 = 3; _key2 < _len2; _key2++) {
     args[_key2 - 3] = arguments[_key2];
   }
 
-  var value = change.value;
+  var value = editor.value;
   var document = value.document;
 
   var path = document.assertPath(key);
   var textPath = document.assertPath(textKey);
-  change.splitDescendantsByPath.apply(change, [path, textPath].concat(args));
+  editor.splitDescendantsByPath.apply(editor, [path, textPath].concat(args));
 };
-
-/**
- * A plugin that adds a set of commands to the editor.
- *
- * @param {Object} commands
- * @return {Object}
- */
-
-function CommandsPlugin() {
-  var commands = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-
-  /**
-   * On command, if it exists in our list of commands, call it.
-   *
-   * @param {Object} command
-   * @param {Change} change
-   * @param {Function} next
-   */
-
-  function onCommand(command, change, next) {
-    var type = command.type,
-        args = command.args;
-
-    var fn = commands[type];
-    if (!fn) return next();
-    change.call.apply(change, [fn].concat(toConsumableArray(args)));
-  }
-
-  /**
-   * On construct, register all the commands.
-   *
-   * @param {Editor} editor
-   * @param {Function} next
-   */
-
-  function onConstruct(editor, next) {
-    for (var command in commands) {
-      editor.registerCommand(command);
-    }
-
-    return next();
-  }
-
-  /**
-   * Return the plugin.
-   *
-   * @type {Object}
-   */
-
-  return {
-    onCommand: onCommand,
-    onConstruct: onConstruct
-  };
-}
 
 /**
  * Commands.
@@ -47727,22 +47349,22 @@ function CommandsPlugin() {
  * @type {Object}
  */
 
-var Commands$4 = {};
+var Commands$3 = {};
 
 /**
  * Save an `operation` into the history.
  *
- * @param {Change} change
+ * @param {Editor} editor
  * @param {Object} operation
  */
 
-Commands$4.save = function (change, operation) {
-  var operations = change.operations,
-      value = change.value;
+Commands$3.save = function (editor, operation) {
+  var operations = editor.operations,
+      value = editor.value;
   var data = value.data;
-  var _change$tmp = change.tmp,
-      save = _change$tmp.save,
-      merge = _change$tmp.merge;
+  var _editor$tmp = editor.tmp,
+      save = _editor$tmp.save,
+      merge = _editor$tmp.merge;
 
   if (save === false) return;
 
@@ -47751,7 +47373,7 @@ Commands$4.save = function (change, operation) {
   var lastOperation = lastBatch && lastBatch.last();
 
   // If `merge` is non-commital, and this is not the first operation in a new
-  // change, then merge, otherwise merge based on the last operation.
+  // editor, then merge, otherwise merge based on the last operation.
   if (merge == null) {
     if (operations.size !== 0) {
       merge = true;
@@ -47777,21 +47399,21 @@ Commands$4.save = function (change, operation) {
   }
 
   // Clear the redos and update the history.
-  change.withoutSaving(function () {
+  editor.withoutSaving(function () {
     var redos = immutable.List();
     var newData = data.set('undos', undos).set('redos', redos);
-    change.setValue({ data: newData });
+    editor.setData(newData);
   });
 };
 
 /**
  * Redo to the next value in the history.
  *
- * @param {Change} change
+ * @param {Editor} editor
  */
 
-Commands$4.redo = function (change) {
-  var value = change.value;
+Commands$3.redo = function (editor) {
+  var value = editor.value;
   var data = value.data;
 
   var redos = data.get('redos') || immutable.List();
@@ -47799,7 +47421,7 @@ Commands$4.redo = function (change) {
   var batch = redos.last();
   if (!batch) return;
 
-  change.withoutSaving(function () {
+  editor.withoutSaving(function () {
     // Replay the batch of operations.
     batch.forEach(function (op) {
       var _op = op,
@@ -47813,25 +47435,25 @@ Commands$4.redo = function (change) {
         op = op.set('properties', omit(properties, 'isFocused'));
       }
 
-      change.applyOperation(op);
+      editor.applyOperation(op);
     });
 
     // Shift the next value into the undo stack.
     redos = redos.pop();
     undos = undos.push(batch);
     var newData = data.set('undos', undos).set('redos', redos);
-    change.setValue({ data: newData });
+    editor.setData(newData);
   });
 };
 
 /**
  * Undo the previous operations in the history.
  *
- * @param {Change} change
+ * @param {Editor} editor
  */
 
-Commands$4.undo = function (change) {
-  var value = change.value;
+Commands$3.undo = function (editor) {
+  var value = editor.value;
   var data = value.data;
 
   var redos = data.get('redos') || immutable.List();
@@ -47839,7 +47461,7 @@ Commands$4.undo = function (change) {
   var batch = undos.last();
   if (!batch) return;
 
-  change.withoutSaving(function () {
+  editor.withoutSaving(function () {
     // Replay the inverse of the previous operations.
     batch.slice().reverse().map(function (op) {
       return op.invert();
@@ -47855,14 +47477,14 @@ Commands$4.undo = function (change) {
         inverse = inverse.set('properties', omit(properties, 'isFocused'));
       }
 
-      change.applyOperation(inverse);
+      editor.applyOperation(inverse);
     });
 
     // Shift the previous operations into the redo stack.
     redos = redos.push(batch);
     undos = undos.pop();
     var newData = data.set('undos', undos).set('redos', redos);
-    change.setValue({ data: newData });
+    editor.setData(newData);
   });
 };
 
@@ -47870,30 +47492,30 @@ Commands$4.undo = function (change) {
  * Apply a series of changes inside a synchronous `fn`, without merging any of
  * the new operations into previous save point in the history.
  *
- * @param {Change} change
+ * @param {Editor} editor
  * @param {Function} fn
  */
 
-Commands$4.withoutMerging = function (change, fn) {
-  var value = change.tmp.merge;
-  change.tmp.merge = false;
-  fn(change);
-  change.tmp.merge = value;
+Commands$3.withoutMerging = function (editor, fn) {
+  var value = editor.tmp.merge;
+  editor.tmp.merge = false;
+  fn(editor);
+  editor.tmp.merge = value;
 };
 
 /**
  * Apply a series of changes inside a synchronous `fn`, without saving any of
  * their operations into the history.
  *
- * @param {Change}
+ * @param {Editor} editor
  * @param {Function} fn
  */
 
-Commands$4.withoutSaving = function (change, fn) {
-  var value = change.tmp.save;
-  change.tmp.save = false;
-  fn(change);
-  change.tmp.save = value;
+Commands$3.withoutSaving = function (editor, fn) {
+  var value = editor.tmp.save;
+  editor.tmp.save = false;
+  fn(editor);
+  editor.tmp.save = value;
 };
 
 /**
@@ -47912,746 +47534,746 @@ function shouldMerge(o, p) {
   return merge;
 }
 
-var Commands$5 = {};
+var Commands$4 = {};
 
-Commands$5.blur = function (change) {
-  change.select({ isFocused: false });
+Commands$4.blur = function (editor) {
+  editor.select({ isFocused: false });
 };
 
-Commands$5.deselect = function (change) {
+Commands$4.deselect = function (editor) {
   var range = Selection.create();
-  change.select(range);
+  editor.select(range);
 };
 
-Commands$5.focus = function (change) {
-  change.select({ isFocused: true });
+Commands$4.focus = function (editor) {
+  editor.select({ isFocused: true });
 };
 
-Commands$5.flip = function (change) {
-  change.call(proxy, 'flip');
+Commands$4.flip = function (editor) {
+  editor.command(proxy, 'flip');
 };
 
-Commands$5.moveAnchorBackward = function (change) {
+Commands$4.moveAnchorBackward = function (editor) {
   for (var _len = arguments.length, args = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
     args[_key - 1] = arguments[_key];
   }
 
-  change.call.apply(change, [pointBackward, 'anchor'].concat(args));
+  editor.command.apply(editor, [pointBackward, 'anchor'].concat(args));
 };
 
-Commands$5.moveAnchorWordBackward = function (change) {
+Commands$4.moveAnchorWordBackward = function (editor) {
   for (var _len2 = arguments.length, args = Array(_len2 > 1 ? _len2 - 1 : 0), _key2 = 1; _key2 < _len2; _key2++) {
     args[_key2 - 1] = arguments[_key2];
   }
 
-  change.call.apply(change, [pointWordBackward, 'anchor'].concat(args));
+  editor.command.apply(editor, [pointWordBackward, 'anchor'].concat(args));
 };
 
-Commands$5.moveAnchorForward = function (change) {
+Commands$4.moveAnchorForward = function (editor) {
   for (var _len3 = arguments.length, args = Array(_len3 > 1 ? _len3 - 1 : 0), _key3 = 1; _key3 < _len3; _key3++) {
     args[_key3 - 1] = arguments[_key3];
   }
 
-  change.call.apply(change, [pointForward, 'anchor'].concat(args));
+  editor.command.apply(editor, [pointForward, 'anchor'].concat(args));
 };
 
-Commands$5.moveAnchorWordForward = function (change) {
+Commands$4.moveAnchorWordForward = function (editor) {
   for (var _len4 = arguments.length, args = Array(_len4 > 1 ? _len4 - 1 : 0), _key4 = 1; _key4 < _len4; _key4++) {
     args[_key4 - 1] = arguments[_key4];
   }
 
-  change.call.apply(change, [pointWordForward, 'anchor'].concat(args));
+  editor.command.apply(editor, [pointWordForward, 'anchor'].concat(args));
 };
 
-Commands$5.moveAnchorTo = function (change) {
+Commands$4.moveAnchorTo = function (editor) {
   for (var _len5 = arguments.length, args = Array(_len5 > 1 ? _len5 - 1 : 0), _key5 = 1; _key5 < _len5; _key5++) {
     args[_key5 - 1] = arguments[_key5];
   }
 
-  change.call.apply(change, [proxy, 'moveAnchorTo'].concat(args));
+  editor.command.apply(editor, [proxy, 'moveAnchorTo'].concat(args));
 };
 
-Commands$5.moveAnchorToEndOfBlock = function (change) {
-  change.call(pointEdgeObject, 'anchor', 'end', 'block');
+Commands$4.moveAnchorToEndOfBlock = function (editor) {
+  editor.command(pointEdgeObject, 'anchor', 'end', 'block');
 };
 
-Commands$5.moveAnchorToEndOfInline = function (change) {
-  change.call(pointEdgeObject, 'anchor', 'end', 'inline');
+Commands$4.moveAnchorToEndOfInline = function (editor) {
+  editor.command(pointEdgeObject, 'anchor', 'end', 'inline');
 };
 
-Commands$5.moveAnchorToEndOfDocument = function (change) {
-  change.moveAnchorToEndOfNode(change.value.document).moveToAnchor();
+Commands$4.moveAnchorToEndOfDocument = function (editor) {
+  editor.moveAnchorToEndOfNode(editor.value.document).moveToAnchor();
 };
 
-Commands$5.moveAnchorToEndOfNextBlock = function (change) {
-  change.call(pointEdgeSideObject, 'anchor', 'end', 'next', 'block');
+Commands$4.moveAnchorToEndOfNextBlock = function (editor) {
+  editor.command(pointEdgeSideObject, 'anchor', 'end', 'next', 'block');
 };
 
-Commands$5.moveAnchorToEndOfNextInline = function (change) {
-  change.call(pointEdgeSideObject, 'anchor', 'end', 'next', 'inline');
+Commands$4.moveAnchorToEndOfNextInline = function (editor) {
+  editor.command(pointEdgeSideObject, 'anchor', 'end', 'next', 'inline');
 };
 
-Commands$5.moveAnchorToEndOfNextText = function (change) {
-  change.call(pointEdgeSideObject, 'anchor', 'end', 'next', 'text');
+Commands$4.moveAnchorToEndOfNextText = function (editor) {
+  editor.command(pointEdgeSideObject, 'anchor', 'end', 'next', 'text');
 };
 
-Commands$5.moveAnchorToEndOfNode = function (change) {
+Commands$4.moveAnchorToEndOfNode = function (editor) {
   for (var _len6 = arguments.length, args = Array(_len6 > 1 ? _len6 - 1 : 0), _key6 = 1; _key6 < _len6; _key6++) {
     args[_key6 - 1] = arguments[_key6];
   }
 
-  change.call.apply(change, [proxy, 'moveAnchorToEndOfNode'].concat(args));
+  editor.command.apply(editor, [proxy, 'moveAnchorToEndOfNode'].concat(args));
 };
 
-Commands$5.moveAnchorToEndOfPreviousBlock = function (change) {
-  change.call(pointEdgeSideObject, 'anchor', 'end', 'previous', 'block');
+Commands$4.moveAnchorToEndOfPreviousBlock = function (editor) {
+  editor.command(pointEdgeSideObject, 'anchor', 'end', 'previous', 'block');
 };
 
-Commands$5.moveAnchorToEndOfPreviousInline = function (change) {
-  change.call(pointEdgeSideObject, 'anchor', 'end', 'previous', 'inline');
+Commands$4.moveAnchorToEndOfPreviousInline = function (editor) {
+  editor.command(pointEdgeSideObject, 'anchor', 'end', 'previous', 'inline');
 };
 
-Commands$5.moveAnchorToEndOfPreviousText = function (change) {
-  change.call(pointEdgeSideObject, 'anchor', 'end', 'previous', 'text');
+Commands$4.moveAnchorToEndOfPreviousText = function (editor) {
+  editor.command(pointEdgeSideObject, 'anchor', 'end', 'previous', 'text');
 };
 
-Commands$5.moveAnchorToEndOfText = function (change) {
-  change.call(pointEdgeObject, 'anchor', 'end', 'text');
+Commands$4.moveAnchorToEndOfText = function (editor) {
+  editor.command(pointEdgeObject, 'anchor', 'end', 'text');
 };
 
-Commands$5.moveAnchorToStartOfBlock = function (change) {
-  change.call(pointEdgeObject, 'anchor', 'start', 'block');
+Commands$4.moveAnchorToStartOfBlock = function (editor) {
+  editor.command(pointEdgeObject, 'anchor', 'start', 'block');
 };
 
-Commands$5.moveAnchorToStartOfDocument = function (change) {
-  change.moveAnchorToStartOfNode(change.value.document).moveToAnchor();
+Commands$4.moveAnchorToStartOfDocument = function (editor) {
+  editor.moveAnchorToStartOfNode(editor.value.document).moveToAnchor();
 };
 
-Commands$5.moveAnchorToStartOfInline = function (change) {
-  change.call(pointEdgeObject, 'anchor', 'start', 'inline');
+Commands$4.moveAnchorToStartOfInline = function (editor) {
+  editor.command(pointEdgeObject, 'anchor', 'start', 'inline');
 };
 
-Commands$5.moveAnchorToStartOfNextBlock = function (change) {
-  change.call(pointEdgeSideObject, 'anchor', 'start', 'next', 'block');
+Commands$4.moveAnchorToStartOfNextBlock = function (editor) {
+  editor.command(pointEdgeSideObject, 'anchor', 'start', 'next', 'block');
 };
 
-Commands$5.moveAnchorToStartOfNextInline = function (change) {
-  change.call(pointEdgeSideObject, 'anchor', 'start', 'next', 'inline');
+Commands$4.moveAnchorToStartOfNextInline = function (editor) {
+  editor.command(pointEdgeSideObject, 'anchor', 'start', 'next', 'inline');
 };
 
-Commands$5.moveAnchorToStartOfNextText = function (change) {
-  change.call(pointEdgeSideObject, 'anchor', 'start', 'next', 'text');
+Commands$4.moveAnchorToStartOfNextText = function (editor) {
+  editor.command(pointEdgeSideObject, 'anchor', 'start', 'next', 'text');
 };
 
-Commands$5.moveAnchorToStartOfNode = function (change) {
+Commands$4.moveAnchorToStartOfNode = function (editor) {
   for (var _len7 = arguments.length, args = Array(_len7 > 1 ? _len7 - 1 : 0), _key7 = 1; _key7 < _len7; _key7++) {
     args[_key7 - 1] = arguments[_key7];
   }
 
-  change.call.apply(change, [proxy, 'moveAnchorToStartOfNode'].concat(args));
+  editor.command.apply(editor, [proxy, 'moveAnchorToStartOfNode'].concat(args));
 };
 
-Commands$5.moveAnchorToStartOfPreviousBlock = function (change) {
-  change.call(pointEdgeSideObject, 'anchor', 'start', 'previous', 'block');
+Commands$4.moveAnchorToStartOfPreviousBlock = function (editor) {
+  editor.command(pointEdgeSideObject, 'anchor', 'start', 'previous', 'block');
 };
 
-Commands$5.moveAnchorToStartOfPreviousInline = function (change) {
-  change.call(pointEdgeSideObject, 'anchor', 'start', 'previous', 'inline');
+Commands$4.moveAnchorToStartOfPreviousInline = function (editor) {
+  editor.command(pointEdgeSideObject, 'anchor', 'start', 'previous', 'inline');
 };
 
-Commands$5.moveAnchorToStartOfPreviousText = function (change) {
-  change.call(pointEdgeSideObject, 'anchor', 'start', 'previous', 'text');
+Commands$4.moveAnchorToStartOfPreviousText = function (editor) {
+  editor.command(pointEdgeSideObject, 'anchor', 'start', 'previous', 'text');
 };
 
-Commands$5.moveAnchorToStartOfText = function (change) {
-  change.call(pointEdgeObject, 'anchor', 'start', 'text');
+Commands$4.moveAnchorToStartOfText = function (editor) {
+  editor.command(pointEdgeObject, 'anchor', 'start', 'text');
 };
 
-Commands$5.moveBackward = function (change) {
-  var _change$moveAnchorBac;
+Commands$4.moveBackward = function (editor) {
+  var _editor$moveAnchorBac;
 
   for (var _len8 = arguments.length, args = Array(_len8 > 1 ? _len8 - 1 : 0), _key8 = 1; _key8 < _len8; _key8++) {
     args[_key8 - 1] = arguments[_key8];
   }
 
-  (_change$moveAnchorBac = change.moveAnchorBackward.apply(change, args)).moveFocusBackward.apply(_change$moveAnchorBac, args);
+  (_editor$moveAnchorBac = editor.moveAnchorBackward.apply(editor, args)).moveFocusBackward.apply(_editor$moveAnchorBac, args);
 };
 
-Commands$5.moveWordBackward = function (change) {
+Commands$4.moveWordBackward = function (editor) {
   for (var _len9 = arguments.length, args = Array(_len9 > 1 ? _len9 - 1 : 0), _key9 = 1; _key9 < _len9; _key9++) {
     args[_key9 - 1] = arguments[_key9];
   }
 
-  change.moveFocusWordBackward.apply(change, args).moveToFocus();
+  editor.moveFocusWordBackward.apply(editor, args).moveToFocus();
 };
 
-Commands$5.moveEndBackward = function (change) {
+Commands$4.moveEndBackward = function (editor) {
   for (var _len10 = arguments.length, args = Array(_len10 > 1 ? _len10 - 1 : 0), _key10 = 1; _key10 < _len10; _key10++) {
     args[_key10 - 1] = arguments[_key10];
   }
 
-  change.call.apply(change, [pointBackward, 'end'].concat(args));
+  editor.command.apply(editor, [pointBackward, 'end'].concat(args));
 };
 
-Commands$5.moveEndWordBackward = function (change) {
+Commands$4.moveEndWordBackward = function (editor) {
   for (var _len11 = arguments.length, args = Array(_len11 > 1 ? _len11 - 1 : 0), _key11 = 1; _key11 < _len11; _key11++) {
     args[_key11 - 1] = arguments[_key11];
   }
 
-  change.call.apply(change, [pointWordBackward, 'end'].concat(args));
+  editor.command.apply(editor, [pointWordBackward, 'end'].concat(args));
 };
 
-Commands$5.moveEndForward = function (change) {
+Commands$4.moveEndForward = function (editor) {
   for (var _len12 = arguments.length, args = Array(_len12 > 1 ? _len12 - 1 : 0), _key12 = 1; _key12 < _len12; _key12++) {
     args[_key12 - 1] = arguments[_key12];
   }
 
-  change.call.apply(change, [pointForward, 'end'].concat(args));
+  editor.command.apply(editor, [pointForward, 'end'].concat(args));
 };
 
-Commands$5.moveEndWordForward = function (change) {
+Commands$4.moveEndWordForward = function (editor) {
   for (var _len13 = arguments.length, args = Array(_len13 > 1 ? _len13 - 1 : 0), _key13 = 1; _key13 < _len13; _key13++) {
     args[_key13 - 1] = arguments[_key13];
   }
 
-  change.call.apply(change, [pointWordForward, 'end'].concat(args));
+  editor.command.apply(editor, [pointWordForward, 'end'].concat(args));
 };
 
-Commands$5.moveEndTo = function (change) {
+Commands$4.moveEndTo = function (editor) {
   for (var _len14 = arguments.length, args = Array(_len14 > 1 ? _len14 - 1 : 0), _key14 = 1; _key14 < _len14; _key14++) {
     args[_key14 - 1] = arguments[_key14];
   }
 
-  change.call.apply(change, [proxy, 'moveEndTo'].concat(args));
+  editor.command.apply(editor, [proxy, 'moveEndTo'].concat(args));
 };
 
-Commands$5.moveEndToEndOfBlock = function (change) {
-  change.call(pointEdgeObject, 'end', 'end', 'block');
+Commands$4.moveEndToEndOfBlock = function (editor) {
+  editor.command(pointEdgeObject, 'end', 'end', 'block');
 };
 
-Commands$5.moveEndToEndOfDocument = function (change) {
-  change.moveEndToEndOfNode(change.value.document).moveToEnd();
+Commands$4.moveEndToEndOfDocument = function (editor) {
+  editor.moveEndToEndOfNode(editor.value.document).moveToEnd();
 };
 
-Commands$5.moveEndToEndOfInline = function (change) {
-  change.call(pointEdgeObject, 'end', 'end', 'inline');
+Commands$4.moveEndToEndOfInline = function (editor) {
+  editor.command(pointEdgeObject, 'end', 'end', 'inline');
 };
 
-Commands$5.moveEndToEndOfNextBlock = function (change) {
-  change.call(pointEdgeSideObject, 'end', 'end', 'next', 'block');
+Commands$4.moveEndToEndOfNextBlock = function (editor) {
+  editor.command(pointEdgeSideObject, 'end', 'end', 'next', 'block');
 };
 
-Commands$5.moveEndToEndOfNextInline = function (change) {
-  change.call(pointEdgeSideObject, 'end', 'end', 'next', 'inline');
+Commands$4.moveEndToEndOfNextInline = function (editor) {
+  editor.command(pointEdgeSideObject, 'end', 'end', 'next', 'inline');
 };
 
-Commands$5.moveEndToEndOfNextText = function (change) {
-  change.call(pointEdgeSideObject, 'end', 'end', 'next', 'text');
+Commands$4.moveEndToEndOfNextText = function (editor) {
+  editor.command(pointEdgeSideObject, 'end', 'end', 'next', 'text');
 };
 
-Commands$5.moveEndToEndOfNode = function (change) {
+Commands$4.moveEndToEndOfNode = function (editor) {
   for (var _len15 = arguments.length, args = Array(_len15 > 1 ? _len15 - 1 : 0), _key15 = 1; _key15 < _len15; _key15++) {
     args[_key15 - 1] = arguments[_key15];
   }
 
-  change.call.apply(change, [proxy, 'moveEndToEndOfNode'].concat(args));
+  editor.command.apply(editor, [proxy, 'moveEndToEndOfNode'].concat(args));
 };
 
-Commands$5.moveEndToEndOfPreviousBlock = function (change) {
-  change.call(pointEdgeSideObject, 'end', 'end', 'previous', 'block');
+Commands$4.moveEndToEndOfPreviousBlock = function (editor) {
+  editor.command(pointEdgeSideObject, 'end', 'end', 'previous', 'block');
 };
 
-Commands$5.moveEndToEndOfPreviousInline = function (change) {
-  change.call(pointEdgeSideObject, 'end', 'end', 'previous', 'inline');
+Commands$4.moveEndToEndOfPreviousInline = function (editor) {
+  editor.command(pointEdgeSideObject, 'end', 'end', 'previous', 'inline');
 };
 
-Commands$5.moveEndToEndOfPreviousText = function (change) {
-  change.call(pointEdgeSideObject, 'end', 'end', 'previous', 'text');
+Commands$4.moveEndToEndOfPreviousText = function (editor) {
+  editor.command(pointEdgeSideObject, 'end', 'end', 'previous', 'text');
 };
 
-Commands$5.moveEndToEndOfText = function (change) {
-  change.call(pointEdgeObject, 'end', 'end', 'text');
+Commands$4.moveEndToEndOfText = function (editor) {
+  editor.command(pointEdgeObject, 'end', 'end', 'text');
 };
 
-Commands$5.moveEndToStartOfBlock = function (change) {
-  change.call(pointEdgeObject, 'end', 'start', 'block');
+Commands$4.moveEndToStartOfBlock = function (editor) {
+  editor.command(pointEdgeObject, 'end', 'start', 'block');
 };
 
-Commands$5.moveEndToStartOfDocument = function (change) {
-  change.moveEndToStartOfNode(change.value.document).moveToEnd();
+Commands$4.moveEndToStartOfDocument = function (editor) {
+  editor.moveEndToStartOfNode(editor.value.document).moveToEnd();
 };
 
-Commands$5.moveEndToStartOfInline = function (change) {
-  change.call(pointEdgeObject, 'end', 'start', 'inline');
+Commands$4.moveEndToStartOfInline = function (editor) {
+  editor.command(pointEdgeObject, 'end', 'start', 'inline');
 };
 
-Commands$5.moveEndToStartOfNextBlock = function (change) {
-  change.call(pointEdgeSideObject, 'end', 'start', 'next', 'block');
+Commands$4.moveEndToStartOfNextBlock = function (editor) {
+  editor.command(pointEdgeSideObject, 'end', 'start', 'next', 'block');
 };
 
-Commands$5.moveEndToStartOfNextInline = function (change) {
-  change.call(pointEdgeSideObject, 'end', 'start', 'next', 'inline');
+Commands$4.moveEndToStartOfNextInline = function (editor) {
+  editor.command(pointEdgeSideObject, 'end', 'start', 'next', 'inline');
 };
 
-Commands$5.moveEndToStartOfNextText = function (change) {
-  change.call(pointEdgeSideObject, 'end', 'start', 'next', 'text');
+Commands$4.moveEndToStartOfNextText = function (editor) {
+  editor.command(pointEdgeSideObject, 'end', 'start', 'next', 'text');
 };
 
-Commands$5.moveEndToStartOfNode = function (change) {
+Commands$4.moveEndToStartOfNode = function (editor) {
   for (var _len16 = arguments.length, args = Array(_len16 > 1 ? _len16 - 1 : 0), _key16 = 1; _key16 < _len16; _key16++) {
     args[_key16 - 1] = arguments[_key16];
   }
 
-  change.call.apply(change, [proxy, 'moveEndToStartOfNode'].concat(args));
+  editor.command.apply(editor, [proxy, 'moveEndToStartOfNode'].concat(args));
 };
 
-Commands$5.moveEndToStartOfPreviousBlock = function (change) {
-  change.call(pointEdgeSideObject, 'end', 'start', 'previous', 'block');
+Commands$4.moveEndToStartOfPreviousBlock = function (editor) {
+  editor.command(pointEdgeSideObject, 'end', 'start', 'previous', 'block');
 };
 
-Commands$5.moveEndToStartOfPreviousInline = function (change) {
-  change.call(pointEdgeSideObject, 'end', 'start', 'previous', 'inline');
+Commands$4.moveEndToStartOfPreviousInline = function (editor) {
+  editor.command(pointEdgeSideObject, 'end', 'start', 'previous', 'inline');
 };
 
-Commands$5.moveEndToStartOfPreviousText = function (change) {
-  change.call(pointEdgeSideObject, 'end', 'start', 'previous', 'text');
+Commands$4.moveEndToStartOfPreviousText = function (editor) {
+  editor.command(pointEdgeSideObject, 'end', 'start', 'previous', 'text');
 };
 
-Commands$5.moveEndToStartOfText = function (change) {
-  change.call(pointEdgeObject, 'end', 'start', 'text');
+Commands$4.moveEndToStartOfText = function (editor) {
+  editor.command(pointEdgeObject, 'end', 'start', 'text');
 };
 
-Commands$5.moveFocusBackward = function (change) {
+Commands$4.moveFocusBackward = function (editor) {
   for (var _len17 = arguments.length, args = Array(_len17 > 1 ? _len17 - 1 : 0), _key17 = 1; _key17 < _len17; _key17++) {
     args[_key17 - 1] = arguments[_key17];
   }
 
-  change.call.apply(change, [pointBackward, 'focus'].concat(args));
+  editor.command.apply(editor, [pointBackward, 'focus'].concat(args));
 };
 
-Commands$5.moveFocusWordBackward = function (change) {
+Commands$4.moveFocusWordBackward = function (editor) {
   for (var _len18 = arguments.length, args = Array(_len18 > 1 ? _len18 - 1 : 0), _key18 = 1; _key18 < _len18; _key18++) {
     args[_key18 - 1] = arguments[_key18];
   }
 
-  change.call.apply(change, [pointWordBackward, 'focus'].concat(args));
+  editor.command.apply(editor, [pointWordBackward, 'focus'].concat(args));
 };
 
-Commands$5.moveFocusForward = function (change) {
+Commands$4.moveFocusForward = function (editor) {
   for (var _len19 = arguments.length, args = Array(_len19 > 1 ? _len19 - 1 : 0), _key19 = 1; _key19 < _len19; _key19++) {
     args[_key19 - 1] = arguments[_key19];
   }
 
-  change.call.apply(change, [pointForward, 'focus'].concat(args));
+  editor.command.apply(editor, [pointForward, 'focus'].concat(args));
 };
 
-Commands$5.moveFocusWordForward = function (change) {
+Commands$4.moveFocusWordForward = function (editor) {
   for (var _len20 = arguments.length, args = Array(_len20 > 1 ? _len20 - 1 : 0), _key20 = 1; _key20 < _len20; _key20++) {
     args[_key20 - 1] = arguments[_key20];
   }
 
-  change.call.apply(change, [pointWordForward, 'focus'].concat(args));
+  editor.command.apply(editor, [pointWordForward, 'focus'].concat(args));
 };
 
-Commands$5.moveFocusTo = function (change) {
+Commands$4.moveFocusTo = function (editor) {
   for (var _len21 = arguments.length, args = Array(_len21 > 1 ? _len21 - 1 : 0), _key21 = 1; _key21 < _len21; _key21++) {
     args[_key21 - 1] = arguments[_key21];
   }
 
-  change.call.apply(change, [proxy, 'moveFocusTo'].concat(args));
+  editor.command.apply(editor, [proxy, 'moveFocusTo'].concat(args));
 };
 
-Commands$5.moveFocusToEndOfBlock = function (change) {
-  change.call(pointEdgeObject, 'focus', 'end', 'block');
+Commands$4.moveFocusToEndOfBlock = function (editor) {
+  editor.command(pointEdgeObject, 'focus', 'end', 'block');
 };
 
-Commands$5.moveFocusToEndOfDocument = function (change) {
-  change.moveFocusToEndOfNode(change.value.document).moveToFocus();
+Commands$4.moveFocusToEndOfDocument = function (editor) {
+  editor.moveFocusToEndOfNode(editor.value.document).moveToFocus();
 };
 
-Commands$5.moveFocusToEndOfInline = function (change) {
-  change.call(pointEdgeObject, 'focus', 'end', 'inline');
+Commands$4.moveFocusToEndOfInline = function (editor) {
+  editor.command(pointEdgeObject, 'focus', 'end', 'inline');
 };
 
-Commands$5.moveFocusToEndOfNextBlock = function (change) {
-  change.call(pointEdgeSideObject, 'focus', 'end', 'next', 'block');
+Commands$4.moveFocusToEndOfNextBlock = function (editor) {
+  editor.command(pointEdgeSideObject, 'focus', 'end', 'next', 'block');
 };
 
-Commands$5.moveFocusToEndOfNextInline = function (change) {
-  change.call(pointEdgeSideObject, 'focus', 'end', 'next', 'inline');
+Commands$4.moveFocusToEndOfNextInline = function (editor) {
+  editor.command(pointEdgeSideObject, 'focus', 'end', 'next', 'inline');
 };
 
-Commands$5.moveFocusToEndOfNextText = function (change) {
-  change.call(pointEdgeSideObject, 'focus', 'end', 'next', 'text');
+Commands$4.moveFocusToEndOfNextText = function (editor) {
+  editor.command(pointEdgeSideObject, 'focus', 'end', 'next', 'text');
 };
 
-Commands$5.moveFocusToEndOfNode = function (change) {
+Commands$4.moveFocusToEndOfNode = function (editor) {
   for (var _len22 = arguments.length, args = Array(_len22 > 1 ? _len22 - 1 : 0), _key22 = 1; _key22 < _len22; _key22++) {
     args[_key22 - 1] = arguments[_key22];
   }
 
-  change.call.apply(change, [proxy, 'moveFocusToEndOfNode'].concat(args));
+  editor.command.apply(editor, [proxy, 'moveFocusToEndOfNode'].concat(args));
 };
 
-Commands$5.moveFocusToEndOfPreviousBlock = function (change) {
-  change.call(pointEdgeSideObject, 'focus', 'end', 'previous', 'block');
+Commands$4.moveFocusToEndOfPreviousBlock = function (editor) {
+  editor.command(pointEdgeSideObject, 'focus', 'end', 'previous', 'block');
 };
 
-Commands$5.moveFocusToEndOfPreviousInline = function (change) {
-  change.call(pointEdgeSideObject, 'focus', 'end', 'previous', 'inline');
+Commands$4.moveFocusToEndOfPreviousInline = function (editor) {
+  editor.command(pointEdgeSideObject, 'focus', 'end', 'previous', 'inline');
 };
 
-Commands$5.moveFocusToEndOfPreviousText = function (change) {
-  change.call(pointEdgeSideObject, 'focus', 'end', 'previous', 'text');
+Commands$4.moveFocusToEndOfPreviousText = function (editor) {
+  editor.command(pointEdgeSideObject, 'focus', 'end', 'previous', 'text');
 };
 
-Commands$5.moveFocusToEndOfText = function (change) {
-  change.call(pointEdgeObject, 'focus', 'end', 'text');
+Commands$4.moveFocusToEndOfText = function (editor) {
+  editor.command(pointEdgeObject, 'focus', 'end', 'text');
 };
 
-Commands$5.moveFocusToStartOfBlock = function (change) {
-  change.call(pointEdgeObject, 'focus', 'start', 'block');
+Commands$4.moveFocusToStartOfBlock = function (editor) {
+  editor.command(pointEdgeObject, 'focus', 'start', 'block');
 };
 
-Commands$5.moveFocusToStartOfDocument = function (change) {
-  change.moveFocusToStartOfNode(change.value.document).moveToFocus();
+Commands$4.moveFocusToStartOfDocument = function (editor) {
+  editor.moveFocusToStartOfNode(editor.value.document).moveToFocus();
 };
 
-Commands$5.moveFocusToStartOfInline = function (change) {
-  change.call(pointEdgeObject, 'focus', 'start', 'inline');
+Commands$4.moveFocusToStartOfInline = function (editor) {
+  editor.command(pointEdgeObject, 'focus', 'start', 'inline');
 };
 
-Commands$5.moveFocusToStartOfNextBlock = function (change) {
-  change.call(pointEdgeSideObject, 'focus', 'start', 'next', 'block');
+Commands$4.moveFocusToStartOfNextBlock = function (editor) {
+  editor.command(pointEdgeSideObject, 'focus', 'start', 'next', 'block');
 };
 
-Commands$5.moveFocusToStartOfNextInline = function (change) {
-  change.call(pointEdgeSideObject, 'focus', 'start', 'next', 'inline');
+Commands$4.moveFocusToStartOfNextInline = function (editor) {
+  editor.command(pointEdgeSideObject, 'focus', 'start', 'next', 'inline');
 };
 
-Commands$5.moveFocusToStartOfNextText = function (change) {
-  change.call(pointEdgeSideObject, 'focus', 'start', 'next', 'text');
+Commands$4.moveFocusToStartOfNextText = function (editor) {
+  editor.command(pointEdgeSideObject, 'focus', 'start', 'next', 'text');
 };
 
-Commands$5.moveFocusToStartOfNode = function (change) {
+Commands$4.moveFocusToStartOfNode = function (editor) {
   for (var _len23 = arguments.length, args = Array(_len23 > 1 ? _len23 - 1 : 0), _key23 = 1; _key23 < _len23; _key23++) {
     args[_key23 - 1] = arguments[_key23];
   }
 
-  change.call.apply(change, [proxy, 'moveFocusToStartOfNode'].concat(args));
+  editor.command.apply(editor, [proxy, 'moveFocusToStartOfNode'].concat(args));
 };
 
-Commands$5.moveFocusToStartOfPreviousBlock = function (change) {
-  change.call(pointEdgeSideObject, 'focus', 'start', 'previous', 'block');
+Commands$4.moveFocusToStartOfPreviousBlock = function (editor) {
+  editor.command(pointEdgeSideObject, 'focus', 'start', 'previous', 'block');
 };
 
-Commands$5.moveFocusToStartOfPreviousInline = function (change) {
-  change.call(pointEdgeSideObject, 'focus', 'start', 'previous', 'inline');
+Commands$4.moveFocusToStartOfPreviousInline = function (editor) {
+  editor.command(pointEdgeSideObject, 'focus', 'start', 'previous', 'inline');
 };
 
-Commands$5.moveFocusToStartOfPreviousText = function (change) {
-  change.call(pointEdgeSideObject, 'focus', 'start', 'previous', 'text');
+Commands$4.moveFocusToStartOfPreviousText = function (editor) {
+  editor.command(pointEdgeSideObject, 'focus', 'start', 'previous', 'text');
 };
 
-Commands$5.moveFocusToStartOfText = function (change) {
-  change.call(pointEdgeObject, 'focus', 'start', 'text');
+Commands$4.moveFocusToStartOfText = function (editor) {
+  editor.command(pointEdgeObject, 'focus', 'start', 'text');
 };
 
-Commands$5.moveForward = function (change) {
-  var _change$moveAnchorFor;
+Commands$4.moveForward = function (editor) {
+  var _editor$moveAnchorFor;
 
   for (var _len24 = arguments.length, args = Array(_len24 > 1 ? _len24 - 1 : 0), _key24 = 1; _key24 < _len24; _key24++) {
     args[_key24 - 1] = arguments[_key24];
   }
 
-  (_change$moveAnchorFor = change.moveAnchorForward.apply(change, args)).moveFocusForward.apply(_change$moveAnchorFor, args);
+  (_editor$moveAnchorFor = editor.moveAnchorForward.apply(editor, args)).moveFocusForward.apply(_editor$moveAnchorFor, args);
 };
 
-Commands$5.moveWordForward = function (change) {
-  var _change$moveFocusWord;
+Commands$4.moveWordForward = function (editor) {
+  var _editor$moveFocusWord;
 
   for (var _len25 = arguments.length, args = Array(_len25 > 1 ? _len25 - 1 : 0), _key25 = 1; _key25 < _len25; _key25++) {
     args[_key25 - 1] = arguments[_key25];
   }
 
-  (_change$moveFocusWord = change.moveFocusWordForward.apply(change, args)).moveToFocus.apply(_change$moveFocusWord, args);
+  (_editor$moveFocusWord = editor.moveFocusWordForward.apply(editor, args)).moveToFocus.apply(_editor$moveFocusWord, args);
 };
 
-Commands$5.moveStartBackward = function (change) {
+Commands$4.moveStartBackward = function (editor) {
   for (var _len26 = arguments.length, args = Array(_len26 > 1 ? _len26 - 1 : 0), _key26 = 1; _key26 < _len26; _key26++) {
     args[_key26 - 1] = arguments[_key26];
   }
 
-  change.call.apply(change, [pointBackward, 'start'].concat(args));
+  editor.command.apply(editor, [pointBackward, 'start'].concat(args));
 };
 
-Commands$5.moveStartWordBackward = function (change) {
+Commands$4.moveStartWordBackward = function (editor) {
   for (var _len27 = arguments.length, args = Array(_len27 > 1 ? _len27 - 1 : 0), _key27 = 1; _key27 < _len27; _key27++) {
     args[_key27 - 1] = arguments[_key27];
   }
 
-  change.call.apply(change, [pointWordBackward, 'start'].concat(args));
+  editor.command.apply(editor, [pointWordBackward, 'start'].concat(args));
 };
 
-Commands$5.moveStartForward = function (change) {
+Commands$4.moveStartForward = function (editor) {
   for (var _len28 = arguments.length, args = Array(_len28 > 1 ? _len28 - 1 : 0), _key28 = 1; _key28 < _len28; _key28++) {
     args[_key28 - 1] = arguments[_key28];
   }
 
-  change.call.apply(change, [pointForward, 'start'].concat(args));
+  editor.command.apply(editor, [pointForward, 'start'].concat(args));
 };
 
-Commands$5.moveStartWordForward = function (change) {
+Commands$4.moveStartWordForward = function (editor) {
   for (var _len29 = arguments.length, args = Array(_len29 > 1 ? _len29 - 1 : 0), _key29 = 1; _key29 < _len29; _key29++) {
     args[_key29 - 1] = arguments[_key29];
   }
 
-  change.call.apply(change, [pointWordForward, 'start'].concat(args));
+  editor.command.apply(editor, [pointWordForward, 'start'].concat(args));
 };
 
-Commands$5.moveStartTo = function (change) {
+Commands$4.moveStartTo = function (editor) {
   for (var _len30 = arguments.length, args = Array(_len30 > 1 ? _len30 - 1 : 0), _key30 = 1; _key30 < _len30; _key30++) {
     args[_key30 - 1] = arguments[_key30];
   }
 
-  change.call.apply(change, [proxy, 'moveStartTo'].concat(args));
+  editor.command.apply(editor, [proxy, 'moveStartTo'].concat(args));
 };
 
-Commands$5.moveStartToEndOfBlock = function (change) {
-  change.call(pointEdgeObject, 'start', 'end', 'block');
+Commands$4.moveStartToEndOfBlock = function (editor) {
+  editor.command(pointEdgeObject, 'start', 'end', 'block');
 };
 
-Commands$5.moveStartToEndOfDocument = function (change) {
-  change.moveStartToEndOfNode(change.value.document).moveToStart();
+Commands$4.moveStartToEndOfDocument = function (editor) {
+  editor.moveStartToEndOfNode(editor.value.document).moveToStart();
 };
 
-Commands$5.moveStartToEndOfInline = function (change) {
-  change.call(pointEdgeObject, 'start', 'end', 'inline');
+Commands$4.moveStartToEndOfInline = function (editor) {
+  editor.command(pointEdgeObject, 'start', 'end', 'inline');
 };
 
-Commands$5.moveStartToEndOfNextBlock = function (change) {
-  change.call(pointEdgeSideObject, 'start', 'end', 'next', 'block');
+Commands$4.moveStartToEndOfNextBlock = function (editor) {
+  editor.command(pointEdgeSideObject, 'start', 'end', 'next', 'block');
 };
 
-Commands$5.moveStartToEndOfNextInline = function (change) {
-  change.call(pointEdgeSideObject, 'start', 'end', 'next', 'inline');
+Commands$4.moveStartToEndOfNextInline = function (editor) {
+  editor.command(pointEdgeSideObject, 'start', 'end', 'next', 'inline');
 };
 
-Commands$5.moveStartToEndOfNextText = function (change) {
-  change.call(pointEdgeSideObject, 'start', 'end', 'next', 'text');
+Commands$4.moveStartToEndOfNextText = function (editor) {
+  editor.command(pointEdgeSideObject, 'start', 'end', 'next', 'text');
 };
 
-Commands$5.moveStartToEndOfNode = function (change) {
+Commands$4.moveStartToEndOfNode = function (editor) {
   for (var _len31 = arguments.length, args = Array(_len31 > 1 ? _len31 - 1 : 0), _key31 = 1; _key31 < _len31; _key31++) {
     args[_key31 - 1] = arguments[_key31];
   }
 
-  change.call.apply(change, [proxy, 'moveStartToEndOfNode'].concat(args));
+  editor.command.apply(editor, [proxy, 'moveStartToEndOfNode'].concat(args));
 };
 
-Commands$5.moveStartToEndOfPreviousBlock = function (change) {
-  change.call(pointEdgeSideObject, 'start', 'end', 'previous', 'block');
+Commands$4.moveStartToEndOfPreviousBlock = function (editor) {
+  editor.command(pointEdgeSideObject, 'start', 'end', 'previous', 'block');
 };
 
-Commands$5.moveStartToEndOfPreviousInline = function (change) {
-  change.call(pointEdgeSideObject, 'start', 'end', 'previous', 'inline');
+Commands$4.moveStartToEndOfPreviousInline = function (editor) {
+  editor.command(pointEdgeSideObject, 'start', 'end', 'previous', 'inline');
 };
 
-Commands$5.moveStartToEndOfPreviousText = function (change) {
-  change.call(pointEdgeSideObject, 'start', 'end', 'previous', 'text');
+Commands$4.moveStartToEndOfPreviousText = function (editor) {
+  editor.command(pointEdgeSideObject, 'start', 'end', 'previous', 'text');
 };
 
-Commands$5.moveStartToEndOfText = function (change) {
-  change.call(pointEdgeObject, 'start', 'end', 'text');
+Commands$4.moveStartToEndOfText = function (editor) {
+  editor.command(pointEdgeObject, 'start', 'end', 'text');
 };
 
-Commands$5.moveStartToStartOfBlock = function (change) {
-  change.call(pointEdgeObject, 'start', 'start', 'block');
+Commands$4.moveStartToStartOfBlock = function (editor) {
+  editor.command(pointEdgeObject, 'start', 'start', 'block');
 };
 
-Commands$5.moveStartToStartOfDocument = function (change) {
-  change.moveStartToStartOfNode(change.value.document).moveToStart();
+Commands$4.moveStartToStartOfDocument = function (editor) {
+  editor.moveStartToStartOfNode(editor.value.document).moveToStart();
 };
 
-Commands$5.moveStartToStartOfInline = function (change) {
-  change.call(pointEdgeObject, 'start', 'start', 'inline');
+Commands$4.moveStartToStartOfInline = function (editor) {
+  editor.command(pointEdgeObject, 'start', 'start', 'inline');
 };
 
-Commands$5.moveStartToStartOfNextBlock = function (change) {
-  change.call(pointEdgeSideObject, 'start', 'start', 'next', 'block');
+Commands$4.moveStartToStartOfNextBlock = function (editor) {
+  editor.command(pointEdgeSideObject, 'start', 'start', 'next', 'block');
 };
 
-Commands$5.moveStartToStartOfNextInline = function (change) {
-  change.call(pointEdgeSideObject, 'start', 'start', 'next', 'inline');
+Commands$4.moveStartToStartOfNextInline = function (editor) {
+  editor.command(pointEdgeSideObject, 'start', 'start', 'next', 'inline');
 };
 
-Commands$5.moveStartToStartOfNextText = function (change) {
-  change.call(pointEdgeSideObject, 'start', 'start', 'next', 'text');
+Commands$4.moveStartToStartOfNextText = function (editor) {
+  editor.command(pointEdgeSideObject, 'start', 'start', 'next', 'text');
 };
 
-Commands$5.moveStartToStartOfNode = function (change) {
+Commands$4.moveStartToStartOfNode = function (editor) {
   for (var _len32 = arguments.length, args = Array(_len32 > 1 ? _len32 - 1 : 0), _key32 = 1; _key32 < _len32; _key32++) {
     args[_key32 - 1] = arguments[_key32];
   }
 
-  change.call.apply(change, [proxy, 'moveStartToStartOfNode'].concat(args));
+  editor.command.apply(editor, [proxy, 'moveStartToStartOfNode'].concat(args));
 };
 
-Commands$5.moveStartToStartOfPreviousBlock = function (change) {
-  change.call(pointEdgeSideObject, 'start', 'start', 'previous', 'block');
+Commands$4.moveStartToStartOfPreviousBlock = function (editor) {
+  editor.command(pointEdgeSideObject, 'start', 'start', 'previous', 'block');
 };
 
-Commands$5.moveStartToStartOfPreviousInline = function (change) {
-  change.call(pointEdgeSideObject, 'start', 'start', 'previous', 'inline');
+Commands$4.moveStartToStartOfPreviousInline = function (editor) {
+  editor.command(pointEdgeSideObject, 'start', 'start', 'previous', 'inline');
 };
 
-Commands$5.moveStartToStartOfPreviousText = function (change) {
-  change.call(pointEdgeSideObject, 'start', 'start', 'previous', 'text');
+Commands$4.moveStartToStartOfPreviousText = function (editor) {
+  editor.command(pointEdgeSideObject, 'start', 'start', 'previous', 'text');
 };
 
-Commands$5.moveStartToStartOfText = function (change) {
-  change.call(pointEdgeObject, 'start', 'start', 'text');
+Commands$4.moveStartToStartOfText = function (editor) {
+  editor.command(pointEdgeObject, 'start', 'start', 'text');
 };
 
-Commands$5.moveTo = function (change) {
+Commands$4.moveTo = function (editor) {
   for (var _len33 = arguments.length, args = Array(_len33 > 1 ? _len33 - 1 : 0), _key33 = 1; _key33 < _len33; _key33++) {
     args[_key33 - 1] = arguments[_key33];
   }
 
-  change.call.apply(change, [proxy, 'moveTo'].concat(args));
+  editor.command.apply(editor, [proxy, 'moveTo'].concat(args));
 };
 
-Commands$5.moveToAnchor = function (change) {
-  change.call(proxy, 'moveToAnchor');
+Commands$4.moveToAnchor = function (editor) {
+  editor.command(proxy, 'moveToAnchor');
 };
 
-Commands$5.moveToEnd = function (change) {
-  change.call(proxy, 'moveToEnd');
+Commands$4.moveToEnd = function (editor) {
+  editor.command(proxy, 'moveToEnd');
 };
 
-Commands$5.moveToEndOfBlock = function (change) {
-  change.moveEndToEndOfBlock().moveToEnd();
+Commands$4.moveToEndOfBlock = function (editor) {
+  editor.moveEndToEndOfBlock().moveToEnd();
 };
 
-Commands$5.moveToEndOfDocument = function (change) {
-  change.moveEndToEndOfNode(change.value.document).moveToEnd();
+Commands$4.moveToEndOfDocument = function (editor) {
+  editor.moveEndToEndOfNode(editor.value.document).moveToEnd();
 };
 
-Commands$5.moveToEndOfInline = function (change) {
-  change.moveEndToEndOfInline().moveToEnd();
+Commands$4.moveToEndOfInline = function (editor) {
+  editor.moveEndToEndOfInline().moveToEnd();
 };
 
-Commands$5.moveToEndOfNextBlock = function (change) {
-  change.moveEndToEndOfNextBlock().moveToEnd();
+Commands$4.moveToEndOfNextBlock = function (editor) {
+  editor.moveEndToEndOfNextBlock().moveToEnd();
 };
 
-Commands$5.moveToEndOfNextInline = function (change) {
-  change.moveEndToEndOfNextInline().moveToEnd();
+Commands$4.moveToEndOfNextInline = function (editor) {
+  editor.moveEndToEndOfNextInline().moveToEnd();
 };
 
-Commands$5.moveToEndOfNextText = function (change) {
-  change.moveEndToEndOfNextText().moveToEnd();
+Commands$4.moveToEndOfNextText = function (editor) {
+  editor.moveEndToEndOfNextText().moveToEnd();
 };
 
-Commands$5.moveToEndOfNode = function (change) {
+Commands$4.moveToEndOfNode = function (editor) {
   for (var _len34 = arguments.length, args = Array(_len34 > 1 ? _len34 - 1 : 0), _key34 = 1; _key34 < _len34; _key34++) {
     args[_key34 - 1] = arguments[_key34];
   }
 
-  change.call.apply(change, [proxy, 'moveToEndOfNode'].concat(args));
+  editor.command.apply(editor, [proxy, 'moveToEndOfNode'].concat(args));
 };
 
-Commands$5.moveToEndOfPreviousBlock = function (change) {
-  change.moveStartToEndOfPreviousBlock().moveToStart();
+Commands$4.moveToEndOfPreviousBlock = function (editor) {
+  editor.moveStartToEndOfPreviousBlock().moveToStart();
 };
 
-Commands$5.moveToEndOfPreviousInline = function (change) {
-  change.moveStartToEndOfPreviousInline().moveToStart();
+Commands$4.moveToEndOfPreviousInline = function (editor) {
+  editor.moveStartToEndOfPreviousInline().moveToStart();
 };
 
-Commands$5.moveToEndOfPreviousText = function (change) {
-  change.moveStartToEndOfPreviousText().moveToStart();
+Commands$4.moveToEndOfPreviousText = function (editor) {
+  editor.moveStartToEndOfPreviousText().moveToStart();
 };
 
-Commands$5.moveToEndOfText = function (change) {
-  change.moveEndToEndOfText().moveToEnd();
+Commands$4.moveToEndOfText = function (editor) {
+  editor.moveEndToEndOfText().moveToEnd();
 };
 
-Commands$5.moveToFocus = function (change) {
-  change.call(proxy, 'moveToFocus');
+Commands$4.moveToFocus = function (editor) {
+  editor.command(proxy, 'moveToFocus');
 };
 
-Commands$5.moveToRangeOfDocument = function (change) {
-  change.moveToRangeOfNode(change.value.document);
+Commands$4.moveToRangeOfDocument = function (editor) {
+  editor.moveToRangeOfNode(editor.value.document);
 };
 
-Commands$5.moveToRangeOfNode = function (change) {
+Commands$4.moveToRangeOfNode = function (editor) {
   for (var _len35 = arguments.length, args = Array(_len35 > 1 ? _len35 - 1 : 0), _key35 = 1; _key35 < _len35; _key35++) {
     args[_key35 - 1] = arguments[_key35];
   }
 
-  change.call.apply(change, [proxy, 'moveToRangeOfNode'].concat(args));
+  editor.command.apply(editor, [proxy, 'moveToRangeOfNode'].concat(args));
 };
 
-Commands$5.moveToStart = function (change) {
-  change.call(proxy, 'moveToStart');
+Commands$4.moveToStart = function (editor) {
+  editor.command(proxy, 'moveToStart');
 };
 
-Commands$5.moveToStartOfBlock = function (change) {
-  change.moveStartToStartOfBlock().moveToStart();
+Commands$4.moveToStartOfBlock = function (editor) {
+  editor.moveStartToStartOfBlock().moveToStart();
 };
 
-Commands$5.moveToStartOfDocument = function (change) {
-  change.moveStartToStartOfNode(change.value.document).moveToStart();
+Commands$4.moveToStartOfDocument = function (editor) {
+  editor.moveStartToStartOfNode(editor.value.document).moveToStart();
 };
 
-Commands$5.moveToStartOfInline = function (change) {
-  change.moveStartToStartOfInline().moveToStart();
+Commands$4.moveToStartOfInline = function (editor) {
+  editor.moveStartToStartOfInline().moveToStart();
 };
 
-Commands$5.moveToStartOfNextBlock = function (change) {
-  change.moveEndToStartOfNextBlock().moveToEnd();
+Commands$4.moveToStartOfNextBlock = function (editor) {
+  editor.moveEndToStartOfNextBlock().moveToEnd();
 };
 
-Commands$5.moveToStartOfNextInline = function (change) {
-  change.moveEndToStartOfNextInline().moveToEnd();
+Commands$4.moveToStartOfNextInline = function (editor) {
+  editor.moveEndToStartOfNextInline().moveToEnd();
 };
 
-Commands$5.moveToStartOfNextText = function (change) {
-  change.moveEndToStartOfNextText().moveToEnd();
+Commands$4.moveToStartOfNextText = function (editor) {
+  editor.moveEndToStartOfNextText().moveToEnd();
 };
 
-Commands$5.moveToStartOfNode = function (change) {
+Commands$4.moveToStartOfNode = function (editor) {
   for (var _len36 = arguments.length, args = Array(_len36 > 1 ? _len36 - 1 : 0), _key36 = 1; _key36 < _len36; _key36++) {
     args[_key36 - 1] = arguments[_key36];
   }
 
-  change.call.apply(change, [proxy, 'moveToStartOfNode'].concat(args));
+  editor.command.apply(editor, [proxy, 'moveToStartOfNode'].concat(args));
 };
 
-Commands$5.moveToStartOfPreviousBlock = function (change) {
-  change.moveStartToStartOfPreviousBlock().moveToStart();
+Commands$4.moveToStartOfPreviousBlock = function (editor) {
+  editor.moveStartToStartOfPreviousBlock().moveToStart();
 };
 
-Commands$5.moveToStartOfPreviousInline = function (change) {
-  change.moveStartToStartOfPreviousInline().moveToStart();
+Commands$4.moveToStartOfPreviousInline = function (editor) {
+  editor.moveStartToStartOfPreviousInline().moveToStart();
 };
 
-Commands$5.moveToStartOfPreviousText = function (change) {
-  change.moveStartToStartOfPreviousText().moveToStart();
+Commands$4.moveToStartOfPreviousText = function (editor) {
+  editor.moveStartToStartOfPreviousText().moveToStart();
 };
 
-Commands$5.moveToStartOfText = function (change) {
-  change.moveStartToStartOfText().moveToStart();
+Commands$4.moveToStartOfText = function (editor) {
+  editor.moveStartToStartOfText().moveToStart();
 };
 
-Commands$5.select = function (change, properties) {
+Commands$4.select = function (editor, properties) {
   var options = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
 
   properties = Selection.createProperties(properties);
   var _options$snapshot = options.snapshot,
       snapshot = _options$snapshot === undefined ? false : _options$snapshot;
-  var value = change.value;
+  var value = editor.value;
   var document = value.document,
       selection = value.selection;
 
@@ -48672,7 +48294,7 @@ Commands$5.select = function (change, properties) {
   }
 
   // If the selection moves, clear any marks, unless the new selection
-  // properties change the marks in some way.
+  // properties editor the marks in some way.
   if (selection.marks && !props.marks && (props.anchor || props.focus)) {
     props.marks = null;
   }
@@ -48682,7 +48304,7 @@ Commands$5.select = function (change, properties) {
     return;
   }
 
-  change.applyOperation({
+  editor.applyOperation({
     type: 'set_selection',
     value: value,
     properties: props,
@@ -48690,41 +48312,41 @@ Commands$5.select = function (change, properties) {
   }, snapshot ? { skip: false, merge: false } : {});
 };
 
-Commands$5.setAnchor = function (change) {
+Commands$4.setAnchor = function (editor) {
   for (var _len37 = arguments.length, args = Array(_len37 > 1 ? _len37 - 1 : 0), _key37 = 1; _key37 < _len37; _key37++) {
     args[_key37 - 1] = arguments[_key37];
   }
 
-  change.call.apply(change, [proxy, 'setAnchor'].concat(args));
+  editor.command.apply(editor, [proxy, 'setAnchor'].concat(args));
 };
 
-Commands$5.setEnd = function (change) {
+Commands$4.setEnd = function (editor) {
   for (var _len38 = arguments.length, args = Array(_len38 > 1 ? _len38 - 1 : 0), _key38 = 1; _key38 < _len38; _key38++) {
     args[_key38 - 1] = arguments[_key38];
   }
 
-  change.call.apply(change, [proxy, 'setEnd'].concat(args));
+  editor.command.apply(editor, [proxy, 'setEnd'].concat(args));
 };
 
-Commands$5.setFocus = function (change) {
+Commands$4.setFocus = function (editor) {
   for (var _len39 = arguments.length, args = Array(_len39 > 1 ? _len39 - 1 : 0), _key39 = 1; _key39 < _len39; _key39++) {
     args[_key39 - 1] = arguments[_key39];
   }
 
-  change.call.apply(change, [proxy, 'setFocus'].concat(args));
+  editor.command.apply(editor, [proxy, 'setFocus'].concat(args));
 };
 
-Commands$5.setStart = function (change) {
+Commands$4.setStart = function (editor) {
   for (var _len40 = arguments.length, args = Array(_len40 > 1 ? _len40 - 1 : 0), _key40 = 1; _key40 < _len40; _key40++) {
     args[_key40 - 1] = arguments[_key40];
   }
 
-  change.call.apply(change, [proxy, 'setStart'].concat(args));
+  editor.command.apply(editor, [proxy, 'setStart'].concat(args));
 };
 
-Commands$5.snapshotSelection = function (change) {
-  change.withoutMerging(function () {
-    change.select(change.value.selection, { snapshot: true });
+Commands$4.snapshotSelection = function (editor) {
+  editor.withoutMerging(function () {
+    editor.select(editor.value.selection, { snapshot: true });
   });
 };
 
@@ -48732,34 +48354,34 @@ Commands$5.snapshotSelection = function (change) {
  * Helpers.
  */
 
-function proxy(change, method) {
-  var _change$value$selecti;
+function proxy(editor, method) {
+  var _editor$value$selecti;
 
   for (var _len41 = arguments.length, args = Array(_len41 > 2 ? _len41 - 2 : 0), _key41 = 2; _key41 < _len41; _key41++) {
     args[_key41 - 2] = arguments[_key41];
   }
 
-  var range = (_change$value$selecti = change.value.selection)[method].apply(_change$value$selecti, args);
-  change.select(range);
+  var range = (_editor$value$selecti = editor.value.selection)[method].apply(_editor$value$selecti, args);
+  editor.select(range);
 }
 
-function pointEdgeObject(change, point, edge, object) {
+function pointEdgeObject(editor, point, edge, object) {
   var Point = point.slice(0, 1).toUpperCase() + point.slice(1);
   var Edge = edge.slice(0, 1).toUpperCase() + edge.slice(1);
   var Object = object.slice(0, 1).toUpperCase() + object.slice(1);
   var method = 'move' + Point + 'To' + Edge + 'OfNode';
   var getNode = object == 'text' ? 'getNode' : 'getClosest' + Object;
-  var value = change.value;
+  var value = editor.value;
   var document = value.document,
       selection = value.selection;
 
   var p = selection[point];
   var node = document[getNode](p.key);
   if (!node) return;
-  change[method](node);
+  editor[method](node);
 }
 
-function pointEdgeSideObject(change, point, edge, side, object) {
+function pointEdgeSideObject(editor, point, edge, side, object) {
   var Point = point.slice(0, 1).toUpperCase() + point.slice(1);
   var Edge = edge.slice(0, 1).toUpperCase() + edge.slice(1);
   var Side = side.slice(0, 1).toUpperCase() + side.slice(1);
@@ -48767,7 +48389,7 @@ function pointEdgeSideObject(change, point, edge, side, object) {
   var method = 'move' + Point + 'To' + Edge + 'OfNode';
   var getNode = object == 'text' ? 'getNode' : 'getClosest' + Object;
   var getDirectionNode = 'get' + Side + Object;
-  var value = change.value;
+  var value = editor.value;
   var document = value.document,
       selection = value.selection;
 
@@ -48776,18 +48398,17 @@ function pointEdgeSideObject(change, point, edge, side, object) {
   if (!node) return;
   var target = document[getDirectionNode](node.key);
   if (!target) return;
-  change[method](target);
+  editor[method](target);
 }
 
-function pointBackward(change, point) {
+function pointBackward(editor, point) {
   var n = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 1;
 
   if (n === 0) return;
-  if (n < 0) return pointForward(change, point, -n);
+  if (n < 0) return pointForward(editor, point, -n);
 
   var Point = point.slice(0, 1).toUpperCase() + point.slice(1);
-  var editor = change.editor,
-      value = change.value;
+  var value = editor.value;
   var document = value.document,
       selection = value.selection;
 
@@ -48797,7 +48418,7 @@ function pointBackward(change, point) {
   // what is this?
   if (!hasVoidParent && p.offset - n >= 0) {
     var range = selection['move' + Point + 'Backward'](n);
-    change.select(range);
+    editor.select(range);
     return;
   }
 
@@ -48807,24 +48428,23 @@ function pointBackward(change, point) {
   var block = document.getClosestBlock(p.path);
   var isInBlock = block.hasNode(previous.key);
   var isPreviousInVoid = previous && document.hasVoidParent(previous.key, editor);
-  change['move' + Point + 'ToEndOfNode'](previous);
+  editor['move' + Point + 'ToEndOfNode'](previous);
 
   // when is this called?
   if (!hasVoidParent && !isPreviousInVoid && isInBlock) {
-    var _range = change.value.selection['move' + Point + 'Backward'](n);
-    change.select(_range);
+    var _range = editor.value.selection['move' + Point + 'Backward'](n);
+    editor.select(_range);
   }
 }
 
-function pointForward(change, point) {
+function pointForward(editor, point) {
   var n = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 1;
 
   if (n === 0) return;
-  if (n < 0) return pointBackward(change, point, -n);
+  if (n < 0) return pointBackward(editor, point, -n);
 
   var Point = point.slice(0, 1).toUpperCase() + point.slice(1);
-  var editor = change.editor,
-      value = change.value;
+  var value = editor.value;
   var document = value.document,
       selection = value.selection;
 
@@ -48835,7 +48455,7 @@ function pointForward(change, point) {
   // what is this?
   if (!hasVoidParent && p.offset + n <= text.text.length) {
     var range = selection['move' + Point + 'Forward'](n);
-    change.select(range);
+    editor.select(range);
     return;
   }
 
@@ -48845,17 +48465,17 @@ function pointForward(change, point) {
   var block = document.getClosestBlock(p.path);
   var isInBlock = block.hasNode(next.key);
   var isNextInVoid = document.hasVoidParent(next.key, editor);
-  change['move' + Point + 'ToStartOfNode'](next);
+  editor['move' + Point + 'ToStartOfNode'](next);
 
   // when is this called?
   if (!hasVoidParent && !isNextInVoid && isInBlock) {
-    var _range2 = change.value.selection['move' + Point + 'Forward'](n);
-    change.select(_range2);
+    var _range2 = editor.value.selection['move' + Point + 'Forward'](n);
+    editor.select(_range2);
   }
 }
 
-function pointWordBackward(change, pointName) {
-  var value = change.value;
+function pointWordBackward(editor, pointName) {
+  var value = editor.value;
   var document = value.document,
       selection = value.selection;
 
@@ -48866,11 +48486,11 @@ function pointWordBackward(change, pointName) {
   var text = block.text;
 
   var n = TextUtils.getWordOffsetBackward(text, o);
-  change.call(pointBackward, pointName, n > 0 ? n : 1);
+  editor.command(pointBackward, pointName, n > 0 ? n : 1);
 }
 
-function pointWordForward(change, pointName) {
-  var value = change.value;
+function pointWordForward(editor, pointName) {
+  var value = editor.value;
   var document = value.document,
       selection = value.selection;
 
@@ -48881,7 +48501,7 @@ function pointWordForward(change, pointName) {
   var text = block.text;
 
   var n = TextUtils.getWordOffsetForward(text, o);
-  change.call(pointForward, pointName, n > 0 ? n : 1);
+  editor.command(pointForward, pointName, n > 0 ? n : 1);
 }
 
 /**
@@ -48890,21 +48510,44 @@ function pointWordForward(change, pointName) {
  * @type {Object}
  */
 
-var Commands$6 = {};
+var Commands$5 = {};
 
 /**
  * Set `properties` on the value.
  *
- * @param {Change} change
+ * @param {Editor} editor
  * @param {Object|Value} properties
  */
 
-Commands$6.setValue = function (change, properties) {
-  properties = Value.createProperties(properties);
-  var value = change.value;
+Commands$5.setData = function (editor) {
+  var data = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+
+  var properties = Value.createProperties({ data: data });
+  var value = editor.value;
 
 
-  change.applyOperation({
+  editor.applyOperation({
+    type: 'set_value',
+    properties: properties,
+    value: value
+  });
+};
+
+/**
+ * Set `properties` on the value.
+ *
+ * @param {Editor} editor
+ * @param {Object|Value} properties
+ */
+
+Commands$5.setDecorations = function (editor) {
+  var decorations = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : [];
+
+  var properties = Value.createProperties({ decorations: decorations });
+  var value = editor.value;
+
+
+  editor.applyOperation({
     type: 'set_value',
     properties: properties,
     value: value
@@ -49085,28 +48728,29 @@ function SchemaPlugin(schema) {
    * fix the invalid node, or void if the node is valid.
    *
    * @param {Node} node
+   * @param {Editor} editor
    * @param {Function} next
    * @return {Function|Void}
    */
 
-  function normalizeNode(node, next) {
-    var error = validateNode(node, function () {});
+  function normalizeNode(node, editor, next) {
+    var error = validateNode(node, editor, function () {});
     if (!error) return next();
 
-    return function (change) {
+    return function () {
       var rule = error.rule;
-      var size = change.operations.size;
+      var size = editor.operations.size;
 
       // First run the user-provided `normalize` function if one exists...
 
       if (rule.normalize) {
-        rule.normalize(change, error);
+        rule.normalize(editor, error);
       }
 
-      // If the `normalize` function did not add any operations to the change
+      // If the `normalize` function did not add any operations to the editor
       // object, it can't have normalized, so run the default one.
-      if (change.operations.size === size) {
-        defaultNormalize(change, error);
+      if (editor.operations.size === size) {
+        defaultNormalize(editor, error);
       }
     };
   }
@@ -49116,11 +48760,12 @@ function SchemaPlugin(schema) {
    * invalid.
    *
    * @param {Node} node
+   * @param {Editor} editor
    * @param {Function} next
    * @return {Error|Void}
    */
 
-  function validateNode(node, next) {
+  function validateNode(node, editor, next) {
     var matches = schemaRules.filter(function (r) {
       return testRules(node, r.match);
     });
@@ -49151,11 +48796,11 @@ function SchemaPlugin(schema) {
 /**
  * Normalize an invalid value with `error` with default remedies.
  *
- * @param {Change} change
+ * @param {Editor} editor
  * @param {SlateError} error
  */
 
-function defaultNormalize(change, error) {
+function defaultNormalize(editor, error) {
   var code = error.code,
       node = error.node,
       child = error.child,
@@ -49174,19 +48819,19 @@ function defaultNormalize(change, error) {
     case 'last_child_object_invalid':
     case 'last_child_type_invalid':
       {
-        return child.object === 'text' && node.object === 'block' && node.nodes.size === 1 ? change.removeNodeByKey(node.key) : change.removeNodeByKey(child.key);
+        return child.object === 'text' && node.object === 'block' && node.nodes.size === 1 ? editor.removeNodeByKey(node.key) : editor.removeNodeByKey(child.key);
       }
 
     case 'previous_sibling_object_invalid':
     case 'previous_sibling_type_invalid':
       {
-        return previous.object === 'text' && node.object === 'block' && node.nodes.size === 1 ? change.removeNodeByKey(node.key) : change.removeNodeByKey(previous.key);
+        return previous.object === 'text' && node.object === 'block' && node.nodes.size === 1 ? editor.removeNodeByKey(node.key) : editor.removeNodeByKey(previous.key);
       }
 
     case 'next_sibling_object_invalid':
     case 'next_sibling_type_invalid':
       {
-        return next.object === 'text' && node.object === 'block' && node.nodes.size === 1 ? change.removeNodeByKey(node.key) : change.removeNodeByKey(next.key);
+        return next.object === 'text' && node.object === 'block' && node.nodes.size === 1 ? editor.removeNodeByKey(node.key) : editor.removeNodeByKey(next.key);
       }
 
     case 'child_required':
@@ -49195,25 +48840,25 @@ function defaultNormalize(change, error) {
     case 'parent_type_invalid':
       {
         return node.object === 'document' ? node.nodes.forEach(function (n) {
-          return change.removeNodeByKey(n.key);
-        }) : change.removeNodeByKey(node.key);
+          return editor.removeNodeByKey(n.key);
+        }) : editor.removeNodeByKey(node.key);
       }
 
     case 'node_data_invalid':
       {
-        return node.data.get(key) === undefined && node.object !== 'document' ? change.removeNodeByKey(node.key) : change.setNodeByKey(node.key, { data: node.data.delete(key) });
+        return node.data.get(key) === undefined && node.object !== 'document' ? editor.removeNodeByKey(node.key) : editor.setNodeByKey(node.key, { data: node.data.delete(key) });
       }
 
     case 'node_mark_invalid':
       {
         return node.getTexts().forEach(function (t) {
-          return change.removeMarkByKey(t.key, 0, t.text.length, mark);
+          return editor.removeMarkByKey(t.key, 0, t.text.length, mark);
         });
       }
 
     default:
       {
-        return change.removeNodeByKey(node.key);
+        return editor.removeNodeByKey(node.key);
       }
   }
 }
@@ -49617,6 +49262,571 @@ function fail(code, attrs) {
 }
 
 /**
+ * Ensure that an expanded selection is deleted first using the `editor.delete`
+ * command. This guarantees that it uses the proper semantic "intent" instead of
+ * using `deleteAtRange` under the covers and skipping `delete`.
+ *
+ * @param {Editor}
+ */
+
+function deleteExpanded(editor) {
+  var value = editor.value;
+  var selection = value.selection;
+
+
+  if (selection.isExpanded) {
+    editor.delete();
+  }
+}
+
+/**
+ * Commands.
+ *
+ * @type {Object}
+ */
+
+var Commands$6 = {};
+
+/**
+ * Add a `mark` to the characters in the current selection.
+ *
+ * @param {Editor} editor
+ * @param {Mark} mark
+ */
+
+Commands$6.addMark = function (editor, mark) {
+  mark = Mark.create(mark);
+  var value = editor.value;
+  var document = value.document,
+      selection = value.selection;
+
+
+  if (selection.isExpanded) {
+    editor.addMarkAtRange(selection, mark);
+  } else if (selection.marks) {
+    var marks = selection.marks.add(mark);
+    var sel = selection.set('marks', marks);
+    editor.select(sel);
+  } else {
+    var _marks = document.getActiveMarksAtRange(selection).add(mark);
+    var _sel = selection.set('marks', _marks);
+    editor.select(_sel);
+  }
+};
+
+/**
+ * Add a list of `marks` to the characters in the current selection.
+ *
+ * @param {Editor} editor
+ * @param {Set<Mark>|Array<Object>} marks
+ */
+
+Commands$6.addMarks = function (editor, marks) {
+  marks.forEach(function (mark) {
+    return editor.addMark(mark);
+  });
+};
+
+/**
+ * Delete at the current selection.
+ *
+ * @param {Editor} editor
+ */
+
+Commands$6.delete = function (editor) {
+  var value = editor.value;
+  var selection = value.selection;
+
+  editor.deleteAtRange(selection);
+
+  // COMPAT: Ensure that the selection is collapsed, because in certain cases
+  // when deleting across inline nodes, when splitting the inline node the end
+  // point of the selection will end up after the split point.
+  editor.moveToFocus();
+};
+
+/**
+ * Delete backward `n` characters.
+ *
+ * @param {Editor} editor
+ * @param {Number} n (optional)
+ */
+
+Commands$6.deleteBackward = function (editor) {
+  var n = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 1;
+  var value = editor.value;
+  var selection = value.selection;
+
+
+  if (selection.isExpanded) {
+    editor.delete();
+  } else {
+    editor.deleteBackwardAtRange(selection, n);
+  }
+};
+
+/**
+ * Delete backward one character.
+ *
+ * @param {Editor} editor
+ */
+
+Commands$6.deleteCharBackward = function (editor) {
+  var value = editor.value;
+  var selection = value.selection;
+
+
+  if (selection.isExpanded) {
+    editor.delete();
+  } else {
+    editor.deleteCharBackwardAtRange(selection);
+  }
+};
+
+/**
+ * Delete backward one line.
+ *
+ * @param {Editor} editor
+ */
+
+Commands$6.deleteLineBackward = function (editor) {
+  var value = editor.value;
+  var selection = value.selection;
+
+
+  if (selection.isExpanded) {
+    editor.delete();
+  } else {
+    editor.deleteLineBackwardAtRange(selection);
+  }
+};
+
+/**
+ * Delete backward one word.
+ *
+ * @param {Editor} editor
+ */
+
+Commands$6.deleteWordBackward = function (editor) {
+  var value = editor.value;
+  var selection = value.selection;
+
+
+  if (selection.isExpanded) {
+    editor.delete();
+  } else {
+    editor.deleteWordBackwardAtRange(selection);
+  }
+};
+
+/**
+ * Delete backward `n` characters.
+ *
+ * @param {Editor} editor
+ * @param {Number} n (optional)
+ */
+
+Commands$6.deleteForward = function (editor) {
+  var n = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 1;
+  var value = editor.value;
+  var selection = value.selection;
+
+
+  if (selection.isExpanded) {
+    editor.delete();
+  } else {
+    editor.deleteForwardAtRange(selection, n);
+  }
+};
+
+/**
+ * Delete backward one character.
+ *
+ * @param {Editor} editor
+ */
+
+Commands$6.deleteCharForward = function (editor) {
+  var value = editor.value;
+  var selection = value.selection;
+
+
+  if (selection.isExpanded) {
+    editor.delete();
+  } else {
+    editor.deleteCharForwardAtRange(selection);
+  }
+};
+
+/**
+ * Delete backward one line.
+ *
+ * @param {Editor} editor
+ */
+
+Commands$6.deleteLineForward = function (editor) {
+  var value = editor.value;
+  var selection = value.selection;
+
+
+  if (selection.isExpanded) {
+    editor.delete();
+  } else {
+    editor.deleteLineForwardAtRange(selection);
+  }
+};
+
+/**
+ * Delete backward one word.
+ *
+ * @param {Editor} editor
+ */
+
+Commands$6.deleteWordForward = function (editor) {
+  var value = editor.value;
+  var selection = value.selection;
+
+
+  if (selection.isExpanded) {
+    editor.delete();
+  } else {
+    editor.deleteWordForwardAtRange(selection);
+  }
+};
+
+/**
+ * Insert a `block` at the current selection.
+ *
+ * @param {Editor} editor
+ * @param {String|Object|Block} block
+ */
+
+Commands$6.insertBlock = function (editor, block) {
+  deleteExpanded(editor);
+
+  block = Block.create(block);
+  var value = editor.value;
+  var selection = value.selection;
+
+  editor.insertBlockAtRange(selection, block);
+
+  // If the node was successfully inserted, update the selection.
+  var node = editor.value.document.getNode(block.key);
+  if (node) editor.moveToEndOfNode(node);
+};
+
+/**
+ * Insert a `fragment` at the current selection.
+ *
+ * @param {Editor} editor
+ * @param {Document} fragment
+ */
+
+Commands$6.insertFragment = function (editor, fragment) {
+  if (!fragment.nodes.size) return;
+
+  deleteExpanded(editor);
+
+  var value = editor.value;
+  var _value = value,
+      document = _value.document,
+      selection = _value.selection;
+  var start = selection.start,
+      end = selection.end;
+  var _value2 = value,
+      startText = _value2.startText,
+      endText = _value2.endText,
+      startInline = _value2.startInline;
+
+  var lastText = fragment.getLastText();
+  var lastInline = fragment.getClosestInline(lastText.key);
+  var lastBlock = fragment.getClosestBlock(lastText.key);
+  var firstChild = fragment.nodes.first();
+  var lastChild = fragment.nodes.last();
+  var keys = document.getTexts().map(function (text) {
+    return text.key;
+  });
+  var isAppending = !startInline || start.isAtStartOfNode(startText) || end.isAtStartOfNode(startText) || start.isAtEndOfNode(endText) || end.isAtEndOfNode(endText);
+
+  var isInserting = firstChild.hasBlockChildren() || lastChild.hasBlockChildren();
+
+  editor.insertFragmentAtRange(selection, fragment);
+  value = editor.value;
+  document = value.document;
+
+  var newTexts = document.getTexts().filter(function (n) {
+    return !keys.includes(n.key);
+  });
+  var newText = isAppending ? newTexts.last() : newTexts.takeLast(2).first();
+
+  if (newText && (lastInline || isInserting)) {
+    editor.moveToEndOfNode(newText);
+  } else if (newText) {
+    editor.moveToStartOfNode(newText).moveForward(lastBlock.text.length);
+  }
+};
+
+/**
+ * Insert an `inline` at the current selection.
+ *
+ * @param {Editor} editor
+ * @param {String|Object|Inline} inline
+ */
+
+Commands$6.insertInline = function (editor, inline) {
+  deleteExpanded(editor);
+
+  inline = Inline.create(inline);
+  var value = editor.value;
+  var selection = value.selection;
+
+  editor.insertInlineAtRange(selection, inline);
+
+  // If the node was successfully inserted, update the selection.
+  var node = editor.value.document.getNode(inline.key);
+  if (node) editor.moveToEndOfNode(node);
+};
+
+/**
+ * Insert a string of `text` with optional `marks` at the current selection.
+ *
+ * @param {Editor} editor
+ * @param {String} text
+ * @param {Set<Mark>} marks (optional)
+ */
+
+Commands$6.insertText = function (editor, text, marks) {
+  deleteExpanded(editor);
+
+  var value = editor.value;
+  var document = value.document,
+      selection = value.selection;
+
+  marks = marks || selection.marks || document.getInsertMarksAtRange(selection);
+  editor.insertTextAtRange(selection, text, marks);
+
+  // If the text was successfully inserted, and the selection had marks on it,
+  // unset the selection's marks.
+  if (selection.marks && document != editor.value.document) {
+    editor.select({ marks: null });
+  }
+};
+
+/**
+ * Remove a `mark` from the characters in the current selection.
+ *
+ * @param {Editor} editor
+ * @param {Mark} mark
+ */
+
+Commands$6.removeMark = function (editor, mark) {
+  mark = Mark.create(mark);
+  var value = editor.value;
+  var document = value.document,
+      selection = value.selection;
+
+
+  if (selection.isExpanded) {
+    editor.removeMarkAtRange(selection, mark);
+  } else if (selection.marks) {
+    var marks = selection.marks.remove(mark);
+    var sel = selection.set('marks', marks);
+    editor.select(sel);
+  } else {
+    var _marks2 = document.getActiveMarksAtRange(selection).remove(mark);
+    var _sel2 = selection.set('marks', _marks2);
+    editor.select(_sel2);
+  }
+};
+
+/**
+ * Replace an `oldMark` with a `newMark` in the characters in the current selection.
+ *
+ * @param {Editor} editor
+ * @param {Mark} oldMark
+ * @param {Mark} newMark
+ */
+
+Commands$6.replaceMark = function (editor, oldMark, newMark) {
+  editor.removeMark(oldMark);
+  editor.addMark(newMark);
+};
+
+/**
+ * Set the `properties` of block nodes.
+ *
+ * @param {Editor} editor
+ * @param {Object|String} properties
+ */
+
+Commands$6.setBlocks = function (editor, properties) {
+  var value = editor.value;
+  var selection = value.selection;
+
+  editor.setBlocksAtRange(selection, properties);
+};
+
+/**
+ * Set the `properties` of inline nodes.
+ *
+ * @param {Editor} editor
+ * @param {Object|String} properties
+ */
+
+Commands$6.setInlines = function (editor, properties) {
+  var value = editor.value;
+  var selection = value.selection;
+
+  editor.setInlinesAtRange(selection, properties);
+};
+
+/**
+ * Split the block node at the current selection, to optional `depth`.
+ *
+ * @param {Editor} editor
+ * @param {Number} depth (optional)
+ */
+
+Commands$6.splitBlock = function (editor) {
+  var depth = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 1;
+
+  deleteExpanded(editor);
+
+  var value = editor.value;
+  var selection = value.selection,
+      document = value.document;
+
+  var marks = selection.marks || document.getInsertMarksAtRange(selection);
+  editor.splitBlockAtRange(selection, depth).moveToEnd();
+
+  if (marks && marks.size !== 0) {
+    editor.select({ marks: marks });
+  }
+};
+
+/**
+ * Split the inline nodes to optional `height`.
+ *
+ * @param {Editor} editor
+ * @param {Number} height (optional)
+ */
+
+Commands$6.splitInline = function (editor, height) {
+  deleteExpanded(editor);
+  var value = editor.value;
+  var selection = value.selection;
+
+  editor.splitInlineAtRange(selection, height);
+};
+
+/**
+ * Add or remove a `mark` from the characters in the current selection,
+ * depending on whether it's already there.
+ *
+ * @param {Editor} editor
+ * @param {Mark} mark
+ */
+
+Commands$6.toggleMark = function (editor, mark) {
+  mark = Mark.create(mark);
+  var value = editor.value;
+
+  var exists = value.activeMarks.has(mark);
+
+  if (exists) {
+    editor.removeMark(mark);
+  } else {
+    editor.addMark(mark);
+  }
+};
+
+/**
+ * Unwrap nodes from a block with `properties`.
+ *
+ * @param {Editor} editor
+ * @param {String|Object} properties
+ */
+
+Commands$6.unwrapBlock = function (editor, properties) {
+  var value = editor.value;
+  var selection = value.selection;
+
+  editor.unwrapBlockAtRange(selection, properties);
+};
+
+/**
+ * Unwrap nodes from an inline with `properties`.
+ *
+ * @param {Editor} editor
+ * @param {String|Object} properties
+ */
+
+Commands$6.unwrapInline = function (editor, properties) {
+  var value = editor.value;
+  var selection = value.selection;
+
+  editor.unwrapInlineAtRange(selection, properties);
+};
+
+/**
+ * Wrap nodes in a new `block`.
+ *
+ * @param {Editor} editor
+ * @param {Block|Object|String} block
+ */
+
+Commands$6.wrapBlock = function (editor, block) {
+  var value = editor.value;
+  var selection = value.selection;
+
+  editor.wrapBlockAtRange(selection, block);
+};
+
+/**
+ * Wrap nodes in a new `inline`.
+ *
+ * @param {Editor} editor
+ * @param {Inline|Object|String} inline
+ */
+
+Commands$6.wrapInline = function (editor, inline) {
+  var value = editor.value;
+  var selection = value.selection;
+
+  editor.wrapInlineAtRange(selection, inline);
+};
+
+/**
+ * Wrap the current selection with prefix/suffix.
+ *
+ * @param {Editor} editor
+ * @param {String} prefix
+ * @param {String} suffix
+ */
+
+Commands$6.wrapText = function (editor, prefix) {
+  var suffix = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : prefix;
+  var value = editor.value;
+  var selection = value.selection;
+
+  editor.wrapTextAtRange(selection, prefix, suffix);
+
+  // If the selection was collapsed, it will have moved the start offset too.
+  if (selection.isCollapsed) {
+    editor.moveStartBackward(prefix.length);
+  }
+
+  // Adding the suffix will have pushed the end of the selection further on, so
+  // we need to move it back to account for this.
+  editor.moveEndBackward(suffix.length);
+
+  // There's a chance that the selection points moved "through" each other,
+  // resulting in a now-incorrect selection direction.
+  if (selection.isForward != editor.value.selection.isForward) {
+    editor.flip();
+  }
+};
+
+/**
  * A plugin that defines the core Slate logic.
  *
  * @param {Object} options
@@ -49634,7 +49844,7 @@ function CorePlugin() {
    * @type {Object}
    */
 
-  var commands = CommandsPlugin(_extends({}, Commands, Commands$1, Commands$2, Commands$4, Commands$5, Commands$6));
+  var commands = CommandsPlugin(_extends({}, Commands$1, Commands$2, Commands$3, Commands$4, Commands$5, Commands$6));
 
   /**
    * The core Slate queries.
@@ -49696,13 +49906,13 @@ function CorePlugin() {
     {
       match: [{ object: 'block' }, { object: 'inline' }],
       nodes: [{ min: 1 }],
-      normalize: function normalize(change, error) {
+      normalize: function normalize(editor, error) {
         var code = error.code,
             node = error.node;
 
 
         if (code === 'child_required') {
-          change.insertNodeByKey(node.key, 0, Text.create());
+          editor.insertNodeByKey(node.key, 0, Text.create());
         }
       }
     },
@@ -49712,7 +49922,7 @@ function CorePlugin() {
       match: { object: 'block' },
       first: [{ object: 'block' }, { object: 'text' }],
       last: [{ object: 'block' }, { object: 'text' }],
-      normalize: function normalize(change, error) {
+      normalize: function normalize(editor, error) {
         var code = error.code,
             node = error.node;
 
@@ -49727,7 +49937,7 @@ function CorePlugin() {
           return;
         }
 
-        change.insertNodeByKey(node.key, i, text);
+        editor.insertNodeByKey(node.key, i, text);
       }
     }, {
       match: { object: 'inline' },
@@ -49735,7 +49945,7 @@ function CorePlugin() {
       last: [{ object: 'block' }, { object: 'text' }],
       previous: [{ object: 'block' }, { object: 'text' }],
       next: [{ object: 'block' }, { object: 'text' }],
-      normalize: function normalize(change, error) {
+      normalize: function normalize(editor, error) {
         var code = error.code,
             node = error.node,
             index = error.index;
@@ -49755,7 +49965,7 @@ function CorePlugin() {
           return;
         }
 
-        change.insertNodeByKey(node.key, i, text);
+        editor.insertNodeByKey(node.key, i, text);
       }
     },
 
@@ -49763,13 +49973,13 @@ function CorePlugin() {
     {
       match: { object: 'text' },
       next: [{ object: 'block' }, { object: 'inline' }],
-      normalize: function normalize(change, error) {
+      normalize: function normalize(editor, error) {
         var code = error.code,
             next = error.next;
 
 
         if (code === 'next_sibling_object_invalid') {
-          change.mergeNodeByKey(next.key);
+          editor.mergeNodeByKey(next.key);
         }
       }
     }]
@@ -49790,7 +50000,7 @@ function CorePlugin() {
  * @type {Function}
  */
 
-var debug$3 = Debug('slate:editor');
+var debug$2 = Debug('slate:editor');
 
 /**
  * Editor.
@@ -49810,8 +50020,10 @@ var Editor = function () {
     var attrs = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
     var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
     classCallCheck(this, Editor);
-    var _options$editor = options.editor,
-        editor = _options$editor === undefined ? this : _options$editor;
+    var _options$controller = options.controller,
+        controller = _options$controller === undefined ? this : _options$controller,
+        _options$construct = options.construct,
+        construct = _options$construct === undefined ? true : _options$construct;
     var _attrs$onChange = attrs.onChange,
         onChange = _attrs$onChange === undefined ? function () {} : _attrs$onChange,
         _attrs$plugins = attrs.plugins,
@@ -49822,188 +50034,261 @@ var Editor = function () {
         value = _attrs$value === undefined ? Value.create() : _attrs$value;
 
 
-    this.Change = function (_AbstractChange) {
-      inherits(Change$$1, _AbstractChange);
-
-      function Change$$1() {
-        classCallCheck(this, Change$$1);
-        return possibleConstructorReturn(this, (Change$$1.__proto__ || Object.getPrototypeOf(Change$$1)).apply(this, arguments));
-      }
-
-      return Change$$1;
-    }(Change);
-    this.editor = editor;
+    this.controller = controller;
     this.middleware = {};
     this.onChange = onChange;
+    this.operations = immutable.List();
     this.readOnly = null;
     this.value = null;
 
     this.tmp = {
-      change: null,
-      isChanging: false
+      dirty: [],
+      flushing: false,
+      merge: null,
+      normalize: true,
+      save: true
     };
 
     var core = CorePlugin({ plugins: plugins });
     registerPlugin(this, core);
 
-    this.run('onConstruct', this);
-
-    this.setReadOnly(readOnly);
-    this.setValue(value, options);
+    if (construct) {
+      this.run('onConstruct');
+      this.setReadOnly(readOnly);
+      this.setValue(value, options);
+    }
   }
 
   /**
-   * Perform a change on the editor, passing `...args` to `change.call`.
+   * Apply an `operation` to the editor, updating its value.
    *
-   * @param {Any} ...args
+   * @param {Operation|Object} operation
+   * @return {Editor}
    */
 
   createClass(Editor, [{
-    key: 'change',
-    value: function change() {
-      var Change$$1 = this.Change,
-          editor = this.editor,
-          value = this.value;
-      var isChanging = this.tmp.isChanging;
+    key: 'applyOperation',
+    value: function applyOperation(operation) {
+      var _this = this;
 
-      var change = isChanging ? this.tmp.change : new Change$$1({ value: value, editor: editor });
+      var operations = this.operations,
+          controller = this.controller;
 
-      try {
-        this.tmp.change = change;
-        this.tmp.isChanging = true;
-        change.call.apply(change, arguments);
-      } catch (error) {
-        throw error;
-      } finally {
-        this.tmp.isChanging = isChanging;
+      var value = this.value;
+
+      // Add in the current `value` in case the operation was serialized.
+      if (isPlainObject(operation)) {
+        operation = _extends({}, operation, { value: value });
       }
 
-      // If this isn't the top-most change function, exit to let it finish.
-      if (isChanging === true) {
-        return;
+      operation = Operation.create(operation);
+
+      // Save the operation into the history. Since `save` is a command, we need
+      // to do it without normalizing, since it would have side effects.
+      this.withoutNormalizing(function () {
+        controller.save(operation);
+        value = _this.value;
+      });
+
+      // Apply the operation to the value.
+      debug$2('apply', { operation: operation });
+      this.value = operation.apply(value);
+      this.operations = operations.push(operation);
+
+      // Get the paths of the affected nodes, and mark them as dirty.
+      var newDirtyPaths = getDirtyPaths(operation);
+      var dirty = this.tmp.dirty.reduce(function (memo, path) {
+        path = PathUtils.create(path);
+        var transformed = PathUtils.transform(path, operation);
+        memo = memo.concat(transformed.toArray());
+        return memo;
+      }, newDirtyPaths);
+
+      this.tmp.dirty = dirty;
+
+      // If we're not already, queue the flushing process on the next tick.
+      if (!this.tmp.flushing) {
+        this.tmp.flushing = true;
+        Promise.resolve().then(function () {
+          return _this.flush();
+        });
       }
 
-      // If the change doesn't define any operations to apply, abort.
-      if (change.operations.size === 0) {
-        return;
-      }
-
-      this.run('onChange', change);
-
-      // Call the provided `onChange` handler.
-      this.value = change.value;
-      this.onChange(change);
+      return controller;
     }
 
     /**
-     * Trigger a `command` with `...args`.
+     * Flush the editor's current change.
      *
-     * @param {String} command
+     * @return {Editor}
+     */
+
+  }, {
+    key: 'flush',
+    value: function flush() {
+      this.run('onChange');
+      var value = this.value,
+          operations = this.operations,
+          controller = this.controller;
+
+      var change = { value: value, operations: operations };
+      this.operations = immutable.List();
+      this.tmp.flushing = false;
+      this.onChange(change);
+      return controller;
+    }
+
+    /**
+     * Trigger a command by `type` with `...args`.
+     *
+     * @param {String|Function} type
      * @param {Any} ...args
+     * @return {Editor}
      */
 
   }, {
     key: 'command',
-    value: function command(_command) {
-      var _this2 = this;
-
+    value: function command(type) {
       for (var _len = arguments.length, args = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
         args[_key - 1] = arguments[_key];
       }
 
-      debug$3('command', { command: _command, args: args });
+      var controller = this.controller;
 
-      this.change(function (change) {
-        var obj = { type: _command, args: args };
-        _this2.run('onCommand', obj, change);
-      });
+
+      if (typeof type === 'function') {
+        type.apply(undefined, [controller].concat(args));
+        normalizeDirtyPaths(this);
+        return controller;
+      }
+
+      debug$2('command', { type: type, args: args });
+      var obj = { type: type, args: args };
+      this.run('onCommand', obj);
+      normalizeDirtyPaths(this);
+      return controller;
     }
 
     /**
-     * Process an `event` by running it through the stack.
+     * Normalize all of the nodes in the document from scratch.
      *
-     * @param {String} handler
-     * @param {Event} event
+     * @return {Editor}
      */
 
   }, {
-    key: 'event',
-    value: function event(handler, _event) {
-      var _this3 = this;
+    key: 'normalize',
+    value: function normalize() {
+      var value = this.value,
+          controller = this.controller;
+      var document = value.document;
 
-      debug$3('event', { handler: handler, event: _event });
+      var table = document.getKeysToPathsTable();
+      var paths = Object.values(table).map(PathUtils.create);
+      this.tmp.dirty = this.tmp.dirty.concat(paths);
+      normalizeDirtyPaths(this);
 
-      this.change(function (change) {
-        _this3.run(handler, _event, change);
-      });
+      var selection = value.selection;
+
+      document = value.document;
+
+      if (selection.isUnset && document.nodes.size) {
+        controller.moveToStartOfDocument();
+      }
+
+      return controller;
     }
 
     /**
-     * Ask a `query` with `...args`.
+     * Ask a query by `type` with `...args`.
      *
-     * @param {String} query
+     * @param {String|Function} type
      * @param {Any} ...args
+     * @return {Any}
      */
 
   }, {
     key: 'query',
-    value: function query(_query) {
+    value: function query(type) {
       for (var _len2 = arguments.length, args = Array(_len2 > 1 ? _len2 - 1 : 0), _key2 = 1; _key2 < _len2; _key2++) {
         args[_key2 - 1] = arguments[_key2];
       }
 
-      debug$3('query', { query: _query, args: args });
+      var controller = this.controller;
 
-      var editor = this.editor;
 
-      var obj = { type: _query, args: args };
-      return this.run('onQuery', obj, editor);
+      if (typeof type === 'function') {
+        return type.apply(undefined, [controller].concat(args));
+      }
+
+      debug$2('query', { type: type, args: args });
+      var obj = { type: type, args: args };
+      return this.run('onQuery', obj);
     }
 
     /**
-     * Register a `command` with the editor.
+     * Register a command `type` with the editor.
      *
-     * @param {String} command
+     * @param {String} type
+     * @return {Editor}
      */
 
   }, {
     key: 'registerCommand',
-    value: function registerCommand(command) {
-      var Change$$1 = this.Change;
+    value: function registerCommand(type) {
+      var _this2 = this;
 
-      if (Change$$1.prototype[command]) return;
+      var controller = this.controller;
 
-      Change$$1.prototype[command] = function () {
+
+      if (type in controller && controller[type].__command) {
+        return controller;
+      }
+
+      invariant(!(type in controller), 'You cannot register a `' + type + '` command because it would overwrite an existing property of the `Editor`.');
+
+      var method = function method() {
         for (var _len3 = arguments.length, args = Array(_len3), _key3 = 0; _key3 < _len3; _key3++) {
           args[_key3] = arguments[_key3];
         }
 
-        var change = this.command.apply(this, [command].concat(args));
-        return change;
+        return _this2.command.apply(_this2, [type].concat(args));
       };
+      controller[type] = method;
+      method.__command = true;
+      return controller;
     }
 
     /**
-     * Register a `query` with the editor.
+     * Register a query `type` with the editor.
      *
-     * @param {String} query
+     * @param {String} type
+     * @return {Editor}
      */
 
   }, {
     key: 'registerQuery',
-    value: function registerQuery(query) {
-      var Change$$1 = this.Change;
+    value: function registerQuery(type) {
+      var _this3 = this;
 
-      if (Change$$1.prototype[query]) return;
+      var controller = this.controller;
 
-      Change$$1.prototype[query] = function () {
+
+      if (type in controller && controller[type].__query) {
+        return controller;
+      }
+
+      invariant(!(type in controller), 'You cannot register a `' + type + '` query because it would overwrite an existing property of the `Editor`.');
+
+      var method = function method() {
         for (var _len4 = arguments.length, args = Array(_len4), _key4 = 0; _key4 < _len4; _key4++) {
           args[_key4] = arguments[_key4];
         }
 
-        var ret = this.query.apply(this, [query].concat(args));
-        return ret;
+        return _this3.query.apply(_this3, [type].concat(args));
       };
+      controller[type] = method;
+      method.__query = true;
+      return controller;
     }
 
     /**
@@ -50021,11 +50306,14 @@ var Editor = function () {
         args[_key5 - 1] = arguments[_key5];
       }
 
-      var middleware = this.middleware[key] || [];
+      var controller = this.controller,
+          middleware = this.middleware;
+
+      var fns = middleware[key] || [];
       var i = 0;
 
       function next() {
-        var fn = middleware[i++];
+        var fn = fns[i++];
         if (!fn) return;
 
         for (var _len6 = arguments.length, overrides = Array(_len6), _key6 = 0; _key6 < _len6; _key6++) {
@@ -50036,37 +50324,37 @@ var Editor = function () {
           args = overrides;
         }
 
-        var ret = fn.apply(undefined, toConsumableArray(args).concat([next]));
+        var ret = fn.apply(undefined, toConsumableArray(args).concat([controller, next]));
         return ret;
       }
 
       Object.defineProperty(next, 'change', {
         get: function get$$1() {
-          invariant(false, 'As of Slate 0.42.0, the `editor` is no longer passed as the third argument to event handlers. You can access it via `change.editor` instead.');
+          invariant(false, 'As of Slate 0.42, the `editor` is no longer passed as the third argument to event handlers. You can access it via `change.editor` instead.');
         }
       });
 
       Object.defineProperty(next, 'onChange', {
         get: function get$$1() {
-          invariant(false, 'As of Slate 0.42.0, the `editor` is no longer passed as the third argument to event handlers. You can access it via `change.editor` instead.');
+          invariant(false, 'As of Slate 0.42, the `editor` is no longer passed as the third argument to event handlers. You can access it via `change.editor` instead.');
         }
       });
 
       Object.defineProperty(next, 'props', {
         get: function get$$1() {
-          invariant(false, 'As of Slate 0.42.0, the `editor` is no longer passed as the third argument to event handlers. You can access it via `change.editor` instead.');
+          invariant(false, 'As of Slate 0.42, the `editor` is no longer passed as the third argument to event handlers. You can access it via `change.editor` instead.');
         }
       });
 
       Object.defineProperty(next, 'schema', {
         get: function get$$1() {
-          invariant(false, 'As of Slate 0.42.0, the `editor` is no longer passed as the third argument to event handlers. You can access it via `change.editor` instead.');
+          invariant(false, 'As of Slate 0.42, the `editor` is no longer passed as the third argument to event handlers. You can access it via `change.editor` instead.');
         }
       });
 
       Object.defineProperty(next, 'stack', {
         get: function get$$1() {
-          invariant(false, 'As of Slate 0.42.0, the `editor` is no longer passed as the third argument to event handlers. You can access it via `change.editor` instead.');
+          invariant(false, 'As of Slate 0.42, the `editor` is no longer passed as the third argument to event handlers. You can access it via `change.editor` instead.');
         }
       });
 
@@ -50105,16 +50393,285 @@ var Editor = function () {
       this.value = value;
 
       if (normalize) {
-        this.change(function (change) {
-          return change.normalize();
-        });
+        this.normalize();
       }
 
       return this;
     }
+
+    /**
+     * Apply a series of changes inside a synchronous `fn`, deferring
+     * normalization until after the function has finished executing.
+     *
+     * @param {Function} fn
+     * @return {Editor}
+     */
+
+  }, {
+    key: 'withoutNormalizing',
+    value: function withoutNormalizing(fn) {
+      var controller = this.controller;
+
+      var value = this.tmp.normalize;
+      this.tmp.normalize = false;
+      fn(controller);
+      this.tmp.normalize = value;
+      normalizeDirtyPaths(this);
+      return controller;
+    }
+
+    /**
+     * Deprecated.
+     */
+
+  }, {
+    key: 'change',
+    value: function change(fn) {
+      warning(false, 'As of Slate 0.43 the `change` object has been replaced with `editor`, so the `editor.change()` method is deprecated.`');
+
+      for (var _len7 = arguments.length, args = Array(_len7 > 1 ? _len7 - 1 : 0), _key7 = 1; _key7 < _len7; _key7++) {
+        args[_key7 - 1] = arguments[_key7];
+      }
+
+      fn.apply(undefined, [this.controller].concat(args));
+    }
+  }, {
+    key: 'call',
+    value: function call(fn) {
+      warning(false, 'As of Slate 0.43 the `editor.call(fn)` method has been deprecated, please use `editor.command(fn)` instead.');
+
+      for (var _len8 = arguments.length, args = Array(_len8 > 1 ? _len8 - 1 : 0), _key8 = 1; _key8 < _len8; _key8++) {
+        args[_key8 - 1] = arguments[_key8];
+      }
+
+      fn.apply(undefined, [this.controller].concat(args));
+      return this.controller;
+    }
+  }, {
+    key: 'applyOperations',
+    value: function applyOperations(operations) {
+      var _this4 = this;
+
+      warning(false, 'As of Slate 0.43 the `applyOperations` method is deprecated, please apply each operation in a loop instead.');
+
+      operations.forEach(function (op) {
+        return _this4.applyOperation(op);
+      });
+      return this.controller;
+    }
+  }, {
+    key: 'setOperationFlag',
+    value: function setOperationFlag(key, value) {
+      warning(false, 'As of slate@0.41 the `change.setOperationFlag` method has been deprecated.');
+
+      this.tmp[key] = value;
+      return this;
+    }
+  }, {
+    key: 'getFlag',
+    value: function getFlag(key) {
+      var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+
+      warning(false, 'As of slate@0.41 the `change.getFlag` method has been deprecated.');
+
+      return options[key] !== undefined ? options[key] : this.tmp[key];
+    }
+  }, {
+    key: 'unsetOperationFlag',
+    value: function unsetOperationFlag(key) {
+      warning(false, 'As of slate@0.41 the `change.unsetOperationFlag` method has been deprecated.');
+
+      delete this.tmp[key];
+      return this;
+    }
+  }, {
+    key: 'withoutNormalization',
+    value: function withoutNormalization(fn) {
+      warning(false, 'As of slate@0.41 the `change.withoutNormalization` helper has been renamed to `change.withoutNormalizing`.');
+
+      return this.withoutNormalizing(fn);
+    }
+  }, {
+    key: 'editor',
+    get: function get$$1() {
+      warning(false, "As of Slate 0.43 the `change` object has been replaced with `editor`, so you don't need to access `change.editor`.");
+
+      return this.controller;
+    }
   }]);
   return Editor;
 }();
+
+/**
+ * Get the "dirty" paths for a given `operation`.
+ *
+ * @param {Operation} operation
+ * @return {Array}
+ */
+
+function getDirtyPaths(operation) {
+  var type = operation.type,
+      node = operation.node,
+      path = operation.path,
+      newPath = operation.newPath;
+
+
+  switch (type) {
+    case 'add_mark':
+    case 'insert_text':
+    case 'remove_mark':
+    case 'remove_text':
+    case 'set_mark':
+    case 'set_node':
+      {
+        var ancestors = PathUtils.getAncestors(path).toArray();
+        return [].concat(toConsumableArray(ancestors), [path]);
+      }
+
+    case 'insert_node':
+      {
+        var table = node.getKeysToPathsTable();
+        var paths = Object.values(table).map(function (p) {
+          return path.concat(p);
+        });
+        var _ancestors = PathUtils.getAncestors(path).toArray();
+        return [].concat(toConsumableArray(_ancestors), [path], toConsumableArray(paths));
+      }
+
+    case 'split_node':
+      {
+        var _ancestors2 = PathUtils.getAncestors(path).toArray();
+        var nextPath = PathUtils.increment(path);
+        return [].concat(toConsumableArray(_ancestors2), [path, nextPath]);
+      }
+
+    case 'merge_node':
+      {
+        var _ancestors3 = PathUtils.getAncestors(path).toArray();
+        var previousPath = PathUtils.decrement(path);
+        return [].concat(toConsumableArray(_ancestors3), [previousPath]);
+      }
+
+    case 'move_node':
+      {
+        var parentPath = PathUtils.lift(path);
+        var newParentPath = PathUtils.lift(newPath);
+
+        if (PathUtils.isEqual(path, newPath)) {
+          return [];
+        }
+
+        // HACK: this clause only exists because the `move_path` logic isn't
+        // consistent when it deals with siblings.
+        if (!PathUtils.isSibling(path, newPath)) {
+          if (newParentPath.size && PathUtils.isYounger(path, newPath)) {
+            newParentPath = PathUtils.decrement(newParentPath, 1, path.size - 1);
+          }
+
+          if (parentPath.size && PathUtils.isYounger(newPath, path)) {
+            parentPath = PathUtils.increment(parentPath, 1, newPath.size - 1);
+          }
+        }
+
+        var oldAncestors = PathUtils.getAncestors(parentPath).toArray();
+        var newAncestors = PathUtils.getAncestors(newParentPath).toArray();
+
+        return [].concat(toConsumableArray(oldAncestors), [parentPath], toConsumableArray(newAncestors), [newParentPath]);
+      }
+
+    case 'remove_node':
+      {
+        var _ancestors4 = PathUtils.getAncestors(path).toArray();
+        return [].concat(toConsumableArray(_ancestors4));
+      }
+
+    default:
+      {
+        return [];
+      }
+  }
+}
+
+/**
+ * Normalize any new "dirty" paths that have been added to the change.
+ *
+ * @param {Editor}
+ */
+
+function normalizeDirtyPaths(editor) {
+  if (!editor.tmp.normalize) {
+    return;
+  }
+
+  while (editor.tmp.dirty.length) {
+    var path = editor.tmp.dirty.pop();
+    normalizeNodeByPath(editor, path);
+  }
+}
+
+/**
+ * Normalize the node at a specific `path`.
+ *
+ * @param {Editor} editor
+ * @param {Array} path
+ */
+
+function normalizeNodeByPath(editor, path) {
+  var controller = editor.controller,
+      value = editor.value;
+  var document = value.document;
+
+  var node = document.assertNode(path);
+  var iterations = 0;
+  var max = 1000 + (node.object === 'text' ? 1 : node.nodes.size);
+
+  var iterate = function iterate() {
+    var fn = node.normalize(controller);
+    if (!fn) return;
+
+    // Run the normalize `fn` to fix the node.
+    fn(controller);
+
+    // Attempt to re-find the node by path, or by key if it has changed
+    // locations in the tree continue iterating.
+    document = editor.value.document;
+    var _node = node,
+        key = _node.key;
+
+    var found = document.getDescendant(path);
+
+    if (found && found.key === key) {
+      node = found;
+    } else {
+      found = document.getDescendant(key);
+
+      if (found) {
+        node = found;
+        path = document.getPath(key);
+      } else {
+        // If it no longer exists by key, it was removed, so abort.
+        return;
+      }
+    }
+
+    // Increment the iterations counter, and check to make sure that we haven't
+    // exceeded the max. Without this check, it's easy for the `normalize`
+    // function of a schema rule to be written incorrectly and for an infinite
+    // invalid loop to occur.
+    iterations++;
+
+    if (iterations > max) {
+      throw new Error('A schema rule could not be normalized after sufficient iterations. This is usually due to a `rule.normalize` or `plugin.normalizeNode` function of a schema being incorrectly written, causing an infinite loop.');
+    }
+
+    // Otherwise, iterate again.
+    iterate();
+  };
+
+  editor.withoutNormalizing(function () {
+    iterate();
+  });
+}
 
 /**
  * Register a `plugin` with the editor.
@@ -51100,7 +51657,7 @@ var ElementInterface = function () {
     value: function getDecorations(editor) {
       invariant(!Value.isValue(editor), 'As of Slate 0.42.0, the `node.getDecorations` method takes an `editor` instead of a `value`.');
 
-      var array = editor.run('decorateNode', this) || [];
+      var array = editor.run('decorateNode', this);
       var decorations = Decoration.createList(array);
       return decorations;
     }
@@ -52216,6 +52773,7 @@ var ElementInterface = function () {
       var object = this.object,
           nodes = this.nodes;
 
+      if (!nodes.size) return true;
       var first = nodes.first();
       return object === 'block' && first.object !== 'block';
     }
@@ -52232,6 +52790,7 @@ var ElementInterface = function () {
       var object = this.object,
           nodes = this.nodes;
 
+      if (!nodes.size) return true;
       var first = nodes.first();
       return object === 'inline' && first.object !== 'inline';
     }
@@ -53487,11 +54046,11 @@ exports.Value = Value;
 exports.default = index;
 
 
-},{"debug":348,"direction":137,"esrever":138,"immutable":158,"is-plain-object":161,"lodash/omit":302,"lodash/pick":303,"tiny-invariant":350,"tiny-warning":351}],348:[function(require,module,exports){
-arguments[4][332][0].apply(exports,arguments)
-},{"./debug":349,"_process":310,"dup":332}],349:[function(require,module,exports){
+},{"debug":349,"direction":137,"esrever":138,"immutable":158,"is-plain-object":161,"lodash/omit":302,"lodash/pick":303,"tiny-invariant":351,"tiny-warning":352}],349:[function(require,module,exports){
 arguments[4][333][0].apply(exports,arguments)
-},{"dup":333,"ms":308}],350:[function(require,module,exports){
+},{"./debug":350,"_process":310,"dup":333}],350:[function(require,module,exports){
+arguments[4][334][0].apply(exports,arguments)
+},{"dup":334,"ms":308}],351:[function(require,module,exports){
 (function (process){
 'use strict';
 
@@ -53512,7 +54071,7 @@ function invariant(condition, message) {
 module.exports = invariant;
 
 }).call(this,require('_process'))
-},{"_process":310}],351:[function(require,module,exports){
+},{"_process":310}],352:[function(require,module,exports){
 (function (process){
 'use strict';
 
