@@ -46,14 +46,12 @@ describe('slate-edit-list', () => {
 
             const runChange = require(path.resolve(dir, 'change.js')).default;
 
-            inputEditor.change(change => {
-                runChange(plugin, change);
-                // Some runChange methods don't perform changes, which
-                // means the value won't get normalized at the
-                // end. But the expected _is_ always normalized. So we
-                // need to force a normalize here.
-                change.normalize();
-            });
+            runChange(plugin, inputEditor);
+            // Some runChange methods don't perform changes, which
+            // means the value won't get normalized at the
+            // end. But the expected _is_ always normalized. So we
+            // need to force a normalize here.
+            inputEditor.normalize();
             
             if (expected) {
                 expect(JSON.stringify(inputEditor.value)).toEqual(

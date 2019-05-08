@@ -4,7 +4,7 @@ export default function(plugin, change) {
     const initialText = change.value.startBlock.text;
     const initialSelection = change.value.selection;
 
-    change.call(plugin.changes.unwrapList).undo();
+    change.command(plugin.changes.unwrapList).undo();
 
     // Back to previous cursor position
     expect(change.value.startBlock.text).toEqual(initialText);

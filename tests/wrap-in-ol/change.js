@@ -1,3 +1,3 @@
 export default function(plugin, change) {
-    return change.call(plugin.changes.wrapInList, 'ol_list');
+    return change.command(plugin.changes.wrapInList, 'ol_list');
 }
