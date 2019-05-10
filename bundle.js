@@ -234,7 +234,7 @@ var Example = function (_React$Component) {
 
 _reactDom2.default.render(_react2.default.createElement(Example, null), document.getElementById('example'));
 
-},{"../lib/":14,"./value":2,"babel-runtime/core-js/object/get-prototype-of":35,"babel-runtime/helpers/classCallCheck":39,"babel-runtime/helpers/createClass":40,"babel-runtime/helpers/extends":42,"babel-runtime/helpers/inherits":43,"babel-runtime/helpers/possibleConstructorReturn":44,"react":322,"react-dom":318,"slate-react":332}],2:[function(require,module,exports){
+},{"../lib/":14,"./value":2,"babel-runtime/core-js/object/get-prototype-of":35,"babel-runtime/helpers/classCallCheck":39,"babel-runtime/helpers/createClass":40,"babel-runtime/helpers/extends":42,"babel-runtime/helpers/inherits":43,"babel-runtime/helpers/possibleConstructorReturn":44,"react":322,"react-dom":318,"slate-react":331}],2:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -340,7 +340,7 @@ exports.default = h(
     )
 );
 
-},{"slate-hyperscript":328}],3:[function(require,module,exports){
+},{"slate-hyperscript":327}],3:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -422,7 +422,7 @@ function decreaseItemDepth(opts, change, block) {
 }
 exports.default = decreaseItemDepth;
 
-},{"../changes":5,"../utils":22,"slate":348}],4:[function(require,module,exports){
+},{"../changes":5,"../utils":22,"slate":415}],4:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -495,7 +495,7 @@ destKey) {
 
 exports.default = increaseItemDepth;
 
-},{"../utils":22,"slate":348}],5:[function(require,module,exports){
+},{"../utils":22,"slate":415}],5:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -565,7 +565,7 @@ function splitListItem(opts, change) {
 
 exports.default = splitListItem;
 
-},{"../utils":22,"slate":348}],7:[function(require,module,exports){
+},{"../utils":22,"slate":415}],7:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -620,7 +620,7 @@ function unwrapList(opts, change, block) {
 }
 exports.default = unwrapList;
 
-},{"../utils":22,"immutable":158,"slate":348}],8:[function(require,module,exports){
+},{"../utils":22,"immutable":158,"slate":415}],8:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -649,7 +649,7 @@ function wrapInList(opts, change, type, data) {
     // of the list with the new list type. For example, if we call
     // wrapInList with 'ol_list', and we're inside a 'ul_list', replace
     // all the lists in the selection with 'ol_list'.
-    var selectedLists = document.getBlocksAtRange(selection).map(function (n) {
+    var selectedLists = document.getLeafBlocksAtRange(selection).map(function (n) {
         return (0, _utils.getCurrentList)(opts, value, n);
     }).filter(function (n) {
         return n;
@@ -721,7 +721,7 @@ function getHighestSelectedBlocks(value) {
 
 exports.default = wrapInList;
 
-},{"../utils":22,"immutable":158,"slate":348}],9:[function(require,module,exports){
+},{"../utils":22,"immutable":158,"slate":415}],9:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -876,7 +876,7 @@ function onBackspace(event, editor, next, opts) {
 }
 exports.default = onBackspace;
 
-},{"../changes":5,"../utils":22,"slate":348}],12:[function(require,module,exports){
+},{"../changes":5,"../utils":22,"slate":415}],12:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -932,7 +932,7 @@ function onEnter(event, editor, next, opts) {
 }
 exports.default = onEnter;
 
-},{"../changes":5,"../utils":22,"slate":348}],13:[function(require,module,exports){
+},{"../changes":5,"../utils":22,"slate":415}],13:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -977,7 +977,7 @@ function onTab(event, editor, next, opts) {
 }
 exports.default = onTab;
 
-},{"../changes":5,"../utils":22,"slate":348}],14:[function(require,module,exports){
+},{"../changes":5,"../utils":22,"slate":415}],14:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -1120,7 +1120,7 @@ function getCurrentItem(opts, value, block) {
 }
 exports.default = getCurrentItem;
 
-},{"slate":348}],17:[function(require,module,exports){
+},{"slate":415}],17:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -1153,7 +1153,7 @@ function getCurrentList(opts, value, block) {
 }
 exports.default = getCurrentList;
 
-},{"./getCurrentItem":16,"./getListForItem":20,"slate":348}],18:[function(require,module,exports){
+},{"./getCurrentItem":16,"./getListForItem":20,"slate":415}],18:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -1189,7 +1189,7 @@ function getItemDepth(opts, value, block) {
 
 exports.default = getItemDepth;
 
-},{"./getCurrentItem":16,"slate":348}],19:[function(require,module,exports){
+},{"./getCurrentItem":16,"slate":415}],19:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -1251,7 +1251,7 @@ function getItemsAtRange(opts, value, range) {
 
 exports.default = getItemsAtRange;
 
-},{"./getCurrentItem":16,"./isList":24,"immutable":158,"slate":348}],20:[function(require,module,exports){
+},{"./getCurrentItem":16,"./isList":24,"immutable":158,"slate":415}],20:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -1278,7 +1278,7 @@ function getListForItem(opts, value, item) {
 
 exports.default = getListForItem;
 
-},{"./isList":24,"slate":348}],21:[function(require,module,exports){
+},{"./isList":24,"slate":415}],21:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -1319,7 +1319,7 @@ function getPreviousItem(opts, value, block) {
 
 exports.default = getPreviousItem;
 
-},{"./getCurrentItem":16,"slate":348}],22:[function(require,module,exports){
+},{"./getCurrentItem":16,"slate":415}],22:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -1413,7 +1413,7 @@ function isList(opts, node) {
 }
 exports.default = isList;
 
-},{"slate":348}],25:[function(require,module,exports){
+},{"slate":415}],25:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -1443,7 +1443,7 @@ function isSelectionInList(opts, value, type) {
 }
 exports.default = isSelectionInList;
 
-},{"./getItemsAtRange":19,"./getListForItem":20,"slate":348}],26:[function(require,module,exports){
+},{"./getItemsAtRange":19,"./getListForItem":20,"slate":415}],26:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -1536,7 +1536,7 @@ function joinAdjacentLists(opts, node, next) {
 
 exports.default = normalizeNode;
 
-},{"../utils":22,"babel-runtime/helpers/slicedToArray":45,"slate":348}],28:[function(require,module,exports){
+},{"../utils":22,"babel-runtime/helpers/slicedToArray":45,"slate":415}],28:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -1629,7 +1629,7 @@ function wrapChildrenInDefaultBlock(opts, change, node) {
 
 exports.default = schema;
 
-},{"babel-runtime/helpers/defineProperty":41,"slate":348}],29:[function(require,module,exports){
+},{"babel-runtime/helpers/defineProperty":41,"slate":415}],29:[function(require,module,exports){
 module.exports = { "default": require("core-js/library/fn/array/from"), __esModule: true };
 },{"core-js/library/fn/array/from":48}],30:[function(require,module,exports){
 module.exports = { "default": require("core-js/library/fn/get-iterator"), __esModule: true };
@@ -31987,320 +31987,7 @@ var index = {
 exports.default = index;
 
 
-},{"isomorphic-base64":163,"slate":348}],325:[function(require,module,exports){
-'use strict';
-
-Object.defineProperty(exports, '__esModule', { value: true });
-
-function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
-
-var isBrowser = _interopDefault(require('is-in-browser'));
-
-var slicedToArray = function () {
-  function sliceIterator(arr, i) {
-    var _arr = [];
-    var _n = true;
-    var _d = false;
-    var _e = undefined;
-
-    try {
-      for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {
-        _arr.push(_s.value);
-
-        if (i && _arr.length === i) break;
-      }
-    } catch (err) {
-      _d = true;
-      _e = err;
-    } finally {
-      try {
-        if (!_n && _i["return"]) _i["return"]();
-      } finally {
-        if (_d) throw _e;
-      }
-    }
-
-    return _arr;
-  }
-
-  return function (arr, i) {
-    if (Array.isArray(arr)) {
-      return arr;
-    } else if (Symbol.iterator in Object(arr)) {
-      return sliceIterator(arr, i);
-    } else {
-      throw new TypeError("Invalid attempt to destructure non-iterable instance");
-    }
-  };
-}();
-
-/**
- * Browser matching rules.
- *
- * @type {Array}
- */
-
-var BROWSER_RULES = [['edge', /Edge\/([0-9\._]+)/], ['chrome', /(?!Chrom.*OPR)Chrom(?:e|ium)\/([0-9\.]+)(:?\s|$)/], ['firefox', /Firefox\/([0-9\.]+)(?:\s|$)/], ['opera', /Opera\/([0-9\.]+)(?:\s|$)/], ['opera', /OPR\/([0-9\.]+)(:?\s|$)$/], ['ie', /Trident\/7\.0.*rv\:([0-9\.]+)\).*Gecko$/], ['ie', /MSIE\s([0-9\.]+);.*Trident\/[4-7].0/], ['ie', /MSIE\s(7\.0)/], ['android', /Android\s([0-9\.]+)/], ['safari', /Version\/([0-9\._]+).*Safari/]];
-
-var browser = void 0;
-
-if (isBrowser) {
-  var _iteratorNormalCompletion = true;
-  var _didIteratorError = false;
-  var _iteratorError = undefined;
-
-  try {
-    for (var _iterator = BROWSER_RULES[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-      var _ref = _step.value;
-
-      var _ref2 = slicedToArray(_ref, 2);
-
-      var name = _ref2[0];
-      var regexp = _ref2[1];
-
-      if (regexp.test(window.navigator.userAgent)) {
-        browser = name;
-        break;
-      }
-    }
-  } catch (err) {
-    _didIteratorError = true;
-    _iteratorError = err;
-  } finally {
-    try {
-      if (!_iteratorNormalCompletion && _iterator.return) {
-        _iterator.return();
-      }
-    } finally {
-      if (_didIteratorError) {
-        throw _iteratorError;
-      }
-    }
-  }
-}
-
-/**
- * Operating system matching rules.
- *
- * @type {Array}
- */
-
-var OS_RULES = [['ios', /os ([\.\_\d]+) like mac os/i], // must be before the macos rule
-['macos', /mac os x/i], ['android', /android/i], ['firefoxos', /mozilla\/[a-z\.\_\d]+ \((?:mobile)|(?:tablet)/i], ['windows', /windows\s*(?:nt)?\s*([\.\_\d]+)/i]];
-
-var os = void 0;
-
-if (isBrowser) {
-  var _iteratorNormalCompletion2 = true;
-  var _didIteratorError2 = false;
-  var _iteratorError2 = undefined;
-
-  try {
-    for (var _iterator2 = OS_RULES[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
-      var _ref3 = _step2.value;
-
-      var _ref4 = slicedToArray(_ref3, 2);
-
-      var _name = _ref4[0];
-      var _regexp = _ref4[1];
-
-      if (_regexp.test(window.navigator.userAgent)) {
-        os = _name;
-        break;
-      }
-    }
-  } catch (err) {
-    _didIteratorError2 = true;
-    _iteratorError2 = err;
-  } finally {
-    try {
-      if (!_iteratorNormalCompletion2 && _iterator2.return) {
-        _iterator2.return();
-      }
-    } finally {
-      if (_didIteratorError2) {
-        throw _iteratorError2;
-      }
-    }
-  }
-}
-
-/**
- * Feature matching rules.
- *
- * @type {Array}
- */
-
-var FEATURE_RULES = [['inputeventslevel1', function (window) {
-  var event = window.InputEvent ? new window.InputEvent('input') : {};
-  var support = 'inputType' in event;
-  return support;
-}], ['inputeventslevel2', function (window) {
-  var element = window.document.createElement('div');
-  element.contentEditable = true;
-  var support = 'onbeforeinput' in element;
-  return support;
-}]];
-
-var features = [];
-
-if (isBrowser) {
-  var _iteratorNormalCompletion3 = true;
-  var _didIteratorError3 = false;
-  var _iteratorError3 = undefined;
-
-  try {
-    for (var _iterator3 = FEATURE_RULES[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
-      var _ref5 = _step3.value;
-
-      var _ref6 = slicedToArray(_ref5, 2);
-
-      var _name2 = _ref6[0];
-      var test = _ref6[1];
-
-      if (test(window)) {
-        features.push(_name2);
-      }
-    }
-  } catch (err) {
-    _didIteratorError3 = true;
-    _iteratorError3 = err;
-  } finally {
-    try {
-      if (!_iteratorNormalCompletion3 && _iterator3.return) {
-        _iterator3.return();
-      }
-    } finally {
-      if (_didIteratorError3) {
-        throw _iteratorError3;
-      }
-    }
-  }
-}
-
-/**
- * Export.
- *
- * @type {Boolean}
- */
-
-var IS_CHROME = browser === 'chrome';
-var IS_OPERA = browser === 'opera';
-var IS_FIREFOX = browser === 'firefox';
-var IS_SAFARI = browser === 'safari';
-var IS_IE = browser === 'ie';
-var IS_EDGE = browser === 'edge';
-
-var IS_ANDROID = os === 'android';
-var IS_IOS = os === 'ios';
-var IS_MAC = os === 'macos';
-var IS_WINDOWS = os === 'windows';
-
-var HAS_INPUT_EVENTS_LEVEL_1 = features.includes('inputeventslevel1');
-var HAS_INPUT_EVENTS_LEVEL_2 = features.includes('inputeventslevel2');
-
-exports.IS_CHROME = IS_CHROME;
-exports.IS_OPERA = IS_OPERA;
-exports.IS_FIREFOX = IS_FIREFOX;
-exports.IS_SAFARI = IS_SAFARI;
-exports.IS_IE = IS_IE;
-exports.IS_EDGE = IS_EDGE;
-exports.IS_ANDROID = IS_ANDROID;
-exports.IS_IOS = IS_IOS;
-exports.IS_MAC = IS_MAC;
-exports.IS_WINDOWS = IS_WINDOWS;
-exports.HAS_INPUT_EVENTS_LEVEL_1 = HAS_INPUT_EVENTS_LEVEL_1;
-exports.HAS_INPUT_EVENTS_LEVEL_2 = HAS_INPUT_EVENTS_LEVEL_2;
-
-
-},{"is-in-browser":160}],326:[function(require,module,exports){
-'use strict';
-
-Object.defineProperty(exports, '__esModule', { value: true });
-
-var isHotkey = require('is-hotkey');
-var slateDevEnvironment = require('slate-dev-environment');
-
-/**
- * Hotkey mappings for each platform.
- *
- * @type {Object}
- */
-
-var HOTKEYS = {
-  bold: 'mod+b',
-  compose: ['down', 'left', 'right', 'up', 'backspace', 'enter'],
-  moveBackward: 'left',
-  moveForward: 'right',
-  moveWordBackward: 'ctrl+left',
-  moveWordForward: 'ctrl+right',
-  deleteBackward: 'shift?+backspace',
-  deleteForward: 'shift?+delete',
-  extendBackward: 'shift+left',
-  extendForward: 'shift+right',
-  italic: 'mod+i',
-  splitBlock: 'shift?+enter',
-  undo: 'mod+z'
-};
-
-var APPLE_HOTKEYS = {
-  moveLineBackward: 'opt+up',
-  moveLineForward: 'opt+down',
-  moveWordBackward: 'opt+left',
-  moveWordForward: 'opt+right',
-  deleteBackward: ['ctrl+backspace', 'ctrl+h'],
-  deleteForward: ['ctrl+delete', 'ctrl+d'],
-  deleteLineBackward: 'cmd+shift?+backspace',
-  deleteLineForward: ['cmd+shift?+delete', 'ctrl+k'],
-  deleteWordBackward: 'opt+shift?+backspace',
-  deleteWordForward: 'opt+shift?+delete',
-  extendLineBackward: 'opt+shift+up',
-  extendLineForward: 'opt+shift+down',
-  redo: 'cmd+shift+z',
-  transposeCharacter: 'ctrl+t'
-};
-
-var WINDOWS_HOTKEYS = {
-  deleteWordBackward: 'ctrl+shift?+backspace',
-  deleteWordForward: 'ctrl+shift?+delete',
-  redo: 'ctrl+y'
-
-  /**
-   * Hotkeys.
-   *
-   * @type {Object}
-   */
-
-};var Hotkeys = {};
-
-var IS_APPLE = slateDevEnvironment.IS_IOS || slateDevEnvironment.IS_MAC;
-var IS_WINDOWS = !IS_APPLE;
-var KEYS = [].concat(Object.keys(HOTKEYS)).concat(Object.keys(APPLE_HOTKEYS)).concat(Object.keys(WINDOWS_HOTKEYS));
-
-KEYS.forEach(function (key) {
-  var method = 'is' + key[0].toUpperCase() + key.slice(1);
-  if (Hotkeys[method]) return;
-
-  var generic = HOTKEYS[key];
-  var apple = APPLE_HOTKEYS[key];
-  var windows = WINDOWS_HOTKEYS[key];
-
-  var isGeneric = generic && isHotkey.isKeyHotkey(generic);
-  var isApple = apple && isHotkey.isKeyHotkey(apple);
-  var isWindows = windows && isHotkey.isKeyHotkey(windows);
-
-  Hotkeys[method] = function (event) {
-    if (isGeneric && isGeneric(event)) return true;
-    if (IS_APPLE && isApple && isApple(event)) return true;
-    if (IS_WINDOWS && isWindows && isWindows(event)) return true;
-    return false;
-  };
-});
-
-exports.default = Hotkeys;
-
-
-},{"is-hotkey":159,"slate-dev-environment":327}],327:[function(require,module,exports){
+},{"isomorphic-base64":163,"slate":415}],325:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, '__esModule', { value: true });
@@ -32584,7 +32271,94 @@ exports.HAS_INPUT_EVENTS_LEVEL_1 = HAS_INPUT_EVENTS_LEVEL_1;
 exports.HAS_INPUT_EVENTS_LEVEL_2 = HAS_INPUT_EVENTS_LEVEL_2;
 
 
-},{"is-in-browser":160}],328:[function(require,module,exports){
+},{"is-in-browser":160}],326:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, '__esModule', { value: true });
+
+var isHotkey = require('is-hotkey');
+var slateDevEnvironment = require('slate-dev-environment');
+
+/**
+ * Hotkey mappings for each platform.
+ *
+ * @type {Object}
+ */
+
+var HOTKEYS = {
+  bold: 'mod+b',
+  compose: ['down', 'left', 'right', 'up', 'backspace', 'enter'],
+  moveBackward: 'left',
+  moveForward: 'right',
+  moveWordBackward: 'ctrl+left',
+  moveWordForward: 'ctrl+right',
+  deleteBackward: 'shift?+backspace',
+  deleteForward: 'shift?+delete',
+  extendBackward: 'shift+left',
+  extendForward: 'shift+right',
+  italic: 'mod+i',
+  splitBlock: 'shift?+enter',
+  undo: 'mod+z'
+};
+
+var APPLE_HOTKEYS = {
+  moveLineBackward: 'opt+up',
+  moveLineForward: 'opt+down',
+  moveWordBackward: 'opt+left',
+  moveWordForward: 'opt+right',
+  deleteBackward: ['ctrl+backspace', 'ctrl+h'],
+  deleteForward: ['ctrl+delete', 'ctrl+d'],
+  deleteLineBackward: 'cmd+shift?+backspace',
+  deleteLineForward: ['cmd+shift?+delete', 'ctrl+k'],
+  deleteWordBackward: 'opt+shift?+backspace',
+  deleteWordForward: 'opt+shift?+delete',
+  extendLineBackward: 'opt+shift+up',
+  extendLineForward: 'opt+shift+down',
+  redo: 'cmd+shift+z',
+  transposeCharacter: 'ctrl+t'
+};
+
+var WINDOWS_HOTKEYS = {
+  deleteWordBackward: 'ctrl+shift?+backspace',
+  deleteWordForward: 'ctrl+shift?+delete',
+  redo: 'ctrl+y'
+
+  /**
+   * Hotkeys.
+   *
+   * @type {Object}
+   */
+
+};var Hotkeys = {};
+
+var IS_APPLE = slateDevEnvironment.IS_IOS || slateDevEnvironment.IS_MAC;
+var IS_WINDOWS = !IS_APPLE;
+var KEYS = [].concat(Object.keys(HOTKEYS)).concat(Object.keys(APPLE_HOTKEYS)).concat(Object.keys(WINDOWS_HOTKEYS));
+
+KEYS.forEach(function (key) {
+  var method = 'is' + key[0].toUpperCase() + key.slice(1);
+  if (Hotkeys[method]) return;
+
+  var generic = HOTKEYS[key];
+  var apple = APPLE_HOTKEYS[key];
+  var windows = WINDOWS_HOTKEYS[key];
+
+  var isGeneric = generic && isHotkey.isKeyHotkey(generic);
+  var isApple = apple && isHotkey.isKeyHotkey(apple);
+  var isWindows = windows && isHotkey.isKeyHotkey(windows);
+
+  Hotkeys[method] = function (event) {
+    if (isGeneric && isGeneric(event)) return true;
+    if (IS_APPLE && isApple && isApple(event)) return true;
+    if (IS_WINDOWS && isWindows && isWindows(event)) return true;
+    return false;
+  };
+});
+
+exports.default = Hotkeys;
+
+
+},{"is-hotkey":159,"slate-dev-environment":325}],327:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, '__esModule', { value: true });
@@ -33378,7 +33152,7 @@ exports.default = index;
 exports.createHyperscript = createHyperscript;
 
 
-},{"is-plain-object":161,"slate":348}],329:[function(require,module,exports){
+},{"is-plain-object":161,"slate":415}],328:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, '__esModule', { value: true });
@@ -33503,7 +33277,7 @@ var index = {
 exports.default = index;
 
 
-},{"immutable":158,"slate":348}],330:[function(require,module,exports){
+},{"immutable":158,"slate":415}],329:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, '__esModule', { value: true });
@@ -33521,9 +33295,19 @@ var slate = require('slate');
 function create(name, validate) {
   function check(isRequired, props, propName, componentName, location) {
     var value = props[propName];
-    if (value == null && !isRequired) return null;
-    if (value == null && isRequired) return new Error('The ' + location + ' `' + propName + '` is marked as required in `' + componentName + '`, but it was not supplied.');
-    if (validate(value)) return null;
+
+    if (value == null && !isRequired) {
+      return null;
+    }
+
+    if (value == null && isRequired) {
+      return new Error('The ' + location + ' `' + propName + '` is marked as required in `' + componentName + '`, but it was not supplied.');
+    }
+
+    if (validate(value)) {
+      return null;
+    }
+
     return new Error('Invalid ' + location + ' `' + propName + '` supplied to `' + componentName + '`, expected a Slate `' + name + '` but received: ' + value);
   }
 
@@ -33598,6 +33382,9 @@ var Types = {
   ranges: create('List<Range>', function (v) {
     return slate.Range.isRangeList(v);
   }),
+  selection: create('Selection', function (v) {
+    return slate.Selection.isSelection(v);
+  }),
   value: create('Value', function (v) {
     return slate.Value.isValue(v);
   }),
@@ -33619,7 +33406,7 @@ var Types = {
 exports.default = Types;
 
 
-},{"slate":348}],331:[function(require,module,exports){
+},{"slate":415}],330:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, '__esModule', { value: true });
@@ -33814,20 +33601,21 @@ function SlateReactPlaceholder() {
 exports.default = SlateReactPlaceholder;
 
 
-},{"react":322}],332:[function(require,module,exports){
+},{"react":322}],331:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
 function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
 
-var slate = require('slate');
 var getWindow = _interopDefault(require('get-window'));
 var invariant = _interopDefault(require('tiny-invariant'));
-var Base64 = _interopDefault(require('slate-base64-serializer'));
-var Plain = _interopDefault(require('slate-plain-serializer'));
+var slate = require('slate');
 var slateDevEnvironment = require('slate-dev-environment');
 var Debug = _interopDefault(require('debug'));
+var pick = _interopDefault(require('lodash/pick'));
+var Base64 = _interopDefault(require('slate-base64-serializer'));
+var Plain = _interopDefault(require('slate-plain-serializer'));
 var Hotkeys = _interopDefault(require('slate-hotkeys'));
 var ReactDOM = _interopDefault(require('react-dom'));
 var React = _interopDefault(require('react'));
@@ -33847,71 +33635,35 @@ var memoizeOne = _interopDefault(require('memoize-one'));
  * @type {Array}
  */
 
-var EVENT_HANDLERS = ['onBeforeInput', 'onBlur', 'onClick', 'onContextMenu', 'onCompositionEnd', 'onCompositionStart', 'onCopy', 'onCut', 'onDragEnd', 'onDragEnter', 'onDragExit', 'onDragLeave', 'onDragOver', 'onDragStart', 'onDrop', 'onInput', 'onFocus', 'onKeyDown', 'onKeyUp', 'onPaste', 'onSelect'];
+var EVENT_HANDLERS = ['onBeforeInput', 'onBlur', 'onClick', 'onContextMenu', 'onCompositionEnd', 'onCompositionStart', 'onCopy', 'onCut', 'onDragEnd', 'onDragEnter', 'onDragExit', 'onDragLeave', 'onDragOver', 'onDragStart', 'onDrop', 'onInput', 'onFocus', 'onKeyDown', 'onKeyUp', 'onMouseDown', 'onMouseUp', 'onPaste', 'onSelect'];
 
 /**
- * The transfer types that Slate recognizes.
+ * Fixes a selection within the DOM when the cursor is in Slate's special
+ * zero-width block. Slate handles empty blocks in a special manner and the
+ * cursor can end up either before or after the non-breaking space. This
+ * causes different behavior in Android and so we make sure the seleciton is
+ * always before the zero-width space.
  *
- * @type {Object}
+ * @param {Window} window
  */
 
-var TRANSFER_TYPES = {
-  FRAGMENT: 'application/x-slate-fragment',
-  HTML: 'text/html',
-  NODE: 'application/x-slate-node',
-  RICH: 'text/rtf',
-  TEXT: 'text/plain'
+function fixSelectionInZeroWidthBlock(window) {
+  var domSelection = window.getSelection();
+  var anchorNode = domSelection.anchorNode;
+  var dataset = anchorNode.parentElement.dataset;
 
-  /**
-   * Export.
-   *
-   * @type {Object}
-   */
+  var isZeroWidth = dataset ? dataset.slateZeroWidth === 'n' : false;
 
-};
-
-/**
- * Find the DOM node for a `key`.
- *
- * @param {String|Node} key
- * @param {Window} win (optional)
- * @return {Element}
- */
-
-function findDOMNode(key) {
-  var win = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : window;
-
-  if (slate.Node.isNode(key)) {
-    key = key.key;
-  }
-
-  var el = win.document.querySelector('[data-key="' + key + '"]');
-
-  if (!el) {
-    throw new Error('Unable to find a DOM node for "' + key + '". This is often because of forgetting to add `props.attributes` to a custom component.');
-  }
-
-  return el;
-}
-
-/**
- * COMPAT: if we are in <= IE11 and the selection contains
- * tables, `removeAllRanges()` will throw
- * "unable to complete the operation due to error 800a025e"
- *
- * @param {Selection} selection document selection
- */
-
-function removeAllRanges(selection) {
-  var doc = window.document;
-
-  if (doc && doc.body.createTextRange) {
-    // All IE but Edge
-    var range = doc.body.createTextRange();
-    range.collapse();
-    range.select();
-  } else {
-    selection.removeAllRanges();
+  // We are doing three checks to see if we need to move the cursor.
+  // Is this a zero-width slate span?
+  // Is the current cursor position not at the start of it?
+  // Is there more than one character (i.e. the zero-width space char) in here?
+  if (isZeroWidth && anchorNode.textContent.length === 1 && domSelection.anchorOffset !== 0) {
+    var range = window.document.createRange();
+    range.setStart(anchorNode, 0);
+    range.setEnd(anchorNode, 0);
+    domSelection.removeAllRanges();
+    domSelection.addRange(range);
   }
 }
 
@@ -34174,7 +33926,12 @@ function findPoint(nativeNode, nativeOffset, editor) {
     range.setStart(textNode, 0);
     range.setEnd(nearestNode, nearestOffset);
     node = textNode;
-    offset = range.toString().length;
+
+    // COMPAT: Edge has a bug where Range.prototype.toString() will convert \n
+    // into \r\n. The bug causes a loop when slate-react attempts to reposition
+    // its cursor to match the native position. Use textContent.length instead.
+    // https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/10291116/
+    offset = range.cloneContents().textContent.length;
   } else {
     // For void nodes, the element with the offset key will be a cousin, not an
     // ancestor, so find it by going down from the nearest void parent.
@@ -34190,7 +33947,7 @@ function findPoint(nativeNode, nativeOffset, editor) {
   // text node should have no characters. However, during IME composition the
   // ASCII characters will be prepended to the zero-width space, so subtract 1
   // from the offset to account for the zero-width space character.
-  if (offset == node.textContent.length && parentNode.hasAttribute(ZERO_WIDTH_ATTRIBUTE)) {
+  if (offset === node.textContent.length && parentNode.hasAttribute(ZERO_WIDTH_ATTRIBUTE)) {
     offset--;
   }
 
@@ -34226,15 +33983,15 @@ function findPoint(nativeNode, nativeOffset, editor) {
 function normalizeNodeAndOffset(node, offset) {
   // If it's an element node, its offset refers to the index of its children
   // including comment nodes, so try to find the right text child node.
-  if (node.nodeType == 1 && node.childNodes.length) {
-    var isLast = offset == node.childNodes.length;
+  if (node.nodeType === 1 && node.childNodes.length) {
+    var isLast = offset === node.childNodes.length;
     var direction = isLast ? 'backward' : 'forward';
     var index = isLast ? offset - 1 : offset;
     node = getEditableChild(node, index, direction);
 
     // If the node has children, traverse until we have a leaf node. Leaf nodes
     // can be either text nodes, or other void DOM nodes.
-    while (node.nodeType == 1 && node.childNodes.length) {
+    while (node.nodeType === 1 && node.childNodes.length) {
       var i = isLast ? node.childNodes.length - 1 : 0;
       node = getEditableChild(node, i, direction);
     }
@@ -34267,7 +34024,7 @@ function getEditableChild(parent, index, direction) {
 
   // While the child is a comment node, or an element node with no children,
   // keep iterating to find a sibling non-void, non-comment node.
-  while (child.nodeType == 8 || child.nodeType == 1 && child.childNodes.length == 0 || child.nodeType == 1 && child.getAttribute('contenteditable') == 'false') {
+  while (child.nodeType === 8 || child.nodeType === 1 && child.childNodes.length === 0 || child.nodeType === 1 && child.getAttribute('contenteditable') === 'false') {
     if (triedForward && triedBackward) break;
 
     if (i >= childNodes.length) {
@@ -34285,169 +34042,35 @@ function getEditableChild(parent, index, direction) {
     }
 
     child = childNodes[i];
-    if (direction == 'forward') i++;
-    if (direction == 'backward') i--;
+    if (direction === 'forward') i++;
+    if (direction === 'backward') i--;
   }
 
   return child || null;
 }
 
-var FRAGMENT = TRANSFER_TYPES.FRAGMENT;
-var HTML = TRANSFER_TYPES.HTML;
-var TEXT = TRANSFER_TYPES.TEXT;
-
 /**
- * Prepares a Slate document fragment to be copied to the clipboard.
+ * Find the DOM node for a `key`.
  *
- * @param {Event} event
- * @param {Editor} editor
+ * @param {String|Node} key
+ * @param {Window} win (optional)
+ * @return {Element}
  */
 
-function cloneFragment(event, editor) {
-  var callback = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : function () {
-    return undefined;
-  };
+function findDOMNode(key) {
+  var win = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : window;
 
-  invariant(!slate.Value.isValue(editor), 'As of Slate 0.42.0, the `cloneFragment` utility takes an `editor` instead of a `value`.');
-
-  var window = getWindow(event.target);
-  var native = window.getSelection();
-  var value = editor.value;
-  var document = value.document,
-      fragment = value.fragment,
-      selection = value.selection;
-  var start = selection.start,
-      end = selection.end;
-
-  var startVoid = document.getClosestVoid(start.key, editor);
-  var endVoid = document.getClosestVoid(end.key, editor);
-
-  // If the selection is collapsed, and it isn't inside a void node, abort.
-  if (native.isCollapsed && !startVoid) return;
-
-  // Create a fake selection so that we can add a Base64-encoded copy of the
-  // fragment to the HTML, to decode on future pastes.
-  var encoded = Base64.serializeNode(fragment);
-  var range = native.getRangeAt(0);
-  var contents = range.cloneContents();
-  var attach = contents.childNodes[0];
-
-  // Make sure attach is a non-empty node, since empty nodes will not get copied
-  contents.childNodes.forEach(function (node) {
-    if (node.textContent && node.textContent.trim() !== '') {
-      attach = node;
-    }
-  });
-
-  // COMPAT: If the end node is a void node, we need to move the end of the
-  // range from the void node's spacer span, to the end of the void node's
-  // content, since the spacer is before void's content in the DOM.
-  if (endVoid) {
-    var r = range.cloneRange();
-    var node = findDOMNode(endVoid, window);
-    r.setEndAfter(node);
-    contents = r.cloneContents();
+  if (slate.Node.isNode(key)) {
+    key = key.key;
   }
 
-  // COMPAT: If the start node is a void node, we need to attach the encoded
-  // fragment to the void node's content node instead of the spacer, because
-  // attaching it to empty `<div>/<span>` nodes will end up having it erased by
-  // most browsers. (2018/04/27)
-  if (startVoid) {
-    attach = contents.childNodes[0].childNodes[1].firstChild;
+  var el = win.document.querySelector('[data-key="' + key + '"]');
+
+  if (!el) {
+    throw new Error('Unable to find a DOM node for "' + key + '". This is often because of forgetting to add `props.attributes` to a custom component.');
   }
 
-  // Remove any zero-width space spans from the cloned DOM so that they don't
-  // show up elsewhere when pasted.
-  [].slice.call(contents.querySelectorAll(ZERO_WIDTH_SELECTOR)).forEach(function (zw) {
-    var isNewline = zw.getAttribute(ZERO_WIDTH_ATTRIBUTE) === 'n';
-    zw.textContent = isNewline ? '\n' : '';
-  });
-
-  // Set a `data-slate-fragment` attribute on a non-empty node, so it shows up
-  // in the HTML, and can be used for intra-Slate pasting. If it's a text
-  // node, wrap it in a `<span>` so we have something to set an attribute on.
-  if (attach.nodeType == 3) {
-    var span = window.document.createElement('span');
-
-    // COMPAT: In Chrome and Safari, if we don't add the `white-space` style
-    // then leading and trailing spaces will be ignored. (2017/09/21)
-    span.style.whiteSpace = 'pre';
-
-    span.appendChild(attach);
-    contents.appendChild(span);
-    attach = span;
-  }
-
-  attach.setAttribute('data-slate-fragment', encoded);
-
-  //  Creates value from only the selected blocks
-  //  Then gets plaintext for clipboard with proper linebreaks for BLOCK elements
-  //  Via Plain serializer
-  var valFromSelection = slate.Value.create({ document: fragment });
-  var plainText = Plain.serialize(valFromSelection);
-
-  // Add the phony content to a div element. This is needed to copy the
-  // contents into the html clipboard register.
-  var div = window.document.createElement('div');
-  div.appendChild(contents);
-
-  // For browsers supporting it, we set the clipboard registers manually,
-  // since the result is more predictable.
-  // COMPAT: IE supports the setData method, but only in restricted sense.
-  // IE doesn't support arbitrary MIME types or common ones like 'text/plain';
-  // it only accepts "Text" (which gets mapped to 'text/plain') and "Url"
-  // (mapped to 'text/url-list'); so, we should only enter block if !IS_IE
-  if (event.clipboardData && event.clipboardData.setData && !slateDevEnvironment.IS_IE) {
-    event.preventDefault();
-    event.clipboardData.setData(TEXT, plainText);
-    event.clipboardData.setData(FRAGMENT, encoded);
-    event.clipboardData.setData(HTML, div.innerHTML);
-    callback();
-    return;
-  }
-
-  // COMPAT: For browser that don't support the Clipboard API's setData method,
-  // we must rely on the browser to natively copy what's selected.
-  // So we add the div (containing our content) to the DOM, and select it.
-  var editorEl = event.target.closest('[data-slate-editor]');
-  div.setAttribute('contenteditable', true);
-  div.style.position = 'absolute';
-  div.style.left = '-9999px';
-  editorEl.appendChild(div);
-  native.selectAllChildren(div);
-
-  // Revert to the previous selection right after copying.
-  window.requestAnimationFrame(function () {
-    editorEl.removeChild(div);
-    removeAllRanges(native);
-    native.addRange(range);
-    callback();
-  });
-}
-
-/**
- * Find a Slate node from a DOM `element`.
- *
- * @param {Element} element
- * @param {Editor} editor
- * @return {Node|Null}
- */
-
-function findNode(element, editor) {
-  invariant(!slate.Value.isValue(editor), 'As of Slate 0.42.0, the `findNode` utility takes an `editor` instead of a `value`.');
-
-  var closest = element.closest('[data-key]');
-  if (!closest) return null;
-
-  var key = closest.getAttribute('data-key');
-  if (!key) return null;
-
-  var value = editor.value;
-  var document = value.document;
-
-  var node = document.getNode(key);
-  return node || null;
+  return el;
 }
 
 /**
@@ -34478,12 +34101,17 @@ function findDOMPoint(point) {
       var text = _step.value;
 
       var node = text.childNodes[0];
-      var length = node.textContent.length;
+      var domLength = node.textContent.length;
+      var slateLength = domLength;
 
-      var end = start + length;
+      if (text.hasAttribute('data-slate-length')) {
+        slateLength = parseInt(text.getAttribute('data-slate-length'), 10);
+      }
+
+      var end = start + slateLength;
 
       if (point.offset <= end) {
-        var offset = Math.max(0, point.offset - start);
+        var offset = Math.min(domLength, Math.max(0, point.offset - start));
         return { node: node, offset: offset };
       }
 
@@ -34571,6 +34199,1321 @@ function findRange(native, editor) {
   return range;
 }
 
+function getSelectionFromDOM(window, editor, domSelection) {
+  var value = editor.value;
+  var document = value.document;
+
+  // If there are no ranges, the editor was blurred natively.
+
+  if (!domSelection.rangeCount) {
+    editor.blur();
+    return;
+  }
+
+  // Otherwise, determine the Slate selection from the native one.
+  var range = findRange(domSelection, editor);
+
+  if (!range) {
+    return;
+  }
+
+  var _range = range,
+      anchor = _range.anchor,
+      focus = _range.focus;
+
+  var anchorText = document.getNode(anchor.key);
+  var focusText = document.getNode(focus.key);
+  var anchorInline = document.getClosestInline(anchor.key);
+  var focusInline = document.getClosestInline(focus.key);
+  var focusBlock = document.getClosestBlock(focus.key);
+  var anchorBlock = document.getClosestBlock(anchor.key);
+
+  // COMPAT: If the anchor point is at the start of a non-void, and the
+  // focus point is inside a void node with an offset that isn't `0`, set
+  // the focus offset to `0`. This is due to void nodes <span>'s being
+  // positioned off screen, resulting in the offset always being greater
+  // than `0`. Since we can't know what it really should be, and since an
+  // offset of `0` is less destructive because it creates a hanging
+  // selection, go with `0`. (2017/09/07)
+  if (anchorBlock && !editor.isVoid(anchorBlock) && anchor.offset === 0 && focusBlock && editor.isVoid(focusBlock) && focus.offset !== 0) {
+    range = range.setFocus(focus.setOffset(0));
+  }
+
+  // COMPAT: If the selection is at the end of a non-void inline node, and
+  // there is a node after it, put it in the node after instead. This
+  // standardizes the behavior, since it's indistinguishable to the user.
+  if (anchorInline && !editor.isVoid(anchorInline) && anchor.offset === anchorText.text.length) {
+    var block = document.getClosestBlock(anchor.key);
+    var nextText = block.getNextText(anchor.key);
+    if (nextText) range = range.moveAnchorTo(nextText.key, 0);
+  }
+
+  if (focusInline && !editor.isVoid(focusInline) && focus.offset === focusText.text.length) {
+    var _block = document.getClosestBlock(focus.key);
+    var _nextText = _block.getNextText(focus.key);
+    if (_nextText) range = range.moveFocusTo(_nextText.key, 0);
+  }
+
+  var selection = document.createSelection(range);
+  selection = selection.setIsFocused(true);
+
+  // Preserve active marks from the current selection.
+  // They will be cleared by `editor.select` if the selection actually moved.
+  selection = selection.set('marks', value.selection.marks);
+
+  return selection;
+}
+
+/**
+ * Looks at the DOM and generates the equivalent Slate Selection.
+ *
+ * @param {Window} window
+ * @param {Editor} editor
+ * @param {Selection} domSelection - The DOM's selection Object
+ */
+
+function setSelectionFromDOM(window, editor, domSelection) {
+  var selection = getSelectionFromDOM(window, editor, domSelection);
+  editor.select(selection);
+}
+
+/**
+ * setTextFromDomNode lets us take a domNode and reconcile the text in the
+ * editor's Document such that it reflects the text in the DOM. This is the
+ * opposite of what the Editor usually does which takes the Editor's Document
+ * and React modifies the DOM to match. The purpose of this method is for
+ * composition changes where we don't know what changes the user made by
+ * looking at events. Instead we wait until the DOM is in a safe state, we
+ * read from it, and update the Editor's Document.
+ *
+ * @param {Window} window
+ * @param {Editor} editor
+ * @param {Node} domNode
+ */
+
+function setTextFromDomNode(window, editor, domNode) {
+  var point = findPoint(domNode, 0, editor);
+  if (!point) return;
+
+  // Get the text node and leaf in question.
+  var value = editor.value;
+  var document = value.document,
+      selection = value.selection;
+
+  var node = document.getDescendant(point.key);
+  var block = document.getClosestBlock(node.key);
+  var leaves = node.getLeaves();
+  var lastText = block.getLastText();
+  var lastLeaf = leaves.last();
+  var start = 0;
+  var end = 0;
+
+  var leaf = leaves.find(function (r) {
+    start = end;
+    end += r.text.length;
+    if (end > point.offset) return true;
+  }) || lastLeaf;
+
+  // Get the text information.
+  var text = leaf.text;
+  var textContent = domNode.textContent;
+
+  var isLastText = node === lastText;
+  var isLastLeaf = leaf === lastLeaf;
+  var lastChar = textContent.charAt(textContent.length - 1);
+
+  // COMPAT: If this is the last leaf, and the DOM text ends in a new line,
+  // we will have added another new line in <Leaf>'s render method to account
+  // for browsers collapsing a single trailing new lines, so remove it.
+  if (isLastText && isLastLeaf && lastChar === '\n') {
+    textContent = textContent.slice(0, -1);
+  }
+
+  // If the text is no different, abort.
+  if (textContent === text) return;
+
+  // Determine what the selection should be after changing the text.
+  // const delta = textContent.length - text.length
+  // const corrected = selection.moveToEnd().moveForward(delta)
+  var entire = selection.moveAnchorTo(point.key, start).moveFocusTo(point.key, end);
+
+  entire = document.resolveRange(entire);
+
+  // Change the current value to have the leaf's text replaced.
+  editor.insertTextAtRange(entire, textContent, leaf.marks);
+}
+
+/**
+ * In Android API 26 and 27 we can tell if the input key was pressed by
+ * waiting for the `beforeInput` event and seeing that the last character
+ * of its `data` property is char code `10`.
+ *
+ * Note that at this point it is too late to prevent the event from affecting
+ * the DOM so we use other methods to clean the DOM up after we have detected
+ * the input.
+ *
+ * @param  {String} data
+ * @return {Boolean}
+ */
+
+function isInputDataEnter(data) {
+  if (data == null) return false;
+  var lastChar = data[data.length - 1];
+  var charCode = lastChar.charCodeAt(0);
+  return charCode === 10;
+}
+
+/**
+ * In Android sometimes the only way to tell what the user is trying to do
+ * is to look at an event's `data` property and see if the last characters
+ * matches a character. This method helps us make that determination.
+ *
+ * @param {String} data
+ * @param {[String]} chars
+ * @return {Boolean}
+ */
+
+function isInputDataLastChar(data, chars) {
+  if (!Array.isArray(chars)) throw new Error("chars must be an array of one character strings");
+  if (data == null) return false;
+  var lastChar = data[data.length - 1];
+  return chars.includes(lastChar);
+}
+
+/**
+ * Is the given node a text node?
+ *
+ * @param {node} node
+ * @param {Window} window
+ * @return {Boolean}
+ */
+
+function isTextNode(node, window) {
+  return node.nodeType === window.Node.TEXT_NODE;
+}
+
+/**
+ * Takes a node and returns a snapshot of the node.
+ *
+ * @param {node} node
+ * @param {Window} window
+ * @return {object} element snapshot
+ */
+
+function getElementSnapshot(node, window) {
+  var snapshot = {};
+  snapshot.node = node;
+
+  if (isTextNode(node, window)) {
+    snapshot.text = node.textContent;
+  }
+
+  snapshot.children = Array.from(node.childNodes).map(function (childNode) {
+    return getElementSnapshot(childNode, window);
+  });
+  return snapshot;
+}
+
+/**
+ * Takes an array of elements and returns a snapshot
+ *
+ * @param {elements[]} elements
+ * @param {Window} window
+ * @return {object} snapshot
+ */
+
+function getSnapshot(elements, window) {
+  if (!elements.length) throw new Error('elements must be an Array');
+
+  var lastElement = elements[elements.length - 1];
+  var snapshot = {
+    elements: elements.map(function (element) {
+      return getElementSnapshot(element, window);
+    }),
+    parent: lastElement.parentElement,
+    next: lastElement.nextElementSibling
+  };
+  return snapshot;
+}
+
+/**
+ * Takes an element snapshot and applies it to the element in the DOM.
+ * Basically, it fixes the DOM to the point in time that the snapshot was
+ * taken. This will put the DOM back in sync with React.
+ *
+ * @param {Object} snapshot
+ * @param {Window} window
+ */
+
+function applyElementSnapshot(snapshot, window) {
+  var el = snapshot.node;
+
+  if (isTextNode(el, window)) {
+    // Update text if it is different
+    if (el.textContent !== snapshot.text) {
+      el.textContent = snapshot.text;
+    }
+  }
+
+  snapshot.children.forEach(function (childSnapshot) {
+    applyElementSnapshot(childSnapshot, window);
+    el.appendChild(childSnapshot.node);
+  });
+
+  // remove children that shouldn't be there
+  var snapLength = snapshot.children.length;
+
+  while (el.childNodes.length > snapLength) {
+    el.removeChild(el.childNodes[0]);
+  }
+
+  // remove any clones from the DOM. This can happen when a block is split.
+  var dataset = el.dataset;
+
+  if (!dataset) return; // if there's no dataset, don't remove it
+  var key = dataset.key;
+  if (!key) return; // if there's no `data-key`, don't remove it
+  var dups = new window.Set(Array.from(window.document.querySelectorAll('[data-key=\'' + key + '\']')));
+  dups.delete(el);
+  dups.forEach(function (dup) {
+    return dup.parentElement.removeChild(dup);
+  });
+}
+
+/**
+ * Takes a snapshot and applies it to the DOM. Rearranges both the contents
+ * of the elements in the snapshot as well as putting the elements back into
+ * position relative to each other and also makes sure the last element is
+ * before the same element as it was when the snapshot was taken.
+ *
+ * @param {snapshot} snapshot
+ * @param {Window} window
+ */
+
+function applySnapshot(snapshot, window) {
+  var elements = snapshot.elements,
+      next = snapshot.next,
+      parent = snapshot.parent;
+
+  elements.forEach(function (element) {
+    return applyElementSnapshot(element, window);
+  });
+  var lastElement = elements[elements.length - 1].node;
+
+  if (snapshot.next) {
+    parent.insertBefore(lastElement, next);
+  } else {
+    parent.appendChild(lastElement);
+  }
+
+  var prevElement = lastElement;
+
+  for (var i = elements.length - 2; i >= 0; i--) {
+    var element = elements[i].node;
+    parent.insertBefore(element, prevElement);
+    prevElement = element;
+  }
+}
+
+/**
+ * A snapshot of one or more elements.
+ */
+
+var ElementSnapshot = function () {
+  /**
+   * constructor
+   * @param {elements[]} elements - array of element to snapshot. Must be in order.
+   * @param {object} data - any arbitrary data you want to store with the snapshot
+   */
+
+  function ElementSnapshot(elements, data) {
+    classCallCheck(this, ElementSnapshot);
+
+    this.window = getWindow(elements[0]);
+    this.snapshot = getSnapshot(elements, this.window);
+    this.data = data;
+  }
+
+  /**
+   * apply the current snapshot to the DOM.
+   */
+
+  createClass(ElementSnapshot, [{
+    key: 'apply',
+    value: function apply() {
+      applySnapshot(this.snapshot, this.window);
+    }
+
+    /**
+     * get the data you passed into the constructor.
+     *
+     * @return {object} data
+     */
+
+  }, {
+    key: 'getData',
+    value: function getData() {
+      return this.data;
+    }
+  }]);
+  return ElementSnapshot;
+}();
+
+/**
+ * Returns the closest element that matches the selector.
+ * Unlike the native `Element.closest` method, this doesn't require the
+ * starting node to be an Element.
+ *
+ * @param  {Node} node to start at
+ * @param  {String} css selector to match
+ * @return {Element} the closest matching element
+ */
+
+function closest(node, selector) {
+  var win = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : window;
+
+  if (node.nodeType === win.Node.TEXT_NODE) {
+    node = node.parentNode;
+  }
+  return node.closest(selector);
+}
+
+/**
+ * A DomSnapshot remembers the state of elements at a given point in time
+ * and also remembers the state of the Editor at that time as well.
+ * The state can be applied to the DOM at a time in the future.
+ */
+
+var DomSnapshot = function () {
+  /**
+   * Constructor.
+   *
+   * @param {Window} window
+   * @param {Editor} editor
+   * @param {Boolean} options.before - should we remember the element before the one passed in
+   */
+
+  function DomSnapshot(window, editor) {
+    var _ref = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {},
+        _ref$before = _ref.before,
+        before = _ref$before === undefined ? false : _ref$before;
+
+    classCallCheck(this, DomSnapshot);
+
+    var domSelection = window.getSelection();
+    var anchorNode = domSelection.anchorNode;
+
+    var subrootEl = closest(anchorNode, '[data-slate-editor] > *');
+    var elements = [subrootEl];
+
+    // The before option is for when we need to take a snapshot of the current
+    // subroot and the element before when the user hits the backspace key.
+    if (before) {
+      var previousElementSibling = subrootEl.previousElementSibling;
+
+
+      if (previousElementSibling) {
+        elements.unshift(previousElementSibling);
+      }
+    }
+
+    this.snapshot = new ElementSnapshot(elements);
+    this.selection = getSelectionFromDOM(window, editor, domSelection);
+  }
+
+  /**
+   * Apply the snapshot to the DOM and set the selection in the Editor.
+   *
+   * @param {Editor} editor
+   */
+
+  createClass(DomSnapshot, [{
+    key: 'apply',
+    value: function apply(editor) {
+      var snapshot = this.snapshot,
+          selection = this.selection;
+
+      snapshot.apply();
+      editor.moveTo(selection.anchor.key, selection.anchor.offset);
+    }
+  }]);
+  return DomSnapshot;
+}();
+
+/**
+ * A function that does nothing
+ * @return {Function}
+ */
+
+function noop() {}
+
+/**
+ * Creates an executor like a `resolver` or a `deleter` that handles
+ * delayed execution of a method using a `requestAnimationFrame` or `setTimeout`.
+ *
+ * Unlike a `requestAnimationFrame`, after a method is cancelled, it can be
+ * resumed. You can also optionally add a `timeout` after which time the
+ * executor is automatically cancelled.
+ */
+
+var Executor =
+/**
+ * Executor
+ * @param {window} window
+ * @param {Function} fn - the function to execute when done
+ * @param {Object} options
+ */
+
+function Executor(window, fn) {
+  var _this = this;
+
+  var options = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+  classCallCheck(this, Executor);
+
+  this.__call__ = function () {
+    // I don't clear the timeout since it will be noop'ed anyways. Less code.
+    _this.fn();
+    _this.preventFurtherCalls(); // Ensure you can only call the function once
+  };
+
+  this.preventFurtherCalls = function () {
+    _this.fn = noop;
+  };
+
+  this.resume = function (ms) {
+    // in case resume is called more than once, we don't want old timers
+    // from executing because the `timeoutId` or `callbackId` is overwritten.
+    _this.cancel();
+
+    if (ms) {
+      _this.mode = 'timeout';
+      _this.timeoutId = _this.window.setTimeout(_this.__call__, ms);
+    } else {
+      _this.mode = 'animationFrame';
+      _this.callbackId = _this.window.requestAnimationFrame(_this.__call__);
+    }
+  };
+
+  this.cancel = function () {
+    if (_this.mode === 'timeout') {
+      _this.window.clearTimeout(_this.timeoutId);
+    } else {
+      _this.window.cancelAnimationFrame(_this.callbackId);
+    }
+
+    if (_this.onCancel) _this.onCancel();
+  };
+
+  this.__setTimeout__ = function (timeout) {
+    if (timeout == null) return;
+
+    _this.window.setTimeout(function () {
+      _this.cancel();
+      _this.preventFurtherCalls();
+    }, timeout);
+  };
+
+  this.fn = fn;
+  this.window = window;
+  this.resume();
+  this.onCancel = options.onCancel;
+  this.__setTimeout__(options.timeout);
+};
+
+var debug = Debug('slate:android');
+debug.reconcile = Debug('slate:reconcile');
+
+debug('ANDROID_API_VERSION', { ANDROID_API_VERSION: slateDevEnvironment.ANDROID_API_VERSION });
+
+/**
+ * Define variables related to composition state.
+ */
+
+var NONE = 0;
+var COMPOSING = 1;
+
+function AndroidPlugin() {
+  /**
+   * The current state of composition.
+   *
+   * @type {NONE|COMPOSING|WAITING}
+   */
+
+  var status = NONE;
+
+  /**
+   * The set of nodes that we need to process when we next reconcile.
+   * Usually this is soon after the `onCompositionEnd` event.
+   *
+   * @type {Set} set containing Node objects
+   */
+
+  var nodes = new window.Set();
+
+  /**
+   * Keep a snapshot after a composition end for API 26/27. If a `beforeInput`
+   * gets called with data that ends in an ENTER then we need to use this
+   * snapshot to revert the DOM so that React doesn't get out of sync with the
+   * DOM. We also need to cancel the `reconcile` operation as it interferes in
+   * certain scenarios like hitting 'enter' at the end of a word.
+   *
+   * @type {DomSnapshot} [compositionEndSnapshot]
+   
+   */
+
+  var compositionEndSnapshot = null;
+
+  /**
+   * When there is a `compositionEnd` we ened to reconcile Slate's Document
+   * with the DOM. The `reconciler` is an instance of `Executor` that does
+   * this for us. It is created on every `compositionEnd` and executes on the
+   * next `requestAnimationFrame`. The `Executor` can be cancelled and resumed
+   * which some methods do.
+   *
+   * @type {Executor}
+   */
+
+  var reconciler = null;
+
+  /**
+   * A snapshot that gets taken when there is a `keydown` event in API26/27.
+   * If an `input` gets called with `inputType` of `deleteContentBackward`
+   * we need to undo the delete that Android does to keep React in sync with
+   * the DOM.
+   *
+   * @type {DomSnapshot}
+   */
+
+  var keyDownSnapshot = null;
+
+  /**
+   * The deleter is an instace of `Executor` that will execute a delete
+   * operation on the next `requestAnimationFrame`. It has to wait because
+   * we need Android to finish all of its DOM operations to do with deletion
+   * before we revert them to a Snapshot. After reverting, we then execute
+   * Slate's version of delete.
+   *
+   * @type {Executor}
+   */
+
+  var deleter = null;
+
+  /**
+   * Because Slate implements its own event handler for `beforeInput` in
+   * addition to React's version, we actually get two. If we cancel the
+   * first native version, the React one will still fire. We set this to
+   * `true` if we don't want that to happen. Remember that when we prevent it,
+   * we need to tell React to `preventDefault` so the event doesn't continue
+   * through React's event system.
+   *
+   * type {Boolean}
+   */
+
+  var preventNextBeforeInput = false;
+
+  /**
+   * When a composition ends, in some API versions we may need to know what we
+   * have learned so far about the composition and what we want to do because of
+   * some actions that may come later.
+   *
+   * For example in API 26/27, if we get a `beforeInput` that tells us that the
+   * input was a `.`, then we want the reconcile to happen even if there are
+   * `onInput:delete` events that follow. In this case, we would set
+   * `compositionEndAction` to `period`. During the `onInput` we would check if
+   * the `compositionEndAction` says `period` and if so we would not start the
+   * `delete` action.
+   *
+   * @type {(String|null)}
+   */
+
+  var compositionEndAction = null;
+
+  /**
+   * Looks at the `nodes` we have collected, usually the things we have edited
+   * during the course of a composition, and then updates Slate's internal
+   * Document based on the text values in these DOM nodes and also updates
+   * Slate's Selection based on the current cursor position in the Editor.
+   *
+   * @param {Window} window
+   * @param {Editor} editor
+   * @param {String} options.from - where reconcile was called from for debug
+   */
+
+  function reconcile(window, editor, _ref) {
+    var from = _ref.from;
+
+    debug.reconcile({ from: from });
+    var domSelection = window.getSelection();
+
+    nodes.forEach(function (node) {
+      setTextFromDomNode(window, editor, node);
+    });
+
+    setSelectionFromDOM(window, editor, domSelection);
+    nodes.clear();
+  }
+
+  /**
+   * On before input.
+   *
+   * Check `components/content` because some versions of Android attach a
+   * native `beforeinput` event on the Editor. In this case, you might need
+   * to distinguish whether the event coming through is the native or React
+   * version of the event. Also, if you cancel the native version that does
+   * not necessarily mean that the React version is cancelled.
+   *
+   * @param {Event} event
+   * @param {Editor} editor
+   * @param {Function} next
+   */
+
+  function onBeforeInput(event, editor, next) {
+    var isNative = !event.nativeEvent;
+
+    debug('onBeforeInput', {
+      isNative: isNative,
+      event: event,
+      status: status,
+      e: pick(event, ['data', 'inputType', 'isComposing', 'nativeEvent'])
+    });
+
+    var window = getWindow(event.target);
+
+    if (preventNextBeforeInput) {
+      event.preventDefault();
+      preventNextBeforeInput = false;
+      return;
+    }
+
+    switch (slateDevEnvironment.ANDROID_API_VERSION) {
+      case 25:
+        // prevent onBeforeInput to allow selecting an alternate suggest to
+        // work.
+        break;
+      case 26:
+      case 27:
+        if (deleter) {
+          deleter.cancel();
+          reconciler.resume();
+        }
+
+        // This analyses Android's native `beforeInput` which Slate adds
+        // on in the `Content` component. It only fires if the cursor is at
+        // the end of a block. Otherwise, the code below checks.
+        if (isNative) {
+          if (event.inputType === 'insertParagraph' || event.inputType === 'insertLineBreak') {
+            debug('onBeforeInput:enter:native', {});
+            var domSelection = window.getSelection();
+            var selection = getSelectionFromDOM(window, editor, domSelection);
+            preventNextBeforeInput = true;
+            event.preventDefault();
+            editor.moveTo(selection.anchor.key, selection.anchor.offset);
+            editor.splitBlock();
+          }
+        } else {
+          if (isInputDataLastChar(event.data, ['.'])) {
+            debug('onBeforeInput:period');
+            reconciler.cancel();
+            compositionEndAction = 'period';
+            return;
+          }
+
+          // This looks at the beforeInput event's data property and sees if it
+          // ends in a linefeed which is character code 10. This appears to be
+          // the only way to detect that enter has been pressed except at end
+          // of line where it doesn't work.
+          var isEnter = isInputDataEnter(event.data);
+
+          if (isEnter) {
+            if (reconciler) reconciler.cancel();
+
+            window.requestAnimationFrame(function () {
+              debug('onBeforeInput:enter:react', {});
+              compositionEndSnapshot.apply(editor);
+              editor.splitBlock();
+            });
+          }
+        }
+
+        break;
+      case 28:
+        // If a `beforeInput` event fires after an `input:deleteContentBackward`
+        // event, it appears to be a good indicator that it is some sort of
+        // special combined Android event. If this is the case, then we don't
+        // want to have a deletion to happen, we just want to wait until Android
+        // has done its thing and then at the end we just want to reconcile.
+        if (deleter) {
+          deleter.cancel();
+          reconciler.resume();
+        }
+
+        break;
+      default:
+        if (status !== COMPOSING) next();
+    }
+  }
+
+  /**
+   * On Composition end. By default, when a `compositionEnd` event happens,
+   * we start a reconciler. The reconciler will update Slate's Document using
+   * the DOM as the source of truth. In some cases, the reconciler needs to
+   * be cancelled and can also be resumed. For example, when a delete
+   * immediately followed a `compositionEnd`, we don't want to reconcile.
+   * Instead, we want the `delete` to take precedence.
+   *
+   * @param  {Event} event
+   * @param  {Editor} editor
+   * @param  {Function} next
+   */
+
+  function onCompositionEnd(event, editor, next) {
+    debug('onCompositionEnd', { event: event });
+    var window = getWindow(event.target);
+    var domSelection = window.getSelection();
+    var anchorNode = domSelection.anchorNode;
+
+
+    switch (slateDevEnvironment.ANDROID_API_VERSION) {
+      case 26:
+      case 27:
+        compositionEndSnapshot = new DomSnapshot(window, editor);
+        // fixes a bug in Android API 26 & 27 where a `compositionEnd` is triggered
+        // without the corresponding `compositionStart` event when clicking a
+        // suggestion.
+        //
+        // If we don't add this, the `onBeforeInput` is triggered and passes
+        // through to the `before` plugin.
+        status = COMPOSING;
+        break;
+    }
+
+    compositionEndAction = 'reconcile';
+    nodes.add(anchorNode);
+
+    reconciler = new Executor(window, function () {
+      status = NONE;
+      reconcile(window, editor, { from: 'onCompositionEnd:reconciler' });
+      compositionEndAction = null;
+    });
+  }
+
+  /**
+   * On composition start.
+   *
+   * @param  {Event} event
+   * @param  {Editor} editor
+   * @param  {Function} next
+   */
+
+  function onCompositionStart(event, editor, next) {
+    debug('onCompositionStart', { event: event });
+    status = COMPOSING;
+    nodes.clear();
+  }
+
+  /**
+   * On composition update.
+   *
+   * @param  {Event} event
+   * @param  {Editor} editor
+   * @param  {Function} next
+   */
+
+  function onCompositionUpdate(event, editor, next) {
+    debug('onCompositionUpdate', { event: event });
+  }
+
+  /**
+   * On input.
+   *
+   * @param  {Event} event
+   * @param  {Editor} editor
+   * @param  {Function} next
+   */
+
+  function onInput(event, editor, next) {
+    debug('onInput', {
+      event: event,
+      status: status,
+      e: pick(event, ['data', 'nativeEvent', 'inputType', 'isComposing'])
+    });
+
+    switch (slateDevEnvironment.ANDROID_API_VERSION) {
+      case 24:
+      case 25:
+        break;
+      case 26:
+      case 27:
+      case 28:
+        var nativeEvent = event.nativeEvent;
+
+
+        if (slateDevEnvironment.ANDROID_API_VERSION === 28) {
+          // NOTE API 28:
+          // When a user hits space and then backspace in `middle` we end up
+          // with `midle`.
+          //
+          // This is because when the user hits space, the composition is not
+          // ended because `compositionEnd` is not called yet. When backspace is
+          // hit, the `compositionEnd` is called. We need to revert the DOM but
+          // the reconciler has not had a chance to run from the
+          // `compositionEnd` because it is set to run on the next
+          // `requestAnimationFrame`. When the backspace is carried out on the
+          // Slate Value, Slate doesn't know about the space yet so the
+          // backspace is carried out without the space cuasing us to lose a
+          // character.
+          //
+          // This fix forces Android to reconcile immediately after hitting
+          // the space.
+          //
+          // NOTE API 27:
+          // It is confirmed that this bug does not present itself on API27.
+          // A space fires a `compositionEnd` (as well as other events including
+          // an input that is a delete) so the reconciliation happens.
+          //
+          if (nativeEvent.inputType === 'insertText' && nativeEvent.data === ' ') {
+            if (reconciler) reconciler.cancel();
+            if (deleter) deleter.cancel();
+            reconcile(window, editor, { from: 'onInput:space' });
+            return;
+          }
+        }
+
+        if (slateDevEnvironment.ANDROID_API_VERSION === 26 || slateDevEnvironment.ANDROID_API_VERSION === 27) {
+          if (compositionEndAction === 'period') {
+            debug('onInput:period:abort');
+            // This means that there was a `beforeInput` that indicated the
+            // period was pressed. When a period is pressed, you get a bunch
+            // of delete actions mixed in. We want to ignore those. At this
+            // point, we add the current node to the list of things we need to
+            // resolve at the next compositionEnd. We know that a new
+            // composition will start right after this event so it is safe to
+            // do this.
+
+            var _window$getSelection = window.getSelection(),
+                anchorNode = _window$getSelection.anchorNode;
+
+            nodes.add(anchorNode);
+            return;
+          }
+        }
+
+        if (nativeEvent.inputType === 'deleteContentBackward') {
+          debug('onInput:delete', { keyDownSnapshot: keyDownSnapshot });
+          var _window = getWindow(event.target);
+          if (reconciler) reconciler.cancel();
+          if (deleter) deleter.cancel();
+
+          deleter = new Executor(_window, function () {
+            debug('onInput:delete:callback', { keyDownSnapshot: keyDownSnapshot });
+            keyDownSnapshot.apply(editor);
+            editor.deleteBackward();
+            deleter = null;
+          }, {
+            onCancel: function onCancel() {
+              deleter = null;
+            }
+          });
+          return;
+        }
+
+        if (status === COMPOSING) {
+          var _window$getSelection2 = window.getSelection(),
+              _anchorNode = _window$getSelection2.anchorNode;
+
+          nodes.add(_anchorNode);
+          return;
+        }
+
+        // Some keys like '.' are input without compositions. This happens
+        // in API28. It might be happening in API 27 as well. Check by typing
+        // `It me. No.` On a blank line.
+        if (slateDevEnvironment.ANDROID_API_VERSION === 28) {
+          debug('onInput:fallback');
+
+          var _window$getSelection3 = window.getSelection(),
+              _anchorNode2 = _window$getSelection3.anchorNode;
+
+          nodes.add(_anchorNode2);
+
+          window.requestAnimationFrame(function () {
+            debug('onInput:fallback:callback');
+            reconcile(window, editor, { from: 'onInput:fallback' });
+          });
+          return;
+        }
+
+        break;
+      default:
+        if (status === COMPOSING) return;
+        next();
+    }
+  }
+
+  /**
+   * On key down.
+   *
+   * @param  {Event} event
+   * @param  {Editor} editor
+   * @param  {Function} next
+   */
+
+  function onKeyDown(event, editor, next) {
+    debug('onKeyDown', {
+      event: event,
+      status: status,
+      e: pick(event, ['char', 'charCode', 'code', 'key', 'keyCode', 'keyIdentifier', 'keyLocation', 'location', 'nativeEvent', 'which'])
+    });
+
+    var window = getWindow(event.target);
+
+    switch (slateDevEnvironment.ANDROID_API_VERSION) {
+      // 1. We want to allow enter keydown to allows go through
+      // 2. We want to deny keydown, I think, when it fires before the composition
+      //    or something. Need to remember what it was.
+
+      case 25:
+        // in API25 prevent other keys to fix clicking a word and then
+        // selecting an alternate suggestion.
+        //
+        // NOTE:
+        // The `setSelectionFromDom` is to allow hitting `Enter` to work
+        // because the selection needs to be in the right place; however,
+        // for now we've removed the cancelling of `onSelect` and everything
+        // appears to be working. Not sure why we removed `onSelect` though
+        // in API25.
+        if (event.key === 'Enter') {
+          // const window = getWindow(event.target)
+          // const selection = window.getSelection()
+          // setSelectionFromDom(window, editor, selection)
+          next();
+        }
+
+        break;
+      case 26:
+      case 27:
+        if (event.key === 'Enter') {
+          debug('onKeyDown:enter', {});
+
+          if (deleter) {
+            // If a `deleter` exists which means there was an onInput with
+            // `deleteContentBackward` that hasn't fired yet, then we know
+            // this is one of the cases where we have to revert to before
+            // the split.
+            deleter.cancel();
+            event.preventDefault();
+
+            window.requestAnimationFrame(function () {
+              debug('onKeyDown:enter:callback');
+              compositionEndSnapshot.apply(editor);
+              editor.splitBlock();
+            });
+          } else {
+            event.preventDefault();
+            // If there is no deleter, all we have to do is prevent the
+            // action before applying or splitBlock. In this scenario, we
+            // have to grab the selection from the DOM.
+            var domSelection = window.getSelection();
+            var selection = getSelectionFromDOM(window, editor, domSelection);
+            editor.moveTo(selection.anchor.key, selection.anchor.offset);
+            editor.splitBlock();
+          }
+          return;
+        }
+
+        // We need to take a snapshot of the current selection and the
+        // element before when the user hits the backspace key. This is because
+        // we only know if the user hit backspace if the `onInput` event that
+        // follows has an `inputType` of `deleteContentBackward`. At that time
+        // it's too late to stop the event.
+        keyDownSnapshot = new DomSnapshot(window, editor, {
+          before: true
+        });
+
+        // If we let 'Enter' through it breaks handling of hitting
+        // enter at the beginning of a word so we need to stop it.
+        break;
+      case 28:
+        {
+          if (event.key === 'Enter') {
+            debug('onKeyDown:enter');
+            event.preventDefault();
+            if (reconciler) reconciler.cancel();
+            if (deleter) deleter.cancel();
+
+            window.requestAnimationFrame(function () {
+              reconcile(window, editor, { from: 'onKeyDown:enter' });
+              editor.splitBlock();
+            });
+            return;
+          }
+
+          // We need to take a snapshot of the current selection and the
+          // element before when the user hits the backspace key. This is because
+          // we only know if the user hit backspace if the `onInput` event that
+          // follows has an `inputType` of `deleteContentBackward`. At that time
+          // it's too late to stop the event.
+          keyDownSnapshot = new DomSnapshot(window, editor, {
+            before: true
+          });
+
+          debug('onKeyDown:snapshot', { keyDownSnapshot: keyDownSnapshot });
+        }
+
+        // If we let 'Enter' through it breaks handling of hitting
+        // enter at the beginning of a word so we need to stop it.
+        break;
+
+      default:
+        if (status !== COMPOSING) {
+          next();
+        }
+    }
+  }
+
+  /**
+   * On select.
+   *
+   * @param {Event} event
+   * @param {Editor} editor
+   * @param {Function} next
+   */
+
+  function onSelect(event, editor, next) {
+    debug('onSelect', { event: event, status: status });
+
+    switch (slateDevEnvironment.ANDROID_API_VERSION) {
+      // We don't want to have the selection move around in an onSelect because
+      // it happens after we press `enter` in the same transaction. This
+      // causes the cursor position to not be properly placed.
+      case 26:
+      case 27:
+      case 28:
+        var _window2 = getWindow(event.target);
+        fixSelectionInZeroWidthBlock(_window2);
+        break;
+      default:
+        break;
+    }
+  }
+
+  /**
+   * Return the plugin.
+   *
+   * @type {Object}
+   */
+
+  return {
+    onBeforeInput: onBeforeInput,
+    onCompositionEnd: onCompositionEnd,
+    onCompositionStart: onCompositionStart,
+    onCompositionUpdate: onCompositionUpdate,
+    onInput: onInput,
+    onKeyDown: onKeyDown,
+    onSelect: onSelect
+  };
+}
+
+/**
+ * The transfer types that Slate recognizes.
+ *
+ * @type {Object}
+ */
+
+var TRANSFER_TYPES = {
+  FRAGMENT: 'application/x-slate-fragment',
+  HTML: 'text/html',
+  NODE: 'application/x-slate-node',
+  RICH: 'text/rtf',
+  TEXT: 'text/plain'
+
+  /**
+   * Export.
+   *
+   * @type {Object}
+   */
+
+};
+
+/**
+ * COMPAT: if we are in <= IE11 and the selection contains
+ * tables, `removeAllRanges()` will throw
+ * "unable to complete the operation due to error 800a025e"
+ *
+ * @param {Selection} selection document selection
+ */
+
+function removeAllRanges(selection) {
+  var doc = window.document;
+
+  if (doc && doc.body.createTextRange) {
+    // All IE but Edge
+    var range = doc.body.createTextRange();
+    range.collapse();
+    range.select();
+  } else {
+    selection.removeAllRanges();
+  }
+}
+
+var FRAGMENT = TRANSFER_TYPES.FRAGMENT;
+var HTML = TRANSFER_TYPES.HTML;
+var TEXT = TRANSFER_TYPES.TEXT;
+
+/**
+ * Prepares a Slate document fragment to be copied to the clipboard.
+ *
+ * @param {Event} event
+ * @param {Editor} editor
+ */
+
+function cloneFragment(event, editor) {
+  var callback = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : function () {
+    return undefined;
+  };
+
+  invariant(!slate.Value.isValue(editor), 'As of Slate 0.42.0, the `cloneFragment` utility takes an `editor` instead of a `value`.');
+
+  var window = getWindow(event.target);
+  var native = window.getSelection();
+  var value = editor.value;
+  var document = value.document,
+      fragment = value.fragment,
+      selection = value.selection;
+  var start = selection.start,
+      end = selection.end;
+
+  var startVoid = document.getClosestVoid(start.key, editor);
+  var endVoid = document.getClosestVoid(end.key, editor);
+
+  // If the selection is collapsed, and it isn't inside a void node, abort.
+  if (native.isCollapsed && !startVoid) return;
+
+  // Create a fake selection so that we can add a Base64-encoded copy of the
+  // fragment to the HTML, to decode on future pastes.
+  var encoded = Base64.serializeNode(fragment);
+  var range = native.getRangeAt(0);
+  var contents = range.cloneContents();
+  var attach = contents.childNodes[0];
+
+  // Make sure attach is a non-empty node, since empty nodes will not get copied
+  contents.childNodes.forEach(function (node) {
+    if (node.textContent && node.textContent.trim() !== '') {
+      attach = node;
+    }
+  });
+
+  // COMPAT: If the end node is a void node, we need to move the end of the
+  // range from the void node's spacer span, to the end of the void node's
+  // content, since the spacer is before void's content in the DOM.
+  if (endVoid) {
+    var r = range.cloneRange();
+    var node = findDOMNode(endVoid, window);
+    r.setEndAfter(node);
+    contents = r.cloneContents();
+  }
+
+  // COMPAT: If the start node is a void node, we need to attach the encoded
+  // fragment to the void node's content node instead of the spacer, because
+  // attaching it to empty `<div>/<span>` nodes will end up having it erased by
+  // most browsers. (2018/04/27)
+  if (startVoid) {
+    attach = contents.childNodes[0].childNodes[1].firstChild;
+  }
+
+  // Remove any zero-width space spans from the cloned DOM so that they don't
+  // show up elsewhere when pasted.
+  [].slice.call(contents.querySelectorAll(ZERO_WIDTH_SELECTOR)).forEach(function (zw) {
+    var isNewline = zw.getAttribute(ZERO_WIDTH_ATTRIBUTE) === 'n';
+    zw.textContent = isNewline ? '\n' : '';
+  });
+
+  // Set a `data-slate-fragment` attribute on a non-empty node, so it shows up
+  // in the HTML, and can be used for intra-Slate pasting. If it's a text
+  // node, wrap it in a `<span>` so we have something to set an attribute on.
+  if (attach.nodeType === 3) {
+    var span = window.document.createElement('span');
+
+    // COMPAT: In Chrome and Safari, if we don't add the `white-space` style
+    // then leading and trailing spaces will be ignored. (2017/09/21)
+    span.style.whiteSpace = 'pre';
+
+    span.appendChild(attach);
+    contents.appendChild(span);
+    attach = span;
+  }
+
+  attach.setAttribute('data-slate-fragment', encoded);
+
+  //  Creates value from only the selected blocks
+  //  Then gets plaintext for clipboard with proper linebreaks for BLOCK elements
+  //  Via Plain serializer
+  var valFromSelection = slate.Value.create({ document: fragment });
+  var plainText = Plain.serialize(valFromSelection);
+
+  // Add the phony content to a div element. This is needed to copy the
+  // contents into the html clipboard register.
+  var div = window.document.createElement('div');
+  div.appendChild(contents);
+
+  // For browsers supporting it, we set the clipboard registers manually,
+  // since the result is more predictable.
+  // COMPAT: IE supports the setData method, but only in restricted sense.
+  // IE doesn't support arbitrary MIME types or common ones like 'text/plain';
+  // it only accepts "Text" (which gets mapped to 'text/plain') and "Url"
+  // (mapped to 'text/url-list'); so, we should only enter block if !IS_IE
+  if (event.clipboardData && event.clipboardData.setData && !slateDevEnvironment.IS_IE) {
+    event.preventDefault();
+    event.clipboardData.setData(TEXT, plainText);
+    event.clipboardData.setData(FRAGMENT, encoded);
+    event.clipboardData.setData(HTML, div.innerHTML);
+    callback();
+    return;
+  }
+
+  // COMPAT: For browser that don't support the Clipboard API's setData method,
+  // we must rely on the browser to natively copy what's selected.
+  // So we add the div (containing our content) to the DOM, and select it.
+  var editorEl = event.target.closest('[data-slate-editor]');
+  div.setAttribute('contenteditable', true);
+  div.style.position = 'absolute';
+  div.style.left = '-9999px';
+  editorEl.appendChild(div);
+  native.selectAllChildren(div);
+
+  // Revert to the previous selection right after copying.
+  window.requestAnimationFrame(function () {
+    editorEl.removeChild(div);
+    removeAllRanges(native);
+    native.addRange(range);
+    callback();
+  });
+}
+
+/**
+ * Find a Slate node from a DOM `element`.
+ *
+ * @param {Element} element
+ * @param {Editor} editor
+ * @return {Node|Null}
+ */
+
+function findNode(element, editor) {
+  invariant(!slate.Value.isValue(editor), 'As of Slate 0.42.0, the `findNode` utility takes an `editor` instead of a `value`.');
+
+  var closest = element.closest('[data-key]');
+  if (!closest) return null;
+
+  var key = closest.getAttribute('data-key');
+  if (!key) return null;
+
+  var value = editor.value;
+  var document = value.document;
+
+  var node = document.getNode(key);
+  return node || null;
+}
+
 /**
  * Get the target range from a DOM `event`.
  *
@@ -34587,8 +35530,8 @@ function getEventRange(event, editor) {
   }
 
   var _event = event,
-      x = _event.x,
-      y = _event.y,
+      x = _event.clientX,
+      y = _event.clientY,
       target = _event.target;
 
   if (x == null || y == null) return null;
@@ -34604,7 +35547,7 @@ function getEventRange(event, editor) {
   // closest to.
   if (editor.query('isVoid', node)) {
     var rect = target.getBoundingClientRect();
-    var isPrevious = node.object == 'inline' ? x - rect.left < rect.left + rect.width - x : y - rect.top < rect.top + rect.height - y;
+    var isPrevious = node.object === 'inline' ? x - rect.left < rect.left + rect.width - x : y - rect.top < rect.top + rect.height - y;
 
     var text = node.getFirstText();
     var _range = document.createRange();
@@ -34730,7 +35673,7 @@ function getEventTransfer(event) {
     // Get and normalize files if they exist.
     if (transfer.items && transfer.items.length) {
       files = Array.from(transfer.items).map(function (item) {
-        return item.kind == 'file' ? item.getAsFile() : null;
+        return item.kind === 'file' ? item.getAsFile() : null;
       }).filter(function (exists) {
         return exists;
       });
@@ -34760,7 +35703,7 @@ function getEventTransfer(event) {
 function getEmbeddedTypes(text) {
   var prefix = 'SLATE-DATA-EMBED::';
 
-  if (text.substring(0, prefix.length) != prefix) {
+  if (text.substring(0, prefix.length) !== prefix) {
     return { TEXT: text };
   }
 
@@ -34810,7 +35753,7 @@ function getType(transfer, type) {
   if (!transfer.types || !transfer.types.length) {
     // COMPAT: In IE 11, there is no `types` field but `getData('Text')`
     // is supported`. (2017/06/23)
-    return type == TEXT$1 ? transfer.getData('Text') || null : null;
+    return type === TEXT$1 ? transfer.getData('Text') || null : null;
   }
 
   // COMPAT: In Edge, transfer.types doesn't respond to `indexOf`. (2017/10/25)
@@ -34885,7 +35828,7 @@ function setEventTransfer(event, type, content) {
  * @type {Function}
  */
 
-var debug = Debug('slate:after');
+var debug$1 = Debug('slate:after');
 
 /**
  * A plugin that adds the "after" browser-specific logic to the editor.
@@ -34896,6 +35839,7 @@ var debug = Debug('slate:after');
 
 function AfterPlugin() {
   var isDraggingInternally = null;
+  var isMouseDown = false;
 
   /**
    * On before input.
@@ -34928,7 +35872,7 @@ function AfterPlugin() {
 
     if (!targetRange) return next();
 
-    debug('onBeforeInput', { event: event });
+    debug$1('onBeforeInput', { event: event });
 
     event.preventDefault();
 
@@ -35004,7 +35948,7 @@ function AfterPlugin() {
 
           // If the text was successfully inserted, and the selection had marks
           // on it, unset the selection's marks.
-          if (selection.marks && value.document != editor.value.document) {
+          if (selection.marks && value.document !== editor.value.document) {
             editor.select({ marks: null });
           }
 
@@ -35024,7 +35968,7 @@ function AfterPlugin() {
    */
 
   function onBlur(event, editor, next) {
-    debug('onBlur', { event: event });
+    debug$1('onBlur', { event: event });
     editor.blur();
     next();
   }
@@ -35046,7 +35990,7 @@ function AfterPlugin() {
     var node = findNode(event.target, editor);
     if (!node) return next();
 
-    debug('onClick', { event: event });
+    debug$1('onClick', { event: event });
 
     var ancestors = document.getAncestors(node.key);
     var isVoid = node && (editor.isVoid(node) || ancestors.some(function (a) {
@@ -35073,7 +36017,7 @@ function AfterPlugin() {
    */
 
   function onCopy(event, editor, next) {
-    debug('onCopy', { event: event });
+    debug$1('onCopy', { event: event });
     cloneFragment(event, editor);
     next();
   }
@@ -35087,7 +36031,7 @@ function AfterPlugin() {
    */
 
   function onCut(event, editor, next) {
-    debug('onCut', { event: event });
+    debug$1('onCut', { event: event });
 
     // Once the fake cut content has successfully been added to the clipboard,
     // delete the content in the current selection.
@@ -35124,7 +36068,7 @@ function AfterPlugin() {
    */
 
   function onDragEnd(event, editor, next) {
-    debug('onDragEnd', { event: event });
+    debug$1('onDragEnd', { event: event });
     isDraggingInternally = null;
     next();
   }
@@ -35138,7 +36082,7 @@ function AfterPlugin() {
    */
 
   function onDragStart(event, editor, next) {
-    debug('onDragStart', { event: event });
+    debug$1('onDragStart', { event: event });
 
     isDraggingInternally = true;
 
@@ -35182,7 +36126,7 @@ function AfterPlugin() {
     var target = getEventRange(event, editor);
     if (!target) return next();
 
-    debug('onDrop', { event: event });
+    debug$1('onDrop', { event: event });
 
     var transfer = getEventTransfer(event);
     var type = transfer.type,
@@ -35194,8 +36138,8 @@ function AfterPlugin() {
 
     // If the drag is internal and the target is after the selection, it
     // needs to account for the selection's content being deleted.
-    if (isDraggingInternally && selection.end.key == target.end.key && selection.end.offset < target.end.offset) {
-      target = target.moveForward(selection.start.key == selection.end.key ? 0 - selection.end.offset + selection.start.offset : 0 - selection.end.offset);
+    if (isDraggingInternally && selection.end.key === target.end.key && selection.end.offset < target.end.offset) {
+      target = target.moveForward(selection.start.key === selection.end.key ? 0 - selection.end.offset + selection.start.offset : 0 - selection.end.offset);
     }
 
     if (isDraggingInternally) {
@@ -35204,7 +36148,7 @@ function AfterPlugin() {
 
     editor.select(target);
 
-    if (type == 'text' || type == 'html') {
+    if (type === 'text' || type === 'html') {
       var _target = target,
           anchor = _target.anchor;
 
@@ -35230,7 +36174,7 @@ function AfterPlugin() {
       }
     }
 
-    if (type == 'fragment') {
+    if (type === 'fragment') {
       editor.insertFragment(fragment);
     }
 
@@ -35253,6 +36197,30 @@ function AfterPlugin() {
   }
 
   /**
+   * On focus.
+   *
+   * @param {Event} event
+   * @param {Editor} editor
+   * @param {Function} next
+   */
+
+  function onFocus(event, editor, next) {
+    debug$1('onFocus', { event: event });
+
+    // COMPAT: If the focus event is a mouse-based one, it will be shortly
+    // followed by a `selectionchange`, so we need to deselect here to prevent
+    // the old selection from being set by the `updateSelection` of `<Content>`,
+    // preventing the `selectionchange` from firing. (2018/11/07)
+    if (isMouseDown && !slateDevEnvironment.IS_IE && !slateDevEnvironment.IS_EDGE) {
+      editor.deselect().focus();
+    } else {
+      editor.focus();
+    }
+
+    next();
+  }
+
+  /**
    * On input.
    *
    * @param {Event} event
@@ -35261,64 +36229,16 @@ function AfterPlugin() {
    */
 
   function onInput(event, editor, next) {
+    debug$1('onInput');
     var window = getWindow(event.target);
-    var value = editor.value;
 
     // Get the selection point.
+    var selection = window.getSelection();
+    var anchorNode = selection.anchorNode;
 
-    var native = window.getSelection();
-    var anchorNode = native.anchorNode;
 
-    var point = findPoint(anchorNode, 0, editor);
-    if (!point) return next();
-
-    // Get the text node and leaf in question.
-    var document = value.document,
-        selection = value.selection;
-
-    var node = document.getDescendant(point.key);
-    var block = document.getClosestBlock(node.key);
-    var leaves = node.getLeaves();
-    var lastText = block.getLastText();
-    var lastLeaf = leaves.last();
-    var start = 0;
-    var end = 0;
-
-    var leaf = leaves.find(function (r) {
-      start = end;
-      end += r.text.length;
-      if (end > point.offset) return true;
-    }) || lastLeaf;
-
-    // Get the text information.
-    var text = leaf.text;
-    var textContent = anchorNode.textContent;
-
-    var isLastText = node == lastText;
-    var isLastLeaf = leaf == lastLeaf;
-    var lastChar = textContent.charAt(textContent.length - 1);
-
-    // COMPAT: If this is the last leaf, and the DOM text ends in a new line,
-    // we will have added another new line in <Leaf>'s render method to account
-    // for browsers collapsing a single trailing new lines, so remove it.
-    if (isLastText && isLastLeaf && lastChar == '\n') {
-      textContent = textContent.slice(0, -1);
-    }
-
-    // If the text is no different, abort.
-    if (textContent == text) return next();
-
-    debug('onInput', { event: event });
-
-    // Determine what the selection should be after changing the text.
-    var delta = textContent.length - text.length;
-    var corrected = selection.moveToEnd().moveForward(delta);
-    var entire = selection.moveAnchorTo(point.key, start).moveFocusTo(point.key, end);
-
-    entire = document.resolveRange(entire);
-
-    // Change the current value to have the leaf's text replaced.
-    editor.insertTextAtRange(entire, textContent, leaf.marks).select(corrected);
+    setTextFromDomNode(window, editor, anchorNode);
+    setSelectionFromDOM(window, editor, selection);
     next();
   }
 
@@ -35331,7 +36251,7 @@ function AfterPlugin() {
    */
 
   function onKeyDown(event, editor, next) {
-    debug('onKeyDown', { event: event });
+    debug$1('onKeyDown', { event: event });
 
     var value = editor.value;
     var document = value.document,
@@ -35440,7 +36360,7 @@ function AfterPlugin() {
 
       var isPreviousInVoid = previousText && document.hasVoidParent(previousText.key, editor);
 
-      if (hasVoidParent || isPreviousInVoid || startText.text == '') {
+      if (hasVoidParent || isPreviousInVoid || startText.text === '') {
         event.preventDefault();
         return editor.moveFocusBackward();
       }
@@ -35452,12 +36372,40 @@ function AfterPlugin() {
 
       var isNextInVoid = nextText && document.hasVoidParent(nextText.key, editor);
 
-      if (hasVoidParent || isNextInVoid || _startText.text == '') {
+      if (hasVoidParent || isNextInVoid || _startText.text === '') {
         event.preventDefault();
         return editor.moveFocusForward();
       }
     }
 
+    next();
+  }
+
+  /**
+   * On mouse down.
+   *
+   * @param {Event} event
+   * @param {Editor} editor
+   * @param {Function} next
+   */
+
+  function onMouseDown(event, editor, next) {
+    debug$1('onMouseDown', { event: event });
+    isMouseDown = true;
+    next();
+  }
+
+  /**
+   * On mouse up.
+   *
+   * @param {Event} event
+   * @param {Editor} editor
+   * @param {Function} next
+   */
+
+  function onMouseUp(event, editor, next) {
+    debug$1('onMouseUp', { event: event });
+    isMouseDown = false;
     next();
   }
 
@@ -35470,7 +36418,7 @@ function AfterPlugin() {
    */
 
   function onPaste(event, editor, next) {
-    debug('onPaste', { event: event });
+    debug$1('onPaste', { event: event });
 
     var value = editor.value;
 
@@ -35480,11 +36428,11 @@ function AfterPlugin() {
         text = transfer.text;
 
 
-    if (type == 'fragment') {
+    if (type === 'fragment') {
       editor.insertFragment(fragment);
     }
 
-    if (type == 'text' || type == 'html') {
+    if (type === 'text' || type === 'html') {
       if (!text) return next();
       var document = value.document,
           selection = value.selection,
@@ -35510,69 +36458,10 @@ function AfterPlugin() {
    */
 
   function onSelect(event, editor, next) {
-    debug('onSelect', { event: event });
-
+    debug$1('onSelect', { event: event });
     var window = getWindow(event.target);
-    var value = editor.value;
-    var document = value.document;
-
-    var native = window.getSelection();
-
-    // If there are no ranges, the editor was blurred natively.
-    if (!native.rangeCount) {
-      editor.blur();
-      return;
-    }
-
-    // Otherwise, determine the Slate selection from the native one.
-    var range = findRange(native, editor);
-    if (!range) return;
-
-    var _range = range,
-        anchor = _range.anchor,
-        focus = _range.focus;
-
-    var anchorText = document.getNode(anchor.key);
-    var focusText = document.getNode(focus.key);
-    var anchorInline = document.getClosestInline(anchor.key);
-    var focusInline = document.getClosestInline(focus.key);
-    var focusBlock = document.getClosestBlock(focus.key);
-    var anchorBlock = document.getClosestBlock(anchor.key);
-
-    // COMPAT: If the anchor point is at the start of a non-void, and the
-    // focus point is inside a void node with an offset that isn't `0`, set
-    // the focus offset to `0`. This is due to void nodes <span>'s being
-    // positioned off screen, resulting in the offset always being greater
-    // than `0`. Since we can't know what it really should be, and since an
-    // offset of `0` is less destructive because it creates a hanging
-    // selection, go with `0`. (2017/09/07)
-    if (anchorBlock && !editor.isVoid(anchorBlock) && anchor.offset == 0 && focusBlock && editor.isVoid(focusBlock) && focus.offset != 0) {
-      range = range.setFocus(focus.setOffset(0));
-    }
-
-    // COMPAT: If the selection is at the end of a non-void inline node, and
-    // there is a node after it, put it in the node after instead. This
-    // standardizes the behavior, since it's indistinguishable to the user.
-    if (anchorInline && !editor.isVoid(anchorInline) && anchor.offset == anchorText.text.length) {
-      var block = document.getClosestBlock(anchor.key);
-      var nextText = block.getNextText(anchor.key);
-      if (nextText) range = range.moveAnchorTo(nextText.key, 0);
-    }
-
-    if (focusInline && !editor.isVoid(focusInline) && focus.offset == focusText.text.length) {
-      var _block = document.getClosestBlock(focus.key);
-      var _nextText = _block.getNextText(focus.key);
-      if (_nextText) range = range.moveFocusTo(_nextText.key, 0);
-    }
-
-    var selection = document.createSelection(range);
-    selection = selection.setIsFocused(true);
-
-    // Preserve active marks from the current selection.
-    // They will be cleared by `editor.select` if the selection actually moved.
-    selection = selection.set('marks', value.selection.marks);
-
-    editor.select(selection);
+    var selection = window.getSelection();
+    setSelectionFromDOM(window, editor, selection);
     next();
   }
 
@@ -35591,8 +36480,11 @@ function AfterPlugin() {
     onDragEnd: onDragEnd,
     onDragStart: onDragStart,
     onDrop: onDrop,
+    onFocus: onFocus,
     onInput: onInput,
     onKeyDown: onKeyDown,
+    onMouseDown: onMouseDown,
+    onMouseUp: onMouseUp,
     onPaste: onPaste,
     onSelect: onSelect
   };
@@ -35604,7 +36496,7 @@ function AfterPlugin() {
  * @type {Function}
  */
 
-var debug$1 = Debug('slate:before');
+var debug$2 = Debug('slate:before');
 
 /**
  * A plugin that adds the "before" browser-specific logic to the editor.
@@ -35636,7 +36528,7 @@ function BeforePlugin() {
     // allowing React's synthetic polyfill, so we need to ignore synthetics.
     if (isSynthetic && slateDevEnvironment.HAS_INPUT_EVENTS_LEVEL_2) return;
 
-    debug$1('onBeforeInput', { event: event });
+    debug$2('onBeforeInput', { event: event });
     next();
   }
 
@@ -35684,7 +36576,7 @@ function BeforePlugin() {
       if (el.contains(relatedTarget) && node && !editor.isVoid(node)) return;
     }
 
-    debug$1('onBlur', { event: event });
+    debug$2('onBlur', { event: event });
     next();
   }
 
@@ -35707,7 +36599,7 @@ function BeforePlugin() {
       isComposing = false;
     });
 
-    debug$1('onCompositionEnd', { event: event });
+    debug$2('onCompositionEnd', { event: event });
     next();
   }
 
@@ -35720,7 +36612,7 @@ function BeforePlugin() {
    */
 
   function onClick(event, editor, next) {
-    debug$1('onClick', { event: event });
+    debug$2('onClick', { event: event });
     next();
   }
 
@@ -35751,7 +36643,7 @@ function BeforePlugin() {
       editor.delete();
     }
 
-    debug$1('onCompositionStart', { event: event });
+    debug$2('onCompositionStart', { event: event });
     next();
   }
 
@@ -35770,7 +36662,7 @@ function BeforePlugin() {
       return isCopying = false;
     });
 
-    debug$1('onCopy', { event: event });
+    debug$2('onCopy', { event: event });
     next();
   }
 
@@ -35791,7 +36683,7 @@ function BeforePlugin() {
       return isCopying = false;
     });
 
-    debug$1('onCut', { event: event });
+    debug$2('onCut', { event: event });
     next();
   }
 
@@ -35805,7 +36697,7 @@ function BeforePlugin() {
 
   function onDragEnd(event, editor, next) {
     isDragging = false;
-    debug$1('onDragEnd', { event: event });
+    debug$2('onDragEnd', { event: event });
     next();
   }
 
@@ -35818,7 +36710,7 @@ function BeforePlugin() {
    */
 
   function onDragEnter(event, editor, next) {
-    debug$1('onDragEnter', { event: event });
+    debug$2('onDragEnter', { event: event });
     next();
   }
 
@@ -35831,7 +36723,7 @@ function BeforePlugin() {
    */
 
   function onDragExit(event, editor, next) {
-    debug$1('onDragExit', { event: event });
+    debug$2('onDragExit', { event: event });
     next();
   }
 
@@ -35844,7 +36736,7 @@ function BeforePlugin() {
    */
 
   function onDragLeave(event, editor, next) {
-    debug$1('onDragLeave', { event: event });
+    debug$2('onDragLeave', { event: event });
     next();
   }
 
@@ -35883,7 +36775,7 @@ function BeforePlugin() {
       }
     }
 
-    debug$1('onDragOver', { event: event });
+    debug$2('onDragOver', { event: event });
     next();
   }
 
@@ -35897,7 +36789,7 @@ function BeforePlugin() {
 
   function onDragStart(event, editor, next) {
     isDragging = true;
-    debug$1('onDragStart', { event: event });
+    debug$2('onDragStart', { event: event });
     next();
   }
 
@@ -35915,7 +36807,7 @@ function BeforePlugin() {
     // Prevent default so the DOM's value isn't corrupted.
     event.preventDefault();
 
-    debug$1('onDrop', { event: event });
+    debug$2('onDrop', { event: event });
     next();
   }
 
@@ -35940,12 +36832,12 @@ function BeforePlugin() {
     // COMPAT: If the editor has nested editable elements, the focus can go to
     // those elements. In Firefox, this must be prevented because it results in
     // issues with keyboard navigation. (2017/03/30)
-    if (slateDevEnvironment.IS_FIREFOX && event.target != el) {
+    if (slateDevEnvironment.IS_FIREFOX && event.target !== el) {
       el.focus();
       return;
     }
 
-    debug$1('onFocus', { event: event });
+    debug$2('onFocus', { event: event });
     next();
   }
 
@@ -35960,7 +36852,7 @@ function BeforePlugin() {
   function onInput(event, editor, next) {
     if (isComposing) return;
     if (editor.value.selection.isBlurred) return;
-    debug$1('onInput', { event: event });
+    debug$2('onInput', { event: event });
     next();
   }
 
@@ -35990,7 +36882,7 @@ function BeforePlugin() {
       event.preventDefault();
     }
 
-    debug$1('onKeyDown', { event: event });
+    debug$2('onKeyDown', { event: event });
     next();
   }
 
@@ -36008,7 +36900,7 @@ function BeforePlugin() {
     // Prevent defaults so the DOM state isn't corrupted.
     event.preventDefault();
 
-    debug$1('onPaste', { event: event });
+    debug$2('onPaste', { event: event });
     next();
   }
 
@@ -36030,7 +36922,7 @@ function BeforePlugin() {
     var window = getWindow(event.target);
     activeElement = window.document.activeElement;
 
-    debug$1('onSelect', { event: event });
+    debug$2('onSelect', { event: event });
     next();
   }
 
@@ -36074,10 +36966,14 @@ function DOMPlugin() {
   var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
   var _options$plugins = options.plugins,
       plugins = _options$plugins === undefined ? [] : _options$plugins;
+  // Add Android specific handling separately before it gets to the other
+  // plugins because it is specific (other browser don't need it) and finicky
+  // (it has to come before other plugins to work).
 
+  var beforeBeforePlugins = slateDevEnvironment.IS_ANDROID ? [AndroidPlugin()] : [];
   var beforePlugin = BeforePlugin();
   var afterPlugin = AfterPlugin();
-  return [beforePlugin].concat(toConsumableArray(plugins), [afterPlugin]);
+  return [].concat(beforeBeforePlugins, [beforePlugin], toConsumableArray(plugins), [afterPlugin]);
 }
 
 /**
@@ -36086,7 +36982,7 @@ function DOMPlugin() {
  * @type {Function}
  */
 
-var debug$2 = Debug('slate:leaves');
+var debug$3 = Debug('slate:leaves');
 
 /**
  * Leaf.
@@ -36136,7 +37032,7 @@ var Leaf = function (_React$Component) {
 
     value: function shouldComponentUpdate(props) {
       // If any of the regular properties have changed, re-render.
-      if (props.index != this.props.index || props.marks != this.props.marks || props.text != this.props.text || props.parent != this.props.parent) {
+      if (props.index !== this.props.index || props.marks !== this.props.marks || props.text !== this.props.text || props.parent !== this.props.parent) {
         return true;
       }
 
@@ -36232,7 +37128,7 @@ var Leaf = function (_React$Component) {
       if (editor.query('isVoid', parent)) {
         return React.createElement(
           'span',
-          { 'data-slate-zero-width': 'z' },
+          { 'data-slate-zero-width': 'z', 'data-slate-length': parent.text.length },
           '\uFEFF'
         );
       }
@@ -36243,7 +37139,7 @@ var Leaf = function (_React$Component) {
       if (text === '' && parent.object === 'block' && parent.text === '' && parent.nodes.last() === node) {
         return React.createElement(
           'span',
-          { 'data-slate-zero-width': 'n' },
+          { 'data-slate-zero-width': 'n', 'data-slate-length': 0 },
           '\uFEFF',
           React.createElement('br', null)
         );
@@ -36255,7 +37151,7 @@ var Leaf = function (_React$Component) {
       if (text === '') {
         return React.createElement(
           'span',
-          { 'data-slate-zero-width': 'z' },
+          { 'data-slate-zero-width': 'z', 'data-slate-length': 0 },
           '\uFEFF'
         );
       }
@@ -36266,7 +37162,11 @@ var Leaf = function (_React$Component) {
       var lastChar = text.charAt(text.length - 1);
       var isLastText = node === lastText;
       var isLastLeaf = index === leaves.size - 1;
-      if (isLastText && isLastLeaf && lastChar === '\n') return text + '\n';
+      if (isLastText && isLastLeaf && lastChar === '\n') return React.createElement(
+        'span',
+        { 'data-slate-content': true },
+        text + '\n'
+      );
 
       // Otherwise, just return the content.
       return React.createElement(
@@ -36304,7 +37204,7 @@ var _initialiseProps = function _initialiseProps() {
       args[_key2 - 1] = arguments[_key2];
     }
 
-    debug$2.apply(undefined, [message, _this2.props.node.key + '-' + _this2.props.index].concat(args));
+    debug$3.apply(undefined, [message, _this2.props.node.key + '-' + _this2.props.index].concat(args));
   };
 };
 
@@ -36314,7 +37214,7 @@ var _initialiseProps = function _initialiseProps() {
  * @type {Function}
  */
 
-var debug$3 = Debug('slate:node');
+var debug$4 = Debug('slate:node');
 
 /**
  * Text.
@@ -36470,7 +37370,7 @@ var _initialiseProps$1 = function _initialiseProps() {
     var node = _this3.props.node;
     var key = node.key;
 
-    debug$3.apply(undefined, [message, key + ' (text)'].concat(args));
+    debug$4.apply(undefined, [message, key + ' (text)'].concat(args));
   };
 
   this.shouldComponentUpdate = function (nextProps) {
@@ -36483,14 +37383,14 @@ var _initialiseProps$1 = function _initialiseProps() {
     // changed, but it's properties will be exactly the same (eg. copy-paste)
     // which this won't catch. But that's rare and not a drag on performance, so
     // for simplicity we just let them through.
-    if (n.node != p.node) return true;
+    if (n.node !== p.node) return true;
 
     // If the node parent is a block node, and it was the last child of the
     // block, re-render to cleanup extra `\n`.
-    if (n.parent.object == 'block') {
+    if (n.parent.object === 'block') {
       var pLast = p.parent.nodes.last();
       var nLast = n.parent.nodes.last();
-      if (p.node == pLast && n.node != nLast) return true;
+      if (p.node === pLast && n.node !== nLast) return true;
     }
 
     // Re-render if the current decorations have changed.
@@ -36531,7 +37431,7 @@ var _initialiseProps$1 = function _initialiseProps() {
  * @type {Function}
  */
 
-var debug$4 = Debug('slate:void');
+var debug$5 = Debug('slate:void');
 
 /**
  * Void.
@@ -36584,7 +37484,7 @@ var Void = function (_React$Component) {
           node = props.node,
           readOnly = props.readOnly;
 
-      var Tag = node.object == 'block' ? 'div' : 'span';
+      var Tag = node.object === 'block' ? 'div' : 'span';
       var style = {
         height: '0',
         color: 'transparent',
@@ -36611,7 +37511,7 @@ var Void = function (_React$Component) {
         {
           'data-slate-void': true,
           'data-key': node.key,
-          contentEditable: readOnly || node.object == 'block' ? null : false
+          contentEditable: readOnly || node.object === 'block' ? null : false
         },
         readOnly ? null : spacer,
         content
@@ -36660,7 +37560,7 @@ var _initialiseProps$2 = function _initialiseProps() {
         type = node.type;
 
     var id = key + ' (' + type + ')';
-    debug$4.apply(undefined, [message, '' + id].concat(args));
+    debug$5.apply(undefined, [message, '' + id].concat(args));
   };
 
   this.renderText = function () {
@@ -36673,7 +37573,7 @@ var _initialiseProps$2 = function _initialiseProps() {
 
     var child = node.getFirstText();
     return React.createElement(Text, {
-      block: node.object == 'block' ? node : block,
+      block: node.object === 'block' ? node : block,
       decorations: decorations,
       editor: editor,
       key: child.key,
@@ -36816,7 +37716,7 @@ function getContainingChildOrder(children, keyOrders, order) {
  * @type {Function}
  */
 
-var debug$5 = Debug('slate:node');
+var debug$6 = Debug('slate:node');
 
 /**
  * Node.
@@ -36886,13 +37786,13 @@ var Node = function (_React$Component) {
 
       // If the `readOnly` status has changed, re-render in case there is any
       // user-land logic that depends on it, like nested editable contents.
-      if (n.readOnly != p.readOnly) return true;
+      if (n.readOnly !== p.readOnly) return true;
 
       // If the node has changed, update. PERF: There are cases where it will have
       // changed, but it's properties will be exactly the same (eg. copy-paste)
       // which this won't catch. But that's rare and not a drag on performance, so
       // for simplicity we just let them through.
-      if (n.node != p.node) return true;
+      if (n.node !== p.node) return true;
 
       // If the selection value of the node or of some of its children has changed,
       // re-render in case there is any user-land logic depends on it to render.
@@ -36951,7 +37851,7 @@ var Node = function (_React$Component) {
         // for text direction.
       };if (node.isLeafBlock()) {
         var direction = node.getTextDirection();
-        if (direction == 'rtl') attributes.dir = 'rtl';
+        if (direction === 'rtl') attributes.dir = 'rtl';
       }
 
       var props = {
@@ -37017,7 +37917,7 @@ var _initialiseProps$3 = function _initialiseProps() {
     var key = node.key,
         type = node.type;
 
-    debug$5.apply(undefined, [message, key + ' (' + type + ')'].concat(args));
+    debug$6.apply(undefined, [message, key + ' (' + type + ')'].concat(args));
   };
 
   this.renderNode = function (child, isSelected, decorations) {
@@ -37028,10 +37928,10 @@ var _initialiseProps$3 = function _initialiseProps() {
         readOnly = _props2.readOnly,
         isFocused = _props2.isFocused;
 
-    var Component = child.object == 'text' ? Text : Node;
+    var Component = child.object === 'text' ? Text : Node;
 
     return React.createElement(Component, {
-      block: node.object == 'block' ? node : block,
+      block: node.object === 'block' ? node : block,
       decorations: decorations,
       editor: editor,
       isSelected: isSelected,
@@ -37135,7 +38035,7 @@ function scrollToSelection(selection) {
 
   var window = getWindow(selection.anchorNode);
   var scroller = findScrollContainer(selection.anchorNode, window);
-  var isWindow = scroller == window.document.body || scroller == window.document.documentElement;
+  var isWindow = scroller === window.document.body || scroller === window.document.documentElement;
   var backward = isBackward(selection);
 
   var range = selection.getRangeAt(0).cloneRange();
@@ -37148,8 +38048,8 @@ function scrollToSelection(selection) {
   // https://bugs.webkit.org/show_bug.cgi?id=138949
   // https://bugs.chromium.org/p/chromium/issues/detail?id=435438
   if (slateDevEnvironment.IS_SAFARI) {
-    if (range.collapsed && cursorRect.top == 0 && cursorRect.height == 0) {
-      if (range.startOffset == 0) {
+    if (range.collapsed && cursorRect.top === 0 && cursorRect.height === 0) {
+      if (range.startOffset === 0) {
         range.setEnd(range.endContainer, 1);
       } else {
         range.setStart(range.startContainer, range.startOffset - 1);
@@ -37157,7 +38057,7 @@ function scrollToSelection(selection) {
 
       cursorRect = range.getBoundingClientRect();
 
-      if (cursorRect.top == 0 && cursorRect.height == 0) {
+      if (cursorRect.top === 0 && cursorRect.height === 0) {
         if (range.getClientRects().length) {
           cursorRect = range.getClientRects()[0];
         }
@@ -37260,7 +38160,16 @@ var FIREFOX_NODE_TYPE_ACCESS_ERROR = /Permission denied to access property "node
  * @type {Function}
  */
 
-var debug$6 = Debug('slate:content');
+var debug$7 = Debug('slate:content');
+
+/**
+ * Separate debug to easily see when the DOM has updated either by render or
+ * changing selection.
+ *
+ * @type {Function}
+ */
+
+debug$7.update = Debug('slate:update');
 
 /**
  * Content.
@@ -37304,87 +38213,108 @@ var Content = function (_React$Component) {
 
       var window = getWindow(_this.element);
       var native = window.getSelection();
+      var activeElement = window.document.activeElement;
 
-      // .getSelection() can return null in some cases
-      // https://bugzilla.mozilla.org/show_bug.cgi?id=827585
-      if (!native) return;
+      debug$7.update('updateSelection', { selection: selection.toJSON() });
+
+      // COMPAT: In Firefox, there's a but where `getSelection` can return `null`.
+      // https://bugzilla.mozilla.org/show_bug.cgi?id=827585 (2018/11/07)
+      if (!native) {
+        return;
+      }
 
       var rangeCount = native.rangeCount,
           anchorNode = native.anchorNode;
 
-      // If both selections are blurred, do nothing.
+      var updated = false;
 
-      if (!rangeCount && selection.isBlurred) return;
-
-      // If the selection has been blurred, but is still inside the editor in the
-      // DOM, blur it manually.
-      if (selection.isBlurred) {
-        if (!_this.isInEditor(anchorNode)) return;
-        removeAllRanges(native);
+      // If the Slate selection is blurred, but the DOM's active element is still
+      // the editor, we need to blur it.
+      if (selection.isBlurred && activeElement === _this.element) {
         _this.element.blur();
-        debug$6('updateSelection', { selection: selection, native: native });
-        return;
+        updated = true;
       }
 
-      // If the selection isn't set, do nothing.
-      if (selection.isUnset) return;
+      // If the Slate selection is unset, but the DOM selection has a range
+      // selected in the editor, we need to remove the range.
+      if (selection.isUnset && rangeCount && _this.isInEditor(anchorNode)) {
+        removeAllRanges(native);
+        updated = true;
+      }
+
+      // If the Slate selection is focused, but the DOM's active element is not
+      // the editor, we need to focus it. We prevent scrolling because we handle
+      // scrolling to the correct selection.
+      if (selection.isFocused && activeElement !== _this.element) {
+        _this.element.focus({ preventScroll: true });
+        updated = true;
+      }
 
       // Otherwise, figure out which DOM nodes should be selected...
-      var current = !!rangeCount && native.getRangeAt(0);
-      var range = findDOMRange(selection, window);
+      if (selection.isFocused && selection.isSet) {
+        var current = !!rangeCount && native.getRangeAt(0);
+        var range = findDOMRange(selection, window);
 
-      if (!range) {
-        warning(false, 'Unable to find a native DOM range from the current selection.');
+        if (!range) {
+          warning(false, 'Unable to find a native DOM range from the current selection.');
 
-        return;
-      }
-
-      var startContainer = range.startContainer,
-          startOffset = range.startOffset,
-          endContainer = range.endContainer,
-          endOffset = range.endOffset;
-
-      // If the new range matches the current selection, there is nothing to fix.
-      // COMPAT: The native `Range` object always has it's "start" first and "end"
-      // last in the DOM. It has no concept of "backwards/forwards", so we have
-      // to check both orientations here. (2017/10/31)
-
-      if (current) {
-        if (startContainer == current.startContainer && startOffset == current.startOffset && endContainer == current.endContainer && endOffset == current.endOffset || startContainer == current.endContainer && startOffset == current.endOffset && endContainer == current.startContainer && endOffset == current.startOffset) {
           return;
         }
-      }
 
-      // Otherwise, set the `isUpdatingSelection` flag and update the selection.
-      _this.tmp.isUpdatingSelection = true;
-      removeAllRanges(native);
+        var startContainer = range.startContainer,
+            startOffset = range.startOffset,
+            endContainer = range.endContainer,
+            endOffset = range.endOffset;
 
-      // COMPAT: IE 11 does not support Selection.setBaseAndExtent
-      if (native.setBaseAndExtent) {
-        // COMPAT: Since the DOM range has no concept of backwards/forwards
-        // we need to check and do the right thing here.
-        if (isBackward$$1) {
-          native.setBaseAndExtent(range.endContainer, range.endOffset, range.startContainer, range.startOffset);
-        } else {
-          native.setBaseAndExtent(range.startContainer, range.startOffset, range.endContainer, range.endOffset);
+        // If the new range matches the current selection, there is nothing to fix.
+        // COMPAT: The native `Range` object always has it's "start" first and "end"
+        // last in the DOM. It has no concept of "backwards/forwards", so we have
+        // to check both orientations here. (2017/10/31)
+
+        if (current) {
+          if (startContainer === current.startContainer && startOffset === current.startOffset && endContainer === current.endContainer && endOffset === current.endOffset || startContainer === current.endContainer && startOffset === current.endOffset && endContainer === current.startContainer && endOffset === current.startOffset) {
+            return;
+          }
         }
-      } else {
-        // COMPAT: IE 11 does not support Selection.extend, fallback to addRange
-        native.addRange(range);
+
+        // Otherwise, set the `isUpdatingSelection` flag and update the selection.
+        updated = true;
+        _this.tmp.isUpdatingSelection = true;
+        removeAllRanges(native);
+
+        // COMPAT: IE 11 does not support `setBaseAndExtent`. (2018/11/07)
+        if (native.setBaseAndExtent) {
+          // COMPAT: Since the DOM range has no concept of backwards/forwards
+          // we need to check and do the right thing here.
+          if (isBackward$$1) {
+            native.setBaseAndExtent(range.endContainer, range.endOffset, range.startContainer, range.startOffset);
+          } else {
+            native.setBaseAndExtent(range.startContainer, range.startOffset, range.endContainer, range.endOffset);
+          }
+        } else {
+          native.addRange(range);
+        }
+
+        // Scroll to the selection, in case it's out of view.
+        scrollToSelection(native);
+
+        // Then unset the `isUpdatingSelection` flag after a delay, to ensure that
+        // it is still set when selection-related events from updating it fire.
+        setTimeout(function () {
+          // COMPAT: In Firefox, it's not enough to create a range, you also need
+          // to focus the contenteditable element too. (2016/11/16)
+          if (slateDevEnvironment.IS_FIREFOX && _this.element) {
+            _this.element.focus();
+          }
+
+          _this.tmp.isUpdatingSelection = false;
+        });
       }
 
-      // Scroll to the selection, in case it's out of view.
-      scrollToSelection(native);
-
-      // Then unset the `isUpdatingSelection` flag after a delay.
-      setTimeout(function () {
-        // COMPAT: In Firefox, it's not enough to create a range, you also need to
-        // focus the contenteditable element too. (2016/11/16)
-        if (slateDevEnvironment.IS_FIREFOX && _this.element) _this.element.focus();
-        _this.tmp.isUpdatingSelection = false;
-      });
-
-      debug$6('updateSelection', { selection: selection, native: native });
+      if (updated) {
+        debug$7('updateSelection', { selection: selection, native: native, activeElement: activeElement });
+        debug$7.update('updateSelection-applied', { selection: selection });
+      }
     }, _this.ref = function (element) {
       _this.element = element;
     }, _this.isInEditor = function (target) {
@@ -37517,6 +38447,7 @@ var Content = function (_React$Component) {
   }, {
     key: 'componentDidUpdate',
     value: function componentDidUpdate() {
+      debug$7.update('componentDidUpdate');
       this.updateSelection();
     }
 
@@ -37551,11 +38482,11 @@ var Content = function (_React$Component) {
      */
 
     value: function onEvent(handler, event) {
-      debug$6('onEvent', handler);
+      debug$7('onEvent', handler);
 
       // Ignore `onBlur`, `onFocus` and `onSelect` events generated
       // programmatically while updating selection.
-      if (this.tmp.isUpdatingSelection && (handler == 'onSelect' || handler == 'onBlur' || handler == 'onFocus')) {
+      if (this.tmp.isUpdatingSelection && (handler === 'onSelect' || handler === 'onBlur' || handler === 'onFocus')) {
         return;
       }
 
@@ -37564,7 +38495,12 @@ var Content = function (_React$Component) {
       // cases we don't need to trigger any changes, since our internal model is
       // already up to date, but we do want to update the native selection again
       // to make sure it is in sync. (2017/10/16)
-      if (handler == 'onSelect') {
+      //
+      // ANDROID: The updateSelection causes issues in Android when you are
+      // at the end of a block. The selection ends up to the left of the inserted
+      // character instead of to the right. This behavior continues even if
+      // you enter more than one character. (2019/01/03)
+      if (!slateDevEnvironment.IS_ANDROID && handler === 'onSelect') {
         var editor = this.props.editor;
         var value = editor.value;
         var selection = value.selection;
@@ -37580,17 +38516,20 @@ var Content = function (_React$Component) {
       }
 
       // Don't handle drag and drop events coming from embedded editors.
-      if (handler == 'onDragEnd' || handler == 'onDragEnter' || handler == 'onDragExit' || handler == 'onDragLeave' || handler == 'onDragOver' || handler == 'onDragStart' || handler == 'onDrop') {
-        var target = event.target;
+      if (handler === 'onDragEnd' || handler === 'onDragEnter' || handler === 'onDragExit' || handler === 'onDragLeave' || handler === 'onDragOver' || handler === 'onDragStart' || handler === 'onDrop') {
+        var closest = event.target.closest('[data-slate-editor]');
 
-        var targetEditorNode = target.closest('[data-slate-editor]');
-        if (targetEditorNode !== this.element) return;
+        if (closest !== this.element) {
+          return;
+        }
       }
 
       // Some events require being in editable in the editor, so if the event
       // target isn't, ignore them.
-      if (handler == 'onBeforeInput' || handler == 'onBlur' || handler == 'onCompositionEnd' || handler == 'onCompositionStart' || handler == 'onCopy' || handler == 'onCut' || handler == 'onFocus' || handler == 'onInput' || handler == 'onKeyDown' || handler == 'onKeyUp' || handler == 'onPaste' || handler == 'onSelect') {
-        if (!this.isInEditor(event.target)) return;
+      if (handler === 'onBeforeInput' || handler === 'onBlur' || handler === 'onCompositionEnd' || handler === 'onCompositionStart' || handler === 'onCopy' || handler === 'onCut' || handler === 'onFocus' || handler === 'onInput' || handler === 'onKeyDown' || handler === 'onKeyUp' || handler === 'onPaste' || handler === 'onSelect') {
+        if (!this.isInEditor(event.target)) {
+          return;
+        }
       }
 
       this.props.onEvent(handler, event);
@@ -37620,7 +38559,8 @@ var Content = function (_React$Component) {
 
       var props = this.props,
           handlers = this.handlers;
-      var className = props.className,
+      var id = props.id,
+          className = props.className,
           readOnly = props.readOnly,
           editor = props.editor,
           tabIndex = props.tabIndex,
@@ -37653,7 +38593,13 @@ var Content = function (_React$Component) {
         wordWrap: 'break-word'
       }, readOnly ? {} : { WebkitUserModify: 'read-write-plaintext-only' }, props.style);
 
-      debug$6('render', { props: props });
+      debug$7('render', { props: props });
+
+      debug$7.update('render', {
+        text: value.document.text,
+        selection: value.selection.toJSON(),
+        value: value.toJSON()
+      });
 
       return React.createElement(
         Container,
@@ -37663,6 +38609,7 @@ var Content = function (_React$Component) {
           'data-key': document.key,
           contentEditable: readOnly ? null : true,
           suppressContentEditableWarning: true,
+          id: id,
           className: className,
           autoCorrect: props.autoCorrect ? 'on' : 'off',
           spellCheck: spellCheck,
@@ -37700,6 +38647,7 @@ Content.propTypes = {
   autoCorrect: Types.bool.isRequired,
   className: Types.string,
   editor: Types.object.isRequired,
+  id: Types.string,
   readOnly: Types.bool.isRequired,
   role: Types.string,
   spellCheck: Types.bool.isRequired,
@@ -37758,6 +38706,7 @@ function ReactPlugin() {
       autoCorrect: props.autoCorrect,
       className: props.className,
       editor: editor,
+      id: props.id,
       onEvent: function onEvent(handler, event) {
         return editor.run(handler, event);
       },
@@ -37785,9 +38734,9 @@ function ReactPlugin() {
         node = props.node;
     var object = node.object;
 
-    if (object != 'block' && object != 'inline') return null;
+    if (object !== 'block' && object !== 'inline') return null;
 
-    var Tag = object == 'block' ? 'div' : 'span';
+    var Tag = object === 'block' ? 'div' : 'span';
     var style = { position: 'relative' };
     return React.createElement(
       Tag,
@@ -37816,7 +38765,7 @@ function ReactPlugin() {
     ret.push(PlaceholderPlugin({
       placeholder: placeholder,
       when: function when(editor, node) {
-        return node.object === 'document' && node.text === '' && node.nodes.size === 1;
+        return node.object === 'document' && node.text === '' && node.nodes.size === 1 && node.getTexts().size === 1;
       }
     }));
   }
@@ -37836,7 +38785,7 @@ function ReactPlugin() {
  * @type {Function}
  */
 
-var debug$7 = Debug('slate:editor');
+var debug$8 = Debug('slate:editor');
 
 /**
  * Editor.
@@ -37858,7 +38807,15 @@ var Editor = function (_React$Component) {
       args[_key] = arguments[_key];
     }
 
-    return _ret = (_temp = (_this = possibleConstructorReturn(this, (_ref = Editor.__proto__ || Object.getPrototypeOf(Editor)).call.apply(_ref, [this].concat(args))), _this), _this.state = {}, _this.tmp = {
+    return _ret = (_temp = (_this = possibleConstructorReturn(this, (_ref = Editor.__proto__ || Object.getPrototypeOf(Editor)).call.apply(_ref, [this].concat(args))), _this), _this.state = { value: _this.props.defaultValue
+
+      /**
+       * Temporary values.
+       *
+       * @type {Object}
+       */
+
+    }, _this.tmp = {
       mounted: false,
       change: null,
       resolves: 0,
@@ -37872,11 +38829,13 @@ var Editor = function (_React$Component) {
       warning(_this.tmp.resolves < 5 || _this.tmp.resolves !== _this.tmp.updates, 'A Slate <Editor> component is re-resolving the `plugins`, `schema`, `commands`, `queries` or `placeholder` prop on each update, which leads to poor performance. This is often due to passing in a new references for these props with each render by declaring them inline in your render function. Do not do this! Declare them outside your render function, or memoize them instead.');
 
       _this.tmp.resolves++;
-      var react = ReactPlugin(_this.props);
+      var react = ReactPlugin(_extends({}, _this.props, {
+        value: _this.props.value || _this.state.value
+      }));
 
       var onChange = function onChange(change) {
         if (_this.tmp.mounted) {
-          _this.props.onChange(change);
+          _this.handleChange(change);
         } else {
           _this.tmp.change = change;
         }
@@ -37905,12 +38864,6 @@ var Editor = function (_React$Component) {
    * @type {Object}
    */
 
-  /**
-   * Temporary values.
-   *
-   * @type {Object}
-   */
-
   createClass(Editor, [{
     key: 'componentDidMount',
     value: function componentDidMount() {
@@ -37922,7 +38875,7 @@ var Editor = function (_React$Component) {
       }
 
       if (this.tmp.change) {
-        this.props.onChange(this.tmp.change);
+        this.handleChange(this.tmp.change);
         this.tmp.change = null;
       }
     }
@@ -37937,9 +38890,19 @@ var Editor = function (_React$Component) {
       this.tmp.updates++;
 
       if (this.tmp.change) {
-        this.props.onChange(this.tmp.change);
+        this.handleChange(this.tmp.change);
         this.tmp.change = null;
       }
+    }
+
+    /**
+     * When the component unmounts, make sure async commands don't trigger react updates.
+     */
+
+  }, {
+    key: 'componentWillUnmount',
+    value: function componentWillUnmount() {
+      this.tmp.mounted = false;
     }
 
     /**
@@ -37951,7 +38914,7 @@ var Editor = function (_React$Component) {
   }, {
     key: 'render',
     value: function render() {
-      debug$7('render', this);
+      debug$8('render', this);
       var props = _extends({}, this.props, { editor: this
 
         // Re-resolve the controller if needed based on memoized props.
@@ -37966,13 +38929,17 @@ var Editor = function (_React$Component) {
       // Set the current props on the controller.
       var options = props.options,
           readOnly = props.readOnly,
-          value = props.value;
+          valueFromProps = props.value;
+      var valueFromState = this.state.value;
 
+      var value = valueFromProps || valueFromState;
       this.controller.setReadOnly(readOnly);
       this.controller.setValue(value, options);
 
       // Render the editor's children with the controller.
-      var children = this.controller.run('renderEditor', props);
+      var children = this.controller.run('renderEditor', _extends({}, props, {
+        value: value
+      }));
       return children;
     }
 
@@ -37990,6 +38957,26 @@ var Editor = function (_React$Component) {
      */
 
   }, {
+    key: 'handleChange',
+    value: function handleChange(change) {
+      var onChange = this.props.onChange;
+      var value = this.state.value;
+
+
+      if (value) {
+        // Syncing value inside this component since parent does not want control of it (defaultValue was used)
+        this.setState({ value: change.value });
+      }
+
+      onChange(change);
+    }
+
+    /**
+     * Mimic the API of the `Editor` controller, so that this component instance
+     * can be passed in its place to plugins.
+     */
+
+  }, {
     key: 'applyOperation',
     value: function applyOperation() {
       var _controller;
@@ -38004,46 +38991,60 @@ var Editor = function (_React$Component) {
       return (_controller2 = this.controller).command.apply(_controller2, arguments);
     }
   }, {
-    key: 'normalize',
-    value: function normalize() {
+    key: 'hasCommand',
+    value: function hasCommand() {
       var _controller3;
 
-      return (_controller3 = this.controller).normalize.apply(_controller3, arguments);
+      return (_controller3 = this.controller).hasCommand.apply(_controller3, arguments);
+    }
+  }, {
+    key: 'hasQuery',
+    value: function hasQuery() {
+      var _controller4;
+
+      return (_controller4 = this.controller).hasQuery.apply(_controller4, arguments);
+    }
+  }, {
+    key: 'normalize',
+    value: function normalize() {
+      var _controller5;
+
+      return (_controller5 = this.controller).normalize.apply(_controller5, arguments);
     }
   }, {
     key: 'query',
     value: function query() {
-      var _controller4;
+      var _controller6;
 
-      return (_controller4 = this.controller).query.apply(_controller4, arguments);
+      return (_controller6 = this.controller).query.apply(_controller6, arguments);
     }
   }, {
     key: 'registerCommand',
     value: function registerCommand() {
-      var _controller5;
+      var _controller7;
 
-      return (_controller5 = this.controller).registerCommand.apply(_controller5, arguments);
+      return (_controller7 = this.controller).registerCommand.apply(_controller7, arguments);
     }
   }, {
     key: 'registerQuery',
     value: function registerQuery() {
-      var _controller6;
+      var _controller8;
 
-      return (_controller6 = this.controller).registerQuery.apply(_controller6, arguments);
+      return (_controller8 = this.controller).registerQuery.apply(_controller8, arguments);
     }
   }, {
     key: 'run',
     value: function run() {
-      var _controller7;
+      var _controller9;
 
-      return (_controller7 = this.controller).run.apply(_controller7, arguments);
+      return (_controller9 = this.controller).run.apply(_controller9, arguments);
     }
   }, {
     key: 'withoutNormalizing',
     value: function withoutNormalizing() {
-      var _controller8;
+      var _controller10;
 
-      return (_controller8 = this.controller).withoutNormalizing.apply(_controller8, arguments);
+      return (_controller10 = this.controller).withoutNormalizing.apply(_controller10, arguments);
     }
 
     /**
@@ -38053,68 +39054,61 @@ var Editor = function (_React$Component) {
   }, {
     key: 'call',
     value: function call() {
-      var _controller9;
+      var _controller11;
 
-      return (_controller9 = this.controller).call.apply(_controller9, arguments);
+      return (_controller11 = this.controller).call.apply(_controller11, arguments);
     }
   }, {
     key: 'change',
     value: function change() {
-      var _controller10;
+      var _controller12;
 
-      return (_controller10 = this.controller).change.apply(_controller10, arguments);
+      return (_controller12 = this.controller).change.apply(_controller12, arguments);
     }
   }, {
     key: 'onChange',
     value: function onChange() {
-      var _controller11;
+      var _controller13;
 
-      return (_controller11 = this.controller).onChange.apply(_controller11, arguments);
+      return (_controller13 = this.controller).onChange.apply(_controller13, arguments);
     }
   }, {
     key: 'applyOperations',
     value: function applyOperations() {
-      var _controller12;
+      var _controller14;
 
-      return (_controller12 = this.controller).applyOperations.apply(_controller12, arguments);
+      return (_controller14 = this.controller).applyOperations.apply(_controller14, arguments);
     }
   }, {
     key: 'setOperationFlag',
     value: function setOperationFlag() {
-      var _controller13;
+      var _controller15;
 
-      return (_controller13 = this.controller).setOperationFlag.apply(_controller13, arguments);
+      return (_controller15 = this.controller).setOperationFlag.apply(_controller15, arguments);
     }
   }, {
     key: 'getFlag',
     value: function getFlag() {
-      var _controller14;
+      var _controller16;
 
-      return (_controller14 = this.controller).getFlag.apply(_controller14, arguments);
+      return (_controller16 = this.controller).getFlag.apply(_controller16, arguments);
     }
   }, {
     key: 'unsetOperationFlag',
     value: function unsetOperationFlag() {
-      var _controller15;
+      var _controller17;
 
-      return (_controller15 = this.controller).unsetOperationFlag.apply(_controller15, arguments);
+      return (_controller17 = this.controller).unsetOperationFlag.apply(_controller17, arguments);
     }
   }, {
     key: 'withoutNormalization',
     value: function withoutNormalization() {
-      var _controller16;
+      var _controller18;
 
-      return (_controller16 = this.controller).withoutNormalization.apply(_controller16, arguments);
+      return (_controller18 = this.controller).withoutNormalization.apply(_controller18, arguments);
     }
   }, {
     key: 'operations',
-
-
-    /**
-     * Mimic the API of the `Editor` controller, so that this component instance
-     * can be passed in its place to plugins.
-     */
-
     get: function get$$1() {
       return this.controller.operations;
     }
@@ -38157,6 +39151,8 @@ Editor.propTypes = _extends({
   autoCorrect: Types.bool,
   autoFocus: Types.bool,
   className: Types.string,
+  defaultValue: SlateTypes.value,
+  id: Types.string,
   onChange: Types.func,
   options: Types.object,
   placeholder: Types.any,
@@ -38167,7 +39163,7 @@ Editor.propTypes = _extends({
   spellCheck: Types.bool,
   style: Types.object,
   tabIndex: Types.number,
-  value: SlateTypes.value.isRequired
+  value: SlateTypes.value
 }, EVENT_HANDLERS.reduce(function (obj, handler) {
   obj[handler] = Types.func;
   return obj;
@@ -38209,7 +39205,7 @@ exports.ReactPlugin = ReactPlugin;
 exports.default = index;
 
 
-},{"debug":333,"get-window":156,"immutable":158,"lodash/throttle":346,"memoize-one":307,"prop-types":314,"react":322,"react-dom":318,"react-immutable-proptypes":319,"selection-is-backward":323,"slate":348,"slate-base64-serializer":324,"slate-dev-environment":325,"slate-hotkeys":326,"slate-plain-serializer":329,"slate-prop-types":330,"slate-react-placeholder":331,"tiny-invariant":351,"tiny-warning":352}],333:[function(require,module,exports){
+},{"debug":332,"get-window":156,"immutable":158,"lodash/pick":411,"lodash/throttle":412,"memoize-one":307,"prop-types":314,"react":322,"react-dom":318,"react-immutable-proptypes":319,"selection-is-backward":323,"slate":415,"slate-base64-serializer":324,"slate-dev-environment":325,"slate-hotkeys":326,"slate-plain-serializer":328,"slate-prop-types":329,"slate-react-placeholder":330,"tiny-invariant":418,"tiny-warning":419}],332:[function(require,module,exports){
 (function (process){
 /**
  * This is the web browser implementation of `debug()`.
@@ -38408,7 +39404,7 @@ function localstorage() {
 }
 
 }).call(this,require('_process'))
-},{"./debug":334,"_process":310}],334:[function(require,module,exports){
+},{"./debug":333,"_process":310}],333:[function(require,module,exports){
 
 /**
  * This is the common logic for both the Node.js and web browser
@@ -38635,19 +39631,133 @@ function coerce(val) {
   return val;
 }
 
-},{"ms":308}],335:[function(require,module,exports){
+},{"ms":308}],334:[function(require,module,exports){
+arguments[4][165][0].apply(exports,arguments)
+},{"./_hashClear":366,"./_hashDelete":367,"./_hashGet":368,"./_hashHas":369,"./_hashSet":370,"dup":165}],335:[function(require,module,exports){
+arguments[4][166][0].apply(exports,arguments)
+},{"./_listCacheClear":376,"./_listCacheDelete":377,"./_listCacheGet":378,"./_listCacheHas":379,"./_listCacheSet":380,"dup":166}],336:[function(require,module,exports){
+arguments[4][167][0].apply(exports,arguments)
+},{"./_getNative":362,"./_root":390,"dup":167}],337:[function(require,module,exports){
+arguments[4][168][0].apply(exports,arguments)
+},{"./_mapCacheClear":381,"./_mapCacheDelete":382,"./_mapCacheGet":383,"./_mapCacheHas":384,"./_mapCacheSet":385,"dup":168}],338:[function(require,module,exports){
 arguments[4][172][0].apply(exports,arguments)
-},{"./_root":340,"dup":172}],336:[function(require,module,exports){
+},{"./_root":390,"dup":172}],339:[function(require,module,exports){
+arguments[4][175][0].apply(exports,arguments)
+},{"dup":175}],340:[function(require,module,exports){
+arguments[4][179][0].apply(exports,arguments)
+},{"dup":179}],341:[function(require,module,exports){
+arguments[4][180][0].apply(exports,arguments)
+},{"dup":180}],342:[function(require,module,exports){
+arguments[4][181][0].apply(exports,arguments)
+},{"./_baseAssignValue":344,"./eq":398,"dup":181}],343:[function(require,module,exports){
+arguments[4][182][0].apply(exports,arguments)
+},{"./eq":398,"dup":182}],344:[function(require,module,exports){
+arguments[4][185][0].apply(exports,arguments)
+},{"./_defineProperty":358,"dup":185}],345:[function(require,module,exports){
+arguments[4][188][0].apply(exports,arguments)
+},{"./_arrayPush":341,"./_isFlattenable":371,"dup":188}],346:[function(require,module,exports){
+arguments[4][189][0].apply(exports,arguments)
+},{"./_castPath":356,"./_toKey":394,"dup":189}],347:[function(require,module,exports){
 arguments[4][191][0].apply(exports,arguments)
-},{"./_Symbol":335,"./_getRawTag":338,"./_objectToString":339,"dup":191}],337:[function(require,module,exports){
+},{"./_Symbol":338,"./_getRawTag":363,"./_objectToString":388,"dup":191}],348:[function(require,module,exports){
+arguments[4][192][0].apply(exports,arguments)
+},{"dup":192}],349:[function(require,module,exports){
+arguments[4][193][0].apply(exports,arguments)
+},{"./_baseGetTag":347,"./isObjectLike":407,"dup":193}],350:[function(require,module,exports){
+arguments[4][195][0].apply(exports,arguments)
+},{"./_isMasked":375,"./_toSource":395,"./isFunction":404,"./isObject":406,"dup":195}],351:[function(require,module,exports){
+arguments[4][200][0].apply(exports,arguments)
+},{"./_basePickBy":352,"./hasIn":400,"dup":200}],352:[function(require,module,exports){
+arguments[4][201][0].apply(exports,arguments)
+},{"./_baseGet":346,"./_baseSet":353,"./_castPath":356,"dup":201}],353:[function(require,module,exports){
+arguments[4][202][0].apply(exports,arguments)
+},{"./_assignValue":342,"./_castPath":356,"./_isIndex":372,"./_toKey":394,"./isObject":406,"dup":202}],354:[function(require,module,exports){
+arguments[4][203][0].apply(exports,arguments)
+},{"./_defineProperty":358,"./constant":396,"./identity":401,"dup":203}],355:[function(require,module,exports){
+arguments[4][206][0].apply(exports,arguments)
+},{"./_Symbol":338,"./_arrayMap":340,"./isArray":403,"./isSymbol":408,"dup":206}],356:[function(require,module,exports){
+arguments[4][209][0].apply(exports,arguments)
+},{"./_isKey":373,"./_stringToPath":393,"./isArray":403,"./toString":414,"dup":209}],357:[function(require,module,exports){
+arguments[4][220][0].apply(exports,arguments)
+},{"./_root":390,"dup":220}],358:[function(require,module,exports){
+arguments[4][222][0].apply(exports,arguments)
+},{"./_getNative":362,"dup":222}],359:[function(require,module,exports){
+arguments[4][223][0].apply(exports,arguments)
+},{"./_overRest":389,"./_setToString":391,"./flatten":399,"dup":223}],360:[function(require,module,exports){
 arguments[4][224][0].apply(exports,arguments)
-},{"dup":224}],338:[function(require,module,exports){
+},{"dup":224}],361:[function(require,module,exports){
+arguments[4][227][0].apply(exports,arguments)
+},{"./_isKeyable":374,"dup":227}],362:[function(require,module,exports){
+arguments[4][228][0].apply(exports,arguments)
+},{"./_baseIsNative":350,"./_getValue":364,"dup":228}],363:[function(require,module,exports){
 arguments[4][230][0].apply(exports,arguments)
-},{"./_Symbol":335,"dup":230}],339:[function(require,module,exports){
+},{"./_Symbol":338,"dup":230}],364:[function(require,module,exports){
+arguments[4][234][0].apply(exports,arguments)
+},{"dup":234}],365:[function(require,module,exports){
+arguments[4][235][0].apply(exports,arguments)
+},{"./_castPath":356,"./_isIndex":372,"./_toKey":394,"./isArguments":402,"./isArray":403,"./isLength":405,"dup":235}],366:[function(require,module,exports){
+arguments[4][236][0].apply(exports,arguments)
+},{"./_nativeCreate":387,"dup":236}],367:[function(require,module,exports){
+arguments[4][237][0].apply(exports,arguments)
+},{"dup":237}],368:[function(require,module,exports){
+arguments[4][238][0].apply(exports,arguments)
+},{"./_nativeCreate":387,"dup":238}],369:[function(require,module,exports){
+arguments[4][239][0].apply(exports,arguments)
+},{"./_nativeCreate":387,"dup":239}],370:[function(require,module,exports){
+arguments[4][240][0].apply(exports,arguments)
+},{"./_nativeCreate":387,"dup":240}],371:[function(require,module,exports){
+arguments[4][244][0].apply(exports,arguments)
+},{"./_Symbol":338,"./isArguments":402,"./isArray":403,"dup":244}],372:[function(require,module,exports){
+arguments[4][245][0].apply(exports,arguments)
+},{"dup":245}],373:[function(require,module,exports){
+arguments[4][246][0].apply(exports,arguments)
+},{"./isArray":403,"./isSymbol":408,"dup":246}],374:[function(require,module,exports){
+arguments[4][247][0].apply(exports,arguments)
+},{"dup":247}],375:[function(require,module,exports){
+arguments[4][248][0].apply(exports,arguments)
+},{"./_coreJsData":357,"dup":248}],376:[function(require,module,exports){
+arguments[4][250][0].apply(exports,arguments)
+},{"dup":250}],377:[function(require,module,exports){
+arguments[4][251][0].apply(exports,arguments)
+},{"./_assocIndexOf":343,"dup":251}],378:[function(require,module,exports){
+arguments[4][252][0].apply(exports,arguments)
+},{"./_assocIndexOf":343,"dup":252}],379:[function(require,module,exports){
+arguments[4][253][0].apply(exports,arguments)
+},{"./_assocIndexOf":343,"dup":253}],380:[function(require,module,exports){
+arguments[4][254][0].apply(exports,arguments)
+},{"./_assocIndexOf":343,"dup":254}],381:[function(require,module,exports){
+arguments[4][255][0].apply(exports,arguments)
+},{"./_Hash":334,"./_ListCache":335,"./_Map":336,"dup":255}],382:[function(require,module,exports){
+arguments[4][256][0].apply(exports,arguments)
+},{"./_getMapData":361,"dup":256}],383:[function(require,module,exports){
+arguments[4][257][0].apply(exports,arguments)
+},{"./_getMapData":361,"dup":257}],384:[function(require,module,exports){
+arguments[4][258][0].apply(exports,arguments)
+},{"./_getMapData":361,"dup":258}],385:[function(require,module,exports){
+arguments[4][259][0].apply(exports,arguments)
+},{"./_getMapData":361,"dup":259}],386:[function(require,module,exports){
+arguments[4][260][0].apply(exports,arguments)
+},{"./memoize":409,"dup":260}],387:[function(require,module,exports){
+arguments[4][261][0].apply(exports,arguments)
+},{"./_getNative":362,"dup":261}],388:[function(require,module,exports){
 arguments[4][265][0].apply(exports,arguments)
-},{"dup":265}],340:[function(require,module,exports){
+},{"dup":265}],389:[function(require,module,exports){
+arguments[4][267][0].apply(exports,arguments)
+},{"./_apply":339,"dup":267}],390:[function(require,module,exports){
 arguments[4][269][0].apply(exports,arguments)
-},{"./_freeGlobal":337,"dup":269}],341:[function(require,module,exports){
+},{"./_freeGlobal":360,"dup":269}],391:[function(require,module,exports){
+arguments[4][270][0].apply(exports,arguments)
+},{"./_baseSetToString":354,"./_shortOut":392,"dup":270}],392:[function(require,module,exports){
+arguments[4][271][0].apply(exports,arguments)
+},{"dup":271}],393:[function(require,module,exports){
+arguments[4][277][0].apply(exports,arguments)
+},{"./_memoizeCapped":386,"dup":277}],394:[function(require,module,exports){
+arguments[4][278][0].apply(exports,arguments)
+},{"./isSymbol":408,"dup":278}],395:[function(require,module,exports){
+arguments[4][279][0].apply(exports,arguments)
+},{"dup":279}],396:[function(require,module,exports){
+arguments[4][280][0].apply(exports,arguments)
+},{"dup":280}],397:[function(require,module,exports){
 var isObject = require('./isObject'),
     now = require('./now'),
     toNumber = require('./toNumber');
@@ -38839,13 +39949,31 @@ function debounce(func, wait, options) {
 
 module.exports = debounce;
 
-},{"./isObject":342,"./now":345,"./toNumber":347}],342:[function(require,module,exports){
+},{"./isObject":406,"./now":410,"./toNumber":413}],398:[function(require,module,exports){
+arguments[4][281][0].apply(exports,arguments)
+},{"dup":281}],399:[function(require,module,exports){
+arguments[4][282][0].apply(exports,arguments)
+},{"./_baseFlatten":345,"dup":282}],400:[function(require,module,exports){
+arguments[4][283][0].apply(exports,arguments)
+},{"./_baseHasIn":348,"./_hasPath":365,"dup":283}],401:[function(require,module,exports){
+arguments[4][284][0].apply(exports,arguments)
+},{"dup":284}],402:[function(require,module,exports){
+arguments[4][285][0].apply(exports,arguments)
+},{"./_baseIsArguments":349,"./isObjectLike":407,"dup":285}],403:[function(require,module,exports){
+arguments[4][286][0].apply(exports,arguments)
+},{"dup":286}],404:[function(require,module,exports){
+arguments[4][289][0].apply(exports,arguments)
+},{"./_baseGetTag":347,"./isObject":406,"dup":289}],405:[function(require,module,exports){
+arguments[4][290][0].apply(exports,arguments)
+},{"dup":290}],406:[function(require,module,exports){
 arguments[4][292][0].apply(exports,arguments)
-},{"dup":292}],343:[function(require,module,exports){
+},{"dup":292}],407:[function(require,module,exports){
 arguments[4][293][0].apply(exports,arguments)
-},{"dup":293}],344:[function(require,module,exports){
+},{"dup":293}],408:[function(require,module,exports){
 arguments[4][296][0].apply(exports,arguments)
-},{"./_baseGetTag":336,"./isObjectLike":343,"dup":296}],345:[function(require,module,exports){
+},{"./_baseGetTag":347,"./isObjectLike":407,"dup":296}],409:[function(require,module,exports){
+arguments[4][301][0].apply(exports,arguments)
+},{"./_MapCache":337,"dup":301}],410:[function(require,module,exports){
 var root = require('./_root');
 
 /**
@@ -38870,7 +39998,9 @@ var now = function() {
 
 module.exports = now;
 
-},{"./_root":340}],346:[function(require,module,exports){
+},{"./_root":390}],411:[function(require,module,exports){
+arguments[4][303][0].apply(exports,arguments)
+},{"./_basePick":351,"./_flatRest":359,"dup":303}],412:[function(require,module,exports){
 var debounce = require('./debounce'),
     isObject = require('./isObject');
 
@@ -38941,7 +40071,7 @@ function throttle(func, wait, options) {
 
 module.exports = throttle;
 
-},{"./debounce":341,"./isObject":342}],347:[function(require,module,exports){
+},{"./debounce":397,"./isObject":406}],413:[function(require,module,exports){
 var isObject = require('./isObject'),
     isSymbol = require('./isSymbol');
 
@@ -39009,7 +40139,9 @@ function toNumber(value) {
 
 module.exports = toNumber;
 
-},{"./isObject":342,"./isSymbol":344}],348:[function(require,module,exports){
+},{"./isObject":406,"./isSymbol":408}],414:[function(require,module,exports){
+arguments[4][306][0].apply(exports,arguments)
+},{"./_baseToString":355,"dup":306}],415:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, '__esModule', { value: true });
@@ -39539,7 +40671,7 @@ var Inline = function (_Record) {
         return attrs;
       }
 
-      if (typeof attrs == 'string') {
+      if (typeof attrs === 'string') {
         attrs = { type: attrs };
       }
 
@@ -39593,7 +40725,7 @@ var Inline = function (_Record) {
           type = object.type;
 
 
-      if (typeof type != 'string') {
+      if (typeof type !== 'string') {
         throw new Error('`Inline.fromJS` requires a `type` string.');
       }
 
@@ -39686,7 +40818,7 @@ var Mark = function (_Record) {
         return attrs;
       }
 
-      if (typeof attrs == 'string') {
+      if (typeof attrs === 'string') {
         attrs = { type: attrs };
       }
 
@@ -39738,7 +40870,7 @@ var Mark = function (_Record) {
         };
       }
 
-      if (typeof attrs == 'string') {
+      if (typeof attrs === 'string') {
         return { type: attrs };
       }
 
@@ -39767,7 +40899,7 @@ var Mark = function (_Record) {
           type = object.type;
 
 
-      if (typeof type != 'string') {
+      if (typeof type !== 'string') {
         throw new Error('`Mark.fromJS` requires a `type` string.');
       }
 
@@ -39943,7 +41075,7 @@ var Leaf = function (_Record) {
         return attrs;
       }
 
-      if (typeof attrs == 'string') {
+      if (typeof attrs === 'string') {
         attrs = { text: attrs };
       }
 
@@ -40128,6 +41260,8 @@ var Leaf = function (_Record) {
   return Leaf;
 }(immutable.Record(DEFAULTS$3));
 
+/* global WeakMap, Map, Symbol */
+
 /**
  * GLOBAL: True if memoization should is enabled.
  *
@@ -40137,30 +41271,31 @@ var Leaf = function (_Record) {
 var ENABLED = true;
 
 /**
- * GLOBAL: Changing this cache key will clear all previous cached results.
- *
- * @type {Number}
- */
-
-var CACHE_KEY = 0;
-
-/**
  * The leaf node of a cache tree. Used to support variable argument length. A
  * unique object, so that native Maps will key it by reference.
  *
- * @type {Object}
+ * @type {Symbol}
  */
 
-var LEAF = {};
+var LEAF = Symbol('LEAF');
 
 /**
- * A value to represent a memoized undefined value. Allows efficient value
- * retrieval using Map.get only.
+ * The node of a cache tree for a WeakMap to store cache visited by objects
  *
- * @type {Object}
+ * @type {Symbol}
  */
 
-var UNDEFINED = {};
+var STORE_KEY = Symbol('STORE_KEY');
+
+/**
+ * Values to represent a memoized undefined and null value. Allows efficient value
+ * retrieval using Map.get only.
+ *
+ * @type {Symbol}
+ */
+
+var UNDEFINED = Symbol('undefined');
+var NULL = Symbol('null');
 
 /**
  * Default value for unset keys in native Maps
@@ -40169,6 +41304,14 @@ var UNDEFINED = {};
  */
 
 var UNSET = undefined;
+
+/**
+ * Global Store for all cached values
+ *
+ * @type {WeakMap}
+ */
+
+var memoizeStore = new WeakMap();
 
 /**
  * Memoize all of the `properties` on a `object`.
@@ -40183,7 +41326,7 @@ function memoize(object, properties) {
     var original = object[property];
 
     if (!original) {
-      throw new Error("Object does not have a property named \"" + property + "\".");
+      throw new Error('Object does not have a property named "' + property + '".');
     }
 
     object[property] = function () {
@@ -40194,20 +41337,16 @@ function memoize(object, properties) {
       // If memoization is disabled, call into the original method.
       if (!ENABLED) return original.apply(this, args);
 
-      // If the cache key is different, previous caches must be cleared.
-      if (CACHE_KEY !== this.__cache_key) {
-        this.__cache_key = CACHE_KEY;
-        this.__cache = new Map(); // eslint-disable-line no-undef,no-restricted-globals
-        this.__cache_no_args = {};
+      if (!memoizeStore.has(this)) {
+        memoizeStore.set(this, {
+          noArgs: {},
+          hasArgs: {}
+        });
       }
 
-      if (!this.__cache) {
-        this.__cache = new Map(); // eslint-disable-line no-undef,no-restricted-globals
-      }
-
-      if (!this.__cache_no_args) {
-        this.__cache_no_args = {};
-      }
+      var _memoizeStore$get = memoizeStore.get(this),
+          noArgs = _memoizeStore$get.noArgs,
+          hasArgs = _memoizeStore$get.hasArgs;
 
       var takesArguments = args.length !== 0;
 
@@ -40216,9 +41355,9 @@ function memoize(object, properties) {
 
       if (takesArguments) {
         keys = [property].concat(args);
-        cachedValue = getIn(this.__cache, keys);
+        cachedValue = getIn(hasArgs, keys);
       } else {
-        cachedValue = this.__cache_no_args[property];
+        cachedValue = noArgs[property];
       }
 
       // If we've got a result already, return it.
@@ -40231,9 +41370,9 @@ function memoize(object, properties) {
       var v = value === undefined ? UNDEFINED : value;
 
       if (takesArguments) {
-        this.__cache = setIn(this.__cache, keys, v);
+        setIn(hasArgs, keys, v);
       } else {
-        this.__cache_no_args[property] = v;
+        noArgs[property] = v;
       }
 
       return value;
@@ -40286,7 +41425,18 @@ function getIn(map, keys) {
     for (var _iterator2 = keys[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
       var key = _step2.value;
 
-      map = map.get(key);
+      if (key === undefined) {
+        key = UNDEFINED;
+      } else if (key == null) {
+        key = NULL;
+      }
+
+      if ((typeof key === 'undefined' ? 'undefined' : _typeof(key)) === 'object') {
+        map = map[STORE_KEY] && map[STORE_KEY].get(key);
+      } else {
+        map = map[key];
+      }
+
       if (map === UNSET) return UNSET;
     }
   } catch (err) {
@@ -40304,7 +41454,7 @@ function getIn(map, keys) {
     }
   }
 
-  return map.get(LEAF);
+  return map[LEAF];
 }
 
 /**
@@ -40317,8 +41467,7 @@ function getIn(map, keys) {
  */
 
 function setIn(map, keys, value) {
-  var parent = map;
-  var child = void 0;
+  var child = map;
 
   var _iteratorNormalCompletion3 = true;
   var _didIteratorError3 = false;
@@ -40328,15 +41477,33 @@ function setIn(map, keys, value) {
     for (var _iterator3 = keys[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
       var key = _step3.value;
 
-      child = parent.get(key);
-
-      // If the path was not created yet...
-      if (child === UNSET) {
-        child = new Map(); // eslint-disable-line no-undef,no-restricted-globals
-        parent.set(key, child);
+      if (key === undefined) {
+        key = UNDEFINED;
+      } else if (key == null) {
+        key = NULL;
       }
 
-      parent = child;
+      if ((typeof key === 'undefined' ? 'undefined' : _typeof(key)) !== 'object') {
+        if (!child[key]) {
+          child[key] = {};
+        }
+
+        child = child[key];
+        continue;
+      }
+
+      if (!child[STORE_KEY]) {
+        child[STORE_KEY] = new WeakMap();
+      }
+
+      if (!child[STORE_KEY].has(key)) {
+        var newChild = {};
+        child[STORE_KEY].set(key, newChild);
+        child = newChild;
+        continue;
+      }
+
+      child = child[STORE_KEY].get(key);
     }
 
     // The whole path has been created, so set the value to the bottom most map.
@@ -40355,7 +41522,7 @@ function setIn(map, keys, value) {
     }
   }
 
-  child.set(LEAF, value);
+  child[LEAF] = value;
   return map;
 }
 
@@ -40366,11 +41533,7 @@ function setIn(map, keys, value) {
  */
 
 function resetMemoization() {
-  CACHE_KEY++;
-
-  if (CACHE_KEY >= Number.MAX_SAFE_INTEGER) {
-    CACHE_KEY = 0;
-  }
+  memoizeStore = new WeakMap();
 }
 
 /**
@@ -40556,8 +41719,8 @@ var Text = function (_Record) {
             end = dec.end,
             mark = dec.mark;
 
-        var hasStart = start.key == key;
-        var hasEnd = end.key == key;
+        var hasStart = start.key === key;
+        var hasEnd = end.key === key;
 
         if (hasStart && hasEnd) {
           var index = hasStart ? start.offset : 0;
@@ -41038,7 +42201,7 @@ var Text = function (_Record) {
         return attrs;
       }
 
-      if (typeof attrs == 'string') {
+      if (typeof attrs === 'string') {
         attrs = { leaves: [{ text: attrs }] };
       }
 
@@ -41252,7 +42415,7 @@ var Node = function () {
         };
       }
 
-      if (typeof attrs == 'string') {
+      if (typeof attrs === 'string') {
         return { type: attrs };
       }
 
@@ -41406,7 +42569,7 @@ var Block = function (_Record) {
         return attrs;
       }
 
-      if (typeof attrs == 'string') {
+      if (typeof attrs === 'string') {
         attrs = { type: attrs };
       }
 
@@ -41460,14 +42623,14 @@ var Block = function (_Record) {
           type = object.type;
 
 
-      if (typeof type != 'string') {
+      if (typeof type !== 'string') {
         throw new Error('`Block.fromJSON` requires a `type` string.');
       }
 
       var block = new Block({
         key: key,
         type: type,
-        data: immutable.Map(data),
+        data: immutable.fromJS(data),
         nodes: Node.createList(nodes)
       });
 
@@ -41579,11 +42742,11 @@ function decrement(path) {
  */
 
 function getAncestors(path) {
-  var ancestors = new immutable.List();
-
-  for (var i = 0; i < path.size; i++) {
-    ancestors = ancestors.push(path.slice(0, i));
-  }
+  var ancestors = immutable.List().withMutations(function (list) {
+    for (var i = 0; i < path.size; i++) {
+      list.push(path.slice(0, i));
+    }
+  });
 
   return ancestors;
 }
@@ -41732,12 +42895,24 @@ function isYounger(path, target) {
  * Lift a `path` to refer to its parent.
  *
  * @param {List} path
- * @return {Array}
+ * @return {List}
  */
 
 function lift(path) {
   var parent = path.slice(0, -1);
   return parent;
+}
+
+/**
+ * Drop a `path`, returning the path from the first child.
+ *
+ * @param {List} path
+ * @return {List}
+ */
+
+function drop(path) {
+  var relative = path.slice(1);
+  return relative;
 }
 
 /**
@@ -41854,27 +43029,28 @@ function transform(path, operation) {
   if (type === 'move_node') {
     var np = operation.newPath;
 
-    var npIndex = np.size - 1;
-    var npEqual = isEqual(np, path);
 
     if (isEqual(p, np)) {
       return immutable.List([path]);
     }
 
-    var npYounger = isYounger(np, path);
-    var npAbove = isAbove(np, path);
-
-    if (pAbove) {
-      path = np.concat(path.slice(p.size));
+    if (pAbove || pEqual) {
+      // We are comparing something that was moved
+      // The new path is unaffected unless the old path was the left-sibling of an ancestor
+      if (isYounger(p, np) && p.size < np.size) {
+        path = decrement(np, 1, min(np, p) - 1).concat(path.slice(p.size));
+      } else {
+        path = np.concat(path.slice(p.size));
+      }
     } else {
-      if (pEqual) {
-        path = np;
-      } else if (pYounger) {
+      // This is equivalent logic to remove_node for path
+      if (pYounger) {
         path = decrement(path, 1, pIndex);
       }
 
-      if (npEqual || npYounger || npAbove) {
-        path = increment(path, 1, npIndex);
+      // This is the equivalent logic to insert_node for newPath
+      if (isYounger(np, path) || isEqual(np, path) || isAbove(np, path)) {
+        path = increment(path, 1, np.size - 1);
       }
     }
   }
@@ -41904,6 +43080,7 @@ var PathUtils = {
   isSibling: isSibling,
   isYounger: isYounger,
   lift: lift,
+  drop: drop,
   max: max,
   min: min,
   relate: relate,
@@ -42065,7 +43242,7 @@ var Point = function (_Record) {
       if (this.isUnset) return false;
 
       // PERF: Do a check for a `0` offset first since it's quickest.
-      if (this.offset != 0) return false;
+      if (this.offset !== 0) return false;
 
       var first = node.getFirstText();
       var is = this.key === first.key;
@@ -42207,7 +43384,23 @@ var Point = function (_Record) {
           offset = this.offset,
           path = this.path;
 
-      var target = node.getNode(key || path);
+      // PERF: this function gets called a lot.
+      // to avoid creating the key -> path lookup table, we attempt to look up by path first.
+
+      var target = path && node.getNode(path);
+
+      if (!target) {
+        target = node.getNode(key);
+
+        if (target) {
+          // There is a misalignment of path and key
+          var _point = this.merge({
+            path: node.getPath(key)
+          });
+
+          return _point;
+        }
+      }
 
       if (!target) {
         warning(false, "A point's `path` or `key` invalid and was reset!");
@@ -42215,13 +43408,13 @@ var Point = function (_Record) {
         var text = node.getFirstText();
         if (!text) return Point.create();
 
-        var _point = this.merge({
+        var _point2 = this.merge({
           key: text.key,
           offset: 0,
           path: node.getPath(text.key)
         });
 
-        return _point;
+        return _point2;
       }
 
       if (target.object !== 'text') {
@@ -42229,17 +43422,19 @@ var Point = function (_Record) {
 
         var _text = target.getTextAtOffset(offset);
         var before = target.getOffset(_text.key);
-        var _point2 = this.merge({
+        var _point3 = this.merge({
           offset: offset - before,
           key: _text.key,
           path: node.getPath(_text.key)
         });
 
-        return _point2;
+        return _point3;
       }
 
       if (target && path && key && key !== target.key) {
         warning(false, "A point's `key` did not match its `path`!");
+
+        // TODO: if we look up by path above and it differs by key, do we want to reset it to looking up by key?
       }
 
       var point = this.merge({
@@ -42261,7 +43456,7 @@ var Point = function (_Record) {
   }, {
     key: 'setKey',
     value: function setKey(key) {
-      if (key !== null) {
+      if (key != null) {
         key = KeyUtils.create(key);
       }
 
@@ -42293,7 +43488,7 @@ var Point = function (_Record) {
   }, {
     key: 'setPath',
     value: function setPath(path) {
-      if (path !== null) {
+      if (path != null) {
         path = PathUtils.create(path);
       }
 
@@ -43290,8 +44485,8 @@ var Value = function (_Record) {
           document = _value7.document;
 
       var node = document.assertNode(path);
-      var first = node.object == 'text' ? node : node.getFirstText() || node;
-      var last = node.object == 'text' ? node : node.getLastText() || node;
+      var first = node.object === 'text' ? node : node.getFirstText() || node;
+      var last = node.object === 'text' ? node : node.getLastText() || node;
       var prev = document.getPreviousText(first.key);
       var next = document.getNextText(last.key);
 
@@ -43842,7 +45037,7 @@ var Value = function (_Record) {
   }, {
     key: 'blocks',
     get: function get$$1() {
-      return this.selection.isUnset ? new immutable.List() : this.document.getBlocksAtRange(this.selection);
+      return this.selection.isUnset ? new immutable.List() : this.document.getLeafBlocksAtRange(this.selection);
     }
 
     /**
@@ -43858,7 +45053,7 @@ var Value = function (_Record) {
     }
 
     /**
-     * Get the inline nodes in the current selection.
+     * Get the bottom-most inline nodes in the current selection.
      *
      * @return {List<Inline>}
      */
@@ -43866,7 +45061,7 @@ var Value = function (_Record) {
   }, {
     key: 'inlines',
     get: function get$$1() {
-      return this.selection.isUnset ? new immutable.List() : this.document.getInlinesAtRange(this.selection);
+      return this.selection.isUnset ? new immutable.List() : this.document.getLeafInlinesAtRange(this.selection);
     }
 
     /**
@@ -44207,30 +45402,16 @@ function invertOperation(op) {
           return op;
         }
 
-        var inversePath = newPath;
-        var inverseNewPath = path;
+        // Get the true path that the moved node ended up at
+        var inversePath = PathUtils.transform(path, op).first();
 
-        var pathLast = path.size - 1;
-        var newPathLast = newPath.size - 1;
+        // Get the true path we are trying to move back to
+        // We transform the right-sibling of the path
+        // This will end up at the operation.path most of the time
+        // But if the newPath is a left-sibling or left-ancestor-sibling, this will account for it
+        var transformedSibling = PathUtils.transform(PathUtils.increment(path), op).first();
 
-        // If the node's old position was a left sibling of an ancestor of
-        // its new position, we need to adjust part of the path by -1.
-        if (path.size < inversePath.size && path.slice(0, pathLast).every(function (e, i) {
-          return e == inversePath.get(i);
-        }) && path.last() < inversePath.get(pathLast)) {
-          inversePath = inversePath.slice(0, pathLast).concat(inversePath.get(pathLast) - 1).concat(inversePath.slice(pathLast + 1, inversePath.size));
-        }
-
-        // If the node's new position is an ancestor of the old position,
-        // or a left sibling of an ancestor of its old position, we need
-        // to adjust part of the path by 1.
-        if (newPath.size < inverseNewPath.size && newPath.slice(0, newPathLast).every(function (e, i) {
-          return e == inverseNewPath.get(i);
-        }) && newPath.last() <= inverseNewPath.get(newPathLast)) {
-          inverseNewPath = inverseNewPath.slice(0, newPathLast).concat(inverseNewPath.get(newPathLast) + 1).concat(inverseNewPath.slice(newPathLast + 1, inverseNewPath.size));
-        }
-
-        var _inverse2 = op.set('path', inversePath).set('newPath', inverseNewPath);
+        var _inverse2 = op.set('path', inversePath).set('newPath', transformedSibling);
         return _inverse2;
       }
 
@@ -44449,37 +45630,37 @@ var Operation = function (_Record) {
 
           // Skip keys for objects that should not be serialized, and are only used
           // for providing the local-only invert behavior for the history stack.
-          if (key == 'document') continue;
-          if (key == 'selection') continue;
-          if (key == 'value') continue;
-          if (key == 'node' && type != 'insert_node') continue;
+          if (key === 'document') continue;
+          if (key === 'selection') continue;
+          if (key === 'value') continue;
+          if (key === 'node' && type !== 'insert_node') continue;
 
-          if (key == 'mark' || key == 'marks' || key == 'node' || key == 'path' || key == 'newPath') {
+          if (key === 'mark' || key === 'marks' || key === 'node' || key === 'path' || key === 'newPath') {
             value = value.toJSON();
           }
 
-          if (key == 'properties' && type == 'merge_node') {
+          if (key === 'properties' && type === 'merge_node') {
             var v = {};
             if ('data' in value) v.data = value.data.toJS();
             if ('type' in value) v.type = value.type;
             value = v;
           }
 
-          if (key == 'properties' && type == 'set_mark') {
+          if (key === 'properties' && type === 'set_mark') {
             var _v = {};
             if ('data' in value) _v.data = value.data.toJS();
             if ('type' in value) _v.type = value.type;
             value = _v;
           }
 
-          if (key == 'properties' && type == 'set_node') {
+          if (key === 'properties' && type === 'set_node') {
             var _v2 = {};
             if ('data' in value) _v2.data = value.data.toJS();
             if ('type' in value) _v2.type = value.type;
             value = _v2;
           }
 
-          if (key == 'properties' && type == 'set_selection') {
+          if (key === 'properties' && type === 'set_selection') {
             var _v3 = {};
             if ('anchor' in value) _v3.anchor = value.anchor.toJSON();
             if ('focus' in value) _v3.focus = value.focus.toJSON();
@@ -44488,21 +45669,21 @@ var Operation = function (_Record) {
             value = _v3;
           }
 
-          if (key == 'properties' && type == 'set_value') {
+          if (key === 'properties' && type === 'set_value') {
             var _v4 = {};
             if ('data' in value) _v4.data = value.data.toJS();
             if ('decorations' in value) _v4.decorations = value.decorations.toJS();
             value = _v4;
           }
 
-          if (key == 'properties' && type == 'split_node') {
+          if (key === 'properties' && type === 'split_node') {
             var _v5 = {};
             if ('data' in value) _v5.data = value.data.toJS();
             if ('type' in value) _v5.type = value.type;
             value = _v5;
           }
 
-          if (key === 'data' && value) {
+          if (key === 'data') {
             value = value.toJSON();
           }
 
@@ -44602,16 +45783,18 @@ var Operation = function (_Record) {
 
           var v = object[key];
 
+          // Default `data` to an empty object.
+          if (key === 'data' && v === undefined) {
+            v = {};
+          }
+
           if (v === undefined) {
             // Skip keys for objects that should not be serialized, and are only used
             // for providing the local-only invert behavior for the history stack.
-            if (key == 'document') continue;
-            if (key == 'selection') continue;
-            if (key == 'value') continue;
-            if (key == 'node' && type != 'insert_node') continue;
-
-            // Skip optional user defined data
-            if (key == 'data') continue;
+            if (key === 'document') continue;
+            if (key === 'selection') continue;
+            if (key === 'value') continue;
+            if (key === 'node' && type !== 'insert_node') continue;
 
             throw new Error('`Operation.fromJSON` was passed a "' + type + '" operation without the required "' + key + '" attribute.');
           }
@@ -45120,9 +46303,9 @@ Commands$1.addMarkAtRange = function (editor, range, mark) {
       var index = 0;
       var length = node.text.length;
 
-      if (key == start.key) index = start.offset;
-      if (key == end.key) length = end.offset;
-      if (key == start.key && key == end.key) length = end.offset - start.offset;
+      if (key === start.key) index = start.offset;
+      if (key === end.key) length = end.offset;
+      if (key === start.key && key === end.key) length = end.offset - start.offset;
 
       editor.addMarkByKey(key, index, length, mark);
     });
@@ -45173,7 +46356,7 @@ Commands$1.deleteAtRange = function (editor, range) {
   // Check if we have a "hanging" selection case where the even though the
   // selection extends into the start of the end node, we actually want to
   // ignore that for UX reasons.
-  var isHanging = startOffset == 0 && endOffset == 0 && isStartVoid == false && startKey == startBlock.getFirstText().key && endKey == endBlock.getFirstText().key;
+  var isHanging = startOffset === 0 && endOffset === 0 && isStartVoid === false && startKey === startBlock.getFirstText().key && endKey === endBlock.getFirstText().key;
 
   // If it's a hanging selection, nudge it back to end in the previous text.
   if (isHanging && isEndVoid) {
@@ -45193,7 +46376,7 @@ Commands$1.deleteAtRange = function (editor, range) {
       editor.removeNodeByKey(startVoid.key);
 
       // If the start and end keys are the same, we're done.
-      if (startKey == endKey) return;
+      if (startKey === endKey) return;
 
       // If there is no next text node, we're done.
       if (!nextText) return;
@@ -45222,10 +46405,10 @@ Commands$1.deleteAtRange = function (editor, range) {
 
     // If the start and end key are the same, and it was a hanging selection, we
     // can just remove the entire block.
-    if (startKey == endKey && isHanging) {
+    if (startKey === endKey && isHanging) {
       editor.removeNodeByKey(startBlock.key);
       return;
-    } else if (startKey == endKey) {
+    } else if (startKey === endKey) {
       // Otherwise, if it wasn't hanging, we're inside a single text node, so we can
       // simply remove the text in the range.
       var index = startOffset;
@@ -45258,7 +46441,7 @@ Commands$1.deleteAtRange = function (editor, range) {
       // but inside the end child, and remove them.
       child = startText;
 
-      while (child.key != startChild.key) {
+      while (child.key !== startChild.key) {
         var parent = document.getParent(child.key);
         var _index = parent.nodes.indexOf(child);
         var afters = parent.nodes.slice(_index + 1);
@@ -45282,7 +46465,7 @@ Commands$1.deleteAtRange = function (editor, range) {
       // Remove the nodes before the end text node in the tree.
       child = endText;
 
-      while (child.key != endChild.key) {
+      while (child.key !== endChild.key) {
         var _parent = document.getParent(child.key);
         var _index2 = _parent.nodes.indexOf(child);
         var befores = _parent.nodes.slice(0, _index2);
@@ -45295,22 +46478,22 @@ Commands$1.deleteAtRange = function (editor, range) {
       }
 
       // Remove any overlapping text content from the leaf text nodes.
-      if (startLength != 0) {
+      if (startLength !== 0) {
         editor.removeTextByKey(startKey, startOffset, startLength);
       }
 
-      if (endLength != 0) {
+      if (endLength !== 0) {
         editor.removeTextByKey(endKey, 0, endOffset);
       }
 
       // If the start and end blocks aren't the same, move and merge the end block
       // into the start block.
-      if (startBlock.key != endBlock.key) {
+      if (startBlock.key !== endBlock.key) {
         document = editor.value.document;
         var lonely = document.getFurthestOnlyChildAncestor(endBlock.key);
 
         // Move the end block to be right after the start block.
-        if (endParentIndex != startParentIndex + 1) {
+        if (endParentIndex !== startParentIndex + 1) {
           editor.moveNodeByKey(endBlock.key, startParent.key, startParentIndex + 1);
         }
 
@@ -45373,7 +46556,7 @@ Commands$1.deleteBackwardAtRange = function (editor, range) {
 
   // PERF: If the closest block is empty, remove it. This is just a shortcut,
   // since merging it would result in the same outcome.
-  if (document.nodes.size !== 1 && block && block.text === '') {
+  if (document.nodes.size !== 1 && block && block.text === '' && block.nodes.size === 1) {
     editor.removeNodeByKey(block.key);
     return;
   }
@@ -45384,6 +46567,15 @@ Commands$1.deleteBackwardAtRange = function (editor, range) {
 
   if (start.isAtStartOfNode(text)) {
     var prev = document.getPreviousText(text.key);
+    var inline = document.getClosestInline(text.key);
+
+    // If the range is at the start of the inline node, and previous text node
+    // is empty, take the text node before that, or "prevBlock" would be the
+    // same node as "block"
+    if (inline && prev.text === '') {
+      prev = document.getPreviousText(prev.key);
+    }
+
     var prevBlock = document.getClosestBlock(prev.key);
     var prevVoid = document.getClosestVoid(prev.key, editor);
 
@@ -45395,7 +46587,7 @@ Commands$1.deleteBackwardAtRange = function (editor, range) {
 
     // If we're deleting by one character and the previous text node is not
     // inside the current block, we need to merge the two blocks together.
-    if (n == 1 && prevBlock != block) {
+    if (n === 1 && prevBlock !== block) {
       range = range.moveAnchorTo(prev.key, prev.text.length);
       editor.deleteAtRange(range);
       return;
@@ -45552,7 +46744,7 @@ Commands$1.deleteForwardAtRange = function (editor, range) {
 
     // If we're deleting by one character and the previous text node is not
     // inside the current block, we need to merge the two blocks together.
-    if (n == 1 && _nextBlock != block) {
+    if (n === 1 && _nextBlock !== block) {
       range = range.moveFocusTo(next.key, 0);
       editor.deleteAtRange(range);
       return;
@@ -45798,9 +46990,9 @@ Commands$1.insertFragmentAtRange = function (editor, range, fragment) {
 
     // If the first and last block aren't the same, we need to insert all of the
     // nodes after the insertion node's first block at the index.
-    if (firstBlock != lastBlock) {
+    if (firstBlock !== lastBlock) {
       var lonelyParent = insertionNode.getFurthest(firstBlock.key, function (p) {
-        return p.nodes.size == 1;
+        return p.nodes.size === 1;
       });
       var lonelyChild = lonelyParent || firstBlock;
 
@@ -45814,7 +47006,7 @@ Commands$1.insertFragmentAtRange = function (editor, range, fragment) {
     }
 
     // Check if we need to split the node.
-    if (start.offset != 0) {
+    if (start.offset !== 0) {
       editor.splitDescendantsByKey(startChild.key, start.key, start.offset);
     }
 
@@ -45827,10 +47019,10 @@ Commands$1.insertFragmentAtRange = function (editor, range, fragment) {
     // If the first and last block aren't the same, we need to move any of the
     // starting block's children after the split into the last block of the
     // fragment, which has already been inserted.
-    if (firstBlock != lastBlock) {
+    if (firstBlock !== lastBlock) {
       var nextChild = isAtStart ? startChild : startBlock.getNextSibling(startChild.key);
       var nextNodes = nextChild ? startBlock.nodes.skipUntil(function (n) {
-        return n.key == nextChild.key;
+        return n.key === nextChild.key;
       }) : immutable.List();
       var lastIndex = lastBlock.nodes.size;
 
@@ -45842,7 +47034,9 @@ Commands$1.insertFragmentAtRange = function (editor, range, fragment) {
 
     // If the starting block is empty, we replace it entirely with the first block
     // of the fragment, since this leads to a more expected behavior for the user.
-    if (!editor.isVoid(startBlock) && startBlock.text === '') {
+    if (!editor.isVoid(startBlock) && startBlock.text === '' && !startBlock.findDescendant(function (n) {
+      return editor.isVoid(n);
+    })) {
       editor.removeNodeByKey(startBlock.key);
       editor.insertNodeByKey(parent.key, index, firstBlock);
     } else {
@@ -45852,7 +47046,7 @@ Commands$1.insertFragmentAtRange = function (editor, range, fragment) {
       var inlineIndex = startBlock.nodes.indexOf(inlineChild);
 
       firstBlock.nodes.forEach(function (inline, i) {
-        var o = start.offset == 0 ? 0 : 1;
+        var o = start.offset === 0 ? 0 : 1;
         var newIndex = inlineIndex + i + o;
         editor.insertNodeByKey(startBlock.key, newIndex, inline);
       });
@@ -45862,8 +47056,10 @@ Commands$1.insertFragmentAtRange = function (editor, range, fragment) {
 
 var findInsertionNode = function findInsertionNode(fragment, document, startKey) {
   var hasSingleNode = function hasSingleNode(object) {
-    return object && object.nodes.size === 1;
+    if (!object || object.object === 'text') return;
+    return object.nodes.size === 1;
   };
+
   var firstNode = function firstNode(object) {
     return object && object.nodes.first();
   };
@@ -45977,9 +47173,9 @@ Commands$1.removeMarkAtRange = function (editor, range, mark) {
       var index = 0;
       var length = node.text.length;
 
-      if (key == start.key) index = start.offset;
-      if (key == end.key) length = end.offset;
-      if (key == start.key && key == end.key) length = end.offset - start.offset;
+      if (key === start.key) index = start.offset;
+      if (key === end.key) length = end.offset;
+      if (key === start.key && key === end.key) length = end.offset - start.offset;
 
       editor.removeMarkByKey(key, index, length, mark);
     });
@@ -45998,7 +47194,7 @@ Commands$1.setBlocksAtRange = function (editor, range, properties) {
   var value = editor.value;
   var document = value.document;
 
-  var blocks = document.getBlocksAtRange(range);
+  var blocks = document.getLeafBlocksAtRange(range);
 
   var start = range.start,
       end = range.end,
@@ -46011,7 +47207,7 @@ Commands$1.setBlocksAtRange = function (editor, range, properties) {
   // Check if we have a "hanging" selection case where the even though the
   // selection extends into the start of the end node, we actually want to
   // ignore that for UX reasons.
-  var isHanging = isCollapsed == false && start.offset == 0 && end.offset == 0 && isStartVoid == false && start.key == startBlock.getFirstText().key && end.key == endBlock.getFirstText().key;
+  var isHanging = isCollapsed === false && start.offset === 0 && end.offset === 0 && isStartVoid === false && start.key === startBlock.getFirstText().key && end.key === endBlock.getFirstText().key;
 
   // If it's a hanging selection, ignore the last block.
   var sets = isHanging ? blocks.slice(0, -1) : blocks;
@@ -46035,7 +47231,7 @@ Commands$1.setInlinesAtRange = function (editor, range, properties) {
   var value = editor.value;
   var document = value.document;
 
-  var inlines = document.getInlinesAtRange(range);
+  var inlines = document.getLeafInlinesAtRange(range);
 
   editor.withoutNormalizing(function () {
     inlines.forEach(function (inline) {
@@ -46068,7 +47264,7 @@ Commands$1.splitBlockAtRange = function (editor, range) {
   var parent = document.getClosestBlock(node.key);
   var h = 0;
 
-  while (parent && parent.object == 'block' && h < height) {
+  while (parent && parent.object === 'block' && h < height) {
     node = parent;
     parent = document.getClosestBlock(parent.key);
     h++;
@@ -46118,7 +47314,7 @@ Commands$1.splitInlineAtRange = function (editor, range) {
   var parent = document.getClosestInline(node.key);
   var h = 0;
 
-  while (parent && parent.object == 'inline' && h < height) {
+  while (parent && parent.object === 'inline' && h < height) {
     node = parent;
     parent = document.getClosestInline(parent.key);
     h++;
@@ -46170,11 +47366,11 @@ Commands$1.unwrapBlockAtRange = function (editor, range, properties) {
   var value = editor.value;
   var document = value.document;
 
-  var blocks = document.getBlocksAtRange(range);
+  var blocks = document.getLeafBlocksAtRange(range);
   var wrappers = blocks.map(function (block) {
     return document.getClosest(block.key, function (parent) {
-      if (parent.object != 'block') return false;
-      if (properties.type != null && parent.type != properties.type) return false;
+      if (parent.object !== 'block') return false;
+      if (properties.type != null && parent.type !== properties.type) return false;
       if (properties.data != null && !parent.data.isSuperset(properties.data)) return false;
       return true;
     });
@@ -46186,33 +47382,33 @@ Commands$1.unwrapBlockAtRange = function (editor, range, properties) {
     wrappers.forEach(function (block) {
       var first = block.nodes.first();
       var last = block.nodes.last();
-      var parent = document.getParent(block.key);
+      var parent = editor.value.document.getParent(block.key);
       var index = parent.nodes.indexOf(block);
 
       var children = block.nodes.filter(function (child) {
         return blocks.some(function (b) {
-          return child == b || child.hasDescendant(b.key);
+          return child === b || child.hasDescendant(b.key);
         });
       });
 
       var firstMatch = children.first();
       var lastMatch = children.last();
 
-      if (first == firstMatch && last == lastMatch) {
+      if (first === firstMatch && last === lastMatch) {
         block.nodes.forEach(function (child, i) {
           editor.moveNodeByKey(child.key, parent.key, index + i);
         });
 
         editor.removeNodeByKey(block.key);
-      } else if (last == lastMatch) {
+      } else if (last === lastMatch) {
         block.nodes.skipUntil(function (n) {
-          return n == firstMatch;
+          return n === firstMatch;
         }).forEach(function (child, i) {
           editor.moveNodeByKey(child.key, parent.key, index + 1 + i);
         });
-      } else if (first == firstMatch) {
+      } else if (first === firstMatch) {
         block.nodes.takeUntil(function (n) {
-          return n == lastMatch;
+          return n === lastMatch;
         }).push(lastMatch).forEach(function (child, i) {
           editor.moveNodeByKey(child.key, parent.key, index + i);
         });
@@ -46224,7 +47420,7 @@ Commands$1.unwrapBlockAtRange = function (editor, range, properties) {
         document = editor.value.document;
 
         children.forEach(function (child, i) {
-          if (i == 0) {
+          if (i === 0) {
             var extra = child;
             child = document.getNextBlock(child.key);
             editor.removeNodeByKey(extra.key);
@@ -46254,8 +47450,8 @@ Commands$1.unwrapInlineAtRange = function (editor, range, properties) {
   var texts = document.getTextsAtRange(range);
   var inlines = texts.map(function (text) {
     return document.getClosest(text.key, function (parent) {
-      if (parent.object != 'inline') return false;
-      if (properties.type != null && parent.type != properties.type) return false;
+      if (parent.object !== 'inline') return false;
+      if (properties.type != null && parent.type !== properties.type) return false;
       if (properties.data != null && !parent.data.isSuperset(properties.data)) return false;
       return true;
     });
@@ -46293,7 +47489,7 @@ Commands$1.wrapBlockAtRange = function (editor, range, block) {
   var document = value.document;
 
 
-  var blocks = document.getBlocksAtRange(range);
+  var blocks = document.getLeafBlocksAtRange(range);
   var firstblock = blocks.first();
   var lastblock = blocks.last();
   var parent = void 0,
@@ -46309,7 +47505,7 @@ Commands$1.wrapBlockAtRange = function (editor, range, block) {
     // Determine closest shared parent to all blocks in selection.
     parent = document.getClosest(firstblock.key, function (p1) {
       return !!document.getClosest(lastblock.key, function (p2) {
-        return p1 == p2;
+        return p1 === p2;
       });
     });
   }
@@ -46321,8 +47517,8 @@ Commands$1.wrapBlockAtRange = function (editor, range, block) {
   // selection.
   if (siblings == null) {
     var indexes = parent.nodes.reduce(function (ind, node, i) {
-      if (node == firstblock || node.hasDescendant(firstblock.key)) ind[0] = i;
-      if (node == lastblock || node.hasDescendant(lastblock.key)) ind[1] = i;
+      if (node === firstblock || node.hasDescendant(firstblock.key)) ind[0] = i;
+      if (node === lastblock || node.hasDescendant(lastblock.key)) ind[1] = i;
       return ind;
     }, []);
 
@@ -46379,7 +47575,7 @@ Commands$1.wrapInlineAtRange = function (editor, range, inline) {
   inline = Inline.create(inline);
   inline = inline.set('nodes', inline.nodes.clear());
 
-  var blocks = document.getBlocksAtRange(range);
+  var blocks = document.getLeafBlocksAtRange(range);
   var startBlock = document.getClosestBlock(start.key);
   var endBlock = document.getClosestBlock(end.key);
   var startInline = document.getClosestInline(start.key);
@@ -46388,7 +47584,7 @@ Commands$1.wrapInlineAtRange = function (editor, range, inline) {
   var endChild = endBlock.getFurthestAncestor(end.key);
 
   editor.withoutNormalizing(function () {
-    if (!startInline || startInline != endInline) {
+    if (!startInline || startInline !== endInline) {
       editor.splitDescendantsByKey(endChild.key, end.key, end.offset);
       editor.splitDescendantsByKey(startChild.key, start.key, start.offset);
     }
@@ -46401,7 +47597,7 @@ Commands$1.wrapInlineAtRange = function (editor, range, inline) {
     var startIndex = startBlock.nodes.indexOf(startChild);
     var endIndex = endBlock.nodes.indexOf(endChild);
 
-    if (startInline && startInline == endInline) {
+    if (startInline && startInline === endInline) {
       var text = startBlock.getTextsAtRange(range).get(0).splitText(start.offset)[1].splitText(end.offset - start.offset)[0];
 
       inline = inline.set('nodes', immutable.List([text]));
@@ -46420,18 +47616,18 @@ Commands$1.wrapInlineAtRange = function (editor, range, inline) {
         isFocused: true
       };
       editor.select(rng);
-    } else if (startBlock == endBlock) {
+    } else if (startBlock === endBlock) {
       document = editor.value.document;
       startBlock = document.getClosestBlock(start.key);
       startChild = startBlock.getFurthestAncestor(start.key);
 
       var startInner = document.getNextSibling(startChild.key);
       var startInnerIndex = startBlock.nodes.indexOf(startInner);
-      var endInner = start.key == end.key ? startInner : startBlock.getFurthestAncestor(end.key);
+      var endInner = start.key === end.key ? startInner : startBlock.getFurthestAncestor(end.key);
       var inlines = startBlock.nodes.skipUntil(function (n) {
-        return n == startInner;
+        return n === startInner;
       }).takeUntil(function (n) {
-        return n == endInner;
+        return n === endInner;
       }).push(endInner);
 
       var node = inline.regenerateKey();
@@ -46487,7 +47683,7 @@ Commands$1.wrapTextAtRange = function (editor, range, prefix) {
   var startRange = range.moveToStart();
   var endRange = range.moveToEnd();
 
-  if (start.key == end.key) {
+  if (start.key === end.key) {
     endRange = endRange.moveForward(prefix.length);
   }
 
@@ -46666,7 +47862,7 @@ Commands$2.mergeNodeByPath = function (editor, path) {
     throw new Error('Unable to merge node with path "' + path + '", because it has no previous sibling.');
   }
 
-  var position = previous.object == 'text' ? previous.text.length : previous.nodes.size;
+  var position = previous.object === 'text' ? previous.text.length : previous.nodes.size;
 
   editor.applyOperation({
     type: 'merge_node',
@@ -46684,19 +47880,25 @@ Commands$2.mergeNodeByPath = function (editor, path) {
 };
 
 /**
- * Move a node by `path` to a new parent by `newPath` and `index`.
+ * Move a node by `path` to a new parent by `newParentPath` and `newIndex`.
  *
  * @param {Editor} editor
  * @param {Array} path
- * @param {String} newPath
- * @param {Number} index
+ * @param {String} newParentPath
+ * @param {Number} newIndex
  */
 
-Commands$2.moveNodeByPath = function (editor, path, newPath, newIndex) {
+Commands$2.moveNodeByPath = function (editor, path, newParentPath, newIndex) {
   var value = editor.value;
 
-  // If the operation path and newPath are the same,
+  // If the operation path and newParentPath are the same,
   // this should be considered a NOOP
+
+  if (PathUtils.isEqual(path, newParentPath)) {
+    return editor;
+  }
+
+  var newPath = newParentPath.concat(newIndex);
 
   if (PathUtils.isEqual(path, newPath)) {
     return editor;
@@ -46706,7 +47908,7 @@ Commands$2.moveNodeByPath = function (editor, path, newPath, newIndex) {
     type: 'move_node',
     value: value,
     path: path,
-    newPath: newPath.concat(newIndex)
+    newPath: newPath
   });
 };
 
@@ -47081,7 +48283,7 @@ Commands$2.splitDescendantsByPath = function (editor, path, textPath, textOffset
   var text = document.assertNode(textPath);
   var ancestors = document.getAncestors(textPath);
   var nodes = ancestors.skipUntil(function (a) {
-    return a.key == node.key;
+    return a.key === node.key;
   }).reverse().unshift(text);
 
   var previous = void 0;
@@ -47422,27 +48624,29 @@ Commands$3.redo = function (editor) {
   if (!batch) return;
 
   editor.withoutSaving(function () {
-    // Replay the batch of operations.
-    batch.forEach(function (op) {
-      var _op = op,
-          type = _op.type,
-          properties = _op.properties;
+    editor.withoutNormalizing(function () {
+      // Replay the batch of operations.
+      batch.forEach(function (op) {
+        var _op = op,
+            type = _op.type,
+            properties = _op.properties;
 
-      // When the operation mutates the selection, omit its `isFocused` value to
-      // prevent the editor focus from changing during redoing.
+        // When the operation mutates the selection, omit its `isFocused` value to
+        // prevent the editor focus from changing during redoing.
 
-      if (type === 'set_selection') {
-        op = op.set('properties', omit(properties, 'isFocused'));
-      }
+        if (type === 'set_selection') {
+          op = op.set('properties', omit(properties, 'isFocused'));
+        }
 
-      editor.applyOperation(op);
+        editor.applyOperation(op);
+      });
+
+      // Shift the next value into the undo stack.
+      redos = redos.pop();
+      undos = undos.push(batch);
+      var newData = data.set('undos', undos).set('redos', redos);
+      editor.setData(newData);
     });
-
-    // Shift the next value into the undo stack.
-    redos = redos.pop();
-    undos = undos.push(batch);
-    var newData = data.set('undos', undos).set('redos', redos);
-    editor.setData(newData);
   });
 };
 
@@ -47462,29 +48666,31 @@ Commands$3.undo = function (editor) {
   if (!batch) return;
 
   editor.withoutSaving(function () {
-    // Replay the inverse of the previous operations.
-    batch.slice().reverse().map(function (op) {
-      return op.invert();
-    }).forEach(function (inverse) {
-      var _inverse = inverse,
-          type = _inverse.type,
-          properties = _inverse.properties;
+    editor.withoutNormalizing(function () {
+      // Replay the inverse of the previous operations.
+      batch.slice().reverse().map(function (op) {
+        return op.invert();
+      }).forEach(function (inverse) {
+        var _inverse = inverse,
+            type = _inverse.type,
+            properties = _inverse.properties;
 
-      // When the operation mutates the selection, omit its `isFocused` value to
-      // prevent the editor focus from changing during undoing.
+        // When the operation mutates the selection, omit its `isFocused` value to
+        // prevent the editor focus from changing during undoing.
 
-      if (type === 'set_selection') {
-        inverse = inverse.set('properties', omit(properties, 'isFocused'));
-      }
+        if (type === 'set_selection') {
+          inverse = inverse.set('properties', omit(properties, 'isFocused'));
+        }
 
-      editor.applyOperation(inverse);
+        editor.applyOperation(inverse);
+      });
+
+      // Shift the previous operations into the redo stack.
+      redos = redos.push(batch);
+      undos = undos.pop();
+      var newData = data.set('undos', undos).set('redos', redos);
+      editor.setData(newData);
     });
-
-    // Shift the previous operations into the redo stack.
-    redos = redos.push(batch);
-    undos = undos.pop();
-    var newData = data.set('undos', undos).set('redos', redos);
-    editor.setData(newData);
   });
 };
 
@@ -48370,7 +49576,7 @@ function pointEdgeObject(editor, point, edge, object) {
   var Edge = edge.slice(0, 1).toUpperCase() + edge.slice(1);
   var Object = object.slice(0, 1).toUpperCase() + object.slice(1);
   var method = 'move' + Point + 'To' + Edge + 'OfNode';
-  var getNode = object == 'text' ? 'getNode' : 'getClosest' + Object;
+  var getNode = object === 'text' ? 'getNode' : 'getClosest' + Object;
   var value = editor.value;
   var document = value.document,
       selection = value.selection;
@@ -48387,7 +49593,7 @@ function pointEdgeSideObject(editor, point, edge, side, object) {
   var Side = side.slice(0, 1).toUpperCase() + side.slice(1);
   var Object = object.slice(0, 1).toUpperCase() + object.slice(1);
   var method = 'move' + Point + 'To' + Edge + 'OfNode';
-  var getNode = object == 'text' ? 'getNode' : 'getClosest' + Object;
+  var getNode = object === 'text' ? 'getNode' : 'getClosest' + Object;
   var getDirectionNode = 'get' + Side + Object;
   var value = editor.value;
   var document = value.document,
@@ -48811,6 +50017,7 @@ function defaultNormalize(editor, error) {
 
 
   switch (code) {
+    case 'child_max_invalid':
     case 'child_object_invalid':
     case 'child_type_invalid':
     case 'child_unknown':
@@ -48834,7 +50041,7 @@ function defaultNormalize(editor, error) {
         return next.object === 'text' && node.object === 'block' && node.nodes.size === 1 ? editor.removeNodeByKey(node.key) : editor.removeNodeByKey(next.key);
       }
 
-    case 'child_required':
+    case 'child_min_invalid':
     case 'node_text_invalid':
     case 'parent_object_invalid':
     case 'parent_type_invalid':
@@ -49051,38 +50258,44 @@ function validateNodes(node, rule) {
 
   if (node.nodes == null) return;
 
-  var children = node.nodes.toArray();
+  var children = node.nodes;
   var defs = rule.nodes != null ? rule.nodes.slice() : [];
-  var offset = void 0;
-  var min = void 0;
-  var index = void 0;
-  var def = void 0;
-  var max = void 0;
-  var child = void 0;
-  var previous = void 0;
-  var next = void 0;
+  var count = 0;
+  var lastCount = 0;
+  var min = null;
+  var index = -1;
+  var def = null;
+  var max = null;
+  var child = null;
+  var previous = null;
+  var next = null;
 
   function nextDef() {
-    offset = offset == null ? null : 0;
+    if (defs.length === 0) return false;
     def = defs.shift();
-    min = def && def.min;
-    max = def && def.max;
-    return !!def;
+    lastCount = count;
+    count = 0;
+    min = def.min || null;
+    max = def.max || null;
+    return true;
   }
 
   function nextChild() {
-    index = index == null ? 0 : index + 1;
-    offset = offset == null ? 0 : offset + 1;
-    previous = child;
-    child = children[index];
-    next = children[index + 1];
-    if (max != null && offset == max) nextDef();
-    return !!child;
+    index += 1;
+    previous = index ? children.get(index - 1) : null;
+    child = children.get(index);
+    next = children.get(index + 1);
+    if (!child) return false;
+    lastCount = count;
+    count += 1;
+    return true;
   }
 
   function rewind() {
-    offset -= 1;
-    index -= 1;
+    if (index > 0) {
+      index -= 1;
+      count = lastCount;
+    }
   }
 
   if (rule.nodes != null) {
@@ -49102,12 +50315,75 @@ function validateNodes(node, rule) {
       if (def.match) {
         var error = validateRules(child, def.match);
 
-        if (error && offset >= min && nextDef()) {
-          rewind();
-          continue;
-        }
-
         if (error) {
+          // Since we want to report overflow on last matching child we don't
+          // immediately check for count > max, but instead do so once we find
+          // a child that doesn't match.
+          if (max != null && count - 1 > max) {
+            rewind();
+            return fail('child_max_invalid', {
+              rule: rule,
+              node: node,
+              index: index,
+              child: children.get(index),
+              count: count,
+              limit: max
+            });
+          }
+
+          var lastMin = min;
+
+          // If there are more groups after this one then child might actually
+          // be valid.
+          if (nextDef()) {
+            // If we've already satisfied the minimum for the current group,
+            // then we can rewind and proceed to the next group.
+            if (lastCount - 1 >= lastMin) {
+              index -= 1;
+              continue;
+            }
+
+            // Otherwise we know that current value is underflowing. There are
+            // three possible causes for this...
+
+            // 1. There might just not be enough elements for current group, and
+            // current child is in fact the first of the next group. If so, the
+            // next def will not report errors, in which case we can rewind and
+            // report an minimum error.
+            if (validateRules(child, def.match) == null) {
+              rewind();
+              return fail('child_min_invalid', {
+                rule: rule,
+                node: node,
+                index: index,
+                count: lastCount - 1,
+                limit: lastMin
+              });
+            }
+
+            // 2. The current group is underflowing, but there is also an
+            // invalid child before the next group.
+            // 3. Or the current group is not underflowing but it appears so
+            // because there's an invalid child between its members.
+            // It's either the second or third case. If it's the second then
+            // we could report an underflow, but presence of an invalid child
+            // is arguably more important, so we report it first. It also lets
+            // us avoid checking for which case exactly is it.
+            error.rule = rule;
+            error.node = node;
+            error.child = child;
+            error.index = index;
+            error.code = error.code.replace('node_', 'child_');
+            return error;
+          }
+
+          // Otherwise either we exhausted the last group, in which case it's
+          // an unknown child, ...
+          if (max != null && count > max) {
+            return fail('child_unknown', { rule: rule, node: node, child: child, index: index });
+          }
+
+          // ... or it's an invalid child for the last group.
           error.rule = rule;
           error.node = node;
           error.child = child;
@@ -49119,14 +50395,31 @@ function validateNodes(node, rule) {
     }
   }
 
-  if (rule.nodes != null) {
-    while (min != null) {
-      if (offset < min) {
-        return fail('child_required', { rule: rule, node: node, index: index });
-      }
+  // Since we want to report overflow on last matching child we don't
+  // immediately check for count > max, but do so after processing all nodes.
+  if (max != null && count > max) {
+    return fail('child_max_invalid', {
+      rule: rule,
+      node: node,
+      index: index - 1,
+      count: count,
+      child: children.get(index - 1),
+      limit: max
+    });
+  }
 
-      nextDef();
-    }
+  if (rule.nodes != null) {
+    do {
+      if (count < min) {
+        return fail('child_min_invalid', {
+          rule: rule,
+          node: node,
+          index: index,
+          count: count,
+          limit: min
+        });
+      }
+    } while (nextDef());
   }
 }
 
@@ -49606,7 +50899,7 @@ Commands$6.insertText = function (editor, text, marks) {
 
   // If the text was successfully inserted, and the selection had marks on it,
   // unset the selection's marks.
-  if (selection.marks && document != editor.value.document) {
+  if (selection.marks && document !== editor.value.document) {
     editor.select({ marks: null });
   }
 };
@@ -49821,7 +51114,7 @@ Commands$6.wrapText = function (editor, prefix) {
 
   // There's a chance that the selection points moved "through" each other,
   // resulting in a now-incorrect selection direction.
-  if (selection.isForward != editor.value.selection.isForward) {
+  if (selection.isForward !== editor.value.selection.isForward) {
     editor.flip();
   }
 };
@@ -49911,7 +51204,7 @@ function CorePlugin() {
             node = error.node;
 
 
-        if (code === 'child_required') {
+        if (code === 'child_min_invalid' && node.nodes.isEmpty()) {
           editor.insertNodeByKey(node.key, 0, Text.create());
         }
       }
@@ -50167,6 +51460,40 @@ var Editor = function () {
       this.run('onCommand', obj);
       normalizeDirtyPaths(this);
       return controller;
+    }
+
+    /**
+     * Checks if a command by `type` has been registered.
+     *
+     * @param {String} type
+     * @return {Boolean}
+     */
+
+  }, {
+    key: 'hasCommand',
+    value: function hasCommand(type) {
+      var controller = this.controller;
+
+      var has = type in controller && controller[type].__command;
+
+      return has;
+    }
+
+    /**
+     * Checks if a query by `type` has been registered.
+     *
+     * @param {String} type
+     * @return {Boolean}
+     */
+
+  }, {
+    key: 'hasQuery',
+    value: function hasQuery(type) {
+      var controller = this.controller;
+
+      var has = type in controller && controller[type].__query;
+
+      return has;
     }
 
     /**
@@ -50554,29 +51881,21 @@ function getDirtyPaths(operation) {
 
     case 'move_node':
       {
-        var parentPath = PathUtils.lift(path);
-        var newParentPath = PathUtils.lift(newPath);
-
         if (PathUtils.isEqual(path, newPath)) {
           return [];
         }
 
-        // HACK: this clause only exists because the `move_path` logic isn't
-        // consistent when it deals with siblings.
-        if (!PathUtils.isSibling(path, newPath)) {
-          if (newParentPath.size && PathUtils.isYounger(path, newPath)) {
-            newParentPath = PathUtils.decrement(newParentPath, 1, path.size - 1);
-          }
+        var oldAncestors = PathUtils.getAncestors(path).reduce(function (arr, p) {
+          arr.push.apply(arr, toConsumableArray(PathUtils.transform(p, operation).toArray()));
+          return arr;
+        }, []);
 
-          if (parentPath.size && PathUtils.isYounger(newPath, path)) {
-            parentPath = PathUtils.increment(parentPath, 1, newPath.size - 1);
-          }
-        }
+        var newAncestors = PathUtils.getAncestors(newPath).reduce(function (arr, p) {
+          arr.push.apply(arr, toConsumableArray(PathUtils.transform(p, operation).toArray()));
+          return arr;
+        }, []);
 
-        var oldAncestors = PathUtils.getAncestors(parentPath).toArray();
-        var newAncestors = PathUtils.getAncestors(newParentPath).toArray();
-
-        return [].concat(toConsumableArray(oldAncestors), [parentPath], toConsumableArray(newAncestors), [newParentPath]);
+        return [].concat(toConsumableArray(oldAncestors), toConsumableArray(newAncestors));
       }
 
     case 'remove_node':
@@ -50603,10 +51922,16 @@ function normalizeDirtyPaths(editor) {
     return;
   }
 
-  while (editor.tmp.dirty.length) {
-    var path = editor.tmp.dirty.pop();
-    normalizeNodeByPath(editor, path);
+  if (!editor.tmp.dirty.length) {
+    return;
   }
+
+  editor.withoutNormalizing(function () {
+    while (editor.tmp.dirty.length) {
+      var path = editor.tmp.dirty.pop();
+      normalizeNodeByPath(editor, path);
+    }
+  });
 }
 
 /**
@@ -50617,24 +51942,29 @@ function normalizeDirtyPaths(editor) {
  */
 
 function normalizeNodeByPath(editor, path) {
-  var controller = editor.controller,
-      value = editor.value;
-  var document = value.document;
+  var controller = editor.controller;
+  var value = editor.value;
+  var _value = value,
+      document = _value.document;
 
   var node = document.assertNode(path);
   var iterations = 0;
-  var max = 1000 + (node.object === 'text' ? 1 : node.nodes.size);
+  var max = 100 + (node.object === 'text' ? 1 : node.nodes.size);
 
-  var iterate = function iterate() {
+  while (node) {
     var fn = node.normalize(controller);
-    if (!fn) return;
+
+    if (!fn) {
+      break;
+    }
 
     // Run the normalize `fn` to fix the node.
     fn(controller);
 
     // Attempt to re-find the node by path, or by key if it has changed
     // locations in the tree continue iterating.
-    document = editor.value.document;
+    value = editor.value;
+    document = value.document;
     var _node = node,
         key = _node.key;
 
@@ -50649,8 +51979,8 @@ function normalizeNodeByPath(editor, path) {
         node = found;
         path = document.getPath(key);
       } else {
-        // If it no longer exists by key, it was removed, so abort.
-        return;
+        // If it no longer exists by key, it was removed, so we're done.
+        break;
       }
     }
 
@@ -50663,14 +51993,7 @@ function normalizeNodeByPath(editor, path) {
     if (iterations > max) {
       throw new Error('A schema rule could not be normalized after sufficient iterations. This is usually due to a `rule.normalize` or `plugin.normalizeNode` function of a schema being incorrectly written, causing an infinite loop.');
     }
-
-    // Otherwise, iterate again.
-    iterate();
-  };
-
-  editor.withoutNormalizing(function () {
-    iterate();
-  });
+  }
 }
 
 /**
@@ -50846,21 +52169,29 @@ function create$2(type) {
  * Mix in the object interfaces.
  */
 
-mixin(create$2('block'), [Block]);
-mixin(create$2('change'), [Change]);
-mixin(create$2('decoration'), [Decoration]);
-mixin(create$2('document'), [Document]);
-mixin(create$2('editor'), [Editor]);
-mixin(create$2('inline'), [Inline]);
-mixin(create$2('leaf'), [Leaf]);
-mixin(create$2('mark'), [Mark]);
-mixin(create$2('node'), [Node]);
-mixin(create$2('operation'), [Operation]);
-mixin(create$2('point'), [Point]);
-mixin(create$2('range'), [Range]);
-mixin(create$2('selection'), [Selection]);
-mixin(create$2('text'), [Text]);
-mixin(create$2('value'), [Value]);
+Object.entries({
+  Block: Block,
+  Change: Change,
+  Decoration: Decoration,
+  Document: Document,
+  Editor: Editor,
+  Inline: Inline,
+  Leaf: Leaf,
+  Mark: Mark,
+  Node: Node,
+  Operation: Operation,
+  Point: Point,
+  Range: Range,
+  Selection: Selection,
+  Text: Text,
+  Value: Value
+}).forEach(function (_ref) {
+  var _ref2 = slicedToArray(_ref, 2),
+      camel = _ref2[0],
+      obj = _ref2[1];
+
+  return mixin(create$2(camel.toLowerCase()), [obj]);
+});
 
 /**
  * The interface that all Slate models implement.
@@ -50988,7 +52319,7 @@ var NodeInterface = function () {
       var descendant = null;
 
       var found = this.nodes.findLast(function (node) {
-        if (node.object == 'text') return true;
+        if (node.object === 'text') return true;
         descendant = node.getLastText();
         return descendant;
       });
@@ -51272,7 +52603,7 @@ var ElementInterface = function () {
     }
 
     /**
-     * Recursively find all descendant nodes by `iterator`.
+     * Recursively find a descendant node by `iterator`.
      *
      * @param {Function} iterator
      * @return {Node|Null}
@@ -51294,6 +52625,46 @@ var ElementInterface = function () {
     }
 
     /**
+     * Recursively find a descendant node and its path by `iterator`.
+     *
+     * @param {Function} iterator
+     * @return {Null|[Node, List]}
+     */
+
+  }, {
+    key: 'findDescendantAndPath',
+    value: function findDescendantAndPath(iterator) {
+      var pathToThisNode = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : PathUtils.create([]);
+      var findLast = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
+
+      var found = void 0;
+      var foundPath = void 0;
+
+      this.forEachDescendantWithPath(function (node, path, nodes) {
+        if (iterator(node, path, nodes)) {
+          found = node;
+          foundPath = path;
+          return false;
+        }
+      }, pathToThisNode, findLast);
+
+      return found ? [found, foundPath] : null;
+    }
+
+    // Easy helpers to avoid needing to pass findLast boolean
+
+  }, {
+    key: 'findFirstDescendantAndPath',
+    value: function findFirstDescendantAndPath(iterator, pathToThisNode) {
+      return this.findDescendantAndPath(iterator, pathToThisNode, false);
+    }
+  }, {
+    key: 'findLastDescendantAndPath',
+    value: function findLastDescendantAndPath(iterator, pathToThisNode) {
+      return this.findDescendantAndPath(iterator, pathToThisNode, true);
+    }
+
+    /**
      * Recursively iterate over all descendant nodes with `iterator`. If the
      * iterator returns false it will break the loop.
      *
@@ -51311,8 +52682,46 @@ var ElementInterface = function () {
           return false;
         }
 
-        if (child.object != 'text') {
+        if (child.object !== 'text') {
           ret = child.forEachDescendant(iterator);
+          return ret;
+        }
+      });
+
+      return ret;
+    }
+
+    /**
+     * Recursively iterate over all descendant nodes with `iterator`. If the
+     * iterator returns false it will break the loop.
+     * Calls iterator with node and path.
+     *
+     * @param {Function} iterator
+     * @param {List} path
+     * @param {Boolean} findLast - whether to iterate in reverse order
+     */
+
+  }, {
+    key: 'forEachDescendantWithPath',
+    value: function forEachDescendantWithPath(iterator) {
+      var path = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : PathUtils.create([]);
+      var findLast = arguments[2];
+
+      var nodes = this.nodes;
+      var ret = void 0;
+
+      if (findLast) nodes = nodes.reverse();
+
+      nodes.forEach(function (child, i) {
+        var childPath = path.concat(i);
+
+        if (iterator(child, childPath, nodes) === false) {
+          ret = false;
+          return false;
+        }
+
+        if (child.object !== 'text') {
+          ret = child.forEachDescendantWithPath(iterator, childPath, findLast);
           return ret;
         }
       });
@@ -51337,54 +52746,82 @@ var ElementInterface = function () {
         var _range = range,
             _start = _range.start;
 
-        return this.getMarksAtPosition(_start.key, _start.offset).toSet();
+        return this.getMarksAtPosition(_start.path, _start.offset).toSet();
       }
 
       var _range2 = range,
           start = _range2.start,
           end = _range2.end;
 
-      var startKey = start.key;
+      var startPath = start.path;
       var startOffset = start.offset;
-      var endKey = end.key;
+      var endPath = end.path;
       var endOffset = end.offset;
-      var startText = this.getDescendant(startKey);
+      var startText = this.getDescendant(startPath);
+      var endText = this.getDescendant(endPath);
 
-      if (startKey !== endKey) {
-        while (startKey !== endKey && endOffset === 0) {
-          var _endText = this.getPreviousText(endKey);
-          endKey = _endText.key;
-          endOffset = _endText.text.length;
+      if (!PathUtils.isEqual(startPath, endPath)) {
+        while (!PathUtils.isEqual(startPath, endPath) && endOffset === 0) {
+          
+          var _getPreviousTextAndPa = this.getPreviousTextAndPath(endPath);
+
+          var _getPreviousTextAndPa2 = slicedToArray(_getPreviousTextAndPa, 2);
+
+          endText = _getPreviousTextAndPa2[0];
+          endPath = _getPreviousTextAndPa2[1];
+
+          endOffset = endText.text.length;
         }
 
-        while (startKey !== endKey && startOffset === startText.text.length) {
-          startText = this.getNextText(startKey);
-          startKey = startText.key;
+        while (!PathUtils.isEqual(startPath, endPath) && startOffset === startText.text.length) {
+          
+          var _getNextTextAndPath = this.getNextTextAndPath(startPath);
+
+          var _getNextTextAndPath2 = slicedToArray(_getNextTextAndPath, 2);
+
+          startText = _getNextTextAndPath2[0];
+          startPath = _getNextTextAndPath2[1];
+
           startOffset = 0;
         }
       }
 
-      if (startKey === endKey) {
+      if (PathUtils.isEqual(startPath, endPath)) {
         return startText.getActiveMarksBetweenOffsets(startOffset, endOffset);
       }
 
       var startMarks = startText.getActiveMarksBetweenOffsets(startOffset, startText.text.length);
       if (startMarks.size === 0) return immutable.Set();
-      var endText = this.getDescendant(endKey);
       var endMarks = endText.getActiveMarksBetweenOffsets(0, endOffset);
       var marks = startMarks.intersect(endMarks);
+
       // If marks is already empty, the active marks is empty
-      if (marks.size === 0) return marks;
+      if (marks.size === 0) {
+        return marks;
+      }
 
-      var text = this.getNextText(startKey);
+      
+      var _getNextTextAndPath3 = this.getNextTextAndPath(startPath);
 
-      while (text.key !== endKey) {
-        if (text.text.length !== 0) {
-          marks = marks.intersect(text.getActiveMarks());
+      var _getNextTextAndPath4 = slicedToArray(_getNextTextAndPath3, 2);
+
+      startText = _getNextTextAndPath4[0];
+      startPath = _getNextTextAndPath4[1];
+
+
+      while (!PathUtils.isEqual(startPath, endPath)) {
+        if (startText.text.length !== 0) {
+          marks = marks.intersect(startText.getActiveMarks());
           if (marks.size === 0) return immutable.Set();
         }
 
-        text = this.getNextText(text.key);
+        
+        var _getNextTextAndPath5 = this.getNextTextAndPath(startPath);
+
+        var _getNextTextAndPath6 = slicedToArray(_getNextTextAndPath5, 2);
+
+        startText = _getNextTextAndPath6[0];
+        startPath = _getNextTextAndPath6[1];
       }
       return marks;
     }
@@ -51438,7 +52875,7 @@ var ElementInterface = function () {
     key: 'getBlocksAsArray',
     value: function getBlocksAsArray() {
       return this.nodes.reduce(function (array, child) {
-        if (child.object != 'block') return array;
+        if (child.object !== 'block') return array;
         if (!child.isLeafBlock()) return array.concat(child.getBlocksAsArray());
         array.push(child);
         return array;
@@ -51455,13 +52892,13 @@ var ElementInterface = function () {
   }, {
     key: 'getBlocksAtRange',
     value: function getBlocksAtRange(range) {
-      var array = this.getBlocksAtRangeAsArray(range);
-      // Eliminate duplicates by converting to an `OrderedSet` first.
-      return immutable.List(immutable.OrderedSet(array));
+      warning(false, 'As of slate@0.44 the `node.getBlocksAtRange` method has been renamed to `getLeafBlocksAtRange`.');
+
+      return this.getLeafBlocksAtRange(range);
     }
 
     /**
-     * Get the leaf block descendants in a `range` as an array
+     * Get the bottom-most block descendants in a `range` as an array
      *
      * @param {Range} range
      * @return {Array}
@@ -51470,24 +52907,9 @@ var ElementInterface = function () {
   }, {
     key: 'getBlocksAtRangeAsArray',
     value: function getBlocksAtRangeAsArray(range) {
-      range = this.resolveRange(range);
-      if (range.isUnset) return [];
+      warning(false, 'As of slate@0.44 the `node.getBlocksAtRangeAsArray` method has been renamed to `getLeafBlocksAtRangeAsArray`.');
 
-      var _range3 = range,
-          start = _range3.start,
-          end = _range3.end;
-
-      var startBlock = this.getClosestBlock(start.key);
-
-      // PERF: the most common case is when the range is in a single block node,
-      // where we can avoid a lot of iterating of the tree.
-      if (start.key === end.key) return [startBlock];
-
-      var endBlock = this.getClosestBlock(end.key);
-      var blocks = this.getBlocksAsArray();
-      var startIndex = blocks.indexOf(startBlock);
-      var endIndex = blocks.indexOf(endBlock);
-      return blocks.slice(startIndex, endIndex + 1);
+      return this.getLeafBlocksAtRangeAsArray(range);
     }
 
     /**
@@ -51515,9 +52937,9 @@ var ElementInterface = function () {
     key: 'getBlocksByTypeAsArray',
     value: function getBlocksByTypeAsArray(type) {
       return this.nodes.reduce(function (array, node) {
-        if (node.object != 'block') {
+        if (node.object !== 'block') {
           return array;
-        } else if (node.isLeafBlock() && node.type == type) {
+        } else if (node.isLeafBlock() && node.type === type) {
           array.push(node);
           return array;
         } else {
@@ -51537,8 +52959,8 @@ var ElementInterface = function () {
     key: 'getChild',
     value: function getChild(path) {
       path = this.resolvePath(path);
-      if (!path) return null;
-      var child = path.size === 1 ? this.nodes.get(path.first()) : null;
+      if (!path || path.size > 1) return null;
+      var child = this.nodes.get(path.first());
       return child;
     }
 
@@ -51694,13 +53116,16 @@ var ElementInterface = function () {
     key: 'getDescendant',
     value: function getDescendant(path) {
       path = this.resolvePath(path);
-      if (!path) return null;
+      if (!path || !path.size) return null;
 
-      var deep = path.flatMap(function (x) {
-        return ['nodes', x];
+      var node = this;
+
+      path.forEach(function (index) {
+        node = node.getIn(['nodes', index]);
+        return !!node;
       });
-      var ret = this.getIn(deep);
-      return ret;
+
+      return node;
     }
 
     /**
@@ -51719,9 +53144,9 @@ var ElementInterface = function () {
         return Document.create();
       }
 
-      var _range4 = range,
-          start = _range4.start,
-          end = _range4.end;
+      var _range3 = range,
+          start = _range3.start,
+          end = _range3.end;
 
       var node = this;
       var targetPath = end.path;
@@ -51780,7 +53205,7 @@ var ElementInterface = function () {
     /**
      * Get the furthest ancestor of a node.
      *
-     * @param {Path} path
+     * @param {List|String} path
      * @return {Node|Null}
      */
 
@@ -51788,8 +53213,8 @@ var ElementInterface = function () {
     key: 'getFurthestAncestor',
     value: function getFurthestAncestor(path) {
       path = this.resolvePath(path);
-      if (!path) return null;
-      var furthest = path.size ? this.nodes.get(path.first()) : null;
+      if (!path || !path.size) return null;
+      var furthest = this.nodes.get(path.first());
       return furthest;
     }
 
@@ -51826,7 +53251,7 @@ var ElementInterface = function () {
     }
 
     /**
-     * Get the furthest ancestor of a node that has only one child.
+     * Get the furthest ancestor of a node, where all ancestors to that point only have one child.
      *
      * @param {Path} path
      * @return {Node|Null}
@@ -51862,7 +53287,7 @@ var ElementInterface = function () {
     /**
      * Get the closest inline nodes for each text node in the node, as an array.
      *
-     * @return {List<Node>}
+     * @return {Array<Node>}
      */
 
   }, {
@@ -51871,7 +53296,7 @@ var ElementInterface = function () {
       var array = [];
 
       this.nodes.forEach(function (child) {
-        if (child.object == 'text') return;
+        if (child.object === 'text') return;
 
         if (child.isLeafInline()) {
           array.push(child);
@@ -51884,7 +53309,7 @@ var ElementInterface = function () {
     }
 
     /**
-     * Get the closest inline nodes for each text node in a `range`.
+     * Get the bottom-most inline nodes for each text node in a `range`.
      *
      * @param {Range} range
      * @return {List<Node>}
@@ -51893,14 +53318,13 @@ var ElementInterface = function () {
   }, {
     key: 'getInlinesAtRange',
     value: function getInlinesAtRange(range) {
-      var array = this.getInlinesAtRangeAsArray(range);
-      // Remove duplicates by converting it to an `OrderedSet` first.
-      var list = immutable.List(immutable.OrderedSet(array));
-      return list;
+      warning(false, 'As of slate@0.44 the `node.getInlinesAtRange` method has been renamed to `getLeafInlinesAtRange`.');
+
+      return this.getLeafInlinesAtRange(range);
     }
 
     /**
-     * Get the closest inline nodes for each text node in a `range` as an array.
+     * Get the bottom-most inline nodes for each text node in a `range` as an array.
      *
      * @param {Range} range
      * @return {Array}
@@ -51909,18 +53333,9 @@ var ElementInterface = function () {
   }, {
     key: 'getInlinesAtRangeAsArray',
     value: function getInlinesAtRangeAsArray(range) {
-      var _this4 = this;
+      warning(false, 'As of slate@0.44 the `node.getInlinesAtRangeAsArray` method has been renamed to `getLeafInlinesAtRangeAsArray`.');
 
-      range = this.resolveRange(range);
-      if (range.isUnset) return [];
-
-      var array = this.getTextsAtRangeAsArray(range).map(function (text) {
-        return _this4.getClosestInline(text.key);
-      }).filter(function (exists) {
-        return exists;
-      });
-
-      return array;
+      return this.getLeafInlinesAtRangeAsArray(range);
     }
 
     /**
@@ -51949,9 +53364,9 @@ var ElementInterface = function () {
     key: 'getInlinesByTypeAsArray',
     value: function getInlinesByTypeAsArray(type) {
       var array = this.nodes.reduce(function (inlines, node) {
-        if (node.object == 'text') {
+        if (node.object === 'text') {
           return inlines;
-        } else if (node.isLeafInline() && node.type == type) {
+        } else if (node.isLeafInline() && node.type === type) {
           inlines.push(node);
           return inlines;
         } else {
@@ -51973,8 +53388,8 @@ var ElementInterface = function () {
     key: 'getInsertMarksAtRange',
     value: function getInsertMarksAtRange(range) {
       range = this.resolveRange(range);
-      var _range5 = range,
-          start = _range5.start;
+      var _range4 = range,
+          start = _range4.start;
 
 
       if (range.isUnset) {
@@ -51983,12 +53398,128 @@ var ElementInterface = function () {
 
       if (range.isCollapsed) {
         // PERF: range is not cachable, use key and offset as proxies for cache
-        return this.getMarksAtPosition(start.key, start.offset);
+        return this.getMarksAtPosition(start.path, start.offset);
       }
 
-      var text = this.getDescendant(start.key);
+      var text = this.getDescendant(start.path);
       var marks = text.getMarksAtIndex(start.offset + 1);
       return marks;
+    }
+
+    /**
+     * Get the bottom-most block descendants in a `range`.
+     *
+     * @param {Range} range
+     * @return {List<Node>}
+     */
+
+  }, {
+    key: 'getLeafBlocksAtRange',
+    value: function getLeafBlocksAtRange(range) {
+      var array = this.getLeafBlocksAtRangeAsArray(range);
+      // Eliminate duplicates by converting to an `OrderedSet` first.
+      return immutable.List(immutable.OrderedSet(array));
+    }
+
+    /**
+     * Get the bottom-most descendants in a `range` as an array
+     *
+     * @param {Range} range
+     * @return {Array<Node>}
+     */
+
+  }, {
+    key: 'getLeafBlocksAtRangeAsArray',
+    value: function getLeafBlocksAtRangeAsArray(range) {
+      range = this.resolveRange(range);
+      if (range.isUnset) return [];
+
+      var _range5 = range,
+          start = _range5.start,
+          end = _range5.end;
+
+
+      return this.getLeafBlocksBetweenPathPositionsAsArray(start.path, end.path);
+    }
+
+    /**
+     * Get the bottom-most descendants between two paths as an array
+     *
+     * @param {List|Null} startPath
+     * @param {List|Null} endPath
+     * @return {Array<Node>}
+     */
+
+  }, {
+    key: 'getLeafBlocksBetweenPathPositionsAsArray',
+    value: function getLeafBlocksBetweenPathPositionsAsArray(startPath, endPath) {
+      // PERF: the most common case is when the range is in a single block node,
+      // where we can avoid a lot of iterating of the tree.
+      if (startPath && endPath && PathUtils.isEqual(startPath, endPath)) {
+        return [this.getClosestBlock(startPath)];
+      } else if (!startPath && !endPath) {
+        return this.getBlocksAsArray();
+      }
+
+      var startIndex = startPath ? startPath.get(0, 0) : 0;
+      var endIndex = endPath ? endPath.get(0, this.nodes.size - 1) : this.nodes.size - 1;
+
+      var array = [];
+
+      this.nodes.slice(startIndex, endIndex + 1).forEach(function (node, i) {
+        if (node.object !== 'block') {
+          return;
+        } else if (node.isLeafBlock()) {
+          array.push(node);
+        } else {
+          var childStartPath = startPath && i === 0 ? PathUtils.drop(startPath) : null;
+          var childEndPath = endPath && i === endIndex - startIndex ? PathUtils.drop(endPath) : null;
+
+          array = array.concat(node.getLeafBlocksBetweenPathPositionsAsArray(childStartPath, childEndPath));
+        }
+      });
+
+      return array;
+    }
+
+    /**
+     * Get the bottom-most inline nodes for each text node in a `range`.
+     *
+     * @param {Range} range
+     * @return {List<Node>}
+     */
+
+  }, {
+    key: 'getLeafInlinesAtRange',
+    value: function getLeafInlinesAtRange(range) {
+      var array = this.getLeafInlinesAtRangeAsArray(range);
+      // Remove duplicates by converting it to an `OrderedSet` first.
+      var list = immutable.List(immutable.OrderedSet(array));
+      return list;
+    }
+
+    /**
+     * Get the bottom-most inline nodes for each text node in a `range` as an array.
+     *
+     * @param {Range} range
+     * @return {Array<Node>}
+     */
+
+  }, {
+    key: 'getLeafInlinesAtRangeAsArray',
+    value: function getLeafInlinesAtRangeAsArray(range) {
+      var _this4 = this;
+
+      range = this.resolveRange(range);
+      if (range.isUnset) return [];
+
+      var array = this.getTextsAtRangeAsArray(range).map(function (text) {
+        return _this4.getClosestInline(text.key);
+      }).filter(function (exists) {
+        return exists;
+      });
+
+      return array;
     }
 
     /**
@@ -52029,29 +53560,34 @@ var ElementInterface = function () {
     /**
      * Get a set of marks in a `position`, the equivalent of a collapsed range
      *
-     * @param {string} key
+     * @param {List|string} key
      * @param {number} offset
      * @return {Set}
      */
 
   }, {
     key: 'getMarksAtPosition',
-    value: function getMarksAtPosition(key, offset) {
-      var text = this.getDescendant(key);
+    value: function getMarksAtPosition(path, offset) {
+      path = this.resolvePath(path);
+      var text = this.getDescendant(path);
       var currentMarks = text.getMarksAtIndex(offset);
       if (offset !== 0) return currentMarks;
-      var closestBlock = this.getClosestBlock(key);
+      var closestBlock = this.getClosestBlock(path);
 
       if (closestBlock.text === '') {
         // insert mark for empty block; the empty block are often created by split node or add marks in a range including empty blocks
         return currentMarks;
       }
 
-      var previous = this.getPreviousText(key);
+      var previous = this.getPreviousTextAndPath(path);
       if (!previous) return immutable.Set();
 
-      if (closestBlock.hasDescendant(previous.key)) {
-        return previous.getMarksAtIndex(previous.text.length);
+      var _previous = slicedToArray(previous, 2),
+          previousText = _previous[0],
+          previousPath = _previous[1];
+
+      if (closestBlock.hasDescendant(previousPath)) {
+        return previous.getMarksAtIndex(previousText.text.length);
       }
 
       return currentMarks;
@@ -52096,8 +53632,8 @@ var ElementInterface = function () {
     key: 'getMarksByTypeAsArray',
     value: function getMarksByTypeAsArray(type) {
       var array = this.nodes.reduce(function (memo, node) {
-        return node.object == 'text' ? memo.concat(node.getMarksAsArray().filter(function (m) {
-          return m.type == type;
+        return node.object === 'text' ? memo.concat(node.getMarksAsArray().filter(function (m) {
+          return m.type === type;
         })) : memo.concat(node.getMarksByTypeAsArray(type));
       }, []);
 
@@ -52105,30 +53641,21 @@ var ElementInterface = function () {
     }
 
     /**
-     * Get the block node before a descendant text node by `key`.
+     * Get the block node after a descendant text node by `path`.
      *
-     * @param {String} key
+     * @param {List|String} path
      * @return {Node|Null}
      */
 
   }, {
     key: 'getNextBlock',
-    value: function getNextBlock(key) {
-      var child = this.assertDescendant(key);
-      var last = void 0;
+    value: function getNextBlock(path) {
+      path = this.resolvePath(path);
+      var match = this.getNextDeepMatchingNodeAndPath(path, function (n) {
+        return n.object === 'block';
+      });
 
-      if (child.object == 'block') {
-        last = child.getLastText();
-      } else {
-        var block = this.getClosestBlock(key);
-        last = block.getLastText();
-      }
-
-      var next = this.getNextText(last.key);
-      if (!next) return null;
-
-      var closest = this.getClosestBlock(next.key);
-      return closest;
+      return match ? match[0] : null;
     }
 
     /**
@@ -52156,6 +53683,89 @@ var ElementInterface = function () {
       }
 
       return null;
+    }
+
+    /**
+     * Get the next node in the tree from a node that matches iterator
+     *
+     * This will not only check for siblings but instead move up the tree
+     * returning the next ancestor if no sibling is found.
+     *
+     * @param {List} path
+     * @return {Node|Null}
+     */
+
+  }, {
+    key: 'getNextMatchingNodeAndPath',
+    value: function getNextMatchingNodeAndPath(path) {
+      var iterator = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : function () {
+        return true;
+      };
+
+      if (!path) return null;
+
+      for (var i = path.size; i > 0; i--) {
+        var p = path.slice(0, i);
+
+        var nextPath = PathUtils.increment(p);
+        var nextNode = this.getNode(nextPath);
+
+        while (nextNode && !iterator(nextNode)) {
+          nextPath = PathUtils.increment(nextPath);
+          nextNode = this.getNode(nextPath);
+        }
+
+        if (nextNode) return [nextNode, nextPath];
+      }
+
+      return null;
+    }
+
+    /**
+     * Get the next, deepest node in the tree from a node that matches iterator
+     *
+     * This will not only check for siblings but instead move up the tree
+     * returning the next ancestor if no sibling is found.
+     *
+     * @param {List} path
+     * @param {Function} iterator
+     * @return {Node|Null}
+     */
+
+  }, {
+    key: 'getNextDeepMatchingNodeAndPath',
+    value: function getNextDeepMatchingNodeAndPath(path) {
+      var iterator = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : function () {
+        return true;
+      };
+
+      var match = this.getNextMatchingNodeAndPath(path);
+
+      if (!match) return null;
+
+      var _match = slicedToArray(match, 2),
+          nextNode = _match[0],
+          nextPath = _match[1];
+
+      var childMatch = void 0;
+
+      var assign = function assign() {
+        childMatch = nextNode.object !== 'text' && nextNode.findFirstDescendantAndPath(iterator, nextPath);
+        return childMatch;
+      };
+
+      while (assign(childMatch)) {
+        var _childMatch = childMatch;
+
+        var _childMatch2 = slicedToArray(_childMatch, 2);
+
+        nextNode = _childMatch2[0];
+        nextPath = _childMatch2[1];
+      }
+
+      if (!nextNode) return null;
+
+      return iterator(nextNode) ? [nextNode, nextPath] : this.getNextDeepMatchingNodeAndPath(match[1], iterator);
     }
 
     /**
@@ -52194,29 +53804,112 @@ var ElementInterface = function () {
       var text = next.getFirstText();
       return text;
     }
+  }, {
+    key: 'getNextTextAndPath',
+    value: function getNextTextAndPath(path) {
+      if (!path) return null;
+      if (!path.size) return null;
+      var match = this.getNextDeepMatchingNodeAndPath(path, function (n) {
+        return n.object === 'text';
+      });
+      return match;
+    }
 
     /**
-     * Get the offset for a descendant text node by `key`.
+     * Get all of the nodes in a `range`. This includes all of the
+     * text nodes inside the range and all ancestors of those text
+     * nodes up to this node.
      *
-     * @param {String} key
+     * @param {Range} range
+     * @return {List<Node>}
+     */
+
+  }, {
+    key: 'getNodesAtRange',
+    value: function getNodesAtRange(range) {
+      range = this.resolveRange(range);
+      if (range.isUnset) return immutable.List();
+      var _range6 = range,
+          start = _range6.start,
+          end = _range6.end;
+
+      // Do a depth-first stack-based search for all nodes in the range
+      // Nodes that are pushed to the stack are inside the range
+
+      // Start with the nodes that are on the highest level in the tree
+
+      var stack = immutable.Stack(this.nodes.slice(start.path.get(0), end.path.get(0) + 1).map(function (node, index) {
+        return {
+          node: node,
+          onStartEdge: index === 0,
+          onEndEdge: index === end.path.get(0) - start.path.get(0),
+          relativeStartPath: start.path.slice(1),
+          relativeEndPath: end.path.slice(1)
+        };
+      }));
+
+      var result = [];
+
+      var _loop = function _loop() {
+        var _stack$peek = stack.peek(),
+            node = _stack$peek.node,
+            onStartEdge = _stack$peek.onStartEdge,
+            onEndEdge = _stack$peek.onEndEdge,
+            relativeStartPath = _stack$peek.relativeStartPath,
+            relativeEndPath = _stack$peek.relativeEndPath;
+
+        stack = stack.shift();
+        result.push(node);
+
+        if (node.object === 'text') return 'continue';
+
+        // Modify indexes to exclude children that are outside of the range
+        var startIndex = onStartEdge ? relativeStartPath.get(0) : 0;
+        var endIndex = onEndEdge ? relativeEndPath.get(0) : node.nodes.size - 1;
+
+        // Push children that are inside the range to the stack
+        stack = stack.pushAll(node.nodes.slice(startIndex, endIndex + 1).map(function (n, i) {
+          return {
+            node: n,
+            onStartEdge: onStartEdge && i === 0,
+            onEndEdge: onEndEdge && i === endIndex - startIndex,
+            relativeStartPath: onStartEdge && i === 0 ? relativeStartPath.slice(1) : null,
+            relativeEndPath: onEndEdge && i === endIndex - startIndex ? relativeEndPath.slice(1) : null
+          };
+        }));
+      };
+
+      while (stack.size > 0) {
+        var _ret = _loop();
+
+        if (_ret === 'continue') continue;
+      }
+
+      return immutable.List(result);
+    }
+
+    /**
+     * Get the offset for a descendant text node by `path` or `key`.
+     *
+     * @param {List|string} path
      * @return {Number}
      */
 
   }, {
     key: 'getOffset',
-    value: function getOffset(key) {
-      this.assertDescendant(key);
+    value: function getOffset(path) {
+      path = this.resolvePath(path);
+      this.assertDescendant(path);
 
       // Calculate the offset of the nodes before the highest child.
-      var child = this.getFurthestAncestor(key);
-      var offset = this.nodes.takeUntil(function (n) {
-        return n == child;
-      }).reduce(function (memo, n) {
+      var index = path.first();
+
+      var offset = this.nodes.slice(0, index).reduce(function (memo, n) {
         return memo + n.text.length;
       }, 0);
 
       // Recurse if need be.
-      var ret = this.hasChild(key) ? offset : offset + child.getOffset(key);
+      var ret = path.size === 1 ? offset : offset + this.nodes.get(index).getOffset(PathUtils.drop(path));
       return ret;
     }
 
@@ -52240,10 +53933,10 @@ var ElementInterface = function () {
         throw new Error('The range must be collapsed to calculcate its offset.');
       }
 
-      var _range6 = range,
-          start = _range6.start;
+      var _range7 = range,
+          start = _range7.start;
 
-      var offset = this.getOffset(start.key) + start.offset;
+      var offset = this.getOffset(start.path) + start.offset;
       return offset;
     }
 
@@ -52271,9 +53964,9 @@ var ElementInterface = function () {
     key: 'getOrderedMarksAtRange',
     value: function getOrderedMarksAtRange(range) {
       range = this.resolveRange(range);
-      var _range7 = range,
-          start = _range7.start,
-          end = _range7.end;
+      var _range8 = range,
+          start = _range8.start,
+          end = _range8.end;
 
 
       if (range.isUnset) {
@@ -52281,11 +53974,11 @@ var ElementInterface = function () {
       }
 
       if (range.isCollapsed) {
-        // PERF: range is not cachable, use key and offset as proxies for cache
-        return this.getMarksAtPosition(start.key, start.offset);
+        // PERF: range is not cachable, use path? and offset as proxies for cache
+        return this.getMarksAtPosition(start.path, start.offset);
       }
 
-      var marks = this.getOrderedMarksBetweenPositions(start.key, start.offset, end.key, end.offset);
+      var marks = this.getOrderedMarksBetweenPositions(start.path, start.offset, end.path, end.offset);
 
       return marks;
     }
@@ -52294,28 +53987,34 @@ var ElementInterface = function () {
      * Get a set of the marks in a `range`.
      * PERF: arguments use key and offset for utilizing cache
      *
-     * @param {string} startKey
+     * @param {List|string} startPath
      * @param {number} startOffset
-     * @param {string} endKey
+     * @param {List|string} endPath
      * @param {number} endOffset
      * @returns {OrderedSet<Mark>}
      */
 
   }, {
     key: 'getOrderedMarksBetweenPositions',
-    value: function getOrderedMarksBetweenPositions(startKey, startOffset, endKey, endOffset) {
-      if (startKey === endKey) {
-        var startText = this.getDescendant(startKey);
+    value: function getOrderedMarksBetweenPositions(startPath, startOffset, endPath, endOffset) {
+      startPath = this.resolvePath(startPath);
+      endPath = this.resolvePath(endPath);
+
+      var startText = this.getDescendant(startPath);
+
+      if (PathUtils.isEqual(startPath, endPath)) {
         return startText.getMarksBetweenOffsets(startOffset, endOffset);
       }
 
-      var texts = this.getTextsBetweenPositionsAsArray(startKey, endKey);
+      var endText = this.getDescendant(endPath);
+
+      var texts = this.getTextsBetweenPathPositionsAsArray(startPath, endPath);
 
       return immutable.OrderedSet().withMutations(function (result) {
         texts.forEach(function (text) {
-          if (text.key === startKey) {
+          if (text.key === startText.key) {
             result.union(text.getMarksBetweenOffsets(startOffset, text.text.length));
-          } else if (text.key === endKey) {
+          } else if (text.key === endText.key) {
             result.union(text.getMarksBetweenOffsets(0, endOffset));
           } else {
             result.union(text.getMarks());
@@ -52357,30 +54056,82 @@ var ElementInterface = function () {
     }
 
     /**
-     * Get the block node before a descendant text node by `key`.
+     * Get the block node before a descendant text node by `path`.
      *
-     * @param {String} key
+     * @param {List|String} path
      * @return {Node|Null}
      */
 
   }, {
     key: 'getPreviousBlock',
-    value: function getPreviousBlock(key) {
-      var child = this.assertDescendant(key);
-      var first = void 0;
+    value: function getPreviousBlock(path) {
+      path = this.resolvePath(path);
+      var match = this.getPreviousDeepMatchingNodeAndPath(path, function (n) {
+        return n.object === 'block';
+      });
 
-      if (child.object == 'block') {
-        first = child.getFirstText();
-      } else {
-        var block = this.getClosestBlock(key);
-        first = block.getFirstText();
-      }
+      return match ? match[0] : null;
+    }
 
-      var previous = this.getPreviousText(first.key);
-      if (!previous) return null;
+    /**
+     * Get the highest block descendants in a `range`.
+     *
+     * @param {Range} range
+     * @return {List<Node>}
+     */
 
-      var closest = this.getClosestBlock(previous.key);
-      return closest;
+  }, {
+    key: 'getRootBlocksAtRange',
+    value: function getRootBlocksAtRange(range) {
+      range = this.resolveRange(range);
+      if (range.isUnset) return immutable.List();
+
+      var _range9 = range,
+          start = _range9.start,
+          end = _range9.end;
+
+
+      return this.nodes.slice(start.path.first(), end.path.first() + 1);
+    }
+
+    /**
+     * Get the top-most inline nodes for each text node in a `range`.
+     *
+     * @param {Range} range
+     * @return {List<Node>}
+     */
+
+  }, {
+    key: 'getRootInlinesAtRange',
+    value: function getRootInlinesAtRange(range) {
+      var array = this.getRootInlinesAtRangeAsArray(range);
+      // Remove duplicates by converting it to an `OrderedSet` first.
+      var list = immutable.List(immutable.OrderedSet(array));
+      return list;
+    }
+
+    /**
+     * Get the top-most inline nodes for each text node in a `range` as an array.
+     *
+     * @param {Range} range
+     * @return {Array}
+     */
+
+  }, {
+    key: 'getRootInlinesAtRangeAsArray',
+    value: function getRootInlinesAtRangeAsArray(range) {
+      var _this5 = this;
+
+      range = this.resolveRange(range);
+      if (range.isUnset) return immutable.List();
+
+      var array = this.getTextsAtRangeAsArray(range).map(function (text) {
+        return _this5.getFurthestInline(text.key);
+      }).filter(function (exists) {
+        return exists;
+      });
+
+      return array;
     }
 
     /**
@@ -52413,6 +54164,91 @@ var ElementInterface = function () {
     }
 
     /**
+     * Get the previous node in the tree from a node that matches iterator
+     *
+     * This will not only check for siblings but instead move up the tree
+     * returning the previous ancestor if no sibling is found.
+     *
+     * @param {List} path
+     * @return {Node|Null}
+     */
+
+  }, {
+    key: 'getPreviousMatchingNodeAndPath',
+    value: function getPreviousMatchingNodeAndPath(path) {
+      var iterator = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : function () {
+        return true;
+      };
+
+      if (!path) return null;
+
+      for (var i = path.size; i > 0; i--) {
+        var p = path.slice(0, i);
+        if (p.last() === 0) continue;
+
+        var previousPath = PathUtils.decrement(p);
+        var previousNode = this.getNode(previousPath);
+
+        while (previousNode && !iterator(previousNode)) {
+          previousPath = PathUtils.decrement(previousPath);
+          previousNode = this.getNode(previousPath);
+        }
+
+        if (previousNode) return [previousNode, previousPath];
+      }
+
+      return null;
+    }
+
+    /**
+     * Get the next previous in the tree from a node that matches iterator
+     *
+     * This will not only check for siblings but instead move up the tree
+     * returning the previous ancestor if no sibling is found.
+     * Once a node is found, the last deepest child matching is returned
+     *
+     * @param {List} path
+     * @param {Function} iterator
+     * @return {Node|Null}
+     */
+
+  }, {
+    key: 'getPreviousDeepMatchingNodeAndPath',
+    value: function getPreviousDeepMatchingNodeAndPath(path) {
+      var iterator = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : function () {
+        return true;
+      };
+
+      var match = this.getPreviousMatchingNodeAndPath(path);
+
+      if (!match) return null;
+
+      var _match2 = slicedToArray(match, 2),
+          previousNode = _match2[0],
+          previousPath = _match2[1];
+
+      var childMatch = void 0;
+
+      var assign = function assign() {
+        childMatch = previousNode.object !== 'text' && previousNode.findLastDescendantAndPath(iterator, previousPath);
+        return childMatch;
+      };
+
+      while (assign(childMatch)) {
+        var _childMatch3 = childMatch;
+
+        var _childMatch4 = slicedToArray(_childMatch3, 2);
+
+        previousNode = _childMatch4[0];
+        previousPath = _childMatch4[1];
+      }
+
+      if (!previousNode) return null;
+
+      return iterator(previousNode) ? [previousNode, previousPath] : this.getPreviousDeepMatchingNodeAndPath(match[1], iterator);
+    }
+
+    /**
      * Get the previous sibling of a node.
      *
      * @param {List|String} path
@@ -52432,7 +54268,7 @@ var ElementInterface = function () {
     }
 
     /**
-     * Get the text node after a descendant text node.
+     * Get the text node before a descendant text node.
      *
      * @param {List|String} path
      * @return {Node|Null}
@@ -52446,8 +54282,18 @@ var ElementInterface = function () {
       if (!path.size) return null;
       var previous = this.getPreviousNode(path);
       if (!previous) return null;
-      var text = previous.getLastText();
-      return text;
+      var match = previous.getLastText();
+      return match;
+    }
+  }, {
+    key: 'getPreviousTextAndPath',
+    value: function getPreviousTextAndPath(path) {
+      if (!path) return null;
+      if (!path.size) return null;
+      var match = this.getPreviousDeepMatchingNodeAndPath(path, function (n) {
+        return n.object === 'text';
+      });
+      return match;
     }
 
     /**
@@ -52480,7 +54326,7 @@ var ElementInterface = function () {
 
       // PERF: if the start and end keys are the same, just check for the child
       // that contains that single key.
-      if (start.key == end.key) {
+      if (start.key === end.key) {
         var child = this.getFurthestAncestor(start.key);
         var index = child ? this.nodes.indexOf(child) : null;
         return { start: index, end: index + 1 };
@@ -52491,9 +54337,9 @@ var ElementInterface = function () {
       var endIndex = null;
 
       this.nodes.forEach(function (child, i) {
-        if (child.object == 'text') {
-          if (startIndex == null && child.key == start.key) startIndex = i;
-          if (endIndex == null && child.key == end.key) endIndex = i + 1;
+        if (child.object === 'text') {
+          if (startIndex == null && child.key === start.key) startIndex = i;
+          if (endIndex == null && child.key === end.key) endIndex = i + 1;
         } else {
           if (startIndex == null && child.hasDescendant(start.key)) startIndex = i;
           if (endIndex == null && child.hasDescendant(end.key)) endIndex = i + 1;
@@ -52570,7 +54416,7 @@ var ElementInterface = function () {
       var array = [];
 
       this.nodes.forEach(function (node) {
-        if (node.object == 'text') {
+        if (node.object === 'text') {
           array.push(node);
         } else {
           array = array.concat(node.getTextsAsArray());
@@ -52581,7 +54427,7 @@ var ElementInterface = function () {
     }
 
     /**
-     * Get all of the text nodes in a `range`.
+     * Get all of the text nodes in a `range` as a List.
      *
      * @param {Range} range
      * @return {List<Node>}
@@ -52590,22 +54436,15 @@ var ElementInterface = function () {
   }, {
     key: 'getTextsAtRange',
     value: function getTextsAtRange(range) {
-      range = this.resolveRange(range);
-      if (range.isUnset) return immutable.List();
-      var _range8 = range,
-          start = _range8.start,
-          end = _range8.end;
-
-      var list = immutable.List(this.getTextsBetweenPositionsAsArray(start.key, end.key));
-
-      return list;
+      var arr = this.getTextsAtRangeAsArray(range);
+      return immutable.List(arr);
     }
 
     /**
      * Get all of the text nodes in a `range` as an array.
      *
      * @param {Range} range
-     * @return {Array}
+     * @return {Array<Node>}
      */
 
   }, {
@@ -52613,38 +54452,70 @@ var ElementInterface = function () {
     value: function getTextsAtRangeAsArray(range) {
       range = this.resolveRange(range);
       if (range.isUnset) return [];
-      var _range9 = range,
-          start = _range9.start,
-          end = _range9.end;
+      var _range10 = range,
+          start = _range10.start,
+          end = _range10.end;
 
-      var texts = this.getTextsBetweenPositionsAsArray(start.key, end.key);
+      var texts = this.getTextsBetweenPathPositionsAsArray(start.path, end.path);
       return texts;
     }
 
     /**
      * Get all of the text nodes in a `range` as an array.
-     * PERF: use key in arguments for cache
+     * PERF: use key / path in arguments for cache
      *
-     * @param {string} startKey
-     * @param {string} endKey
+     * @param {List|string} startPath
+     * @param {List|string} endPath
      * @returns {Array}
      */
 
   }, {
     key: 'getTextsBetweenPositionsAsArray',
-    value: function getTextsBetweenPositionsAsArray(startKey, endKey) {
-      var startText = this.getDescendant(startKey);
+    value: function getTextsBetweenPositionsAsArray(startPath, endPath) {
+      startPath = this.resolvePath(startPath);
+      endPath = this.resolvePath(endPath);
 
+      return this.getTextsBetweenPathPositionsAsArray(startPath, endPath);
+    }
+
+    /**
+     * Get all of the text nodes in a `range` as an array.
+     *
+     * @param {List|falsey} startPath
+     * @param {List|falsey} endPath
+     * @returns {Array}
+     */
+
+  }, {
+    key: 'getTextsBetweenPathPositionsAsArray',
+    value: function getTextsBetweenPathPositionsAsArray(startPath, endPath) {
       // PERF: the most common case is when the range is in a single text node,
       // where we can avoid a lot of iterating of the tree.
-      if (startKey == endKey) return [startText];
+      if (startPath && endPath && PathUtils.isEqual(startPath, endPath)) {
+        return [this.getDescendant(startPath)];
+      } else if (!startPath && !endPath) {
+        return this.getTextsAsArray();
+      }
 
-      var endText = this.getDescendant(endKey);
-      var texts = this.getTextsAsArray();
-      var start = texts.indexOf(startText);
-      var end = texts.indexOf(endText, start);
-      var ret = texts.slice(start, end + 1);
-      return ret;
+      var startIndex = startPath ? startPath.get(0, 0) : 0;
+      var endIndex = endPath ? endPath.get(0, this.nodes.size - 1) : this.nodes.size - 1;
+
+      var array = [];
+
+      this.nodes.slice(startIndex, endIndex + 1).forEach(function (node, i) {
+        if (node.object === 'text') {
+          array.push(node);
+        } else {
+          // For the node at start and end of this list, we want to provide a start and end path
+          // For other nodes, we can just get all their text nodes, they are between the paths
+          var childStartPath = startPath && i === 0 ? PathUtils.drop(startPath) : null;
+          var childEndPath = endPath && i === endIndex - startIndex ? PathUtils.drop(endPath) : null;
+
+          array = array.concat(node.getTextsBetweenPathPositionsAsArray(childStartPath, childEndPath));
+        }
+      });
+
+      return array;
     }
 
     /**
@@ -52773,9 +54644,10 @@ var ElementInterface = function () {
       var object = this.object,
           nodes = this.nodes;
 
+      if (object !== 'block') return false;
       if (!nodes.size) return true;
-      var first = nodes.first();
-      return object === 'block' && first.object !== 'block';
+
+      return nodes.first().object !== 'block';
     }
 
     /**
@@ -52790,9 +54662,34 @@ var ElementInterface = function () {
       var object = this.object,
           nodes = this.nodes;
 
+      if (object !== 'inline') return false;
       if (!nodes.size) return true;
-      var first = nodes.first();
-      return object === 'inline' && first.object !== 'inline';
+
+      return nodes.first().object !== 'inline';
+    }
+
+    /**
+     * Check whether a descendant node is inside a range. This will return true for all
+     * text nodes inside the range and all ancestors of those text nodes up to this node.
+     *
+     * @param {List|string} path
+     * @param {Range} range
+     * @return {Node}
+     */
+
+  }, {
+    key: 'isNodeInRange',
+    value: function isNodeInRange(path, range) {
+      this.assertDescendant(path);
+      path = this.resolvePath(path);
+      range = this.resolveRange(range);
+      if (range.isUnset) return false;
+
+      var toStart = PathUtils.compare(path, range.start.path);
+      var toEnd = range.start.key === range.end.key ? toStart : PathUtils.compare(path, range.end.path);
+
+      var is = toStart !== -1 && toEnd !== 1;
+      return is;
     }
 
     /**
@@ -52806,13 +54703,13 @@ var ElementInterface = function () {
   }, {
     key: 'mapChildren',
     value: function mapChildren(iterator) {
-      var _this5 = this;
+      var _this6 = this;
 
       var nodes = this.nodes;
 
 
       nodes.forEach(function (node, i) {
-        var ret = iterator(node, i, _this5.nodes);
+        var ret = iterator(node, i, _this6.nodes);
         if (ret !== node) nodes = nodes.set(ret.key, ret);
       });
 
@@ -52831,7 +54728,7 @@ var ElementInterface = function () {
   }, {
     key: 'mapDescendants',
     value: function mapDescendants(iterator) {
-      var _this6 = this;
+      var _this7 = this;
 
       var nodes = this.nodes;
 
@@ -52839,7 +54736,7 @@ var ElementInterface = function () {
       nodes.forEach(function (node, index) {
         var ret = node;
         if (ret.object !== 'text') ret = ret.mapDescendants(iterator);
-        ret = iterator(ret, index, _this6.nodes);
+        ret = iterator(ret, index, _this7.nodes);
         if (ret === node) return;
 
         nodes = nodes.set(index, ret);
@@ -52906,18 +54803,15 @@ var ElementInterface = function () {
       var newParentPath = PathUtils.lift(newPath);
       this.assertNode(newParentPath);
 
-      var _PathUtils$crop = PathUtils.crop(path, newPath),
-          _PathUtils$crop2 = slicedToArray(_PathUtils$crop, 2),
-          p = _PathUtils$crop2[0],
-          np = _PathUtils$crop2[1];
-
-      var position = PathUtils.compare(p, np);
-
-      // If the old path ends above and before a node in the new path, then
-      // removing it will alter the target, so we need to adjust the new path.
-      if (path.size < newPath.size && position === -1) {
-        newPath = PathUtils.decrement(newPath, 1, p.size - 1);
-      }
+      // TODO: this is a bit hacky, re-creating the operation that led to this method being called
+      // Alternative 1: pass the operation through from apply -> value.moveNode
+      // Alternative 2: add a third property to the operation called "transformedNewPath", pass that through
+      var op = Operation.create({
+        type: 'move_node',
+        path: path,
+        newPath: newPath
+      });
+      newPath = PathUtils.transform(path, op).first();
 
       var ret = this;
       ret = ret.removeNode(path);
@@ -53162,7 +55056,7 @@ var ElementInterface = function () {
 
 var ASSERTS = ['Child', 'Depth', 'Descendant', 'Node', 'Parent', 'Path'];
 
-var _loop$1 = function _loop(method) {
+var _loop2 = function _loop2(method) {
   ElementInterface.prototype['assert' + method] = function (path) {
     for (var _len3 = arguments.length, args = Array(_len3 > 1 ? _len3 - 1 : 0), _key3 = 1; _key3 < _len3; _key3++) {
       args[_key3 - 1] = arguments[_key3];
@@ -53186,7 +55080,7 @@ try {
   for (var _iterator$1 = ASSERTS[Symbol.iterator](), _step$1; !(_iteratorNormalCompletion$1 = (_step$1 = _iterator$1.next()).done); _iteratorNormalCompletion$1 = true) {
     var method$1 = _step$1.value;
 
-    _loop$1(method$1);
+    _loop2(method$1);
   }
 
   /**
@@ -53207,7 +55101,7 @@ try {
   }
 }
 
-memoize(ElementInterface.prototype, ['getBlocksAsArray', 'getBlocksAtRangeAsArray', 'getBlocksByTypeAsArray', 'getDecorations', 'getFragmentAtRange', 'getInlinesAsArray', 'getInlinesAtRangeAsArray', 'getInlinesByTypeAsArray', 'getMarksAsArray', 'getMarksAtPosition', 'getOrderedMarksBetweenPositions', 'getInsertMarksAtRange', 'getMarksByTypeAsArray', 'getNextBlock', 'getOffset', 'getOffsetAtRange', 'getPreviousBlock', 'getTextAtOffset', 'getTextDirection', 'getTextsAsArray', 'getTextsBetweenPositionsAsArray']);
+memoize(ElementInterface.prototype, ['getBlocksAsArray', 'getLeafBlocksAtRangeAsArray', 'getBlocksByTypeAsArray', 'getDecorations', 'getFragmentAtRange', 'getInlinesAsArray', 'getInlinesByTypeAsArray', 'getLeafBlocksAtRangeAsArray', 'getLeafInlinesAtRangeAsArray', 'getMarksAsArray', 'getMarksAtPosition', 'getNodesAtRange', 'getOrderedMarksBetweenPositions', 'getInsertMarksAtRange', 'getMarksByTypeAsArray', 'getNextBlock', 'getOffset', 'getOffsetAtRange', 'getPreviousBlock', 'getRootBlocksAtRange', 'getRootInlinesAtRangeAsArray', 'getTextAtOffset', 'getTextDirection', 'getTextsAsArray', 'getTextsBetweenPathPositionsAsArray']);
 
 /**
  * Mix in the element interface.
@@ -54046,11 +55940,11 @@ exports.Value = Value;
 exports.default = index;
 
 
-},{"debug":349,"direction":137,"esrever":138,"immutable":158,"is-plain-object":161,"lodash/omit":302,"lodash/pick":303,"tiny-invariant":351,"tiny-warning":352}],349:[function(require,module,exports){
+},{"debug":416,"direction":137,"esrever":138,"immutable":158,"is-plain-object":161,"lodash/omit":302,"lodash/pick":303,"tiny-invariant":418,"tiny-warning":419}],416:[function(require,module,exports){
+arguments[4][332][0].apply(exports,arguments)
+},{"./debug":417,"_process":310,"dup":332}],417:[function(require,module,exports){
 arguments[4][333][0].apply(exports,arguments)
-},{"./debug":350,"_process":310,"dup":333}],350:[function(require,module,exports){
-arguments[4][334][0].apply(exports,arguments)
-},{"dup":334,"ms":308}],351:[function(require,module,exports){
+},{"dup":333,"ms":308}],418:[function(require,module,exports){
 (function (process){
 'use strict';
 
@@ -54071,7 +55965,7 @@ function invariant(condition, message) {
 module.exports = invariant;
 
 }).call(this,require('_process'))
-},{"_process":310}],352:[function(require,module,exports){
+},{"_process":310}],419:[function(require,module,exports){
 (function (process){
 'use strict';
 
