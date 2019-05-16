@@ -4656,7 +4656,7 @@ slash@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/slash/-/slash-1.0.0.tgz#c41f2f6c39fc16d1cd17ad4b5d896114ae470d55"
 
-slate-base64-serializer@^0.2.98:
+slate-base64-serializer@^0.2.105:
   version "0.2.105"
   resolved "https://registry.yarnpkg.com/slate-base64-serializer/-/slate-base64-serializer-0.2.105.tgz#ec45a766b709d223f2670a8c8a0671f068a84e52"
   integrity sha512-Ld3QMJmQwkuQkrYK90StG/5BtbvRsqmTs0JDNNND+Pyo0Cf/XopUufvYlRqe38YMtjGMwZaGXiNOnSJvTy7LmA==
@@ -4690,32 +4690,32 @@ slate-hyperprint@^2.2.5:
     prettier "1.13.6"
     stringify-object "^3.2.2"
 
-slate-hyperscript@^0.11.28:
-  version "0.11.30"
-  resolved "https://registry.yarnpkg.com/slate-hyperscript/-/slate-hyperscript-0.11.30.tgz#25b665fe2d1b00b16f0782b130f844552cc8d932"
-  integrity sha512-Ys9owRgk92F24q4mqWzHhNK+mwuXeb1EOh/oDl4NYiiQTX79xl8J2/YTIDlmU0svOlzOqj8lQdlD7KWvsE6kUQ==
+slate-hyperscript@^0.13.1:
+  version "0.13.2"
+  resolved "https://registry.yarnpkg.com/slate-hyperscript/-/slate-hyperscript-0.13.2.tgz#75978d2a7343b32229d8eee25340216580cd10e3"
+  integrity sha512-T1mmHoBkOIkdSzkmj+u9uT4D08k66HxmVLrTOCN5hUQrfPt6sJT2h+WB/hxF6qw2eB26t8o9rDAc29omIuXtAg==
   dependencies:
     is-plain-object "^2.0.4"
 
-slate-plain-serializer@^0.6.37:
-  version "0.6.39"
-  resolved "https://registry.yarnpkg.com/slate-plain-serializer/-/slate-plain-serializer-0.6.39.tgz#5fb8d4dc530a2e7e0689548d48964ce242c4516a"
-  integrity sha512-EGl+Y+9Fw9IULtPg8sttydaeiAoaibJolMXNfqI79+5GWTQwJFIbg24keKvsTw+3f2RieaPu8fcrKyujKtZ7ZQ==
+slate-plain-serializer@^0.7.4:
+  version "0.7.4"
+  resolved "https://registry.yarnpkg.com/slate-plain-serializer/-/slate-plain-serializer-0.7.4.tgz#17c8d6b8444da21b610cfc1606b0e7b0806dc8b9"
+  integrity sha512-F64rUnaLfJ6jyj5vjuFBD0I2c2gOFYELAuDoshHHu27ensIpZzd2hs0oHJkqGHjngd3lKx6/DRHoWADHGAdPHQ==
 
-slate-prop-types@^0.5.28:
+slate-prop-types@^0.5.35:
   version "0.5.35"
   resolved "https://registry.yarnpkg.com/slate-prop-types/-/slate-prop-types-0.5.35.tgz#03a57edd026ca72248249e0116c6d21d7810cacf"
   integrity sha512-tsogOEp2hlFqW7Rjnda9yNiUhVIzM/jfjy+7EVNJkhUR5BmjbU6xhJHng51gFrvRrCzjr7eWmX0KfS27REGLLQ==
 
-slate-react-placeholder@^0.1.16:
-  version "0.1.20"
-  resolved "https://registry.yarnpkg.com/slate-react-placeholder/-/slate-react-placeholder-0.1.20.tgz#1a504727257cd50d9a4da4eb1fe47bdf024eefbf"
-  integrity sha512-A4xq1kS3V3YetFbLE/1dv+/SDVjx9zsZZepJqjcmkGK+evHU2yNkWjZXCg8MLMRtZJpGtYT/BE3+kHbkgT5Q4A==
+slate-react-placeholder@^0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/slate-react-placeholder/-/slate-react-placeholder-0.2.2.tgz#c4d84177a6898b6fc580dcb62f0a5055d089c68b"
+  integrity sha512-DQhoVN71jJPiWPiGdkyZKIWnzwGfRi/ZqjCfljqRxKryPo6D+xYlAjoyqypClZsHI+KenuS/0h2tc+04HANGWw==
 
-slate-react@0.21.19:
-  version "0.21.19"
-  resolved "https://registry.yarnpkg.com/slate-react/-/slate-react-0.21.19.tgz#e3320c0df3856bf8a879e9c876bb065e458b6b6f"
-  integrity sha512-Qc2cBoRV6N4trJMdlmRVs61A8C1WZ35k7ir2RY36x5YiJsGMQ858kBF6KKPNBUEFvkU6rx9i+ztxxf0nBoFNQw==
+slate-react@^0.22.1:
+  version "0.22.2"
+  resolved "https://registry.yarnpkg.com/slate-react/-/slate-react-0.22.2.tgz#5e7f152beb7599df590d39f4a6bff5274d0013ff"
+  integrity sha512-e1LRUuo56PXTVEUN4nxREkDXec7InOeqY07Sab4fbJE2gM98RGAxX3UtzZBaDvKpJGtVfqUG9Rz3MUg96q/ddA==
   dependencies:
     debug "^3.1.0"
     get-window "^1.1.1"
@@ -4725,19 +4725,19 @@ slate-react@0.21.19:
     prop-types "^15.5.8"
     react-immutable-proptypes "^2.1.0"
     selection-is-backward "^1.0.0"
-    slate-base64-serializer "^0.2.98"
+    slate-base64-serializer "^0.2.105"
     slate-dev-environment "^0.2.2"
     slate-hotkeys "^0.2.9"
-    slate-plain-serializer "^0.6.37"
-    slate-prop-types "^0.5.28"
-    slate-react-placeholder "^0.1.16"
+    slate-plain-serializer "^0.7.4"
+    slate-prop-types "^0.5.35"
+    slate-react-placeholder "^0.2.2"
     tiny-invariant "^1.0.1"
     tiny-warning "^0.0.3"
 
-slate@^0.44.13:
-  version "0.44.13"
-  resolved "https://registry.yarnpkg.com/slate/-/slate-0.44.13.tgz#9c87d0769fd7bacc3ce649f4e3c9fd3a2e705245"
-  integrity sha512-GcDon/8iN6Mmonl7FucSDGs9KYDB7S9gs+fnnJDny5HFsHGGDTDwfBnRXMyKDC307sRZ+yhauqKSulHkoBdB9A==
+slate@^0.47.1:
+  version "0.47.2"
+  resolved "https://registry.yarnpkg.com/slate/-/slate-0.47.2.tgz#c943a9795fb2cb2aba54fd862fa73e5e76d3e148"
+  integrity sha512-hu8EeL1fmVT6Etxi//02v+p60Xo0pRkWwApQkyqqdZpc6F9CHgcMpvaA0twFHGmpVI3v2sHDXk7efYJvgJO8sw==
   dependencies:
     debug "^3.1.0"
     direction "^0.1.5"
